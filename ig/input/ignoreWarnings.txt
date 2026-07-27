@@ -1,0 +1,19 @@
+== Suppressed Messages ==
+
+# Only genuinely out-of-scope or cosmetic best-practice notes are suppressed here,
+# each with a rationale. Content-validity problems are NEVER suppressed — they are
+# fixed in the FSH. Matching is by substring against the QA message.
+
+# --- Per-resource OID assignment -------------------------------------------------
+# OIDs are only needed for CDA / OID-based terminology usage. This is a FHIR-native
+# IG (canonical URLs), so OID assignment is out of scope for the draft.
+should have an OID assigned to cater for possible use with OID based terminology systems
+
+# --- Optional template fragments -------------------------------------------------
+# This minimal IG ships no IP-statements / cross-version / dependency / globals pages.
+is not included anywhere in the produced implementation guide
+
+# --- Artifact-list descriptions --------------------------------------------------
+# Resource descriptions live on the narrative pages; the per-entry artifact-list
+# description is optional for a draft.
+Unable to find ImplementationGuide.definition.resource.description

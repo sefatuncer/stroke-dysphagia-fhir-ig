@@ -1,0 +1,2666 @@
+[
+  {
+    "id": "00e294fd-4a98-5eff-dcb5-8d640de31a20",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "00fbbc4e-e5af-408e-bc6d-5da39fff0316",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "012b0b61-7275-eaef-5f5f-8edf5cc019c7",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "01e8eb70-18c8-af89-d93e-48052a61fcbe",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "01f7b19f-9af9-faa0-1e48-32933f7ede2b",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "02d8b181-e85d-54c6-bd69-e609a4b6e078",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "04a4b9e5-5f8c-3037-8e6a-b692b6d18f44",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "05759022-32bd-a6f4-30c6-60daa2996364",
+    "hasFlag": true,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "061827dc-3339-c374-a408-a06039bcd34b",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "08872436-3089-c6bd-8d5d-3966887f0367",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "08aace66-f997-cc4d-4630-1a6c458661af",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "094f4309-4a83-8743-b233-5e276e79c439",
+    "hasFlag": false,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "09684cfe-2d50-4116-f3e9-c986eeee03fa",
+    "hasFlag": true,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "0a612daa-cdeb-06c5-0c4c-0f11040679ad",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "0a6ca288-78a5-1940-09d4-0a387d762739",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "0ca52b03-200f-fead-79b6-e57e04564176",
+    "hasFlag": true,
+    "onThin": false,
+    "isNpo": true,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "0df70d4c-bd86-11ef-4ba4-8654ab650ee5",
+    "hasFlag": true,
+    "onThin": true,
+    "isNpo": false,
+    "alert": true,
+    "alertText": "ASPIRATION PRECAUTION: at-risk patient on thin fluids and not NPO — review diet/fluid consistency (IDDSI) and swallowing precautions."
+  },
+  {
+    "id": "0e944741-1d3a-7a89-a241-186c004b9750",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "11e46910-ce16-7aab-15d1-65b97769048b",
+    "hasFlag": true,
+    "onThin": true,
+    "isNpo": false,
+    "alert": true,
+    "alertText": "ASPIRATION PRECAUTION: at-risk patient on thin fluids and not NPO — review diet/fluid consistency (IDDSI) and swallowing precautions."
+  },
+  {
+    "id": "12ea4535-ee56-3e4b-279f-eb792ff04595",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "1358e769-b7df-37dd-58c3-1dd4867e25ac",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "14838260-6a3c-6fde-7be7-6657fd01dcd6",
+    "hasFlag": false,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "1490eff4-b09e-fc6e-0cf6-e81b2f3cbb84",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "15278ea7-acff-37dd-2991-5035600bd88c",
+    "hasFlag": true,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "17007ae0-2ea7-c53e-3eb9-c3decfcd7720",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "183e8a9e-c55c-495e-c025-5fc4d60ce035",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "19bd9763-7b23-3317-ef9f-e7bff2af86cd",
+    "hasFlag": false,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "1b05df37-ec52-ed50-2723-8994d0d976bc",
+    "hasFlag": false,
+    "onThin": false,
+    "isNpo": true,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "1b89bd0d-6454-e224-d0be-dad3f1ddb28e",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "1b9b4a03-701a-4463-d503-8a3bc62dedd3",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "1c229ff5-0d39-ca5c-8d92-c51ecd2dac50",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "1c789cd7-22e2-fa6c-45d7-3701a8cf978e",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "1d287715-f721-1c56-118f-dd48339e8a87",
+    "hasFlag": true,
+    "onThin": true,
+    "isNpo": false,
+    "alert": true,
+    "alertText": "ASPIRATION PRECAUTION: at-risk patient on thin fluids and not NPO — review diet/fluid consistency (IDDSI) and swallowing precautions."
+  },
+  {
+    "id": "1d966d87-61fd-ea5f-98dc-16f9dcf190fe",
+    "hasFlag": false,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "1f9bbbf6-c4ce-fa27-fe02-bf55f851a196",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "1ff536bc-6ebf-e128-62a1-d4bb146a6ec7",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "207f2ff7-5ed5-9872-6c47-3edc8c772a25",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "215a39ea-ec9e-c9d7-1edc-c97487581935",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "216f2bce-0377-4484-59c1-e017678e0402",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "21afe05e-7b91-6c56-7a69-37f1e5775c22",
+    "hasFlag": true,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "21b754c8-08e9-d714-aacd-66e738cb038b",
+    "hasFlag": false,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "21e27ec7-563a-c8a0-3bd7-4a9a7a3cd5c0",
+    "hasFlag": true,
+    "onThin": true,
+    "isNpo": false,
+    "alert": true,
+    "alertText": "ASPIRATION PRECAUTION: at-risk patient on thin fluids and not NPO — review diet/fluid consistency (IDDSI) and swallowing precautions."
+  },
+  {
+    "id": "2221e328-738b-3a9d-693d-d9d026bef2c7",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "2338f4bb-cdde-a4f6-d2b4-908e07ce8687",
+    "hasFlag": false,
+    "onThin": false,
+    "isNpo": true,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "23959a87-a4a4-b551-2ebf-167591bb0a7b",
+    "hasFlag": false,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "23afe402-2774-f804-2645-b6709e0b87ad",
+    "hasFlag": true,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "24153bb2-c802-4d64-08b4-d7f259983a80",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "26044b1b-5606-500c-603b-30a6ec3f9036",
+    "hasFlag": true,
+    "onThin": true,
+    "isNpo": false,
+    "alert": true,
+    "alertText": "ASPIRATION PRECAUTION: at-risk patient on thin fluids and not NPO — review diet/fluid consistency (IDDSI) and swallowing precautions."
+  },
+  {
+    "id": "267e3622-40dc-79af-a6c5-9816ecb9b56f",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "26827861-47aa-5cd4-1bd4-51d176a7a89a",
+    "hasFlag": false,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "26ad8fbe-909c-2afb-dd64-4471ae3ac483",
+    "hasFlag": true,
+    "onThin": false,
+    "isNpo": true,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "271ecac6-31d1-a067-055e-c5a63b839fb5",
+    "hasFlag": true,
+    "onThin": true,
+    "isNpo": false,
+    "alert": true,
+    "alertText": "ASPIRATION PRECAUTION: at-risk patient on thin fluids and not NPO — review diet/fluid consistency (IDDSI) and swallowing precautions."
+  },
+  {
+    "id": "27b987a1-049e-812b-8d34-fd1e51203501",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "28570700-bd2c-f91e-2b8d-abb6cbdfc45e",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "28e982ec-ebc3-1c2c-724b-df265882a99e",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "296ed5fb-b959-d9e4-3796-7cbbeccc852b",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "29cf02ef-dd39-0620-a106-f8c95a7df4e9",
+    "hasFlag": false,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "2a08db73-77aa-358b-a409-68aa5c1026ec",
+    "hasFlag": false,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "2a4b3d1f-9f48-52e8-5220-86d93dbc822d",
+    "hasFlag": false,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "2a964cab-d868-e88c-0317-9b0541aa8e78",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "2c2c4aa5-4af5-95bd-1c1a-5e786f87665a",
+    "hasFlag": true,
+    "onThin": true,
+    "isNpo": false,
+    "alert": true,
+    "alertText": "ASPIRATION PRECAUTION: at-risk patient on thin fluids and not NPO — review diet/fluid consistency (IDDSI) and swallowing precautions."
+  },
+  {
+    "id": "2ccdfac8-94c2-7cd0-9227-04f0ce97cbdf",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "3053d47f-9c24-d47f-983a-d313822fded3",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "30b31c52-d83a-6b27-37ec-1ea5b7f543ef",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "327b73eb-1083-baf4-e59a-de81f01941e7",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "363a5d30-92ee-63df-3459-7b20020951ef",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "38b5f11f-da92-ccfa-b7cf-854f665f41ab",
+    "hasFlag": true,
+    "onThin": true,
+    "isNpo": false,
+    "alert": true,
+    "alertText": "ASPIRATION PRECAUTION: at-risk patient on thin fluids and not NPO — review diet/fluid consistency (IDDSI) and swallowing precautions."
+  },
+  {
+    "id": "39c04587-abf8-868c-d8dc-e05c35aaeab8",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "39c5558b-cca8-a11d-09c7-dd5e0aa8a37f",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "3aa43c62-ba4f-0e89-7241-e55e741bcc5b",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "3aa9bcb4-ca44-a02d-dfcd-d52736aa952c",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "3aba2cfc-44b6-17e5-b123-7db35d9a8f49",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "3b747a1b-23ae-d1c4-32ca-6372b128f5c0",
+    "hasFlag": true,
+    "onThin": true,
+    "isNpo": false,
+    "alert": true,
+    "alertText": "ASPIRATION PRECAUTION: at-risk patient on thin fluids and not NPO — review diet/fluid consistency (IDDSI) and swallowing precautions."
+  },
+  {
+    "id": "3ba80b23-b2ac-8d24-0ae5-54c8762a095a",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "3bc632b3-61a5-e536-c0a7-172fc45e1d7e",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "3c2791ec-b6dc-1661-6d5e-637b59ab60ea",
+    "hasFlag": false,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "3c7ca157-e8f8-061e-34ce-c720e83b1b67",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "3c8e2929-6056-43b2-21a8-b67d7958c329",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "3cba6ce4-a4ec-bcc3-cac7-8c41e30a13b1",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "3ce70e5f-3ae2-fabc-dee3-85235f40adb8",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "3ea971d7-ee29-3c07-f257-6fc0cb529867",
+    "hasFlag": true,
+    "onThin": true,
+    "isNpo": false,
+    "alert": true,
+    "alertText": "ASPIRATION PRECAUTION: at-risk patient on thin fluids and not NPO — review diet/fluid consistency (IDDSI) and swallowing precautions."
+  },
+  {
+    "id": "3f10e659-a034-d790-3fce-223c48f9c139",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "3fa2528b-f7b7-e354-c4df-e62cd8690505",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "4043f80d-c7e9-80fe-b220-6fbb66e34f6a",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "406c5f01-3754-1a2d-7cab-5076914bc13f",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "4074b176-8fc4-ad63-b0b8-457029964aa4",
+    "hasFlag": true,
+    "onThin": true,
+    "isNpo": false,
+    "alert": true,
+    "alertText": "ASPIRATION PRECAUTION: at-risk patient on thin fluids and not NPO — review diet/fluid consistency (IDDSI) and swallowing precautions."
+  },
+  {
+    "id": "41b8dc3c-09ad-7d9c-aa3d-588efb19e0dd",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "450ede0f-ca7c-6aca-6765-fec1a89a385d",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "454baf9a-db76-131b-e95a-320ee04d05cb",
+    "hasFlag": false,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "458c2ce1-f11a-0549-5b67-33794116e091",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "467fc453-21a6-a607-df5d-b89ac9d0029f",
+    "hasFlag": false,
+    "onThin": false,
+    "isNpo": true,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "48348372-d727-00ef-68d0-855d9eccf1a3",
+    "hasFlag": false,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "48d627a5-3cfa-1703-fe1a-2e5b792a5480",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "48e1fb90-c081-efc2-355c-e36aa4af5ae7",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "48fa52ad-b48f-e3fd-86d6-6d9fe01d12db",
+    "hasFlag": true,
+    "onThin": true,
+    "isNpo": false,
+    "alert": true,
+    "alertText": "ASPIRATION PRECAUTION: at-risk patient on thin fluids and not NPO — review diet/fluid consistency (IDDSI) and swallowing precautions."
+  },
+  {
+    "id": "491b1377-8546-70a2-d145-2301f39ff559",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "499c0524-3da1-25ef-6a87-0669e9fa6f0e",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "49d1d0bd-938f-e836-21b8-5257c239e16a",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "49eb7ba7-5875-cd61-7181-81b7e683cacd",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "4a267452-783d-044f-08b1-83f7d739e73a",
+    "hasFlag": true,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "4b516f4c-f737-224b-8737-b9ef0bf654a2",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "4bcd2117-e79d-2b3d-fffb-6e075a8768fc",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "4d166f8e-75c2-5678-9455-09b9ac28597b",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "4da39a33-3406-1311-4112-a3f374da3b70",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "4ea31a2a-0b29-7188-aa2b-329f9ea75236",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "4ecba0ab-03ff-75bc-b5ad-f5fdcae1d073",
+    "hasFlag": true,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "4f84d266-3b59-71a2-ea0c-336ef6a48a45",
+    "hasFlag": true,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "5090d807-df5b-71ce-9c2d-3856aa3fdce3",
+    "hasFlag": true,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "529b2bae-4ee0-ef82-9b33-85681f22588a",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "52ec34c9-2ac7-724e-3d4a-6a2518b1be3e",
+    "hasFlag": true,
+    "onThin": true,
+    "isNpo": false,
+    "alert": true,
+    "alertText": "ASPIRATION PRECAUTION: at-risk patient on thin fluids and not NPO — review diet/fluid consistency (IDDSI) and swallowing precautions."
+  },
+  {
+    "id": "533eb6eb-ad53-33cc-c746-3595c64d8265",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "53542a6c-63ca-b901-c418-1a1d53d06b62",
+    "hasFlag": true,
+    "onThin": true,
+    "isNpo": false,
+    "alert": true,
+    "alertText": "ASPIRATION PRECAUTION: at-risk patient on thin fluids and not NPO — review diet/fluid consistency (IDDSI) and swallowing precautions."
+  },
+  {
+    "id": "53cb8911-0ac7-94d3-6d01-8cae62921cfe",
+    "hasFlag": true,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "546438a6-c37f-e30b-272d-083f158f25b9",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "54852cc6-a676-d761-01c4-f6b363fc41df",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "555a9edb-0f7e-0ac5-ca4a-7e83e2058c0a",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "55fca227-f8d5-ee93-5f3c-0b65bba0b9ab",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "5717576c-e08a-d9f0-6316-c5f02f9bd17c",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "5765378e-f055-e379-124b-e4ae4a2f4bcd",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "583d5870-2446-a0f7-71ed-36c5c397ff87",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "5938d3bc-5460-02b9-88e5-531661f5f726",
+    "hasFlag": true,
+    "onThin": true,
+    "isNpo": false,
+    "alert": true,
+    "alertText": "ASPIRATION PRECAUTION: at-risk patient on thin fluids and not NPO — review diet/fluid consistency (IDDSI) and swallowing precautions."
+  },
+  {
+    "id": "5961ec86-21d3-d06e-fd4f-bfdd37ef3986",
+    "hasFlag": true,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "59bcfcc8-62e9-3dfe-a1b9-015ef2d97991",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "5a972eed-0e9b-c3c0-fae9-22fd7d7a5525",
+    "hasFlag": true,
+    "onThin": true,
+    "isNpo": false,
+    "alert": true,
+    "alertText": "ASPIRATION PRECAUTION: at-risk patient on thin fluids and not NPO — review diet/fluid consistency (IDDSI) and swallowing precautions."
+  },
+  {
+    "id": "5ab4a15d-2e22-6bce-eb71-2d3b10fc1828",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "5ae3d0eb-1f9e-4264-229c-80590b219013",
+    "hasFlag": false,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "5b133937-07b0-5d92-323f-b26b63f36529",
+    "hasFlag": true,
+    "onThin": true,
+    "isNpo": false,
+    "alert": true,
+    "alertText": "ASPIRATION PRECAUTION: at-risk patient on thin fluids and not NPO — review diet/fluid consistency (IDDSI) and swallowing precautions."
+  },
+  {
+    "id": "5c12aec7-03ec-6349-bc46-8af7b6d94309",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "5ca00b0d-502b-dbe5-3391-08707d5ff5c4",
+    "hasFlag": false,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "5cba0c37-0f5b-78c6-f97f-9389e302fc5b",
+    "hasFlag": false,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "5de15ea9-5f5e-2653-e2c3-048bca2536db",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "5e2b1af0-024d-cf47-30ca-f87b74fbe75d",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "5ee00288-da48-f2fb-4ac5-2d28ff600ed4",
+    "hasFlag": true,
+    "onThin": true,
+    "isNpo": false,
+    "alert": true,
+    "alertText": "ASPIRATION PRECAUTION: at-risk patient on thin fluids and not NPO — review diet/fluid consistency (IDDSI) and swallowing precautions."
+  },
+  {
+    "id": "5efdee1f-9737-ae3d-9e27-de2ec463291c",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "5efed5f6-05e5-2e27-382d-9b4b3f8069ae",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "5fa06ff0-cd20-787a-60fd-cbb00f2a3187",
+    "hasFlag": false,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "5fd7622c-a829-c3c3-3dcd-969c5ea5c24c",
+    "hasFlag": true,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "611cb1e7-c3b6-5322-e44a-16130f95ccd7",
+    "hasFlag": true,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "6165a6e3-5207-9ace-1ea9-2bb04e8ac3e2",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "6182babf-6273-278f-0c54-0e61b8e34b6e",
+    "hasFlag": false,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "61af3d77-d17f-ae92-3b9b-3b9646dff02a",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "62e6c03d-c24c-8eaa-3d72-0745d915cd40",
+    "hasFlag": false,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "632b7551-f46c-2715-00c1-9d94c010dbf9",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "637abd8f-33a5-f15c-09ca-c85dcd1e2270",
+    "hasFlag": true,
+    "onThin": false,
+    "isNpo": true,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "64d26c52-263d-274b-854d-8b49c51b2747",
+    "hasFlag": true,
+    "onThin": true,
+    "isNpo": false,
+    "alert": true,
+    "alertText": "ASPIRATION PRECAUTION: at-risk patient on thin fluids and not NPO — review diet/fluid consistency (IDDSI) and swallowing precautions."
+  },
+  {
+    "id": "64e472ad-641a-34bc-7c70-ad2aa37bb422",
+    "hasFlag": true,
+    "onThin": false,
+    "isNpo": true,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "6595ba44-a2f1-b0be-93d1-487ec52d4833",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "682908e6-fe84-853e-30c7-5d14a0c170b9",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "68b8b6c0-0eb6-f47a-af79-2e6016a296da",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "692a7ee4-9703-e683-4215-69156d852573",
+    "hasFlag": true,
+    "onThin": true,
+    "isNpo": false,
+    "alert": true,
+    "alertText": "ASPIRATION PRECAUTION: at-risk patient on thin fluids and not NPO — review diet/fluid consistency (IDDSI) and swallowing precautions."
+  },
+  {
+    "id": "6984784f-376b-611a-5239-b03f9fb004ec",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "69eed52f-cd99-a973-3873-b5a5e0ec722f",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "6cdc62f8-9dbc-e054-9fd6-bb4c249445ba",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "6cfb3beb-2963-305d-8a6a-49dd4a4324f1",
+    "hasFlag": true,
+    "onThin": false,
+    "isNpo": true,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "6d912c7e-9b3d-8b79-1743-303802fe4bf8",
+    "hasFlag": false,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "6dc3831e-a577-2718-69db-b661ae30a979",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "703df6e6-9153-a95b-a47b-af8a9d3261ac",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "746a458b-f2f8-1059-8d68-4fb3fef83d50",
+    "hasFlag": true,
+    "onThin": false,
+    "isNpo": true,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "74745287-fd5b-a527-ba4f-52067ea42ed2",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "74ba1fd3-f445-1598-0f02-9d27084ec039",
+    "hasFlag": false,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "7536be9d-50c4-4ba7-82b2-6e0de3860110",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "76579be4-f28b-8312-12f7-d80f343307ec",
+    "hasFlag": false,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "786e6078-932f-e8f0-b81f-6fdb06837270",
+    "hasFlag": true,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "79f055c4-570f-3002-8e5e-de3a02473d01",
+    "hasFlag": true,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "7a997720-97f6-a918-3324-e33a85c6e213",
+    "hasFlag": false,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "7b78d6b5-d68d-a4da-c71e-ab5d95b2cabd",
+    "hasFlag": false,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "7c8344c2-a3dd-221a-1d33-3af3b217f212",
+    "hasFlag": true,
+    "onThin": false,
+    "isNpo": true,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "7cd51aec-123d-b1b4-fad4-735e443884cc",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "7d12bfac-0c55-2c88-92da-b7273d1a4e64",
+    "hasFlag": true,
+    "onThin": true,
+    "isNpo": false,
+    "alert": true,
+    "alertText": "ASPIRATION PRECAUTION: at-risk patient on thin fluids and not NPO — review diet/fluid consistency (IDDSI) and swallowing precautions."
+  },
+  {
+    "id": "7d63c02e-3716-8172-e809-08201e8c1d61",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "7e1b2679-4b42-5c4c-0199-faa3085216c7",
+    "hasFlag": true,
+    "onThin": true,
+    "isNpo": false,
+    "alert": true,
+    "alertText": "ASPIRATION PRECAUTION: at-risk patient on thin fluids and not NPO — review diet/fluid consistency (IDDSI) and swallowing precautions."
+  },
+  {
+    "id": "7f9dd4e5-bce9-b404-474e-38eaf7939ed4",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "7fa30337-2b88-9617-deaf-abf8f3dd682f",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "7fc125f1-2cad-b696-31bd-3aac417b9917",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "80e4cb89-1f46-0da1-6aa6-a3b18563afcf",
+    "hasFlag": true,
+    "onThin": false,
+    "isNpo": true,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "8142f949-7e65-0ebc-d6fd-7a06605ef72a",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "8226c120-a80d-5aea-b295-f7bdb17579cd",
+    "hasFlag": true,
+    "onThin": true,
+    "isNpo": false,
+    "alert": true,
+    "alertText": "ASPIRATION PRECAUTION: at-risk patient on thin fluids and not NPO — review diet/fluid consistency (IDDSI) and swallowing precautions."
+  },
+  {
+    "id": "8258e3e5-021d-4e56-5910-00b39efbe1bb",
+    "hasFlag": true,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "826f2c3b-11e4-5f06-09d5-e427f7b8389d",
+    "hasFlag": false,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "82c497f6-3abe-9cd1-f05c-0a6237753a85",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "8363b4bf-8220-22e6-40f3-75db475f132d",
+    "hasFlag": false,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "83b735ba-8116-e268-4077-38a93c0a0519",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "85acd665-0140-061f-e35b-bee03978d946",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "86820616-7373-33d2-6288-d49cd4c22ced",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "8753dd5b-fd52-9327-38aa-d515df48f8d3",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "8795eceb-8ef7-2c84-6ef5-c393d0f6cf09",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "879906b3-fdf6-5c41-aad5-6c705f9452e4",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "87da4181-1485-b809-feae-5ccee0526a9f",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "881e1b98-4060-c3d2-5fb6-18f42d1acb29",
+    "hasFlag": true,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "8a0799ff-3459-e35c-2a50-774810216578",
+    "hasFlag": true,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "8a087440-2130-b7d3-5079-22e27df3f708",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "8a3770a0-9584-5bcd-52ca-4c63479c8e01",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "8b35fd6a-d507-d657-46ef-7105ac1725c6",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "8dae2ea7-602e-59eb-8679-1e0d1d1b7e16",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "8ddecded-76df-f3d1-736d-33d6d97f1e72",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "8e9421f0-aa55-5d5b-d58d-4639481e8d5b",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "8ef200ca-8b1d-aff9-6083-2b585163813a",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "910acb39-32d5-b737-4353-0794ce94cea4",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "914bced1-5ddd-7045-8d3b-834c0a268921",
+    "hasFlag": true,
+    "onThin": true,
+    "isNpo": false,
+    "alert": true,
+    "alertText": "ASPIRATION PRECAUTION: at-risk patient on thin fluids and not NPO — review diet/fluid consistency (IDDSI) and swallowing precautions."
+  },
+  {
+    "id": "91b3c35d-c726-c264-8d4e-8266803690d3",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "921cab19-99d1-64ab-dbcd-77d29fd31239",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "943fe761-2104-f50b-d75f-0750b63ba361",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "94c1e65e-bb63-f55a-7327-66d7c6d675ea",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "957bd59b-0dbd-5e09-766d-b790ff0e9838",
+    "hasFlag": true,
+    "onThin": false,
+    "isNpo": true,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "959ccbd9-f78a-e73b-dd7d-c8a95099724e",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "96807897-20ea-5f73-46e0-3fea1d96ae24",
+    "hasFlag": false,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "97016b2d-8cbe-a898-db14-666f27fd0962",
+    "hasFlag": false,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "97364852-58f8-76cd-f53d-54a260238c54",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "973a4b6f-f8a0-866f-f88e-2dff4c2c5cf2",
+    "hasFlag": false,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "98f606f3-01ed-564b-f935-d40ef35070a4",
+    "hasFlag": false,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "9933e2ba-4c0e-bbde-5e9c-4c3b1cea3a80",
+    "hasFlag": true,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "99c0c985-fbe1-c817-75e7-91f4bdd631db",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "99feb3ef-9b1b-27c7-5b44-082ebba7c8d9",
+    "hasFlag": false,
+    "onThin": false,
+    "isNpo": true,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "9a09792c-9c4f-fa23-86fd-970eab41132a",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "9a92ee32-d4dc-e4cc-abf6-43a333cf4a6e",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "9b3cee42-6e9e-1a07-1c39-2c899adc242b",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "9e3ae103-343c-6bc3-b820-b0d4d690fcfb",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "9fcef8a7-24a4-431d-1721-d7853bb128b5",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "a11bbd21-ac27-fb80-d49f-28df9274eeec",
+    "hasFlag": true,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "a132061c-e41a-5f8a-3366-0bae35f37cb0",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "a1d93722-4450-cbdd-cf40-27429b858b86",
+    "hasFlag": true,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "a30a77c2-d0a8-8523-23dc-f884b3b79eb9",
+    "hasFlag": false,
+    "onThin": false,
+    "isNpo": true,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "a46c3209-2f6d-3ea1-f68c-195d31a75083",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "a56d3c6e-3c7e-54ad-7a7c-ffe861be3333",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "a587e99b-5f20-15a7-2759-b1bcd8de6c61",
+    "hasFlag": true,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "a5b6fa44-33e1-5857-9a0c-fb52bdff60c3",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "a62ed9be-120d-221f-fbc3-49c8240d19a6",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "a674959e-9cce-7b82-3b4d-7d5f3c06271d",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "a6cc6fc6-15ea-08ed-9aec-46b611ef33fe",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "a6e57974-9f13-437f-5442-1b6fce1cede0",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "a739ac55-4412-567c-d1bf-eae6dfc25f68",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "a8c71acf-0730-95fb-0c73-da59bd9073ce",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "a909606e-6d0d-a70b-3166-92a13b509b73",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "ab40c749-d8a8-7110-6193-63baa4c4f371",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "ab5237b3-f18f-5cfe-5dd3-3203c0649bb8",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "ab6303cb-7e38-4e3e-5261-5665d2f41582",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "ac262083-29ff-339e-cf5f-01aa359ce7ac",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "accc327e-29f7-10c4-a6c2-0a79335f7b9e",
+    "hasFlag": true,
+    "onThin": true,
+    "isNpo": false,
+    "alert": true,
+    "alertText": "ASPIRATION PRECAUTION: at-risk patient on thin fluids and not NPO — review diet/fluid consistency (IDDSI) and swallowing precautions."
+  },
+  {
+    "id": "ad99633f-e135-4dbe-21de-07c50b9e5c50",
+    "hasFlag": true,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "ae0018e9-aa52-032d-a991-83a2f7d522b0",
+    "hasFlag": true,
+    "onThin": true,
+    "isNpo": false,
+    "alert": true,
+    "alertText": "ASPIRATION PRECAUTION: at-risk patient on thin fluids and not NPO — review diet/fluid consistency (IDDSI) and swallowing precautions."
+  },
+  {
+    "id": "af1b7e70-6bbc-a073-3c02-56638dd65dc8",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "b00ede1b-e88b-f5d0-3c7f-1947d3d55cff",
+    "hasFlag": true,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "b0eb8d9c-b00d-f4c2-2a8a-d0e7903b006d",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "b1acad17-289c-7515-47b3-c0a27baeaf80",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "b275fb20-ad41-d9ee-2ca1-d7bf0795fe4e",
+    "hasFlag": false,
+    "onThin": false,
+    "isNpo": true,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "b3f24529-b5fc-6801-0df9-c13889e44365",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "b54c3d6e-cb13-eff5-b7da-314be2b150bf",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "b5509dae-91cf-e919-8e1c-c0e9eca2ed87",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "b57d8096-ce92-af2b-fb92-8fdba6aba4e7",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "b68cac0a-7b1c-40ef-4fea-ca1194eab0ac",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "b702bf3e-22f3-3d5b-92f8-37e125f871e7",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "b8bfabc1-6506-93cd-4f83-3bc540aabc55",
+    "hasFlag": true,
+    "onThin": true,
+    "isNpo": false,
+    "alert": true,
+    "alertText": "ASPIRATION PRECAUTION: at-risk patient on thin fluids and not NPO — review diet/fluid consistency (IDDSI) and swallowing precautions."
+  },
+  {
+    "id": "b9459bd0-b4d9-079e-b6c4-31407f3f3af0",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "b9c10e5d-970a-65c8-92ce-e9e53c85de10",
+    "hasFlag": false,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "ba61ae26-d6d2-196f-d68e-2287ccff8593",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "be491464-49c4-4fb6-8f54-eb39e0cf9295",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "be9d9be1-0856-28df-6440-8ac5c6a09284",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "bf79dacd-2f35-3eb5-f957-233dc47d8404",
+    "hasFlag": true,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "c0331184-764e-2088-b9d0-106a974eacbc",
+    "hasFlag": true,
+    "onThin": true,
+    "isNpo": false,
+    "alert": true,
+    "alertText": "ASPIRATION PRECAUTION: at-risk patient on thin fluids and not NPO — review diet/fluid consistency (IDDSI) and swallowing precautions."
+  },
+  {
+    "id": "c0613283-206f-c79f-10f7-46acdd052980",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "c103fc75-f660-855f-ad6d-0a37301a004a",
+    "hasFlag": true,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "c23be65f-e30b-9d13-6ce0-a0e0fad00b17",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "c24b8514-3352-049f-883a-a4c98f47b8c0",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "c2abcc7c-5f5e-7781-21ae-97b9183dff40",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "c2bc9dd9-5d52-8e0a-c582-92f25d50d4b0",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "c31d62e1-0d82-cd27-35c9-e130a30f2d55",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "c3230ecb-15a8-c944-a43d-b386cec32139",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "c339da3a-27e7-5933-cab5-b96b6d1e2d2e",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "c40d68e0-1d08-5745-ff18-eda6551b5959",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "c4c6d439-4676-c715-d0f2-cc41e68f8cd4",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "c7199201-9a95-a318-99d4-9c058147f720",
+    "hasFlag": true,
+    "onThin": true,
+    "isNpo": false,
+    "alert": true,
+    "alertText": "ASPIRATION PRECAUTION: at-risk patient on thin fluids and not NPO — review diet/fluid consistency (IDDSI) and swallowing precautions."
+  },
+  {
+    "id": "c8c8ff4c-c48c-75b8-4399-7d71df7efd14",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "c95b5419-00f7-5096-e46c-c5140cd780c4",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "c9bf1d84-7e65-c3cb-e559-ceea12733f09",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "c9d1690b-ff85-bcd5-66ef-655706ada102",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "cc1911ad-6f71-502f-c95d-16b622fffb98",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "cd44e17d-e759-6564-7e8e-6f06ba90b210",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "cdb35e8c-ac09-d6be-95ef-7b763add9594",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "cf5e57f3-aa6e-417c-e4c7-bcc27222425a",
+    "hasFlag": false,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "d106480b-4021-3624-f2db-11d850b4b07a",
+    "hasFlag": false,
+    "onThin": false,
+    "isNpo": true,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "d29030fc-03a8-1f10-c54a-82a6f340da24",
+    "hasFlag": true,
+    "onThin": false,
+    "isNpo": true,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "d482cf50-24ae-b253-4405-78b004525297",
+    "hasFlag": true,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "d57c8207-2b68-ea2d-0d87-c9436d6c801d",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "d608a188-7f72-9cc0-c35f-18c98028eabc",
+    "hasFlag": true,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "d648fa5a-55e3-c245-64da-8bb00dae1de9",
+    "hasFlag": false,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "d7709ed6-0559-e3de-4eac-281cfacc1352",
+    "hasFlag": true,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "d775e8bb-fc31-614e-1ca8-352cb7e16bbe",
+    "hasFlag": false,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "d7d06ced-b2eb-2732-9c3f-285bf5f59944",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "d8738ed3-146b-009e-602f-34592fce66b3",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "d9f41dcb-c92d-f050-f123-d618edd52d41",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "da17e366-3cd6-fcc3-0672-d1eef550f2bf",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "da4a1aea-4848-f58a-5249-3fd92f1391fe",
+    "hasFlag": false,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "dad9d530-9ead-e1ef-bc0d-e9c8754bc0de",
+    "hasFlag": true,
+    "onThin": true,
+    "isNpo": false,
+    "alert": true,
+    "alertText": "ASPIRATION PRECAUTION: at-risk patient on thin fluids and not NPO — review diet/fluid consistency (IDDSI) and swallowing precautions."
+  },
+  {
+    "id": "dbdbe6cf-125f-bbc3-e795-9e03dfb50265",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "dd28fd66-b702-4f0e-3db8-6c5b5f7f6fd9",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "dd5f10f0-0d7f-2895-d713-b158c480a796",
+    "hasFlag": false,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "ddf3c766-62e4-96d9-7730-f84a43dd6a72",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "de139dfd-0ebb-f45c-af6d-6424b898dc0d",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "df81f640-d93c-4993-e9fd-45eb774da762",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "e03dacbc-6c35-03e6-037f-e7bd03406e80",
+    "hasFlag": false,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "e07fe220-45ce-4fdc-312f-94eae19e3c1d",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "e09d0585-d7b9-88e3-1cde-59e0e14dfc20",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "e3c27eff-3d63-bd46-3fe1-57f5e03aebce",
+    "hasFlag": false,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "e41af10b-04e0-7496-2543-d63490ac8c9e",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "e423ebc2-b6ea-b14b-8e75-f3c3f01afa38",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "e58a2e86-a692-a266-6fc5-146712157bbe",
+    "hasFlag": false,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "e649cd35-82cf-e786-2d7b-adf55435718d",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "e8898cab-1ec3-8f29-5e5c-14f9f13ebf5d",
+    "hasFlag": true,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "e9e1bf00-3642-cf68-5d7b-8916ad1ca5a4",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "ea0f5f30-6d5f-ef09-691a-b486a64054a8",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "eaf9257a-4ca9-b297-8149-6f60052c24e3",
+    "hasFlag": false,
+    "onThin": false,
+    "isNpo": true,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "ebbcade0-9747-9511-fb4d-8b5083e254a8",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "ebd53f74-9c37-49e9-e038-f48286b3196a",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "ec0377b8-bb20-59ab-6dee-3e90e42ba534",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "ec2144bd-5756-4ac3-7142-d08c1aad68fb",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "eca77bdf-c354-92d9-ec2c-6ad44d460063",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "ed1a9ac5-faf2-9471-88d6-676f659e468d",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "ed33c8b4-9e1d-f857-36f2-b2124c342d48",
+    "hasFlag": false,
+    "onThin": false,
+    "isNpo": true,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "eda46961-d5fb-e415-0e61-1dbdf8ab258b",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "ef23b5f9-e534-d09b-fa62-290d81f080bd",
+    "hasFlag": true,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "f1a683fc-9982-a3ea-86d8-605cee288c03",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "f435bcf2-289f-7209-960c-b1f6db31f473",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "f4c0d43c-77b4-4815-111d-1494c8216bdd",
+    "hasFlag": true,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "f6b3deda-ab4a-5fed-cc1a-6cc5cc391984",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "f6daea0b-26ba-7371-ba14-7124a81229bc",
+    "hasFlag": false,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "f8048e4c-7fa1-7a71-1d1b-a2940426beb4",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "f9b1371f-bf78-169a-81cd-404cb2f3f935",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "fabcb808-58ad-7fcb-26b9-1edf9b997598",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "fbcd06d7-9d99-c581-349a-5a3f4b291c1e",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "fcb4e0f4-ffd2-d8f4-0e0c-cffec784a321",
+    "hasFlag": false,
+    "onThin": true,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "fd2067ee-8c93-0acc-7256-4527debd3fd9",
+    "hasFlag": true,
+    "onThin": false,
+    "isNpo": true,
+    "alert": false,
+    "alertText": null
+  },
+  {
+    "id": "fd603d98-9435-678b-6043-90f1fee2515f",
+    "hasFlag": true,
+    "onThin": true,
+    "isNpo": false,
+    "alert": true,
+    "alertText": "ASPIRATION PRECAUTION: at-risk patient on thin fluids and not NPO — review diet/fluid consistency (IDDSI) and swallowing precautions."
+  },
+  {
+    "id": "ff0e4342-10b3-c79f-abe0-72b952efb29c",
+    "hasFlag": true,
+    "onThin": false,
+    "isNpo": false,
+    "alert": false,
+    "alertText": null
+  }
+]

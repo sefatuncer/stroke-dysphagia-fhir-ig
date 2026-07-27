@@ -1,0 +1,68 @@
+{
+  "N": 333,
+  "seeds": 40,
+  "primary": {
+    "seed": 20260716,
+    "unsafe": 47,
+    "gap": 16,
+    "eligible": 31,
+    "invis": 0.3404255319148936,
+    "trigger": 0.09309309309309309,
+    "wilson95": [
+      0.22167260713762188,
+      0.4832934049469702
+    ]
+  },
+  "sweep": [
+    {
+      "pFlagCoded": 0.5,
+      "expectedInvis": 0.5,
+      "meanInvis": 0.5009282587914352,
+      "sdInvis": 0.08496927590693386,
+      "minInvis": 0.32608695652173914,
+      "maxInvis": 0.6470588235294118,
+      "meanUnsafe": 43.4,
+      "meanTrigger": 0.06501501501501501
+    },
+    {
+      "pFlagCoded": 0.6,
+      "expectedInvis": 0.4,
+      "meanInvis": 0.3980356821497998,
+      "sdInvis": 0.07549764653905354,
+      "minInvis": 0.25,
+      "maxInvis": 0.5853658536585366,
+      "meanUnsafe": 43.4,
+      "meanTrigger": 0.0783033033033033
+    },
+    {
+      "pFlagCoded": 0.7,
+      "expectedInvis": 0.30000000000000004,
+      "meanInvis": 0.2996298067280702,
+      "sdInvis": 0.07482892177191518,
+      "minInvis": 0.15,
+      "maxInvis": 0.5121951219512195,
+      "meanUnsafe": 43.4,
+      "meanTrigger": 0.09099099099099098
+    },
+    {
+      "pFlagCoded": 0.8,
+      "expectedInvis": 0.19999999999999996,
+      "meanInvis": 0.20070787596370937,
+      "sdInvis": 0.0601934145430586,
+      "minInvis": 0.075,
+      "maxInvis": 0.3181818181818182,
+      "meanUnsafe": 43.4,
+      "meanTrigger": 0.1038288288288288
+    },
+    {
+      "pFlagCoded": 0.9,
+      "expectedInvis": 0.09999999999999998,
+      "meanInvis": 0.10517022460257992,
+      "sdInvis": 0.05044494675275731,
+      "minInvis": 0,
+      "maxInvis": 0.21212121212121213,
+      "meanUnsafe": 43.4,
+      "meanTrigger": 0.11666666666666663
+    }
+  ]
+}

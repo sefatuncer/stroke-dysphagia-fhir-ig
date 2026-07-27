@@ -1,0 +1,30 @@
+{
+  "cohort": {
+    "n": 333,
+    "seed": 20260716,
+    "syntheaPopulation": 25000,
+    "strokeCode": "230690007"
+  },
+  "executability": {
+    "engine": "cql-execution (JS) + cql-exec-fhir FHIR R4",
+    "elmErrors": 0,
+    "patientsExecuted": 333
+  },
+  "authoringConcordance": {
+    "concordant": 333,
+    "of": 333,
+    "rate": "100.0%",
+    "discordantIds": []
+  },
+  "triggerRate": {
+    "fired": 31,
+    "of": 333,
+    "rate": "9.3%"
+  },
+  "interoperabilityDependency": {
+    "clinicalUnsafe_shouldSurface": 47,
+    "surfacedByRule_flagCoded": 31,
+    "missedDueToUncodedFlag": 16,
+    "missedShare_ofUnsafe": "34.0%"
+  }
+}

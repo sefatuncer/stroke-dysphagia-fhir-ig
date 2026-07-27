@@ -1,0 +1,27 @@
+# Build outputs and caches (regenerable, reproduced by the toolchain)
+ig/output/
+ig/temp/
+ig/fsh-generated/
+ig/input-cache/
+ig/template/
+ig/evaluation/.tools/
+ig/evaluation/elm/
+ig/evaluation/cohort/
+ig/evaluation/synthea-out/
+**/node_modules/
+
+# Large binaries fetched by the toolchain (not source)
+*.jar
+*.tgz
+*.zip
+
+# Personal documents
+*.pdf
+
+# Local working directories (not part of the public artifact)
+/review/
+/submission/
+
+# OS and editor cruft
+.DS_Store
+Thumbs.db

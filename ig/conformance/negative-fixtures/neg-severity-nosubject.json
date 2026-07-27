@@ -1,0 +1,8 @@
+{
+  "resourceType": "Observation",
+  "id": "neg-severity-nosubject",
+  "meta": { "profile": ["http://example.org/fhir/dysphagia-ct/StructureDefinition/dysphagia-severity"] },
+  "status": "final",
+  "code": { "coding": [{ "system": "http://example.org/fhir/dysphagia-ct/CodeSystem/dysphagia-scales-temp", "code": "FOIS" }] },
+  "effectiveDateTime": "2026-03-09"
+}

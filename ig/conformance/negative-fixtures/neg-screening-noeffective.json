@@ -1,0 +1,8 @@
+{
+  "resourceType": "Observation",
+  "id": "neg-screening-noeffective",
+  "meta": { "profile": ["http://example.org/fhir/dysphagia-ct/StructureDefinition/swallowing-screening-result"] },
+  "status": "final",
+  "code": { "coding": [{ "system": "http://snomed.info/sct", "code": "1289999007", "display": "Gugging swallowing screen" }] },
+  "subject": { "reference": "Patient/ex-patient" }
+}

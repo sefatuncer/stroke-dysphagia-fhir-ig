@@ -1,0 +1,9 @@
+{
+  "resourceType": "Observation",
+  "id": "neg-aspiration-wrongcode",
+  "meta": { "profile": ["http://example.org/fhir/dysphagia-ct/StructureDefinition/aspiration-risk-flag"] },
+  "status": "final",
+  "code": { "coding": [{ "system": "http://snomed.info/sct", "code": "40739000", "display": "Dysphagia" }] },
+  "subject": { "reference": "Patient/ex-patient" },
+  "effectiveDateTime": "2026-03-10"
+}

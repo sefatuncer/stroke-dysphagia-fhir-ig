@@ -1,0 +1,96 @@
+<mxfile host="app.diagrams.net" type="device">
+  <diagram id="fig2" name="Figure 2 - IG structure">
+    <mxGraphModel dx="1200" dy="720" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1340" pageHeight="640" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Base FHIR resources -->
+        <mxCell id="obs" value="FHIR Observation (base)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="52" width="770" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nut" value="FHIR NutritionOrder (base)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="850" y="52" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cmp" value="FHIR Composition (base)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="52" width="200" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Profiles (single aligned row) -->
+        <mxCell id="pf1" value="SwallowingScreeningResult" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="40" y="150" width="185" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="pf2" value="InstrumentalSwallowAssessment" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="235" y="150" width="185" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="pf3" value="DysphagiaSeverity" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="430" y="150" width="185" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="pf4" value="AspirationRiskFlag" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="625" y="150" width="185" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="pf5" value="DysphagiaNutritionOrder&#10;(adds extensible IDDSI binding)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="850" y="150" width="200" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="pf6" value="DysphagiaCareTransitionSummary" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="150" width="200" height="56" as="geometry" />
+        </mxCell>
+
+        <!-- derivation edges -->
+        <mxCell id="d1" value="constrains" style="endArrow=block;endFill=0;html=1;dashed=1;fontSize=9;strokeColor=#666666;" edge="1" parent="1" source="pf1" target="obs"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="d2" style="endArrow=block;endFill=0;html=1;dashed=1;strokeColor=#666666;" edge="1" parent="1" source="pf2" target="obs"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="d3" style="endArrow=block;endFill=0;html=1;dashed=1;strokeColor=#666666;" edge="1" parent="1" source="pf3" target="obs"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="d4" style="endArrow=block;endFill=0;html=1;dashed=1;strokeColor=#666666;" edge="1" parent="1" source="pf4" target="obs"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="d5" style="endArrow=block;endFill=0;html=1;dashed=1;strokeColor=#666666;" edge="1" parent="1" source="pf5" target="nut"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="d6" style="endArrow=block;endFill=0;html=1;dashed=1;strokeColor=#666666;" edge="1" parent="1" source="pf6" target="cmp"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <!-- ValueSets (directly under their profiles: no crossings) -->
+        <mxCell id="vs1" value="SwallowScreeningTypeVS" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="40" y="292" width="185" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vs2" value="InstrumentalSwallowTypeVS" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="235" y="292" width="185" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vs3" value="DysphagiaSeverityTypeVS" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="430" y="292" width="185" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vs4" value="AspirationRiskValueVS" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="625" y="292" width="185" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vs5" value="IDDSIFluidLevels&#10;(drink axis, 0–4)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="850" y="292" width="97" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vs5b" value="IDDSIFoodLevels&#10;(food axis, 4–7)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="953" y="292" width="97" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="bv1" value="binds" style="endArrow=open;html=1;dashed=1;fontSize=9;strokeColor=#6c8ebf;" edge="1" parent="1" source="pf1" target="vs1"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="bv2" style="endArrow=open;html=1;dashed=1;strokeColor=#6c8ebf;" edge="1" parent="1" source="pf2" target="vs2"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="bv3" style="endArrow=open;html=1;dashed=1;strokeColor=#6c8ebf;" edge="1" parent="1" source="pf3" target="vs3"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="bv4" style="endArrow=open;html=1;dashed=1;strokeColor=#6c8ebf;" edge="1" parent="1" source="pf4" target="vs4"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="bv5" value="binds (extensible)" style="endArrow=open;html=1;dashed=1;fontSize=9;strokeColor=#6c8ebf;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="pf5" target="vs5"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="bv5b" style="endArrow=open;html=1;dashed=1;strokeColor=#6c8ebf;" edge="1" parent="1" source="pf5" target="vs5b"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <!-- Local CodeSystem (below the value sets it feeds) -->
+        <mxCell id="cs" value="DysphagiaScalesTemp (CodeSystem) — temporary codes for instruments that lack terminology (PAS, FOIS, DIGEST, EAT-10, TOR-BSST, V-VST, Yale residue, ...); upstream submission pending" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;align=left;spacingLeft=8;spacingRight=8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="420" width="575" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="cs1" style="endArrow=open;html=1;dashed=1;strokeColor=#d6b656;" edge="1" parent="1" source="cs" target="vs1"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="cs2" value="temp codes" style="endArrow=open;html=1;dashed=1;fontSize=9;strokeColor=#d6b656;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="cs" target="vs2"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="cs3" style="endArrow=open;html=1;dashed=1;strokeColor=#d6b656;" edge="1" parent="1" source="cs" target="vs3"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <!-- Dependencies note -->
+        <mxCell id="depbox" value="Declared dependencies — ALIGNED TO, NOT DERIVED FROM:&#10;• IPS 2.0.1 — aligns with IPS optional sections (functional-status / plan-of-care)&#10;• PACIO PFE 2.0.0 — conceptual alignment / shared terminology&#10;Profiles derive from base FHIR; the addition is the extensible IDDSI binding base FHIR leaves at 'example' strength." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10;align=left;spacingLeft=8;spacingRight=8;" vertex="1" parent="1">
+          <mxGeometry x="700" y="418" width="580" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="dep1" value="aligns / extends" style="endArrow=open;html=1;dashed=1;fontSize=9;strokeColor=#999999;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="pf6" target="depbox"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <!-- Legend -->
+        <mxCell id="lg1" value="base FHIR / external" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10;" vertex="1" parent="1"><mxGeometry x="40" y="530" width="160" height="26" as="geometry" /></mxCell>
+        <mxCell id="lg2" value="profile (contribution)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;" vertex="1" parent="1"><mxGeometry x="215" y="530" width="160" height="26" as="geometry" /></mxCell>
+        <mxCell id="lg3" value="ValueSet" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="1"><mxGeometry x="390" y="530" width="140" height="26" as="geometry" /></mxCell>
+        <mxCell id="lg4" value="local CodeSystem (temp)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="1"><mxGeometry x="545" y="530" width="180" height="26" as="geometry" /></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

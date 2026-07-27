@@ -1,0 +1,42 @@
+MIT License
+
+Copyright (c) 2026 N. Kapan Tunçer and S. Tunçer
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+--------------------------------------------------------------------------------
+THIRD-PARTY TERMINOLOGY AND CONTENT NOTICES (not covered by the MIT license above)
+
+The MIT license covers ONLY the original source code and artifacts in this
+repository (FHIR Shorthand, evaluation scripts, the Implementation Guide
+configuration, and generated conformance resources). It does NOT relicense any
+third-party terminology or framework referenced by this work:
+
+- SNOMED CT: © SNOMED International. Use is governed by the SNOMED CT Affiliate
+  License; this repository only references concept identifiers, it does not
+  redistribute SNOMED CT content. Turkey is a non-member territory — a
+  research/affiliate (MLDS) arrangement is required before production use.
+- LOINC: © Regenstrief Institute, Inc. LOINC is available under the LOINC
+  license; only LOINC codes are referenced here.
+- IDDSI Framework: © The International Dysphagia Diet Standardisation Initiative,
+  licensed CC BY-SA. The IDDSI framework MUST NOT be modified; this work only
+  enumerates SNOMED-embedded IDDSI concept identifiers in a ValueSet and does
+  not alter the framework.
+- All patient data are SYNTHETIC (generated with Synthea); no real patient data
+  are included.

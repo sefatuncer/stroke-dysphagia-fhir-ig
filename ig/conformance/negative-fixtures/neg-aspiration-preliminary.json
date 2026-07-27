@@ -1,0 +1,9 @@
+{
+  "resourceType": "Observation",
+  "id": "neg-aspiration-preliminary",
+  "meta": { "profile": ["http://example.org/fhir/dysphagia-ct/StructureDefinition/aspiration-risk-flag"] },
+  "status": "preliminary",
+  "code": { "coding": [{ "system": "http://snomed.info/sct", "code": "371736008", "display": "At risk for aspiration" }] },
+  "subject": { "reference": "Patient/ex-patient" },
+  "effectiveDateTime": "2026-03-10"
+}

@@ -1,0 +1,42 @@
+# ============================================================================
+# Reproducible build environment for the Stroke Dysphagia Care-Transition IG.
+# One image bundles the whole toolchain so the IG builds identically anywhere:
+#   - Node + SUSHI       : FSH -> FHIR resources
+#   - Java (Temurin 17)  : HL7 IG Publisher + FHIR Validator
+#   - Ruby + Jekyll      : renders the human-readable HTML IG site
+#
+# This container IS part of the paper's reproducibility contribution.
+#
+# Build (from the ig/ folder):
+#   docker build -f Dockerfile.igbuild -t dysphagia-ig-build .
+#
+# Run the full IG build (mount this folder + reuse the host FHIR package cache):
+#   docker run --rm \
+#     -v "${PWD}:/ig" \
+#     -v "${HOME}/.fhir:/root/.fhir" \
+#     dysphagia-ig-build
+#   # -> output/ (browsable IG) + output/qa.html (validation summary)
+#
+# publisher.jar / validator_cli.jar are expected under input-cache/ (mounted,
+# not baked in) so the image stays small and the tool version is swappable.
+# ============================================================================
+FROM node:20-bookworm
+
+# Java (IG Publisher + Validator) + Ruby/Jekyll (HTML) + build essentials
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        openjdk-17-jre-headless \
+        ruby-full build-essential zlib1g-dev \
+        git ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
+
+# SUSHI (FSH compiler) — pinned major to match the scaffold
+RUN npm install -g fsh-sushi@3
+
+# Jekyll — the IG Publisher shells out to it to render narrative HTML
+RUN gem install jekyll bundler --no-document
+
+WORKDIR /ig
+
+# Default: run the IG Publisher against the mounted project.
+# (It auto-runs SUSHI on input/fsh, validates, then renders HTML via Jekyll.)
+ENTRYPOINT ["java", "-Xmx4g", "-jar", "input-cache/publisher.jar", "-ig", "."]

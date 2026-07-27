@@ -1,0 +1,17 @@
+{
+  "name": "dysphagia-ct-evaluation",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Faz 2 — executable CQL decision-support feasibility over a synthetic stroke-dysphagia cohort (trigger rate + PPV vs guideline-derived ground truth). Synthetic data only; no clinical-benefit claim.",
+  "scripts": {
+    "generate": "node generate-cohort.mjs",
+    "run-cql": "node run-cql.mjs",
+    "evaluate": "node evaluate.mjs",
+    "all": "node generate-cohort.mjs && node run-cql.mjs && node evaluate.mjs"
+  },
+  "dependencies": {
+    "cql-execution": "^3.0.1",
+    "cql-exec-fhir": "^2.1.5"
+  }
+}

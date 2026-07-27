@@ -1,0 +1,21 @@
+# Independent conformance server #1 — HAPI FHIR (Java / Smile CDR OSS).
+# Used to demonstrate that the IG's synthetic examples validate against an
+# INDEPENDENT server implementation's $validate operation — not self-validation.
+#
+#   docker compose -f docker-compose.hapi.yml up -d
+#   # FHIR base: http://localhost:8080/fhir   (metadata: .../fhir/metadata)
+#   docker compose -f docker-compose.hapi.yml down
+#
+# Default H2 in-memory store is fine for a conformance smoke test (no persistence needed).
+services:
+  hapi:
+    image: hapiproject/hapi:latest
+    container_name: hapi-dysphagia
+    ports:
+      - "8080:8080"
+    environment:
+      hapi.fhir.fhir_version: R4
+      hapi.fhir.allow_external_references: "true"
+      hapi.fhir.allow_multiple_delete: "true"
+      # Let the server fetch/validate against our uploaded profiles.
+      hapi.fhir.enforce_referential_integrity_on_write: "false"

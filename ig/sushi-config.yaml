@@ -1,0 +1,28 @@
+# Canonical set to the GitHub Pages URL of the public repo (27 Jul 2026).
+# Dependencies aligned to IPS 2.0.1 + PACIO PFE 2.0.0 (declared below).
+id: dysphagia.care.transition
+canonical: https://sefatuncer.github.io/stroke-dysphagia-fhir-ig
+name: DysphagiaCareTransitionIG
+title: "Stroke Dysphagia Care-Transition FHIR IG (DRAFT scaffold)"
+description: "Interoperable representation of swallowing assessment, aspiration risk, dysphagia severity and IDDSI diet across stroke care transitions (acute → rehab → home). Reuses SNOMED-embedded IDDSI/GUSS + clinical findings; contributes swallowing-assessment Observation profiles + IDDSI ValueSet/binding + a care-transition summary."
+status: draft
+version: 0.1.0
+fhirVersion: 4.0.1
+copyrightYear: 2026+
+releaseLabel: ci-build
+publisher:
+  name: "N. Kapan Tunçer; S. Tunçer"
+# Minimal navigation menu (clears IG Publisher "no menu" warning).
+menu:
+  Home: index.html
+  Profiles: artifacts.html
+  Artifacts: artifacts.html
+# Dependencies — align to existing IGs (anti-silo; "extend, don't reinvent").
+# Versions verified against packages.fhir.org (16 Jul 2026).
+# IPS 2.0.1 = International Patient Summary (care-transition Composition alignment).
+# PACIO PFE 2.0.0 = Personal Functioning & Engagement (reuse pfe-nutrition-order).
+# NOTE: no inline comments on the lines below — IG Publisher's sushi-config prescan
+# does not strip them and folds them into the version string.
+dependencies:
+  hl7.fhir.uv.ips: 2.0.1
+  hl7.fhir.us.pacio-pfe: 2.0.0

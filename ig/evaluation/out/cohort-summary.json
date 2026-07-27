@@ -1,0 +1,35 @@
+{
+  "seed": 20260716,
+  "strokeCode": "230690007",
+  "syntheaPopulation": 25000,
+  "cohortN": 333,
+  "params": {
+    "pDysphagia": 0.5,
+    "pScreenPosGivenDysphagia": 0.7,
+    "pScreenPosGivenNoDysphagia": 0.05,
+    "pFlagCoded": 0.7,
+    "dietGivenScreenPos": {
+      "npo": 0.2,
+      "thickened": 0.45,
+      "thin": 0.35
+    },
+    "dietGivenScreenNeg": {
+      "npo": 0.02,
+      "thickened": 0.08,
+      "thin": 0.9
+    }
+  },
+  "composition": {
+    "dysphagia": "162 (48.6%)",
+    "screenPositive": "115 (34.5%)",
+    "flagCoded": "75 (22.5%)",
+    "flagUncoded_screenPos": "40 (12.0%)",
+    "onThinFluids": "240 (72.1%)",
+    "npo": "20 (6.0%)"
+  },
+  "referenceLabels": {
+    "clinicalUnsafe_screenPos_thin_notNpo": "47 (14.1%)",
+    "cqlEligible_codedFlag_thin_notNpo": "31 (9.3%)",
+    "interopGap_unsafe_but_flag_uncoded": "16 (4.8%)"
+  }
+}
