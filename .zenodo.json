@@ -1,0 +1,35 @@
+{
+  "upload_type": "software",
+  "title": "Stroke-Dysphagia Care-Transition FHIR Implementation Guide",
+  "description": "<p>An open, standards-aligned HL7 FHIR R4 Implementation Guide that makes stroke-dysphagia care-transition data computable across the acute, inpatient-rehabilitation, and home/tele-rehabilitation journey, together with a structured terminology-gap analysis (SNOMED CT, LOINC) and an executable decision-support feasibility evaluation in Clinical Quality Language run on a real engine over a synthetic Synthea cohort.</p><p>The repository contains six FHIR R4 profiles, six ValueSets (including the two IDDSI axes), a local CodeSystem for instruments that currently lack terminology, an AspirationRiskAlert CQL rule, a conformance harness exercised on two independent servers with negative fixtures, and a fully containerized, seeded evaluation pipeline.</p><p><strong>Scope and claims.</strong> All data are synthetic or drawn from the published literature. No human or animal subjects, no patient data, and no clinical-benefit or diagnostic claim are involved; the evaluation demonstrates interoperability and computability feasibility, not clinical validity.</p><p><strong>Terminology notice.</strong> This IG references SNOMED CT, LOINC, and IDDSI codes; it does not redistribute their code systems. The MIT license covers only the source and IG artifacts authored here.</p>",
+  "creators": [
+    {
+      "name": "Kapan Tunçer, Nazife",
+      "affiliation": "Department of Physical Medicine and Rehabilitation, Faculty of Medicine, Kırşehir Ahi Evran University, Kırşehir, Türkiye",
+      "orcid": "0000-0002-8161-5669"
+    },
+    {
+      "name": "Tunçer, Sefa",
+      "affiliation": "Independent Researcher, Ankara, Türkiye",
+      "orcid": "0000-0001-6672-3605"
+    }
+  ],
+  "license": "mit",
+  "access_right": "open",
+  "language": "eng",
+  "keywords": [
+    "HL7 FHIR",
+    "Implementation Guide",
+    "dysphagia",
+    "stroke",
+    "care transition",
+    "interoperability",
+    "SNOMED CT",
+    "LOINC",
+    "IDDSI",
+    "Clinical Quality Language",
+    "clinical decision support",
+    "terminology gap analysis",
+    "reproducibility"
+  ]
+}

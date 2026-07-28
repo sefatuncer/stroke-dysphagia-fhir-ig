@@ -192,13 +192,14 @@ Description: "NutritionOrder constrained to bind IDDSI levels (extensible) — b
 * oralDiet.texture.modifier from IDDSIFoodLevels (extensible)        // food axis (levels 4–7)
 
 // ---------------------------------------------------------------------------
-// Care-transition SUMMARY — the transfer envelope (align to IPS Composition later)
+// Care-transition SUMMARY — the transfer envelope (positioned relative to the IPS
+// Composition; see the standards-alignment page for why sections stay open)
 // ---------------------------------------------------------------------------
 Profile: DysphagiaCareTransitionSummary
 Parent: Composition
 Id: dysphagia-care-transition-summary
 Title: "Dysphagia Care-Transition Summary"
-Description: "Composition bundling swallowing assessment + severity + aspiration risk + IDDSI diet + precautions for a stroke care transition. TODO: align section codes to IPS."
+Description: "Composition bundling swallowing assessment + severity + aspiration risk + IDDSI diet + precautions for a stroke care transition."
 * status MS
 * subject 1..1 MS
 * subject only Reference(Patient)

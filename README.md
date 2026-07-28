@@ -1,6 +1,6 @@
 # Stroke–Dysphagia Care-Transition FHIR Implementation Guide
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21623978.svg)](https://doi.org/10.5281/zenodo.21623978)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21629526.svg)](https://doi.org/10.5281/zenodo.21629526)
 
 An open, standards-aligned **HL7 FHIR R4 Implementation Guide (IG)** that makes stroke–dysphagia
 care-transition data computable across the acute → inpatient-rehabilitation → home/tele-rehabilitation
@@ -81,7 +81,9 @@ Source code and the IG artifacts authored here are released under the **MIT Lice
 
 If you use this work, please cite the archived release:
 
-> Kapan Tunçer N, Tunçer S. Stroke–Dysphagia Care-Transition FHIR Implementation Guide (v1.0.0). Zenodo; 2026. DOI: 10.5281/zenodo.21623978.
+> Kapan Tunçer N, Tunçer S. Stroke–Dysphagia Care-Transition FHIR Implementation Guide (v1.0.1). Zenodo; 2026. DOI: 10.5281/zenodo.21629526.
+
+The DOI above is the *concept* DOI: it always resolves to the latest archived version.
 
 **Authors:**
 Nazife Kapan Tunçer (ORCID 0000-0002-8161-5669). Department of Physical Medicine and Rehabilitation, Faculty of Medicine, Kırşehir Ahi Evran University, Kırşehir, Türkiye.
