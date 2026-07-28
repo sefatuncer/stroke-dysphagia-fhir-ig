@@ -1,4 +1,4 @@
-# Example ??? dysphagia care-transition summary bundling the transfer package (synthetic) - Stroke Dysphagia Care-Transition FHIR IG (DRAFT scaffold) v0.1.0
+# Example ??? dysphagia care-transition summary bundling the transfer package (synthetic) - Stroke Dysphagia Care-Transition FHIR IG v1.0.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

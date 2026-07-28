@@ -1,4 +1,4 @@
-# Swallowing Screening Result - Stroke Dysphagia Care-Transition FHIR IG (DRAFT scaffold) v0.1.0
+# Swallowing Screening Result - Stroke Dysphagia Care-Transition FHIR IG v1.0.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/swallowing-screening-result | *Version*:0.1.0 |
-| Draft as of 2026-07-28 | *Computable Name*:SwallowingScreeningResult |
+| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/swallowing-screening-result | *Version*:1.0.1 |
+| Active as of 2026-07-28 | *Computable Name*:SwallowingScreeningResult |
 
  
 Bedside dysphagia screening (GUSS/EAT-10/TOR-BSST). GUSS reuses SNOMED 1289999007. 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-swallowing-screening
   "resourceType" : "StructureDefinition",
   "id" : "swallowing-screening-result",
   "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/swallowing-screening-result",
-  "version" : "0.1.0",
+  "version" : "1.0.1",
   "name" : "SwallowingScreeningResult",
   "title" : "Swallowing Screening Result",
-  "status" : "draft",
-  "date" : "2026-07-28T10:20:05+00:00",
+  "status" : "active",
+  "date" : "2026-07-28T10:50:36+00:00",
   "publisher" : "N. Kapan Tunçer; S. Tunçer",
   "description" : "Bedside dysphagia screening (GUSS/EAT-10/TOR-BSST). GUSS reuses SNOMED 1289999007.",
   "fhirVersion" : "4.0.1",

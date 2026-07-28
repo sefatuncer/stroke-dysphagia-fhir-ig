@@ -480,7 +480,7 @@
   },
   {
     "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/aspiration-risk-value-vs",
-    "version" : "0.1.0",
+    "version" : "1.0.1",
     "status" : "draft",
     "name" : "AspirationRiskValueVS",
     "title" : "Aspiration Event Qualifier",
@@ -493,7 +493,7 @@
   },
   {
     "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/dysphagia-severity-type-vs",
-    "version" : "0.1.0",
+    "version" : "1.0.1",
     "status" : "draft",
     "name" : "DysphagiaSeverityTypeVS",
     "title" : "Dysphagia Severity / Oral-Intake Scale Type",
@@ -506,7 +506,7 @@
   },
   {
     "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/iddsi-fluid-levels",
-    "version" : "0.1.0",
+    "version" : "1.0.1",
     "status" : "draft",
     "name" : "IDDSIFluidLevels",
     "title" : "IDDSI Drink/Fluid Consistency Levels (SNOMED CT)",
@@ -518,7 +518,7 @@
   },
   {
     "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/iddsi-food-levels",
-    "version" : "0.1.0",
+    "version" : "1.0.1",
     "status" : "draft",
     "name" : "IDDSIFoodLevels",
     "title" : "IDDSI Food Texture Levels (SNOMED CT)",
@@ -530,7 +530,7 @@
   },
   {
     "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/instrumental-swallow-type-vs",
-    "version" : "0.1.0",
+    "version" : "1.0.1",
     "status" : "draft",
     "name" : "InstrumentalSwallowTypeVS",
     "title" : "Instrumental Swallow Assessment Type",
@@ -544,7 +544,7 @@
   },
   {
     "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/swallow-screening-type-vs",
-    "version" : "0.1.0",
+    "version" : "1.0.1",
     "status" : "draft",
     "name" : "SwallowScreeningTypeVS",
     "title" : "Swallowing Screening Type",

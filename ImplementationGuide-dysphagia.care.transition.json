@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide dysphagia.care.transition</b></p><a name=\"dysphagia.care.transition\"> </a><a name=\"hcdysphagia.care.transition\"> </a><h2>DysphagiaCareTransitionIG</h2><p>The official URL for this implementation guide is: </p><pre>https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ImplementationGuide/dysphagia.care.transition</pre><div><p>Interoperable representation of swallowing assessment, aspiration risk, dysphagia severity and IDDSI diet across stroke care transitions (acute → rehab → home). Reuses SNOMED-embedded IDDSI/GUSS + clinical findings; contributes swallowing-assessment Observation profiles + IDDSI ValueSet/binding + a care-transition summary.</p>\n</div></div>"
   },
   "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ImplementationGuide/dysphagia.care.transition",
-  "version" : "0.1.0",
+  "version" : "1.0.1",
   "name" : "DysphagiaCareTransitionIG",
-  "title" : "Stroke Dysphagia Care-Transition FHIR IG (DRAFT scaffold)",
-  "status" : "draft",
-  "date" : "2026-07-28T10:20:05+00:00",
+  "title" : "Stroke Dysphagia Care-Transition FHIR IG",
+  "status" : "active",
+  "date" : "2026-07-28T10:50:36+00:00",
   "publisher" : "N. Kapan Tunçer; S. Tunçer",
   "description" : "Interoperable representation of swallowing assessment, aspiration risk, dysphagia severity and IDDSI diet across stroke care transitions (acute → rehab → home). Reuses SNOMED-embedded IDDSI/GUSS + clinical findings; contributes swallowing-assessment Observation profiles + IDDSI ValueSet/binding + a care-transition summary.",
   "packageId" : "dysphagia.care.transition",
@@ -67,7 +67,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "ci-build"
+        "valueString" : "release"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -346,7 +346,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "ci-build"
+        "valueString" : "release"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },

@@ -1,4 +1,4 @@
-# Home - Stroke Dysphagia Care-Transition FHIR IG (DRAFT scaffold) v0.1.0
+# Home - Stroke Dysphagia Care-Transition FHIR IG v1.0.1
 
 * [**Table of Contents**](toc.md)
 * **Home**
@@ -7,10 +7,10 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ImplementationGuide/dysphagia.care.transition | *Version*:0.1.0 |
-| Draft as of 2026-07-28 | *Computable Name*:DysphagiaCareTransitionIG |
+| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ImplementationGuide/dysphagia.care.transition | *Version*:1.0.1 |
+| Active as of 2026-07-28 | *Computable Name*:DysphagiaCareTransitionIG |
 
-### Stroke Dysphagia Care-Transition FHIR IG (DRAFT)
+### Stroke Dysphagia Care-Transition FHIR IG
 
 This Implementation Guide defines an **interoperable, machine-readable representation** of swallowing assessment, aspiration risk, dysphagia severity and IDDSI diet/fluid consistency so these data can travel across stroke care transitions (**acute → inpatient rehab → home / tele-rehab**).
 
@@ -41,7 +41,7 @@ This IG **extends, does not reinvent**: it declares dependencies on **IPS 2.0.1*
 
 #### Status
 
-Draft scaffold. Terminology verified against SNOMED CT International 20250201 + LOINC/NLM. Conformance is demonstrated with the FHIR Validator plus **≥2 independent servers** (not self-validation only).
+Released, v1.0.1. Terminology verified against SNOMED CT International 20250201 + LOINC/NLM. Conformance is demonstrated with the FHIR Validator plus **≥2 independent servers** (not self-validation only).
 
 
 
@@ -52,11 +52,11 @@ Draft scaffold. Terminology verified against SNOMED CT International 20250201 + 
   "resourceType" : "ImplementationGuide",
   "id" : "dysphagia.care.transition",
   "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ImplementationGuide/dysphagia.care.transition",
-  "version" : "0.1.0",
+  "version" : "1.0.1",
   "name" : "DysphagiaCareTransitionIG",
-  "title" : "Stroke Dysphagia Care-Transition FHIR IG (DRAFT scaffold)",
-  "status" : "draft",
-  "date" : "2026-07-28T10:20:05+00:00",
+  "title" : "Stroke Dysphagia Care-Transition FHIR IG",
+  "status" : "active",
+  "date" : "2026-07-28T10:50:36+00:00",
   "publisher" : "N. Kapan Tunçer; S. Tunçer",
   "description" : "Interoperable representation of swallowing assessment, aspiration risk, dysphagia severity and IDDSI diet across stroke care transitions (acute → rehab → home). Reuses SNOMED-embedded IDDSI/GUSS + clinical findings; contributes swallowing-assessment Observation profiles + IDDSI ValueSet/binding + a care-transition summary.",
   "packageId" : "dysphagia.care.transition",
@@ -113,7 +113,7 @@ Draft scaffold. Terminology verified against SNOMED CT International 20250201 + 
       },
       {
         "url" : "value",
-        "valueString" : "ci-build"
+        "valueString" : "release"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -392,7 +392,7 @@ Draft scaffold. Terminology verified against SNOMED CT International 20250201 + 
       },
       {
         "url" : "value",
-        "valueString" : "ci-build"
+        "valueString" : "release"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },

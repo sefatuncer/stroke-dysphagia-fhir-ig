@@ -1,13 +1,13 @@
 {
   "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ImplementationGuide/dysphagia.care.transition",
   "name" : "DysphagiaCareTransitionIG",
-  "title" : "Stroke Dysphagia Care-Transition FHIR IG (DRAFT scaffold)",
+  "title" : "Stroke Dysphagia Care-Transition FHIR IG",
   "description" : "Interoperable representation of swallowing assessment, aspiration risk, dysphagia severity and IDDSI diet across stroke care transitions (acute → rehab → home). Reuses SNOMED-embedded IDDSI/GUSS + clinical findings; contributes swallowing-assessment Observation profiles + IDDSI ValueSet/binding + a care-transition summary.",
-  "status" : "draft",
+  "status" : "active",
   "package-id" : "dysphagia.care.transition",
-  "ig-ver" : "0.1.0",
-  "date" : "Tue, 28 Jul, 2026 10:20:05 +0000",
-  "dateISO8601" : "2026-07-28T10:20:05+00:00",
+  "ig-ver" : "1.0.1",
+  "date" : "Tue, 28 Jul, 2026 10:50:36 +0000",
+  "dateISO8601" : "2026-07-28T10:50:36+00:00",
   "errs" : 0,
   "warnings" : 24,
   "hints" : 21,
@@ -15,5 +15,5 @@
   "suppressed-warnings" : 0,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 1870260408
+  "maxMemory" : 1868677872
 }

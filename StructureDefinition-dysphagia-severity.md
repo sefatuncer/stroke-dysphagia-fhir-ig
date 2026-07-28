@@ -1,4 +1,4 @@
-# Dysphagia Severity - Stroke Dysphagia Care-Transition FHIR IG (DRAFT scaffold) v0.1.0
+# Dysphagia Severity - Stroke Dysphagia Care-Transition FHIR IG v1.0.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-severity | *Version*:0.1.0 |
-| Draft as of 2026-07-28 | *Computable Name*:DysphagiaSeverity |
+| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-severity | *Version*:1.0.1 |
+| Active as of 2026-07-28 | *Computable Name*:DysphagiaSeverity |
 
  
 Overall severity / oral-intake level (FOIS, DIGEST, or IDDSI FDS). 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-dysphagia-severity.c
   "resourceType" : "StructureDefinition",
   "id" : "dysphagia-severity",
   "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-severity",
-  "version" : "0.1.0",
+  "version" : "1.0.1",
   "name" : "DysphagiaSeverity",
   "title" : "Dysphagia Severity",
-  "status" : "draft",
-  "date" : "2026-07-28T10:20:05+00:00",
+  "status" : "active",
+  "date" : "2026-07-28T10:50:36+00:00",
   "publisher" : "N. Kapan Tunçer; S. Tunçer",
   "description" : "Overall severity / oral-intake level (FOIS, DIGEST, or IDDSI FDS).",
   "fhirVersion" : "4.0.1",

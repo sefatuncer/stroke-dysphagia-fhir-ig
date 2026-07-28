@@ -1,4 +1,4 @@
-# dysphagia.care.transition#0.1.0: Stroke Dysphagia Care-Transition FHIR IG (DRAFT scaffold)
+# dysphagia.care.transition#1.0.1: Stroke Dysphagia Care-Transition FHIR IG
 
 ## Pages
 
@@ -31,7 +31,7 @@
 
 ### ImplementationGuides
 
-* [Stroke Dysphagia Care-Transition FHIR IG (DRAFT scaffold)](index.md)
+* [Stroke Dysphagia Care-Transition FHIR IG](index.md)
 
 ### Examples
 

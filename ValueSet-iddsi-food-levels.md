@@ -1,4 +1,4 @@
-# IDDSI Food Texture Levels (SNOMED CT) - Stroke Dysphagia Care-Transition FHIR IG (DRAFT scaffold) v0.1.0
+# IDDSI Food Texture Levels (SNOMED CT) - Stroke Dysphagia Care-Transition FHIR IG v1.0.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/iddsi-food-levels | *Version*:0.1.0 |
+| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/iddsi-food-levels | *Version*:1.0.1 |
 | Draft as of 2026-07-28 | *Computable Name*:IDDSIFoodLevels |
 
  
@@ -46,12 +46,12 @@ IDDSI food-axis texture levels 4–7 (SNOMED CT-embedded IDDSI concepts), for Nu
   "resourceType" : "ValueSet",
   "id" : "iddsi-food-levels",
   "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/iddsi-food-levels",
-  "version" : "0.1.0",
+  "version" : "1.0.1",
   "name" : "IDDSIFoodLevels",
   "title" : "IDDSI Food Texture Levels (SNOMED CT)",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-07-28T10:20:05+00:00",
+  "date" : "2026-07-28T10:50:36+00:00",
   "publisher" : "N. Kapan Tunçer; S. Tunçer",
   "description" : "IDDSI food-axis texture levels 4–7 (SNOMED CT-embedded IDDSI concepts), for NutritionOrder.oralDiet.texture.modifier.",
   "compose" : {

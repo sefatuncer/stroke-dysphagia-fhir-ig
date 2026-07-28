@@ -1,4 +1,4 @@
-# Dysphagia Care-Transition Summary - Stroke Dysphagia Care-Transition FHIR IG (DRAFT scaffold) v0.1.0
+# Dysphagia Care-Transition Summary - Stroke Dysphagia Care-Transition FHIR IG v1.0.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-care-transition-summary | *Version*:0.1.0 |
-| Draft as of 2026-07-28 | *Computable Name*:DysphagiaCareTransitionSummary |
+| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-care-transition-summary | *Version*:1.0.1 |
+| Active as of 2026-07-28 | *Computable Name*:DysphagiaCareTransitionSummary |
 
  
 Composition bundling swallowing assessment + severity + aspiration risk + IDDSI diet + precautions for a stroke care transition. 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-dysphagia-care-trans
   "resourceType" : "StructureDefinition",
   "id" : "dysphagia-care-transition-summary",
   "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-care-transition-summary",
-  "version" : "0.1.0",
+  "version" : "1.0.1",
   "name" : "DysphagiaCareTransitionSummary",
   "title" : "Dysphagia Care-Transition Summary",
-  "status" : "draft",
-  "date" : "2026-07-28T10:20:05+00:00",
+  "status" : "active",
+  "date" : "2026-07-28T10:50:36+00:00",
   "publisher" : "N. Kapan Tunçer; S. Tunçer",
   "description" : "Composition bundling swallowing assessment + severity + aspiration risk + IDDSI diet + precautions for a stroke care transition.",
   "fhirVersion" : "4.0.1",

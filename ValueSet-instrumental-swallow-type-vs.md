@@ -1,4 +1,4 @@
-# Instrumental Swallow Assessment Type - Stroke Dysphagia Care-Transition FHIR IG (DRAFT scaffold) v0.1.0
+# Instrumental Swallow Assessment Type - Stroke Dysphagia Care-Transition FHIR IG v1.0.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/instrumental-swallow-type-vs | *Version*:0.1.0 |
+| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/instrumental-swallow-type-vs | *Version*:1.0.1 |
 | Draft as of 2026-07-28 | *Computable Name*:InstrumentalSwallowTypeVS |
 
  
@@ -46,12 +46,12 @@ Instrumental swallowing assessments (VFSS/FEES) and associated graded scales (PA
   "resourceType" : "ValueSet",
   "id" : "instrumental-swallow-type-vs",
   "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/instrumental-swallow-type-vs",
-  "version" : "0.1.0",
+  "version" : "1.0.1",
   "name" : "InstrumentalSwallowTypeVS",
   "title" : "Instrumental Swallow Assessment Type",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-07-28T10:20:05+00:00",
+  "date" : "2026-07-28T10:50:36+00:00",
   "publisher" : "N. Kapan Tunçer; S. Tunçer",
   "description" : "Instrumental swallowing assessments (VFSS/FEES) and associated graded scales (PAS, Yale residue) — SNOMED/LOINC where coded, temporary local codes otherwise.",
   "compose" : {

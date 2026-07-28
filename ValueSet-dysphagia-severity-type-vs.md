@@ -1,4 +1,4 @@
-# Dysphagia Severity / Oral-Intake Scale Type - Stroke Dysphagia Care-Transition FHIR IG (DRAFT scaffold) v0.1.0
+# Dysphagia Severity / Oral-Intake Scale Type - Stroke Dysphagia Care-Transition FHIR IG v1.0.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/dysphagia-severity-type-vs | *Version*:0.1.0 |
+| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/dysphagia-severity-type-vs | *Version*:1.0.1 |
 | Draft as of 2026-07-28 | *Computable Name*:DysphagiaSeverityTypeVS |
 
  
@@ -46,12 +46,12 @@ Overall dysphagia severity / functional oral-intake measures (DOSS + IDDSI Funct
   "resourceType" : "ValueSet",
   "id" : "dysphagia-severity-type-vs",
   "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/dysphagia-severity-type-vs",
-  "version" : "0.1.0",
+  "version" : "1.0.1",
   "name" : "DysphagiaSeverityTypeVS",
   "title" : "Dysphagia Severity / Oral-Intake Scale Type",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-07-28T10:20:05+00:00",
+  "date" : "2026-07-28T10:50:36+00:00",
   "publisher" : "N. Kapan Tunçer; S. Tunçer",
   "description" : "Overall dysphagia severity / functional oral-intake measures (DOSS + IDDSI Functional Diet Scale reused from SNOMED; FOIS, DIGEST as temporary local codes pending LOINC/SNOMED submission).",
   "compose" : {

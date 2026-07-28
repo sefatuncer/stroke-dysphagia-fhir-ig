@@ -1,4 +1,4 @@
-# Dysphagia Nutrition Order (IDDSI-bound) - Stroke Dysphagia Care-Transition FHIR IG (DRAFT scaffold) v0.1.0
+# Dysphagia Nutrition Order (IDDSI-bound) - Stroke Dysphagia Care-Transition FHIR IG v1.0.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-nutrition-order | *Version*:0.1.0 |
-| Draft as of 2026-07-28 | *Computable Name*:DysphagiaNutritionOrder |
+| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-nutrition-order | *Version*:1.0.1 |
+| Active as of 2026-07-28 | *Computable Name*:DysphagiaNutritionOrder |
 
  
 NutritionOrder constrained to bind IDDSI levels (extensible) — base FHIR only binds these 'example'. 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-dysphagia-nutrition-
   "resourceType" : "StructureDefinition",
   "id" : "dysphagia-nutrition-order",
   "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-nutrition-order",
-  "version" : "0.1.0",
+  "version" : "1.0.1",
   "name" : "DysphagiaNutritionOrder",
   "title" : "Dysphagia Nutrition Order (IDDSI-bound)",
-  "status" : "draft",
-  "date" : "2026-07-28T10:20:05+00:00",
+  "status" : "active",
+  "date" : "2026-07-28T10:50:36+00:00",
   "publisher" : "N. Kapan Tunçer; S. Tunçer",
   "description" : "NutritionOrder constrained to bind IDDSI levels (extensible) — base FHIR only binds these 'example'.",
   "fhirVersion" : "4.0.1",

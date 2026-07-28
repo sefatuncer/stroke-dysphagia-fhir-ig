@@ -1,4 +1,4 @@
-# Instrumental Swallow Assessment (VFSS/FEES) with Penetration-Aspiration Scale - Stroke Dysphagia Care-Transition FHIR IG (DRAFT scaffold) v0.1.0
+# Instrumental Swallow Assessment (VFSS/FEES) with Penetration-Aspiration Scale - Stroke Dysphagia Care-Transition FHIR IG v1.0.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/instrumental-swallow-assessment | *Version*:0.1.0 |
-| Draft as of 2026-07-28 | *Computable Name*:InstrumentalSwallowAssessment |
+| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/instrumental-swallow-assessment | *Version*:1.0.1 |
+| Active as of 2026-07-28 | *Computable Name*:InstrumentalSwallowAssessment |
 
  
 VFSS/FEES result incl. PAS (Rosenbek). PAS lacks LOINC/SNOMED → temp code; proposed upstream. 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-instrumental-swallow
   "resourceType" : "StructureDefinition",
   "id" : "instrumental-swallow-assessment",
   "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/instrumental-swallow-assessment",
-  "version" : "0.1.0",
+  "version" : "1.0.1",
   "name" : "InstrumentalSwallowAssessment",
   "title" : "Instrumental Swallow Assessment (VFSS/FEES) with Penetration-Aspiration Scale",
-  "status" : "draft",
-  "date" : "2026-07-28T10:20:05+00:00",
+  "status" : "active",
+  "date" : "2026-07-28T10:50:36+00:00",
   "publisher" : "N. Kapan Tunçer; S. Tunçer",
   "description" : "VFSS/FEES result incl. PAS (Rosenbek). PAS lacks LOINC/SNOMED → temp code; proposed upstream.",
   "fhirVersion" : "4.0.1",
