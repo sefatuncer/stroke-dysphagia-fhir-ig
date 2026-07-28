@@ -1,0 +1,23 @@
+{
+  "resourceType" : "Observation",
+  "id" : "ex-dysphagia-severity",
+  "meta" : {
+    "profile" : ["https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-severity"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation ex-dysphagia-severity</b></p><a name=\"ex-dysphagia-severity\"> </a><a name=\"hcex-dysphagia-severity\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dysphagia-severity.html\">Dysphagia Severity</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp FOIS}\">Functional Oral Intake Scale — level 1–7</span></p><p><b>subject</b>: <a href=\"Patient-ex-patient.html\">Ornek Sentetik  Female, DoB: 1957-05-12</a></p><p><b>effective</b>: 2026-03-09</p><p><b>value</b>: 4</p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp",
+      "code" : "FOIS"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/ex-patient"
+  },
+  "effectiveDateTime" : "2026-03-09",
+  "valueInteger" : 4
+}

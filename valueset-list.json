@@ -1,0 +1,61 @@
+{
+  "codeSystems" : [{
+    "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/aspiration-risk-value-vs",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "AspirationRiskValueVS",
+    "title" : "Aspiration Event Qualifier",
+    "description" : "Optional qualifier for the Aspiration Risk Flag: the observed aspiration event on which the risk determination was based (pulmonary aspiration; silent aspiration as a proposed temporary local code). Does NOT include the at-risk finding itself, which is carried in Observation.code.",
+    "systems" : ["https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp",
+    "http://snomed.info/sct"]
+  },
+  {
+    "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/dysphagia-severity-type-vs",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "DysphagiaSeverityTypeVS",
+    "title" : "Dysphagia Severity / Oral-Intake Scale Type",
+    "description" : "Overall dysphagia severity / functional oral-intake measures (DOSS + IDDSI Functional Diet Scale reused from SNOMED; FOIS, DIGEST as temporary local codes pending LOINC/SNOMED submission).",
+    "systems" : ["https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp",
+    "http://snomed.info/sct"]
+  },
+  {
+    "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/iddsi-fluid-levels",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "IDDSIFluidLevels",
+    "title" : "IDDSI Drink/Fluid Consistency Levels (SNOMED CT)",
+    "description" : "IDDSI drink-axis consistency levels 0–4 (SNOMED CT-embedded IDDSI concepts), for NutritionOrder.oralDiet.fluidConsistencyType. Level 3 is the transitional Moderately Thick concept shared with the food axis.",
+    "systems" : ["http://snomed.info/sct"]
+  },
+  {
+    "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/iddsi-food-levels",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "IDDSIFoodLevels",
+    "title" : "IDDSI Food Texture Levels (SNOMED CT)",
+    "description" : "IDDSI food-axis texture levels 4–7 (SNOMED CT-embedded IDDSI concepts), for NutritionOrder.oralDiet.texture.modifier.",
+    "systems" : ["http://snomed.info/sct"]
+  },
+  {
+    "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/instrumental-swallow-type-vs",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "InstrumentalSwallowTypeVS",
+    "title" : "Instrumental Swallow Assessment Type",
+    "description" : "Instrumental swallowing assessments (VFSS/FEES) and associated graded scales (PAS, Yale residue) — SNOMED/LOINC where coded, temporary local codes otherwise.",
+    "systems" : ["http://loinc.org",
+    "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp",
+    "http://snomed.info/sct"]
+  },
+  {
+    "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/swallow-screening-type-vs",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "SwallowScreeningTypeVS",
+    "title" : "Swallowing Screening Type",
+    "description" : "Bedside swallowing screening instruments (GUSS + Yale Swallow Protocol/3-oz reused from SNOMED; EAT-10 / TOR-BSST as temporary local codes pending LOINC/SNOMED submission).",
+    "systems" : ["https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp",
+    "http://snomed.info/sct"]
+  }]
+}

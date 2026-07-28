@@ -1,0 +1,76 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/Composition/ex-care-transition-summary> a fhir:Composition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ex-care-transition-summary"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-care-transition-summary" ;
+       fhir:index 0 ;
+       fhir:link <https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-care-transition-summary>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Composition ex-care-transition-summary</b></p><a name=\"ex-care-transition-summary\"> </a><a name=\"hcex-care-transition-summary\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dysphagia-care-transition-summary.html\">Dysphagia Care-Transition Summary</a></p></div><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 34133-9}\">Summary of episode note</span></p><p><b>date</b>: 2026-03-10</p><p><b>author</b>: <a href=\"Organization-ex-org.html\">Organization Synthetic Stroke Rehabilitation Service</a></p><p><b>title</b>: Dysphagia Care-Transition Summary</p></div>"
+  ] ;
+  fhir:Composition.status [ fhir:value "final"] ;
+  fhir:Composition.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a loinc:34133-9 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "34133-9" ] ;
+       fhir:Coding.display [ fhir:value "Summary of episode note" ]
+     ]
+  ] ;
+  fhir:Composition.subject [
+     fhir:link <https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/Patient/ex-patient> ;
+     fhir:Reference.reference [ fhir:value "Patient/ex-patient" ]
+  ] ;
+  fhir:Composition.date [ fhir:value "2026-03-10"^^xsd:date] ;
+  fhir:Composition.author [
+     fhir:index 0 ;
+     fhir:link <https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/Organization/ex-org> ;
+     fhir:Reference.reference [ fhir:value "Organization/ex-org" ]
+  ] ;
+  fhir:Composition.title [ fhir:value "Dysphagia Care-Transition Summary"] ;
+  fhir:Composition.section [
+     fhir:index 0 ;
+     fhir:Composition.section.title [ fhir:value "Aspiration risk" ] ;
+     fhir:Composition.section.entry [
+       fhir:index 0 ;
+       fhir:link <https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/Observation/ex-aspiration-risk> ;
+       fhir:Reference.reference [ fhir:value "Observation/ex-aspiration-risk" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:Composition.section.title [ fhir:value "Swallowing severity" ] ;
+     fhir:Composition.section.entry [
+       fhir:index 0 ;
+       fhir:link <https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/Observation/ex-dysphagia-severity> ;
+       fhir:Reference.reference [ fhir:value "Observation/ex-dysphagia-severity" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:Composition.section.title [ fhir:value "Diet and fluid consistency (IDDSI)" ] ;
+     fhir:Composition.section.entry [
+       fhir:index 0 ;
+       fhir:link <https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/NutritionOrder/ex-dysphagia-diet> ;
+       fhir:Reference.reference [ fhir:value "NutritionOrder/ex-dysphagia-diet" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/Composition/ex-care-transition-summary.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

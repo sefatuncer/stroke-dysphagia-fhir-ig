@@ -1,0 +1,56 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/Observation/ex-instrumental-swallow> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ex-instrumental-swallow"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/instrumental-swallow-assessment" ;
+       fhir:index 0 ;
+       fhir:link <https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/instrumental-swallow-assessment>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation ex-instrumental-swallow</b></p><a name=\"ex-instrumental-swallow\"> </a><a name=\"hcex-instrumental-swallow\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-instrumental-swallow-assessment.html\">Instrumental Swallow Assessment (VFSS/FEES) with Penetration-Aspiration Scale</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 241149003}\">Videofluoroscopy swallow</span></p><p><b>subject</b>: <a href=\"Patient-ex-patient.html\">Ornek Sentetik  Female, DoB: 1957-05-12</a></p><p><b>effective</b>: 2026-03-09</p><h3>Components</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp PAS}\">Penetration-Aspiration Scale (Rosenbek 1996) — score 1–8</span></td><td>6</td></tr></table></div>"
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a sct:241149003 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "241149003" ] ;
+       fhir:Coding.display [ fhir:value "Videofluoroscopy swallow" ]
+     ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:link <https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/Patient/ex-patient> ;
+     fhir:Reference.reference [ fhir:value "Patient/ex-patient" ]
+  ] ;
+  fhir:Observation.effectiveDateTime [ fhir:value "2026-03-09"^^xsd:date] ;
+  fhir:Observation.component [
+     fhir:index 0 ;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp" ] ;
+         fhir:Coding.code [ fhir:value "PAS" ]
+       ]
+     ] ;
+     fhir:Observation.component.valueInteger [ fhir:value "6"^^xsd:integer ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/Observation/ex-instrumental-swallow.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

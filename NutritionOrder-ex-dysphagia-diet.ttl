@@ -1,0 +1,61 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/NutritionOrder/ex-dysphagia-diet> a fhir:NutritionOrder ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ex-dysphagia-diet"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-nutrition-order" ;
+       fhir:index 0 ;
+       fhir:link <https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-nutrition-order>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: NutritionOrder ex-dysphagia-diet</b></p><a name=\"ex-dysphagia-diet\"> </a><a name=\"hcex-dysphagia-diet\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dysphagia-nutrition-order.html\">Dysphagia Nutrition Order (IDDSI-bound)</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>patient</b>: <a href=\"Patient-ex-patient.html\">Ornek Sentetik  Female, DoB: 1957-05-12</a></p><p><b>dateTime</b>: 2026-03-10</p><blockquote><p><b>oralDiet</b></p><h3>Textures</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Modifier</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 1237448004}\">International Dysphagia Diet Standardisation Initiative Framework - Minced and Moist Level 5</span></td></tr></table><p><b>fluidConsistencyType</b>: <span title=\"Codes:{http://snomed.info/sct 1237442003}\">International Dysphagia Diet Standardisation Initiative Framework - Mildly Thick Level 2</span></p></blockquote></div>"
+  ] ;
+  fhir:NutritionOrder.status [ fhir:value "active"] ;
+  fhir:NutritionOrder.intent [ fhir:value "order"] ;
+  fhir:NutritionOrder.patient [
+     fhir:link <https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/Patient/ex-patient> ;
+     fhir:Reference.reference [ fhir:value "Patient/ex-patient" ]
+  ] ;
+  fhir:NutritionOrder.dateTime [ fhir:value "2026-03-10"^^xsd:date] ;
+  fhir:NutritionOrder.oralDiet [
+     fhir:NutritionOrder.oralDiet.texture [
+       fhir:index 0 ;
+       fhir:NutritionOrder.oralDiet.texture.modifier [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           a sct:1237448004 ;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.code [ fhir:value "1237448004" ] ;
+           fhir:Coding.display [ fhir:value "International Dysphagia Diet Standardisation Initiative Framework - Minced and Moist Level 5" ]
+         ]
+       ]
+     ] ;
+     fhir:NutritionOrder.oralDiet.fluidConsistencyType [
+       fhir:index 0 ;
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a sct:1237442003 ;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+         fhir:Coding.code [ fhir:value "1237442003" ] ;
+         fhir:Coding.display [ fhir:value "International Dysphagia Diet Standardisation Initiative Framework - Mildly Thick Level 2" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/NutritionOrder/ex-dysphagia-diet.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,45 @@
+# dysphagia.care.transition#0.1.0: Stroke Dysphagia Care-Transition FHIR IG (DRAFT scaffold)
+
+## Pages
+
+* [Home](index.md)
+* [Artifacts Summary](artifacts.md)
+
+## Resources
+
+### CodeSystems
+
+* [Dysphagia Scales — temporary local codes (proposed for LOINC/SNOMED)](CodeSystem-dysphagia-scales-temp.md)
+
+### ValueSets
+
+* [Aspiration Event Qualifier](ValueSet-aspiration-risk-value-vs.md)
+* [Dysphagia Severity / Oral-Intake Scale Type](ValueSet-dysphagia-severity-type-vs.md)
+* [IDDSI Drink/Fluid Consistency Levels (SNOMED CT)](ValueSet-iddsi-fluid-levels.md)
+* [IDDSI Food Texture Levels (SNOMED CT)](ValueSet-iddsi-food-levels.md)
+* [Instrumental Swallow Assessment Type](ValueSet-instrumental-swallow-type-vs.md)
+* [Swallowing Screening Type](ValueSet-swallow-screening-type-vs.md)
+
+### Resource Profiles
+
+* [Aspiration Risk Flag](StructureDefinition-aspiration-risk-flag.md)
+* [Dysphagia Care-Transition Summary](StructureDefinition-dysphagia-care-transition-summary.md)
+* [Dysphagia Nutrition Order (IDDSI-bound)](StructureDefinition-dysphagia-nutrition-order.md)
+* [Dysphagia Severity](StructureDefinition-dysphagia-severity.md)
+* [Instrumental Swallow Assessment (VFSS/FEES) with Penetration-Aspiration Scale](StructureDefinition-instrumental-swallow-assessment.md)
+* [Swallowing Screening Result](StructureDefinition-swallowing-screening-result.md)
+
+### ImplementationGuides
+
+* [Stroke Dysphagia Care-Transition FHIR IG (DRAFT scaffold)](index.md)
+
+### Examples
+
+* [Dysphagia Care-Transition Summary (Composition)](Composition-ex-care-transition-summary.md)
+* [ex-dysphagia-diet (NutritionOrder)](NutritionOrder-ex-dysphagia-diet.md)
+* [ex-aspiration-risk (Observation)](Observation-ex-aspiration-risk.md)
+* [ex-dysphagia-severity (Observation)](Observation-ex-dysphagia-severity.md)
+* [ex-instrumental-swallow (Observation)](Observation-ex-instrumental-swallow.md)
+* [ex-swallow-screening (Observation)](Observation-ex-swallow-screening.md)
+* [Synthetic Stroke Rehabilitation Service (Organization)](Organization-ex-org.md)
+* [ex-patient (Patient)](Patient-ex-patient.md)

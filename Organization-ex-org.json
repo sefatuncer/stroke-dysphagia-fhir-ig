@@ -1,0 +1,9 @@
+{
+  "resourceType" : "Organization",
+  "id" : "ex-org",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization ex-org</b></p><a name=\"ex-org\"> </a><a name=\"hcex-org\"> </a><p><b>name</b>: Synthetic Stroke Rehabilitation Service</p></div>"
+  },
+  "name" : "Synthetic Stroke Rehabilitation Service"
+}

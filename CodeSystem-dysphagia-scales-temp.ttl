@@ -1,0 +1,63 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "dysphagia-scales-temp"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem dysphagia-scales-temp</b></p><a name=\"dysphagia-scales-temp\"> </a><a name=\"hcdysphagia-scales-temp\"> </a><p>This case-sensitive code system <code>https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">PAS<a name=\"dysphagia-scales-temp-PAS\"> </a></td><td>Penetration-Aspiration Scale (Rosenbek 1996) — score 1–8</td></tr><tr><td style=\"white-space:nowrap\">FOIS<a name=\"dysphagia-scales-temp-FOIS\"> </a></td><td>Functional Oral Intake Scale — level 1–7</td></tr><tr><td style=\"white-space:nowrap\">EAT-10<a name=\"dysphagia-scales-temp-EAT-10\"> </a></td><td>Eating Assessment Tool-10 — total score</td></tr><tr><td style=\"white-space:nowrap\">DIGEST<a name=\"dysphagia-scales-temp-DIGEST\"> </a></td><td>Dynamic Imaging Grade of Swallowing Toxicity — grade 0–4</td></tr><tr><td style=\"white-space:nowrap\">TOR-BSST<a name=\"dysphagia-scales-temp-TOR-BSST\"> </a></td><td>Toronto Bedside Swallowing Screening Test — pass/fail</td></tr><tr><td style=\"white-space:nowrap\">YALE-RESIDUE<a name=\"dysphagia-scales-temp-YALE-RESIDUE\"> </a></td><td>Yale Pharyngeal Residue Severity Rating</td></tr><tr><td style=\"white-space:nowrap\">SILENT-ASPIRATION<a name=\"dysphagia-scales-temp-SILENT-ASPIRATION\"> </a></td><td>Silent aspiration (finding) — proposed (no SNOMED concept)</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp"] ;
+  fhir:CodeSystem.version [ fhir:value "0.1.0"] ;
+  fhir:CodeSystem.name [ fhir:value "DysphagiaScalesTemp"] ;
+  fhir:CodeSystem.title [ fhir:value "Dysphagia Scales — temporary local codes (proposed for LOINC/SNOMED)"] ;
+  fhir:CodeSystem.status [ fhir:value "draft"] ;
+  fhir:CodeSystem.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-07-28T10:20:05+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "N. Kapan Tunçer; S. Tunçer"] ;
+  fhir:CodeSystem.description [ fhir:value "Placeholder codes for validated dysphagia measures lacking terminology representation. To be submitted upstream."] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "7"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "PAS" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Penetration-Aspiration Scale (Rosenbek 1996) — score 1–8" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "FOIS" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Functional Oral Intake Scale — level 1–7" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "EAT-10" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Eating Assessment Tool-10 — total score" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DIGEST" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dynamic Imaging Grade of Swallowing Toxicity — grade 0–4" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TOR-BSST" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Toronto Bedside Swallowing Screening Test — pass/fail" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "YALE-RESIDUE" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Yale Pharyngeal Residue Severity Rating" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SILENT-ASPIRATION" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Silent aspiration (finding) — proposed (no SNOMED concept)" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

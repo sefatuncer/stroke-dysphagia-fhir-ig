@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="swallow-screening-type-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet swallow-screening-type-vs</b></p><a name="swallow-screening-type-vs"> </a><a name="hcswallow-screening-type-vs"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/1289999007">1289999007</a></td><td>Gugging swallowing screen</td></tr><tr><td><a href="http://snomed.info/id/717684008">717684008</a></td><td>Yale Swallow Protocol</td></tr></table></li><li>Include these codes as defined in <a href="CodeSystem-dysphagia-scales-temp.html"><code>https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.1.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-dysphagia-scales-temp.html#dysphagia-scales-temp-EAT-10">EAT-10</a></td><td style="color: #cccccc">Eating Assessment Tool-10 — total score</td></tr><tr><td><a href="CodeSystem-dysphagia-scales-temp.html#dysphagia-scales-temp-TOR-BSST">TOR-BSST</a></td><td style="color: #cccccc">Toronto Bedside Swallowing Screening Test — pass/fail</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/swallow-screening-type-vs"/>
+  <version value="0.1.0"/>
+  <name value="SwallowScreeningTypeVS"/>
+  <title value="Swallowing Screening Type"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-07-28T10:20:05+00:00"/>
+  <publisher value="N. Kapan Tunçer; S. Tunçer"/>
+  <description value="Bedside swallowing screening instruments (GUSS + Yale Swallow Protocol/3-oz reused from SNOMED; EAT-10 / TOR-BSST as temporary local codes pending LOINC/SNOMED submission)."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="1289999007"/>
+        <display value="Gugging swallowing screen"/>
+      </concept>
+      <concept>
+        <code value="717684008"/>
+        <display value="Yale Swallow Protocol"/>
+      </concept>
+    </include>
+    <include>
+      <system value="https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp"/>
+      <concept>
+        <code value="EAT-10"/>
+      </concept>
+      <concept>
+        <code value="TOR-BSST"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

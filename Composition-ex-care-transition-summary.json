@@ -1,0 +1,45 @@
+{
+  "resourceType" : "Composition",
+  "id" : "ex-care-transition-summary",
+  "meta" : {
+    "profile" : ["https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-care-transition-summary"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Composition ex-care-transition-summary</b></p><a name=\"ex-care-transition-summary\"> </a><a name=\"hcex-care-transition-summary\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dysphagia-care-transition-summary.html\">Dysphagia Care-Transition Summary</a></p></div><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 34133-9}\">Summary of episode note</span></p><p><b>date</b>: 2026-03-10</p><p><b>author</b>: <a href=\"Organization-ex-org.html\">Organization Synthetic Stroke Rehabilitation Service</a></p><p><b>title</b>: Dysphagia Care-Transition Summary</p></div>"
+  },
+  "status" : "final",
+  "type" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "34133-9",
+      "display" : "Summary of episode note"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/ex-patient"
+  },
+  "date" : "2026-03-10",
+  "author" : [{
+    "reference" : "Organization/ex-org"
+  }],
+  "title" : "Dysphagia Care-Transition Summary",
+  "section" : [{
+    "title" : "Aspiration risk",
+    "entry" : [{
+      "reference" : "Observation/ex-aspiration-risk"
+    }]
+  },
+  {
+    "title" : "Swallowing severity",
+    "entry" : [{
+      "reference" : "Observation/ex-dysphagia-severity"
+    }]
+  },
+  {
+    "title" : "Diet and fluid consistency (IDDSI)",
+    "entry" : [{
+      "reference" : "NutritionOrder/ex-dysphagia-diet"
+    }]
+  }]
+}

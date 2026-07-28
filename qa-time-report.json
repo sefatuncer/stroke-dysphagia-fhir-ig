@@ -1,0 +1,1066 @@
+{
+  "date" : "Tue, 28 Jul, 2026 10:20:05 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [{
+    "name" : "/fsh-generated/resources/ImplementationGuide-dysphagia.care.transition.json",
+    "size" : 9386,
+    "processes" : [{
+      "activity" : "load",
+      "start" : 228,
+      "length" : 9
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 229,
+      "length" : 10
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 229,
+      "length" : 190
+    },
+    {
+      "activity" : "validate",
+      "start" : 235,
+      "length" : 12536
+    },
+    {
+      "activity" : "checkConformanceResources3",
+      "start" : 248,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 264,
+      "length" : 9279
+    },
+    {
+      "activity" : "generate2",
+      "start" : 619,
+      "length" : 580
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 764,
+      "length" : 3
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 814,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/CodeSystem-dysphagia-scales-temp.json",
+    "size" : 1318,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 228,
+      "length" : 6
+    },
+    {
+      "activity" : "load",
+      "start" : 228,
+      "length" : 8
+    },
+    {
+      "activity" : "load-configure",
+      "start" : 229,
+      "length" : 5
+    },
+    {
+      "activity" : "loadDepInfo",
+      "start" : 229,
+      "length" : 1
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 229,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 229,
+      "length" : 11
+    },
+    {
+      "activity" : "validate",
+      "start" : 230,
+      "length" : 83
+    },
+    {
+      "activity" : "generate1",
+      "start" : 273,
+      "length" : 962
+    },
+    {
+      "activity" : "generate2",
+      "start" : 620,
+      "length" : 845
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Composition-ex-care-transition-summary.json",
+    "size" : 1109,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 228,
+      "length" : 4
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 229,
+      "length" : 8
+    },
+    {
+      "activity" : "validate",
+      "start" : 248,
+      "length" : 25
+    },
+    {
+      "activity" : "generate1",
+      "start" : 274,
+      "length" : 672
+    },
+    {
+      "activity" : "generate2",
+      "start" : 621,
+      "length" : 393
+    },
+    {
+      "activity" : "generateExampleZip",
+      "start" : 763,
+      "length" : 1
+    },
+    {
+      "activity" : "generateExampleZip",
+      "start" : 764,
+      "length" : 2
+    },
+    {
+      "activity" : "generateExampleZip",
+      "start" : 764,
+      "length" : 2
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/NutritionOrder-ex-dysphagia-diet.json",
+    "size" : 1008,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 228,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 229,
+      "length" : 7
+    },
+    {
+      "activity" : "validate",
+      "start" : 248,
+      "length" : 8
+    },
+    {
+      "activity" : "generate1",
+      "start" : 275,
+      "length" : 847
+    },
+    {
+      "activity" : "generate2",
+      "start" : 621,
+      "length" : 337
+    },
+    {
+      "activity" : "generateExampleZip",
+      "start" : 763,
+      "length" : 2
+    },
+    {
+      "activity" : "generateExampleZip",
+      "start" : 764,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Observation-ex-aspiration-risk.json",
+    "size" : 497,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 228,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 229,
+      "length" : 2
+    },
+    {
+      "activity" : "validate",
+      "start" : 248,
+      "length" : 7
+    },
+    {
+      "activity" : "generate1",
+      "start" : 276,
+      "length" : 438
+    },
+    {
+      "activity" : "generate2",
+      "start" : 621,
+      "length" : 338
+    },
+    {
+      "activity" : "generateExampleZip",
+      "start" : 763,
+      "length" : 1
+    },
+    {
+      "activity" : "generateExampleZip",
+      "start" : 764,
+      "length" : 2
+    },
+    {
+      "activity" : "generateExampleZip",
+      "start" : 764,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Observation-ex-dysphagia-severity.json",
+    "size" : 533,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 228,
+      "length" : 2
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 229,
+      "length" : 53
+    },
+    {
+      "activity" : "validate",
+      "start" : 248,
+      "length" : 7
+    },
+    {
+      "activity" : "generate1",
+      "start" : 276,
+      "length" : 510
+    },
+    {
+      "activity" : "generate2",
+      "start" : 622,
+      "length" : 320
+    },
+    {
+      "activity" : "generateExampleZip",
+      "start" : 763,
+      "length" : 1
+    },
+    {
+      "activity" : "generateExampleZip",
+      "start" : 764,
+      "length" : 1
+    },
+    {
+      "activity" : "generateExampleZip",
+      "start" : 764,
+      "length" : 2
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Observation-ex-instrumental-swallow.json",
+    "size" : 790,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 228,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 229,
+      "length" : 2
+    },
+    {
+      "activity" : "validate",
+      "start" : 248,
+      "length" : 8
+    },
+    {
+      "activity" : "generate1",
+      "start" : 277,
+      "length" : 722
+    },
+    {
+      "activity" : "generate2",
+      "start" : 622,
+      "length" : 400
+    },
+    {
+      "activity" : "generateExampleZip",
+      "start" : 763,
+      "length" : 2
+    },
+    {
+      "activity" : "generateExampleZip",
+      "start" : 764,
+      "length" : 1
+    },
+    {
+      "activity" : "generateExampleZip",
+      "start" : 764,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Observation-ex-swallow-screening.json",
+    "size" : 532,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 228,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 229,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 248,
+      "length" : 6
+    },
+    {
+      "activity" : "generate1",
+      "start" : 277,
+      "length" : 482
+    },
+    {
+      "activity" : "generate2",
+      "start" : 622,
+      "length" : 298
+    },
+    {
+      "activity" : "generateExampleZip",
+      "start" : 763,
+      "length" : 1
+    },
+    {
+      "activity" : "generateExampleZip",
+      "start" : 764,
+      "length" : 1
+    },
+    {
+      "activity" : "generateExampleZip",
+      "start" : 764,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Organization-ex-org.json",
+    "size" : 108,
+    "processes" : [{
+      "activity" : "scanForUsageStats",
+      "start" : 248,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 248,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 278,
+      "length" : 194
+    },
+    {
+      "activity" : "generate2",
+      "start" : 623,
+      "length" : 251
+    },
+    {
+      "activity" : "generateExampleZip",
+      "start" : 763,
+      "length" : 1
+    },
+    {
+      "activity" : "generateExampleZip",
+      "start" : 764,
+      "length" : 2
+    },
+    {
+      "activity" : "generateExampleZip",
+      "start" : 764,
+      "length" : 2
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Patient-ex-patient.json",
+    "size" : 203,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 228,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 229,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 248,
+      "length" : 3
+    },
+    {
+      "activity" : "generate1",
+      "start" : 278,
+      "length" : 164
+    },
+    {
+      "activity" : "generate2",
+      "start" : 623,
+      "length" : 237
+    },
+    {
+      "activity" : "generateExampleZip",
+      "start" : 763,
+      "length" : 1
+    },
+    {
+      "activity" : "generateExampleZip",
+      "start" : 764,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-aspiration-risk-flag.json",
+    "size" : 2480,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 228,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 228,
+      "length" : 6
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 228,
+      "length" : 34
+    },
+    {
+      "activity" : "loadInfo",
+      "start" : 229,
+      "length" : 1
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 229,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 229,
+      "length" : 71
+    },
+    {
+      "activity" : "validate",
+      "start" : 231,
+      "length" : 832
+    },
+    {
+      "activity" : "checkConformanceResources3",
+      "start" : 248,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 278,
+      "length" : 37041
+    },
+    {
+      "activity" : "generate2",
+      "start" : 623,
+      "length" : 5821
+    },
+    {
+      "activity" : "generate2",
+      "start" : 662,
+      "length" : 1218
+    },
+    {
+      "activity" : "makeDependencies",
+      "start" : 726,
+      "length" : 1
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 764,
+      "length" : 6
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-dysphagia-care-transition-summary.json",
+    "size" : 1170,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 228,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 228,
+      "length" : 3
+    },
+    {
+      "activity" : "load",
+      "start" : 228,
+      "length" : 1
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 228,
+      "length" : 33
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 229,
+      "length" : 18
+    },
+    {
+      "activity" : "validate",
+      "start" : 232,
+      "length" : 706
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 248,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 315,
+      "length" : 42206
+    },
+    {
+      "activity" : "generate2",
+      "start" : 629,
+      "length" : 4774
+    },
+    {
+      "activity" : "generate2",
+      "start" : 663,
+      "length" : 477
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 764,
+      "length" : 9
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 814,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-dysphagia-nutrition-order.json",
+    "size" : 1430,
+    "processes" : [{
+      "activity" : "load",
+      "start" : 228,
+      "length" : 4
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 228,
+      "length" : 41
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 229,
+      "length" : 26
+    },
+    {
+      "activity" : "validate",
+      "start" : 233,
+      "length" : 697
+    },
+    {
+      "activity" : "checkConformanceResources3",
+      "start" : 248,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 357,
+      "length" : 52444
+    },
+    {
+      "activity" : "generate2",
+      "start" : 634,
+      "length" : 4768
+    },
+    {
+      "activity" : "generate2",
+      "start" : 664,
+      "length" : 482
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 764,
+      "length" : 7
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-dysphagia-severity.json",
+    "size" : 1619,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 228,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 228,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 228,
+      "length" : 31
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 229,
+      "length" : 26
+    },
+    {
+      "activity" : "validate",
+      "start" : 234,
+      "length" : 645
+    },
+    {
+      "activity" : "generate1",
+      "start" : 410,
+      "length" : 49556
+    },
+    {
+      "activity" : "generate2",
+      "start" : 639,
+      "length" : 5185
+    },
+    {
+      "activity" : "generate2",
+      "start" : 664,
+      "length" : 242
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 764,
+      "length" : 8
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-instrumental-swallow-assessment.json",
+    "size" : 2808,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 228,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 228,
+      "length" : 4
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 228,
+      "length" : 33
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 229,
+      "length" : 42
+    },
+    {
+      "activity" : "validate",
+      "start" : 234,
+      "length" : 758
+    },
+    {
+      "activity" : "checkConformanceResources",
+      "start" : 248,
+      "length" : 1
+    },
+    {
+      "activity" : "checkConformanceResources3",
+      "start" : 248,
+      "length" : 1
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 248,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 459,
+      "length" : 64717
+    },
+    {
+      "activity" : "generate2",
+      "start" : 644,
+      "length" : 6544
+    },
+    {
+      "activity" : "generate2",
+      "start" : 664,
+      "length" : 236
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 764,
+      "length" : 9
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 814,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-swallowing-screening-result.json",
+    "size" : 1699,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 228,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 228,
+      "length" : 3
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 228,
+      "length" : 26
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 229,
+      "length" : 23
+    },
+    {
+      "activity" : "validate",
+      "start" : 235,
+      "length" : 458
+    },
+    {
+      "activity" : "generate1",
+      "start" : 524,
+      "length" : 48759
+    },
+    {
+      "activity" : "generate2",
+      "start" : 650,
+      "length" : 5927
+    },
+    {
+      "activity" : "generate2",
+      "start" : 665,
+      "length" : 189
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 764,
+      "length" : 10
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-aspiration-risk-value-vs.json",
+    "size" : 1049,
+    "processes" : [{
+      "activity" : "load",
+      "start" : 228,
+      "length" : 4
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 229,
+      "length" : 97
+    },
+    {
+      "activity" : "validate",
+      "start" : 230,
+      "length" : 1623
+    },
+    {
+      "activity" : "checkConformanceResources3",
+      "start" : 248,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 573,
+      "length" : 1242
+    },
+    {
+      "activity" : "generate2",
+      "start" : 656,
+      "length" : 1257
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 764,
+      "length" : 3
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-dysphagia-severity-type-vs.json",
+    "size" : 1199,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 228,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 228,
+      "length" : 4
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 230,
+      "length" : 3
+    },
+    {
+      "activity" : "validate",
+      "start" : 231,
+      "length" : 18
+    },
+    {
+      "activity" : "checkConformanceResources3",
+      "start" : 248,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 574,
+      "length" : 1480
+    },
+    {
+      "activity" : "generate2",
+      "start" : 657,
+      "length" : 882
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-iddsi-fluid-levels.json",
+    "size" : 948,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 228,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 228,
+      "length" : 3
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 230,
+      "length" : 2
+    },
+    {
+      "activity" : "validate",
+      "start" : 231,
+      "length" : 12
+    },
+    {
+      "activity" : "generate1",
+      "start" : 576,
+      "length" : 1234
+    },
+    {
+      "activity" : "generate2",
+      "start" : 658,
+      "length" : 925
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-iddsi-food-levels.json",
+    "size" : 845,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 228,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 228,
+      "length" : 3
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 230,
+      "length" : 3
+    },
+    {
+      "activity" : "validate",
+      "start" : 231,
+      "length" : 10
+    },
+    {
+      "activity" : "generate1",
+      "start" : 577,
+      "length" : 1238
+    },
+    {
+      "activity" : "generate2",
+      "start" : 659,
+      "length" : 899
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-instrumental-swallow-type-vs.json",
+    "size" : 1325,
+    "processes" : [{
+      "activity" : "load",
+      "start" : 228,
+      "length" : 7
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 230,
+      "length" : 5
+    },
+    {
+      "activity" : "validate",
+      "start" : 231,
+      "length" : 20
+    },
+    {
+      "activity" : "checkConformanceResources3",
+      "start" : 248,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 578,
+      "length" : 1864
+    },
+    {
+      "activity" : "generate2",
+      "start" : 660,
+      "length" : 937
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 764,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-swallow-screening-type-vs.json",
+    "size" : 1099,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 228,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 228,
+      "length" : 3
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 230,
+      "length" : 4
+    },
+    {
+      "activity" : "validate",
+      "start" : 231,
+      "length" : 12
+    },
+    {
+      "activity" : "checkConformanceResources3",
+      "start" : 248,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 580,
+      "length" : 1437
+    },
+    {
+      "activity" : "generate2",
+      "start" : 661,
+      "length" : 671
+    }]
+  },
+  {
+    "name" : "/fsh-generated/includes/fsh-link-references.md",
+    "size" : 1368,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 662,
+      "length" : 9
+    }]
+  },
+  {
+    "name" : "/fsh-generated/includes/menu.xml",
+    "size" : 1100,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 662,
+      "length" : 44
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/index.md",
+    "size" : 3599,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 662,
+      "length" : 27
+    }]
+  },
+  {
+    "name" : "/template/config",
+    "size" : 0,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 662,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/template/config/_config.yml",
+    "size" : 140,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 662,
+      "length" : 9
+    }]
+  },
+  {
+    "name" : "/temp/pages/_includes/artifacts.xml",
+    "size" : 11194,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 662,
+      "length" : 11
+    }]
+  }]
+}

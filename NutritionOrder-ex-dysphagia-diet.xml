@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<NutritionOrder xmlns="http://hl7.org/fhir">
+  <id value="ex-dysphagia-diet"/>
+  <meta>
+    <profile value="https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-nutrition-order"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: NutritionOrder ex-dysphagia-diet</b></p><a name="ex-dysphagia-diet"> </a><a name="hcex-dysphagia-diet"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-dysphagia-nutrition-order.html">Dysphagia Nutrition Order (IDDSI-bound)</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>patient</b>: <a href="Patient-ex-patient.html">Ornek Sentetik  Female, DoB: 1957-05-12</a></p><p><b>dateTime</b>: 2026-03-10</p><blockquote><p><b>oralDiet</b></p><h3>Textures</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Modifier</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct 1237448004}">International Dysphagia Diet Standardisation Initiative Framework - Minced and Moist Level 5</span></td></tr></table><p><b>fluidConsistencyType</b>: <span title="Codes:{http://snomed.info/sct 1237442003}">International Dysphagia Diet Standardisation Initiative Framework - Mildly Thick Level 2</span></p></blockquote></div>
+  </text>
+  <status value="active"/>
+  <intent value="order"/>
+  <patient>
+    <reference value="Patient/ex-patient"/>
+  </patient>
+  <dateTime value="2026-03-10"/>
+  <oralDiet>
+    <texture>
+      <modifier>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="1237448004"/>
+          <display value="International Dysphagia Diet Standardisation Initiative Framework - Minced and Moist Level 5"/>
+        </coding>
+      </modifier>
+    </texture>
+    <fluidConsistencyType>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="1237442003"/>
+        <display value="International Dysphagia Diet Standardisation Initiative Framework - Mildly Thick Level 2"/>
+      </coding>
+    </fluidConsistencyType>
+  </oralDiet>
+</NutritionOrder>

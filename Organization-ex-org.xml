@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="ex-org"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization ex-org</b></p><a name="ex-org"> </a><a name="hcex-org"> </a><p><b>name</b>: Synthetic Stroke Rehabilitation Service</p></div>
+  </text>
+  <name value="Synthetic Stroke Rehabilitation Service"/>
+</Organization>
