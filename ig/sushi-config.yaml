@@ -3,13 +3,13 @@
 id: dysphagia.care.transition
 canonical: https://sefatuncer.github.io/stroke-dysphagia-fhir-ig
 name: DysphagiaCareTransitionIG
-title: "Stroke Dysphagia Care-Transition FHIR IG (DRAFT scaffold)"
+title: "Stroke Dysphagia Care-Transition FHIR IG"
 description: "Interoperable representation of swallowing assessment, aspiration risk, dysphagia severity and IDDSI diet across stroke care transitions (acute → rehab → home). Reuses SNOMED-embedded IDDSI/GUSS + clinical findings; contributes swallowing-assessment Observation profiles + IDDSI ValueSet/binding + a care-transition summary."
-status: draft
-version: 0.1.0
+status: active
+version: 1.0.1
 fhirVersion: 4.0.1
 copyrightYear: 2026+
-releaseLabel: ci-build
+releaseLabel: release
 publisher:
   name: "N. Kapan Tunçer; S. Tunçer"
 # Minimal navigation menu (clears IG Publisher "no menu" warning).

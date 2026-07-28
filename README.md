@@ -2,6 +2,8 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21629526.svg)](https://doi.org/10.5281/zenodo.21629526)
 
+**Published IG:** <https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/>
+
 An open, standards-aligned **HL7 FHIR R4 Implementation Guide (IG)** that makes stroke–dysphagia
 care-transition data computable across the acute → inpatient-rehabilitation → home/tele-rehabilitation
 journey, together with a **structured terminology-gap analysis** and an **executable decision-support

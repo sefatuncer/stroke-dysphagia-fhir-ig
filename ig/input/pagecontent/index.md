@@ -1,4 +1,4 @@
-### Stroke Dysphagia Care-Transition FHIR IG (DRAFT)
+### Stroke Dysphagia Care-Transition FHIR IG
 
 This Implementation Guide defines an **interoperable, machine-readable representation** of
 swallowing assessment, aspiration risk, dysphagia severity and IDDSI diet/fluid consistency
@@ -53,6 +53,6 @@ lack**.
 
 #### Status
 
-Draft scaffold. Terminology verified against SNOMED CT International 20250201 + LOINC/NLM.
+Released, v1.0.1. Terminology verified against SNOMED CT International 20250201 + LOINC/NLM.
 Conformance is demonstrated with the FHIR Validator plus **≥2 independent servers** (not
 self-validation only).
