@@ -28,10 +28,35 @@ repository (FHIR Shorthand, evaluation scripts, the Implementation Guide
 configuration, and generated conformance resources). It does NOT relicense any
 third-party terminology or framework referenced by this work:
 
-- SNOMED CT: © SNOMED International. Use is governed by the SNOMED CT Affiliate
-  License; this repository only references concept identifiers, it does not
-  redistribute SNOMED CT content. Turkey is a non-member territory — a
-  research/affiliate (MLDS) arrangement is required before production use.
+- SNOMED CT: SNOMED CT® is © International Health Terminology Standards
+  Development Organisation (SNOMED International). "SNOMED" and "SNOMED CT" are
+  registered trademarks of SNOMED International.
+
+  This repository does NOT redistribute the SNOMED CT release, any national
+  extension, or any SNOMED CT semantic content (relationships, hierarchies,
+  logical definitions or reference sets). It contains SNOMED CT concept
+  identifiers used as FHIR value set members and code bindings and, for a small
+  number of concepts, the corresponding SNOMED CT International Edition English
+  term used as a `display` hint. Terms are reproduced unmodified and are not
+  translated.
+
+  Concept identifiers together with their English terms are published by SNOMED
+  International as the Global Patient Set (GPS), made available worldwide at no
+  cost under the Creative Commons Attribution-NoDerivatives 4.0 International
+  Public License. Per SNOMED International's GPS Implementation Guide, the GPS
+  "does not require SNOMED CT membership or a SNOMED CT Affiliate License".
+  See https://www.snomed.org/gps.
+
+  Nothing here grants any right in the full SNOMED CT release. Türkiye is not a
+  SNOMED International Member territory. Any party that deploys, operates or
+  distributes a system which contains or provides access to SNOMED CT itself —
+  for example, loading a SNOMED CT edition into a terminology server in order to
+  expand these value sets — must hold its own SNOMED CT Affiliate Licence for its
+  territory, obtained through the Member Licensing and Distribution Service
+  (https://mlds.ihtsdotools.org) and renewed annually. Fee exemptions, including
+  for qualifying non-commercial research, may be available
+  (https://www.snomed.org/fee-exemptions). Implementers are responsible for their
+  own SNOMED CT licensing.
 - LOINC: © Regenstrief Institute, Inc. LOINC is available under the LOINC
   license; only LOINC codes are referenced here.
 - IDDSI Framework: © The International Dysphagia Diet Standardisation Initiative,

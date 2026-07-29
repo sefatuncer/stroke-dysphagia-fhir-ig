@@ -1,5 +1,5 @@
 // ============================================================================
-// Stroke Dysphagia Care-Transition IG — FHIR Shorthand source (released v1.1.0, MIT)
+// Stroke Dysphagia Care-Transition IG — FHIR Shorthand source (released v1.1.1, MIT)
 // Canonical: https://sefatuncer.github.io/stroke-dysphagia-fhir-ig
 // Terminology verified against SNOMED CT International 20250201 + LOINC v2.82;
 // per-item queries and classifications are in the supplementary terminology log.
@@ -77,7 +77,7 @@ Id: swallow-screening-type-vs
 Title: "Swallowing Screening Type"
 Description: "Swallowing screening instruments for the stroke care transition (GUSS + Yale Swallow Protocol/3-oz reused from SNOMED; TOR-BSST and EAT-10 as temporary local codes pending LOINC/SNOMED submission). Note that EAT-10 is a patient-reported symptom-severity tool used as a screen rather than a clinician-administered bedside swallow test, and its applicability in acute stroke is limited by aphasia and cognitive impairment."
 * ^status = #active
-* ^copyright = "Value-set definition: MIT (© 2026 N. Kapan Tunçer and S. Tunçer). Content is referenced, not redistributed: this value set enumerates third-party concept identifiers (SNOMED CT © SNOMED International; LOINC © Regenstrief Institute, Inc.; IDDSI framework CC BY-SA 4.0, used unmodified) and carries no display terms, which are supplied at expansion time by the implementer's own terminology server. Implementers must hold the applicable third-party licences."
+* ^copyright = "Value-set definition: MIT (© 2026 N. Kapan Tunçer and S. Tunçer). Content is referenced, not redistributed: this value set enumerates third-party concept identifiers (SNOMED CT © SNOMED International; LOINC © Regenstrief Institute, Inc.; IDDSI framework CC BY-SA 4.0, used unmodified) and carries, for some members, the SNOMED CT International Edition English term as an unmodified display hint (not translated); the authoritative display is supplied at expansion time by the implementer's own terminology server. Implementers must hold the applicable third-party licences."
 * ^experimental = false
 * $SCT#1289999007 "Gugging swallowing screen"            // GUSS (verified, SNOMED Intl 20250201)
 * $SCT#717684008 "Yale Swallow Protocol"                 // Yale/3-oz Water Swallow Test (verified 20250201; score 716854005)
@@ -89,7 +89,7 @@ Id: instrumental-swallow-type-vs
 Title: "Instrumental Swallow Assessment Type"
 Description: "Instrumental swallowing assessments (VFSS/FEES) and associated graded scales (PAS, Yale residue) — SNOMED/LOINC where coded, temporary local codes otherwise."
 * ^status = #active
-* ^copyright = "Value-set definition: MIT (© 2026 N. Kapan Tunçer and S. Tunçer). Content is referenced, not redistributed: this value set enumerates third-party concept identifiers (SNOMED CT © SNOMED International; LOINC © Regenstrief Institute, Inc.; IDDSI framework CC BY-SA 4.0, used unmodified) and carries no display terms, which are supplied at expansion time by the implementer's own terminology server. Implementers must hold the applicable third-party licences."
+* ^copyright = "Value-set definition: MIT (© 2026 N. Kapan Tunçer and S. Tunçer). Content is referenced, not redistributed: this value set enumerates third-party concept identifiers (SNOMED CT © SNOMED International; LOINC © Regenstrief Institute, Inc.; IDDSI framework CC BY-SA 4.0, used unmodified) and carries, for some members, the SNOMED CT International Edition English term as an unmodified display hint (not translated); the authoritative display is supplied at expansion time by the implementer's own terminology server. Implementers must hold the applicable third-party licences."
 * ^experimental = false
 * $SCT#241149003 "Videofluoroscopy swallow"              // VFSS (verified)
 * $LOINC#24681-9                                          // VFSS imaging, general RF videography (verified)
@@ -103,7 +103,7 @@ Id: dysphagia-severity-type-vs
 Title: "Dysphagia Severity / Oral-Intake Scale Type"
 Description: "Overall dysphagia severity / functional oral-intake measures for the stroke care transition (DOSS + IDDSI Functional Diet Scale reused from SNOMED; FOIS as a temporary local code pending LOINC/SNOMED submission). DIGEST is deliberately excluded: it is validated for head-and-neck-cancer radiation toxicity, not for stroke, and is surveyed in the coverage assessment only. Its temporary code remains in the local CodeSystem as an upstream-submission candidate."
 * ^status = #active
-* ^copyright = "Value-set definition: MIT (© 2026 N. Kapan Tunçer and S. Tunçer). Content is referenced, not redistributed: this value set enumerates third-party concept identifiers (SNOMED CT © SNOMED International; LOINC © Regenstrief Institute, Inc.; IDDSI framework CC BY-SA 4.0, used unmodified) and carries no display terms, which are supplied at expansion time by the implementer's own terminology server. Implementers must hold the applicable third-party licences."
+* ^copyright = "Value-set definition: MIT (© 2026 N. Kapan Tunçer and S. Tunçer). Content is referenced, not redistributed: this value set enumerates third-party concept identifiers (SNOMED CT © SNOMED International; LOINC © Regenstrief Institute, Inc.; IDDSI framework CC BY-SA 4.0, used unmodified) and carries, for some members, the SNOMED CT International Edition English term as an unmodified display hint (not translated); the authoritative display is supplied at expansion time by the implementer's own terminology server. Implementers must hold the applicable third-party licences."
 * ^experimental = false
 * DysphagiaScalesTemp#FOIS
 * $SCT#767131006 "Dysphagia Outcome and Severity Scale"   // DOSS scale concept (verified 20250201; level answer-set proposed)
@@ -195,7 +195,7 @@ Id: aspiration-risk-value-vs
 Title: "Aspiration Event Qualifier"
 Description: "Optional qualifier for the Aspiration Risk Flag: the observed aspiration event on which the risk determination was based (pulmonary aspiration; silent aspiration as a proposed temporary local code). Does NOT include the at-risk finding itself, which is carried in Observation.code."
 * ^status = #active
-* ^copyright = "Value-set definition: MIT (© 2026 N. Kapan Tunçer and S. Tunçer). Content is referenced, not redistributed: this value set enumerates third-party concept identifiers (SNOMED CT © SNOMED International; LOINC © Regenstrief Institute, Inc.; IDDSI framework CC BY-SA 4.0, used unmodified) and carries no display terms, which are supplied at expansion time by the implementer's own terminology server. Implementers must hold the applicable third-party licences."
+* ^copyright = "Value-set definition: MIT (© 2026 N. Kapan Tunçer and S. Tunçer). Content is referenced, not redistributed: this value set enumerates third-party concept identifiers (SNOMED CT © SNOMED International; LOINC © Regenstrief Institute, Inc.; IDDSI framework CC BY-SA 4.0, used unmodified) and carries, for some members, the SNOMED CT International Edition English term as an unmodified display hint (not translated); the authoritative display is supplied at expansion time by the implementer's own terminology server. Implementers must hold the applicable third-party licences."
 * ^experimental = false
 * $SCT#68052005 "Pulmonary aspiration"
 * DysphagiaScalesTemp#SILENT-ASPIRATION

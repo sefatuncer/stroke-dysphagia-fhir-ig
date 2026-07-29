@@ -55,7 +55,7 @@ lack**.
 
 #### Status
 
-Released, v1.1.0. Terminology verified against SNOMED CT International 20250201 + LOINC v2.82.
+Released, v1.1.1. Terminology verified against SNOMED CT International 20250201 + LOINC v2.82.
 Conformance is demonstrated on **two independently deployed servers** — the HL7 reference
 validator and a containerized HAPI FHIR server — rather than by self-validation alone. Both
 share the HL7 Java validation core, so this establishes portability across deployments, not
@@ -69,11 +69,17 @@ the specific constraint it violates.
 
 #### Intellectual property and terminology licensing
 
-This IG **references** SNOMED CT, LOINC and IDDSI concepts by identifier; it does not
-redistribute their content. The value sets enumerate concept identifiers, so the official
-display term is supplied at expansion time by the implementer's own terminology server.
-Implementers are responsible for their own SNOMED CT affiliate/member licensing, the LOINC
-license, and IDDSI's CC BY-SA terms. The MIT license covers only the artifacts authored here
-and does not relicense any third-party terminology.
+This IG **carries** SNOMED CT, LOINC and IDDSI concept identifiers; it redistributes no code
+system release, national extension or semantic content (relationships, hierarchies, reference
+sets). The value sets enumerate identifiers, and a small number of members additionally carry
+the English term as an unmodified display hint; the authoritative display is supplied at
+expansion time by the implementer's own terminology server. Identifiers and English terms of
+this kind fall within SNOMED International's
+[Global Patient Set](https://www.snomed.org/gps), published at no cost under CC BY-ND 4.0,
+which does not itself require SNOMED CT membership or an Affiliate Licence. Anyone loading
+SNOMED CT into a terminology server to expand these value sets is responsible for their own
+SNOMED CT affiliate/member licensing, as implementers are for the LOINC license and IDDSI's
+CC BY-SA terms. The MIT license covers only the artifacts authored here and does not
+relicense any third-party terminology.
 
 {% include ip-statements.xhtml %}

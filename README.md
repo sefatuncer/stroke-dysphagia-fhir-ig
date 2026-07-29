@@ -76,10 +76,15 @@ node evaluate.mjs && node sensitivity.mjs && node mutation-test.mjs
 
 ## Terminology notice
 
-This IG **references** SNOMED CT, LOINC, and IDDSI codes; it does **not** redistribute their code
-systems. SNOMED CT content is licensed by SNOMED International (affiliate/member terms apply);
-LOINC is used under the LOINC license; the IDDSI framework is © The IDDSI Committee (CC BY-SA,
-used unmodified). Users are responsible for their own terminology licensing.
+This IG carries SNOMED CT, LOINC, and IDDSI concept identifiers — and, for a few concepts, an
+unmodified English display term. It does **not** redistribute any code system: no SNOMED CT
+release, national extension, or semantic content (relationships, hierarchies, reference sets).
+The identifiers and English terms carried here fall within SNOMED International's
+[Global Patient Set](https://www.snomed.org/gps), published at no cost under CC BY-ND 4.0, which
+does not require SNOMED CT membership or an Affiliate License. Anyone loading SNOMED CT itself
+into a terminology server to expand these value sets needs their own Affiliate/member licence for
+their territory. LOINC is used under the LOINC license; the IDDSI framework is © The IDDSI
+Committee (CC BY-SA, used unmodified). See [`LICENSE`](LICENSE) for the full notice.
 
 ## License
 
@@ -90,7 +95,7 @@ Source code and the IG artifacts authored here are released under the **MIT Lice
 
 If you use this work, please cite the archived release:
 
-> Kapan Tunçer N, Tunçer S. Stroke–Dysphagia Care-Transition FHIR Implementation Guide (v1.1.0). Zenodo; 2026. DOI: 10.5281/zenodo.21629526.
+> Kapan Tunçer N, Tunçer S. Stroke–Dysphagia Care-Transition FHIR Implementation Guide (v1.1.1). Zenodo; 2026. DOI: 10.5281/zenodo.21629526.
 
 The DOI above is the *concept* DOI: it always resolves to the latest archived version.
 
