@@ -1,7 +1,8 @@
 // ============================================================================
-// Stroke Dysphagia Care-Transition IG — FSH scaffold (DRAFT, 13 Tem 2026)
-// Codes verified by terminology agent against SNOMED CT Intl 20250201 + LOINC/NLM.
-// This is a STARTER — verify syntax/bindings and run `sushi build`; refine iteratively.
+// Stroke Dysphagia Care-Transition IG — FHIR Shorthand source (released v1.1.0, MIT)
+// Canonical: https://sefatuncer.github.io/stroke-dysphagia-fhir-ig
+// Terminology verified against SNOMED CT International 20250201 + LOINC v2.82;
+// per-item queries and classifications are in the supplementary terminology log.
 // ============================================================================
 
 Alias: $SCT = http://snomed.info/sct
@@ -9,7 +10,8 @@ Alias: $LOINC = http://loinc.org
 
 // ---------------------------------------------------------------------------
 // Local temporary CodeSystem — scales that currently LACK LOINC & SNOMED codes.
-// (Agent verified: PAS/FOIS/EAT-10/DIGEST/TOR-BSST/Yale/MBSImP have no code;
+// (Verified against the terminology servers logged in the supplement:
+//  PAS/FOIS/EAT-10/DIGEST/TOR-BSST/Yale/MBSImP have no code;
 //  GUSS + IDDSI DO exist in SNOMED and are reused below.)
 // These are candidates to submit to LOINC/SNOMED — a stated contribution of the paper.
 // ---------------------------------------------------------------------------
@@ -18,6 +20,7 @@ Id: dysphagia-scales-temp
 Title: "Dysphagia Scales — temporary local codes (proposed for LOINC/SNOMED)"
 Description: "Placeholder codes for validated dysphagia measures lacking terminology representation. To be submitted upstream."
 * ^status = #draft
+* ^copyright = "MIT (© 2026 N. Kapan Tunçer and S. Tunçer). These are locally minted placeholder identifiers only. They name validated instruments whose own copyright rests with their developers; no instrument content, scoring rule or item text is reproduced here. The codes are temporary and are expected to be retired once equivalent concepts exist in LOINC or SNOMED CT."
 * ^experimental = true
 * ^caseSensitive = true
 * #PAS "Penetration-Aspiration Scale (Rosenbek 1996) — score 1–8"
@@ -44,7 +47,8 @@ ValueSet: IDDSIFluidLevels
 Id: iddsi-fluid-levels
 Title: "IDDSI Drink/Fluid Consistency Levels (SNOMED CT)"
 Description: "IDDSI drink-axis consistency levels 0–4 (SNOMED CT-embedded IDDSI concepts), for NutritionOrder.oralDiet.fluidConsistencyType. Level 3 is the transitional Moderately Thick concept shared with the food axis."
-* ^status = #draft
+* ^status = #active
+* ^copyright = "Value-set definition: MIT (© 2026 N. Kapan Tunçer and S. Tunçer). Content is referenced, not redistributed: this value set enumerates third-party concept identifiers (SNOMED CT © SNOMED International; LOINC © Regenstrief Institute, Inc.; IDDSI framework CC BY-SA 4.0, used unmodified) and carries no display terms, which are supplied at expansion time by the implementer's own terminology server. Implementers must hold the applicable third-party licences."
 * ^experimental = false
 * $SCT#1231508001   // Thin (IDDSI Level 0)
 * $SCT#1237441005   // Slightly Thick (IDDSI Level 1)
@@ -55,8 +59,9 @@ Description: "IDDSI drink-axis consistency levels 0–4 (SNOMED CT-embedded IDDS
 ValueSet: IDDSIFoodLevels
 Id: iddsi-food-levels
 Title: "IDDSI Food Texture Levels (SNOMED CT)"
-Description: "IDDSI food-axis texture levels 4–7 (SNOMED CT-embedded IDDSI concepts), for NutritionOrder.oralDiet.texture.modifier."
-* ^status = #draft
+Description: "IDDSI food-axis texture levels 4–7 (SNOMED CT-embedded IDDSI concepts), for NutritionOrder.oralDiet.texture.modifier. The IDDSI food axis spans Levels 3–7; Level 3 (Liquidised) is the shared Moderately Thick concept and is not enumerated here, so it is reached through the extensible binding."
+* ^status = #active
+* ^copyright = "Value-set definition: MIT (© 2026 N. Kapan Tunçer and S. Tunçer). Content is referenced, not redistributed: this value set enumerates third-party concept identifiers (SNOMED CT © SNOMED International; LOINC © Regenstrief Institute, Inc.; IDDSI framework CC BY-SA 4.0, used unmodified) and carries no display terms, which are supplied at expansion time by the implementer's own terminology server. Implementers must hold the applicable third-party licences."
 * ^experimental = false
 * $SCT#1237447009   // Pureed (IDDSI Level 4 — foods)
 * $SCT#1237448004   // Minced & Moist (IDDSI Level 5)
@@ -70,8 +75,9 @@ Description: "IDDSI food-axis texture levels 4–7 (SNOMED CT-embedded IDDSI con
 ValueSet: SwallowScreeningTypeVS
 Id: swallow-screening-type-vs
 Title: "Swallowing Screening Type"
-Description: "Bedside swallowing screening instruments (GUSS + Yale Swallow Protocol/3-oz reused from SNOMED; EAT-10 / TOR-BSST as temporary local codes pending LOINC/SNOMED submission)."
-* ^status = #draft
+Description: "Swallowing screening instruments for the stroke care transition (GUSS + Yale Swallow Protocol/3-oz reused from SNOMED; TOR-BSST and EAT-10 as temporary local codes pending LOINC/SNOMED submission). Note that EAT-10 is a patient-reported symptom-severity tool used as a screen rather than a clinician-administered bedside swallow test, and its applicability in acute stroke is limited by aphasia and cognitive impairment."
+* ^status = #active
+* ^copyright = "Value-set definition: MIT (© 2026 N. Kapan Tunçer and S. Tunçer). Content is referenced, not redistributed: this value set enumerates third-party concept identifiers (SNOMED CT © SNOMED International; LOINC © Regenstrief Institute, Inc.; IDDSI framework CC BY-SA 4.0, used unmodified) and carries no display terms, which are supplied at expansion time by the implementer's own terminology server. Implementers must hold the applicable third-party licences."
 * ^experimental = false
 * $SCT#1289999007 "Gugging swallowing screen"            // GUSS (verified, SNOMED Intl 20250201)
 * $SCT#717684008 "Yale Swallow Protocol"                 // Yale/3-oz Water Swallow Test (verified 20250201; score 716854005)
@@ -82,7 +88,8 @@ ValueSet: InstrumentalSwallowTypeVS
 Id: instrumental-swallow-type-vs
 Title: "Instrumental Swallow Assessment Type"
 Description: "Instrumental swallowing assessments (VFSS/FEES) and associated graded scales (PAS, Yale residue) — SNOMED/LOINC where coded, temporary local codes otherwise."
-* ^status = #draft
+* ^status = #active
+* ^copyright = "Value-set definition: MIT (© 2026 N. Kapan Tunçer and S. Tunçer). Content is referenced, not redistributed: this value set enumerates third-party concept identifiers (SNOMED CT © SNOMED International; LOINC © Regenstrief Institute, Inc.; IDDSI framework CC BY-SA 4.0, used unmodified) and carries no display terms, which are supplied at expansion time by the implementer's own terminology server. Implementers must hold the applicable third-party licences."
 * ^experimental = false
 * $SCT#241149003 "Videofluoroscopy swallow"              // VFSS (verified)
 * $LOINC#24681-9                                          // VFSS imaging, general RF videography (verified)
@@ -94,11 +101,11 @@ Description: "Instrumental swallowing assessments (VFSS/FEES) and associated gra
 ValueSet: DysphagiaSeverityTypeVS
 Id: dysphagia-severity-type-vs
 Title: "Dysphagia Severity / Oral-Intake Scale Type"
-Description: "Overall dysphagia severity / functional oral-intake measures (DOSS + IDDSI Functional Diet Scale reused from SNOMED; FOIS, DIGEST as temporary local codes pending LOINC/SNOMED submission)."
-* ^status = #draft
+Description: "Overall dysphagia severity / functional oral-intake measures for the stroke care transition (DOSS + IDDSI Functional Diet Scale reused from SNOMED; FOIS as a temporary local code pending LOINC/SNOMED submission). DIGEST is deliberately excluded: it is validated for head-and-neck-cancer radiation toxicity, not for stroke, and is surveyed in the coverage assessment only. Its temporary code remains in the local CodeSystem as an upstream-submission candidate."
+* ^status = #active
+* ^copyright = "Value-set definition: MIT (© 2026 N. Kapan Tunçer and S. Tunçer). Content is referenced, not redistributed: this value set enumerates third-party concept identifiers (SNOMED CT © SNOMED International; LOINC © Regenstrief Institute, Inc.; IDDSI framework CC BY-SA 4.0, used unmodified) and carries no display terms, which are supplied at expansion time by the implementer's own terminology server. Implementers must hold the applicable third-party licences."
 * ^experimental = false
 * DysphagiaScalesTemp#FOIS
-* DysphagiaScalesTemp#DIGEST
 * $SCT#767131006 "Dysphagia Outcome and Severity Scale"   // DOSS scale concept (verified 20250201; level answer-set proposed)
 * $SCT#1231505003 "International Dysphagia Diet Standardisation Initiative Functional Diet Scale"  // FDS (corrected display)
 
@@ -119,6 +126,11 @@ Description: "Bedside dysphagia screening (GUSS/EAT-10/TOR-BSST). GUSS reuses SN
 * effective[x] 1..1 MS
 * value[x] MS
 
+Invariant: pas-range
+Description: "The Penetration-Aspiration Scale is an 8-point ordinal scale; a PAS grade outside 1-8 is not a valid score."
+Severity: #error
+Expression: "value.ofType(integer) >= 1 and value.ofType(integer) <= 8"
+
 Profile: InstrumentalSwallowAssessment
 Parent: Observation
 Id: instrumental-swallow-assessment
@@ -138,6 +150,9 @@ Description: "VFSS/FEES result incl. PAS (Rosenbek). PAS lacks LOINC/SNOMED → 
 * component[pas].code = DysphagiaScalesTemp#PAS
 * component[pas].value[x] 1..1
 * component[pas].value[x] only integer
+// Typing the value as integer does not by itself make it a PAS grade: without a range
+// constraint an out-of-scale value such as 99 would still conform.
+* component[pas] obeys pas-range
 
 Profile: DysphagiaSeverity
 Parent: Observation
@@ -159,7 +174,13 @@ Title: "Aspiration Risk Flag"
 Description: "Patient-level aspiration-risk finding — the minimal, most safety-critical element carried across transitions. The at-risk-for-aspiration finding is asserted by `Observation.code`; the mere PRESENCE of a final instance is the datum the care-transition consistency rule consumes (the rule does not read the value). Status is fixed to final so that every conformant instance is visible to the rule (the rule accepts final|amended, a superset), closing the profile↔rule gap. An optional qualifier value may record the observed aspiration event on which the risk determination was based."
 * status MS
 * status = #final (exactly)                             // rule-visible: a preliminary flag must not silently conform
-* code = $SCT#371736008 "At risk for aspiration"        // finding asserted by presence (verified SNOMED Intl 20250201)
+// Only the code and system are fixed. The display term is deliberately NOT part of the
+// pattern: this IG references SNOMED CT rather than redistributing it, so the official
+// term is supplied at expansion time by the implementer's own terminology server. Fixing
+// a display string here would both contradict that policy and reject conformant instances
+// that carry a language-localised or edition-current term.
+* code.coding.system = "http://snomed.info/sct"
+* code.coding.code = #371736008                         // at risk for aspiration (verified SNOMED Intl 20250201)
 * subject 1..1 MS
 * subject only Reference(Patient)
 * effective[x] 1..1 MS
@@ -173,15 +194,32 @@ ValueSet: AspirationRiskValueVS
 Id: aspiration-risk-value-vs
 Title: "Aspiration Event Qualifier"
 Description: "Optional qualifier for the Aspiration Risk Flag: the observed aspiration event on which the risk determination was based (pulmonary aspiration; silent aspiration as a proposed temporary local code). Does NOT include the at-risk finding itself, which is carried in Observation.code."
-* ^status = #draft
+* ^status = #active
+* ^copyright = "Value-set definition: MIT (© 2026 N. Kapan Tunçer and S. Tunçer). Content is referenced, not redistributed: this value set enumerates third-party concept identifiers (SNOMED CT © SNOMED International; LOINC © Regenstrief Institute, Inc.; IDDSI framework CC BY-SA 4.0, used unmodified) and carries no display terms, which are supplied at expansion time by the implementer's own terminology server. Implementers must hold the applicable third-party licences."
 * ^experimental = false
 * $SCT#68052005 "Pulmonary aspiration"
 * DysphagiaScalesTemp#SILENT-ASPIRATION
 
 // ---------------------------------------------------------------------------
 // NutritionOrder PROFILE — REUSE (diet/IDDSI already covered by base + PACIO).
-// Contribution here = a REQUIRED/EXTENSIBLE IDDSI binding (base uses only 'example').
+// Contribution here = an EXTENSIBLE IDDSI binding (base uses only 'example')
+// PLUS the two invariants below, which are what actually enforce axis separation.
+//
+// An extensible binding does NOT prevent an out-of-axis code: it permits codes
+// outside the value set when no suitable concept exists. Axis separation therefore
+// has to be stated as a constraint, not left to the binding.
 // ---------------------------------------------------------------------------
+
+Invariant: iddsi-axis-fluid
+Description: "A food-axis IDDSI concept must not be used on fluidConsistencyType, which carries the drink axis (IDDSI Levels 0-4)."
+Severity: #error
+Expression: "fluidConsistencyType.coding.where(system = 'http://snomed.info/sct' and code in ('1237447009' | '1237448004' | '1237449007' | '1237450007' | '1237451006')).empty()"
+
+Invariant: iddsi-axis-food
+Description: "A drink-only IDDSI concept must not be used on texture.modifier, which carries the food axis. IDDSI Level 3 (1237444002) is a single concept shared by both axes and is therefore permitted here."
+Severity: #error
+Expression: "texture.modifier.coding.where(system = 'http://snomed.info/sct' and code in ('1231508001' | '1237441005' | '1237442003' | '1237446000')).empty()"
+
 Profile: DysphagiaNutritionOrder
 Parent: NutritionOrder
 Id: dysphagia-nutrition-order
@@ -189,23 +227,34 @@ Title: "Dysphagia Nutrition Order (IDDSI-bound)"
 Description: "NutritionOrder constrained to bind IDDSI levels (extensible) — base FHIR only binds these 'example'."
 * patient 1..1 MS
 * oralDiet.fluidConsistencyType from IDDSIFluidLevels (extensible)   // drink axis (levels 0–4)
-* oralDiet.texture.modifier from IDDSIFoodLevels (extensible)        // food axis (levels 4–7)
+* oralDiet.texture.modifier from IDDSIFoodLevels (extensible)        // food axis: value set enumerates 4–7
+* oralDiet obeys iddsi-axis-fluid and iddsi-axis-food
 
 // ---------------------------------------------------------------------------
 // Care-transition SUMMARY — the transfer envelope (positioned relative to the IPS
 // Composition; see the standards-alignment page for why sections stay open)
 // ---------------------------------------------------------------------------
+Invariant: dct-has-content
+Description: "A care-transition summary must carry at least one section entry. An envelope with no dysphagia content is not a transfer."
+Severity: #error
+Expression: "section.entry.exists()"
+
 Profile: DysphagiaCareTransitionSummary
 Parent: Composition
 Id: dysphagia-care-transition-summary
 Title: "Dysphagia Care-Transition Summary"
 Description: "Composition bundling swallowing assessment + severity + aspiration risk + IDDSI diet + precautions for a stroke care transition."
+* obeys dct-has-content
 * status MS
+* type = $LOINC#34133-9
 * subject 1..1 MS
 * subject only Reference(Patient)
-// Sections are left OPEN (not sliced): a code-discriminated slicing would require
-// assigning fixed LOINC/SNOMED codes to the severity and diet sections, which is
-// deferred; the care-transition example below carries three sections by convention.
+// Section CODES are left open (not sliced): code-discriminated slicing would require
+// fixed LOINC/SNOMED codes for the severity and diet sections, which is deferred.
+// Section ENTRIES are not left open: they must reference this IG's profiles, so a
+// receiving system can locate the dysphagia content by type rather than by reading
+// a free-text section title.
+* section.entry only Reference(SwallowingScreeningResult or InstrumentalSwallowAssessment or DysphagiaSeverity or AspirationRiskFlag or DysphagiaNutritionOrder)
 
 // ---------------------------------------------------------------------------
 // EXAMPLE (synthetic — no real patient)

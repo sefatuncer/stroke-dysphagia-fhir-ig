@@ -9,7 +9,11 @@
 # Default H2 in-memory store is fine for a conformance smoke test (no persistence needed).
 services:
   hapi:
-    image: hapiproject/hapi:latest
+    # Pinned by digest for reproducibility. This digest is HAPI FHIR Server 8.10.0
+    # (verified from the running server's CapabilityStatement.software.version, and
+    # recorded in conformance/out/negative-conformance.json). Using :latest here would
+    # silently change the server under test between runs.
+    image: hapiproject/hapi@sha256:55213612779ab3eeec919226b7bad378f0061ade823393a61d7dd46dd5087a3d
     container_name: hapi-dysphagia
     ports:
       - "8080:8080"

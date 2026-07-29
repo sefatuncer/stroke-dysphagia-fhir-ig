@@ -1,7 +1,9 @@
 // ============================================================================
-// sensitivity.mjs — Z1 revision: show that the "interoperability-gap" rate is,
-// by construction, the complement of the coding-completeness parameter, and
-// quantify sampling uncertainty (multi-seed) + a 95% CI on the primary run.
+// sensitivity.mjs — show that the "interoperability-gap" rate is, by
+// construction, the complement of the coding-completeness parameter, and
+// characterise seed-to-seed variation across a multi-seed sweep. No inferential
+// interval is reported: the spread here is generator variability under a chosen
+// parameter, not sampling error around an estimated population quantity.
 //
 // This DEMONSTRATES THE MECHANISM (invisibility tracks 1 - P(coded)); it is not
 // an empirical measurement. Synthetic data only. No fabricated numbers — the
@@ -40,16 +42,12 @@ function runCohort(pFlagCoded, seed) {
 const mean = a => a.reduce((s, x) => s + x, 0) / a.length;
 const sd = a => { const m = mean(a); return Math.sqrt(mean(a.map(x => (x - m) ** 2))); };
 
-// Wilson score interval for a binomial proportion (k/n), 95% (z=1.96).
-function wilson(k, n, z = 1.96) {
-  if (n === 0) return [NaN, NaN];
-  const p = k / n, z2 = z * z;
-  const denom = 1 + z2 / n;
-  const centre = (p + z2 / (2 * n)) / denom;
-  const half = (z / denom) * Math.sqrt(p * (1 - p) / n + z2 / (4 * n * n));
-  return [Math.max(0, centre - half), Math.min(1, centre + half)];
-}
-
+// No inferential interval is computed here. The invisibility rate is a
+// by-construction property of the generative model over a fixed synthetic
+// cohort, not an estimate of a real-world quantity, so a confidence interval
+// would misrepresent what the number is. Dispersion is reported instead as the
+// across-seed spread (population SD over the 40 seeds) and its Monte-Carlo
+// standard error.
 // --- Multi-seed sweep over coding-completeness ------------------------------
 const SEEDS = Array.from({ length: 40 }, (_, i) => PRIMARY_SEED + i);
 const PS = [0.50, 0.60, 0.70, 0.80, 0.90];
@@ -69,10 +67,9 @@ const sweep = PS.map(p => {
 
 // --- Primary run (paper's headline config) ----------------------------------
 const primary = runCohort(0.70, PRIMARY_SEED);
-const [lo, hi] = wilson(primary.gap, primary.unsafe);
 
 const pct = x => (100 * x).toFixed(1);
-const out = { N, seeds: SEEDS.length, primary: { seed: PRIMARY_SEED, ...primary, wilson95: [lo, hi] }, sweep };
+const out = { N, seeds: SEEDS.length, primary: { seed: PRIMARY_SEED, ...primary }, sweep };
 writeFileSync(join(OUT, 'sensitivity.json'), JSON.stringify(out, null, 2));
 
 // --- Human-readable report --------------------------------------------------
@@ -80,7 +77,7 @@ let md = `# Sensitivity analysis — interoperability-gap vs coding-completeness
 md += `Cohort N = ${N} synthetic stroke patients. 40 seeds per parameter value. **The invisibility rate among clinically-unsafe cases tracks (1 − P(coded)) by construction; this demonstrates the mechanism, it is not an empirical estimate.**\n\n`;
 md += `## Primary run (paper's headline; seed ${PRIMARY_SEED}, P(coded)=0.70)\n`;
 md += `- clinically-unsafe cases: **${primary.unsafe}**; invisible (un-coded flag): **${primary.gap}**\n`;
-md += `- invisibility rate = ${primary.gap}/${primary.unsafe} = **${pct(primary.invis)}%** (Wilson 95% CI **${pct(lo)}%–${pct(hi)}%**)\n`;
+md += `- invisibility rate = ${primary.gap}/${primary.unsafe} = **${pct(primary.invis)}%** (no inferential interval is attached: this is a by-construction property of the model, not an estimate of a real-world quantity)\n`;
 md += `- expected by design: 1 − 0.70 = 30.0%\n\n`;
 md += `## Sweep over coding-completeness P(coded) — 40 seeds each\n\n`;
 md += `| P(coded) | expected 1−P | mean invisibility (±SD) | range | mean unsafe n | mean trigger |\n|---|---|---|---|---|---|\n`;

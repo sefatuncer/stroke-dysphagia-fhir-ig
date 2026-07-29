@@ -40,7 +40,13 @@ ig/
     cql/AspirationRiskAlert.cql
     pagecontent/index.md
   conformance/              Independent-server conformance harness + negative fixtures
-  evaluation/               Synthea → cohort → CQL→ELM → execution pipeline (+ reported results in out/)
+    negative-fixtures/      Eight should-fail instances, one per constraint under test
+    out/                    Deposited conformance evidence (positive + negative, .json/.md)
+  evaluation/               Synthea → cohort → CQL→ELM → execution pipeline
+    mutation-test.mjs       Two-way rule-mutation control (suppressing and alarm-raising)
+    out/                    Reported results, sensitivity sweep, mutation control
+submission/
+  supplement/               Supplementary files S2-S4 (checklist, terminology log, search log)
 figures/                    Editable draw.io sources + exported PNGs (≥300 dpi)
 ```
 
@@ -64,7 +70,8 @@ cd ig && sushi .
 
 # 4. Decision-support feasibility evaluation (synthetic data only)
 cd ig/evaluation && npm ci && node generate-cohort.mjs && node compile-cql.mjs && node run-cql.mjs
-#    Reported metrics are in ig/evaluation/out/RESULTS.md and SENSITIVITY.md
+node evaluate.mjs && node sensitivity.mjs && node mutation-test.mjs
+#    Reported metrics are in ig/evaluation/out/: RESULTS.md, SENSITIVITY.md, MUTATION-TEST.md
 ```
 
 ## Terminology notice
@@ -83,7 +90,7 @@ Source code and the IG artifacts authored here are released under the **MIT Lice
 
 If you use this work, please cite the archived release:
 
-> Kapan Tunçer N, Tunçer S. Stroke–Dysphagia Care-Transition FHIR Implementation Guide (v1.0.1). Zenodo; 2026. DOI: 10.5281/zenodo.21629526.
+> Kapan Tunçer N, Tunçer S. Stroke–Dysphagia Care-Transition FHIR Implementation Guide (v1.1.0). Zenodo; 2026. DOI: 10.5281/zenodo.21629526.
 
 The DOI above is the *concept* DOI: it always resolves to the latest archived version.
 

@@ -20,7 +20,10 @@ ig/evaluation/synthea-out/
 
 # Local working directories (not part of the public artifact)
 /review/
-/submission/
+# The manuscript sources stay private, but the supplementary files the paper
+# declares as openly available (S2-S4) are part of the public artifact.
+/submission/*
+!/submission/supplement/
 
 # OS and editor cruft
 .DS_Store

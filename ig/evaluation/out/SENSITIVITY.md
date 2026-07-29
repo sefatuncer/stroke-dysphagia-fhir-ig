@@ -4,7 +4,7 @@ Cohort N = 333 synthetic stroke patients. 40 seeds per parameter value. **The in
 
 ## Primary run (paper's headline; seed 20260716, P(coded)=0.70)
 - clinically-unsafe cases: **47**; invisible (un-coded flag): **16**
-- invisibility rate = 16/47 = **34.0%** (one illustrative draw; no inferential confidence interval is attached — the rate is a by-construction property of the model, see manuscript §4.4)
+- invisibility rate = 16/47 = **34.0%** (no inferential interval is attached: this is a by-construction property of the model, not an estimate of a real-world quantity)
 - expected by design: 1 − 0.70 = 30.0%
 
 ## Sweep over coding-completeness P(coded) — 40 seeds each

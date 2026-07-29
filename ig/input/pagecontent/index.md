@@ -35,10 +35,12 @@ inconsistency** — an at-risk patient still on unmodified (thin, IDDSI Level 0)
 NPO — directly from the profiled data. It compiles to ELM and runs, **unmodified, on a real CQL
 engine** (cql-execution) over a synthetic Synthea stroke cohort (N = 333). Reported outcomes are
 **executability**, authoring **concordance**, trigger rate, and — the point — the
-**interoperability dependency**: of the clinically-unsafe cases that should surface, **34% are
-invisible to the rule when the aspiration-risk flag is left as un-coded free text** rather than
-the coded Observation this IG defines. This is a **feasibility / interoperability** result —
-**no diagnostic-accuracy or PPV claim**. All data are synthetic.
+**interoperability dependency**: clinically-unsafe cases become **invisible to the rule when the
+aspiration-risk flag is left as un-coded free text** rather than the coded Observation this IG
+defines. The invisibility rate tracks the un-coded fraction **by construction** (30.0% ± 7.5
+percentage points across 40 seeds at P(coded) = 0.70), so it illustrates a mechanism, not an
+empirical estimate. This is a **feasibility / interoperability** result — **no diagnostic-accuracy
+or PPV claim**. All data are synthetic.
 
 #### Standards alignment
 
@@ -53,6 +55,25 @@ lack**.
 
 #### Status
 
-Released, v1.0.1. Terminology verified against SNOMED CT International 20250201 + LOINC/NLM.
-Conformance is demonstrated with the FHIR Validator plus **≥2 independent servers** (not
-self-validation only).
+Released, v1.1.0. Terminology verified against SNOMED CT International 20250201 + LOINC v2.82.
+Conformance is demonstrated on **two independently deployed servers** — the HL7 reference
+validator and a containerized HAPI FHIR server — rather than by self-validation alone. Both
+share the HL7 Java validation core, so this establishes portability across deployments, not
+independence across implementations. Eight positive examples pass (six against a declared IG
+profile, two against base FHIR) and **eight negative fixtures are correctly rejected**, each for
+the specific constraint it violates.
+
+#### Dependencies
+
+{% include dependency-table.xhtml %}
+
+#### Intellectual property and terminology licensing
+
+This IG **references** SNOMED CT, LOINC and IDDSI concepts by identifier; it does not
+redistribute their content. The value sets enumerate concept identifiers, so the official
+display term is supplied at expansion time by the implementer's own terminology server.
+Implementers are responsible for their own SNOMED CT affiliate/member licensing, the LOINC
+license, and IDDSI's CC BY-SA terms. The MIT license covers only the artifacts authored here
+and does not relicense any third-party terminology.
+
+{% include ip-statements.xhtml %}

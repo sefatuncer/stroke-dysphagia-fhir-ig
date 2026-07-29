@@ -1,0 +1,72 @@
+{
+  "kind": "positive-conformance",
+  "server": {
+    "baseUrl": "http://localhost:8080/fhir",
+    "name": "HAPI FHIR Server",
+    "version": "8.10.0",
+    "fhirVersion": "4.0.1"
+  },
+  "examplesTested": 8,
+  "conforming": 8,
+  "validatedAgainstDeclaredProfile": 6,
+  "validatedAgainstBaseFhir": 2,
+  "pass": true,
+  "results": [
+    {
+      "resource": "Composition/ex-care-transition-summary",
+      "profile": "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-care-transition-summary",
+      "validatedAgainst": "declared IG profile",
+      "worstSeverity": "warning",
+      "conforms": true
+    },
+    {
+      "resource": "NutritionOrder/ex-dysphagia-diet",
+      "profile": "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-nutrition-order",
+      "validatedAgainst": "declared IG profile",
+      "worstSeverity": "warning",
+      "conforms": true
+    },
+    {
+      "resource": "Observation/ex-aspiration-risk",
+      "profile": "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/aspiration-risk-flag",
+      "validatedAgainst": "declared IG profile",
+      "worstSeverity": "warning",
+      "conforms": true
+    },
+    {
+      "resource": "Observation/ex-dysphagia-severity",
+      "profile": "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-severity",
+      "validatedAgainst": "declared IG profile",
+      "worstSeverity": "warning",
+      "conforms": true
+    },
+    {
+      "resource": "Observation/ex-instrumental-swallow",
+      "profile": "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/instrumental-swallow-assessment",
+      "validatedAgainst": "declared IG profile",
+      "worstSeverity": "warning",
+      "conforms": true
+    },
+    {
+      "resource": "Observation/ex-swallow-screening",
+      "profile": "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/swallowing-screening-result",
+      "validatedAgainst": "declared IG profile",
+      "worstSeverity": "warning",
+      "conforms": true
+    },
+    {
+      "resource": "Organization/ex-org",
+      "profile": null,
+      "validatedAgainst": "base FHIR (no profile declared)",
+      "worstSeverity": "warning",
+      "conforms": true
+    },
+    {
+      "resource": "Patient/ex-patient",
+      "profile": null,
+      "validatedAgainst": "base FHIR (no profile declared)",
+      "worstSeverity": "warning",
+      "conforms": true
+    }
+  ]
+}

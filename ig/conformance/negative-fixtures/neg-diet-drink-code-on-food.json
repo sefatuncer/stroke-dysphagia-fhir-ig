@@ -1,0 +1,41 @@
+{
+  "resourceType": "NutritionOrder",
+  "id": "neg-diet-drink-code-on-food",
+  "meta": {
+    "profile": [
+      "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-nutrition-order"
+    ]
+  },
+  "status": "active",
+  "intent": "order",
+  "patient": {
+    "reference": "Patient/ex-patient"
+  },
+  "dateTime": "2026-03-10",
+  "oralDiet": {
+    "texture": [
+      {
+        "modifier": {
+          "coding": [
+            {
+              "code": "1231508001",
+              "system": "http://snomed.info/sct",
+              "display": "International Dysphagia Diet Standardisation Initiative Framework - Thin Level 0"
+            }
+          ]
+        }
+      }
+    ],
+    "fluidConsistencyType": [
+      {
+        "coding": [
+          {
+            "code": "1237442003",
+            "system": "http://snomed.info/sct",
+            "display": "International Dysphagia Diet Standardisation Initiative Framework - Mildly Thick Level 2"
+          }
+        ]
+      }
+    ]
+  }
+}

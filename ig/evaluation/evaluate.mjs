@@ -46,7 +46,7 @@ const out = {
 };
 writeFileSync(join(OUT, 'results.json'), JSON.stringify(out, null, 2));
 
-const md = `# Faz 2 — Computable-CDS feasibility results (synthetic)
+const md = `# Phase 2 — Computable-CDS feasibility results (synthetic)
 
 > Synthetic data only (Synthea base + documented dysphagia-layer model). **No clinical-benefit / diagnostic-accuracy / PPV claim.** Framing = executability + interoperability-dependency feasibility.
 

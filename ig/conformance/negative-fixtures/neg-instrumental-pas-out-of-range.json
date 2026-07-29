@@ -1,0 +1,36 @@
+{
+  "resourceType": "Observation",
+  "id": "neg-instrumental-pas-out-of-range",
+  "meta": {
+    "profile": [
+      "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/instrumental-swallow-assessment"
+    ]
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "PAS",
+            "system": "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp"
+          }
+        ]
+      },
+      "valueInteger": 99
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "241149003",
+        "system": "http://snomed.info/sct",
+        "display": "Videofluoroscopy swallow"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/ex-patient"
+  },
+  "effectiveDateTime": "2026-03-09"
+}

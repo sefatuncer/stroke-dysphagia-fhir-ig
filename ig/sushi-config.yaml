@@ -6,10 +6,16 @@ name: DysphagiaCareTransitionIG
 title: "Stroke Dysphagia Care-Transition FHIR IG"
 description: "Interoperable representation of swallowing assessment, aspiration risk, dysphagia severity and IDDSI diet across stroke care transitions (acute → rehab → home). Reuses SNOMED-embedded IDDSI/GUSS + clinical findings; contributes swallowing-assessment Observation profiles + IDDSI ValueSet/binding + a care-transition summary."
 status: active
-version: 1.0.1
+version: 1.1.0
 fhirVersion: 4.0.1
 copyrightYear: 2026+
 releaseLabel: release
+# The artifacts authored here (profiles, value sets, examples, CQL) are MIT-licensed.
+# This does NOT relicense third-party terminology: SNOMED CT, LOINC and IDDSI concepts are
+# referenced by identifier, not redistributed, and implementers remain responsible for their
+# own SNOMED CT affiliate/member licence, the LOINC licence, and IDDSI's CC BY-SA terms.
+license: MIT
+copyright: "© 2026 N. Kapan Tunçer and S. Tunçer. IG artifacts licensed under the MIT License. This IG references but does not redistribute SNOMED CT (© SNOMED International), LOINC (© Regenstrief Institute, Inc.) and the IDDSI framework (CC BY-SA 4.0, used unmodified); value sets enumerate concept identifiers only, so display terms are supplied at expansion time by the implementer's own terminology server. Implementers are responsible for holding the applicable third-party licences."
 publisher:
   name: "N. Kapan Tunçer; S. Tunçer"
 # Minimal navigation menu (clears IG Publisher "no menu" warning).

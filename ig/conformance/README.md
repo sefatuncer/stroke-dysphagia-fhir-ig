@@ -4,14 +4,19 @@
 FHIR server implementations**' `$validate` operation — not only the reference validator /
 IG Publisher we author against.
 
-| # | Server | Implementation | How |
-|---|--------|----------------|-----|
-| 0 | FHIR reference validator (`validator_cli.jar`) | HL7 (Java) | done during build — 0 errors |
-| 1 | **HAPI FHIR** (local Docker) | HAPI / Smile CDR OSS (Java) | `docker-compose.hapi.yml` |
-| 2 | **Firely Server** (public `server.fire.ly`) or a 2nd local server | Firely (.NET) — *different vendor* | point the script at its base URL |
+| # | Server | Implementation | Status |
+|---|--------|----------------|--------|
+| 0 | FHIR reference validator (`validator_cli.jar`) | HL7 (Java) | **used** — runs during the IG build, 0 errors |
+| 1 | **HAPI FHIR** (local Docker, digest-pinned = 8.10.0) | HAPI / Smile CDR OSS (Java) | **used** — `docker-compose.hapi.yml` |
+| 2 | Firely Server (.NET, different vendor) | Firely | **not used — future work** |
 
-Servers 1 and 2 are **different codebases/vendors**, so passing both is genuine
-cross-implementation conformance.
+**What this establishes, and what it does not.** Servers 0 and 1 are two *independently
+deployed* servers, and passing both shows the artifacts are portable across deployments and
+are not merely self-validating against the toolchain that produced them. However, both are
+built on the **HL7 Java validation core**, so this is *not* independence across
+implementations: a misreading shared by that core would pass on both. Validation against a
+genuinely different implementation (Firely/.NET) remains future work and is reported as a
+limitation in the manuscript.
 
 ## Run
 
@@ -24,11 +29,17 @@ docker compose -f docker-compose.hapi.yml up -d
 node validate-on-server.mjs http://localhost:8080/fhir
 
 # 2b) NEGATIVE test — prove the profiles CONSTRAIN, not merely accept:
-#     4 should-fail fixtures (negative-fixtures/) must ALL be rejected with an error.
+#     8 should-fail fixtures (negative-fixtures/) must ALL be rejected, and each
+#     rejection must carry the signature of the constraint under test (not merely
+#     "some error"), covering all six profiles.
 node validate-negatives.mjs http://localhost:8080/fhir
 
-# 3) repeat against an independent 2nd server (Firely, different vendor)
-node validate-on-server.mjs https://server.fire.ly
+# Both scripts deposit machine-readable evidence under conformance/out/
+# (positive-conformance.json / negative-conformance.json + .md summaries).
+
+# 3) OPTIONAL, not part of the reported results: a genuinely independent
+#    implementation (Firely/.NET). Reported as future work.
+# node validate-on-server.mjs https://server.fire.ly
 
 # teardown
 docker compose -f docker-compose.hapi.yml down

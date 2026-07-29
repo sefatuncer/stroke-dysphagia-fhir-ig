@@ -1,0 +1,55 @@
+{
+  "baselineFired": 31,
+  "cohortSize": 333,
+  "branchCoverage": {
+    "codedFlagPresent": 75,
+    "onThinFluids": 240,
+    "npoExcluded": 20,
+    "alertFired": 31
+  },
+  "mutations": [
+    {
+      "id": "M1-iddsi-code",
+      "link": "CodeableConcept equivalence on IDDSI codes",
+      "why": "Replaces the IDDSI Thin (Level 0) code with a non-IDDSI code. The rule must stop seeing these patients as being on thin fluids.",
+      "role": "sensitivity control (alert-suppressing direction)",
+      "resourcesMutated": 240,
+      "outcomesChanged": 31,
+      "alertsAfterMutation": 0,
+      "behavedAsExpected": true
+    },
+    {
+      "id": "M2-flag-status",
+      "link": "Observation.status filtering",
+      "why": "Sets the aspiration-risk flag status to entered-in-error. The rule accepts only final/amended, so these flags must become invisible.",
+      "role": "sensitivity control (alert-suppressing direction)",
+      "resourcesMutated": 75,
+      "outcomesChanged": 31,
+      "alertsAfterMutation": 0,
+      "behavedAsExpected": true
+    },
+    {
+      "id": "M3-npo-suppression",
+      "link": "NPO exclusion branch",
+      "expectChange": false,
+      "why": "Removes the NPO signal (nil-by-mouth observation and diet-less active orders). Because NPO and thin-fluid orders are mutually exclusive by construction, no verdict should change; this documents that the NPO branch is not outcome-discriminating in this cohort.",
+      "role": "diagnostic (expects no change)",
+      "resourcesMutated": 20,
+      "outcomesChanged": 0,
+      "alertsAfterMutation": 31,
+      "behavedAsExpected": true
+    },
+    {
+      "id": "M4-inject-flag",
+      "link": "alert-generating direction (flag retrieval)",
+      "expectIncrease": true,
+      "why": "Adds a conformant coded aspiration-risk flag to every patient lacking one. Patients already on thin fluids and not NPO must now trigger the alert, so the alert count must strictly increase. This tests the alert-generating direction, which the suppressing controls (M1, M2) structurally cannot reach.",
+      "role": "sensitivity control (alert-generating direction)",
+      "resourcesMutated": 258,
+      "outcomesChanged": 209,
+      "alertsAfterMutation": 240,
+      "behavedAsExpected": true
+    }
+  ],
+  "pass": true
+}

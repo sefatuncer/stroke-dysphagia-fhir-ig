@@ -1,0 +1,110 @@
+{
+  "kind": "negative-conformance",
+  "server": {
+    "baseUrl": "http://localhost:8080/fhir",
+    "name": "HAPI FHIR Server",
+    "version": "8.10.0",
+    "fhirVersion": "4.0.1"
+  },
+  "fixturesTested": 8,
+  "correctlyRejected": 8,
+  "pass": true,
+  "results": [
+    {
+      "fixture": "neg-aspiration-preliminary.json",
+      "resourceType": "Observation",
+      "profile": "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/aspiration-risk-flag",
+      "expected": "status=preliminary — profile fixes status to final",
+      "worstSeverity": "error",
+      "signatureMatched": true,
+      "profileUnresolved": false,
+      "correctlyRejected": true,
+      "firstError": "Value is 'preliminary' but is fixed to 'final' in the profile https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/aspi",
+      "allErrors": "Value is 'preliminary' but is fixed to 'final' in the profile https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/aspiration-risk-flag#Observation.status"
+    },
+    {
+      "fixture": "neg-aspiration-wrongcode.json",
+      "resourceType": "Observation",
+      "profile": "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/aspiration-risk-flag",
+      "expected": "code≠371736008 — profile fixes the at-risk-for-aspiration code",
+      "worstSeverity": "error",
+      "signatureMatched": true,
+      "profileUnresolved": false,
+      "correctlyRejected": true,
+      "firstError": "Value is '40739000' but is fixed to '371736008' in the profile https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/asp",
+      "allErrors": "Value is '40739000' but is fixed to '371736008' in the profile https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/aspiration-risk-flag#Observation.code.coding.code"
+    },
+    {
+      "fixture": "neg-diet-drink-code-on-food.json",
+      "resourceType": "NutritionOrder",
+      "profile": "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-nutrition-order",
+      "expected": "drink-axis IDDSI concept on texture.modifier — violates invariant iddsi-axis-food",
+      "worstSeverity": "error",
+      "signatureMatched": true,
+      "profileUnresolved": false,
+      "correctlyRejected": true,
+      "firstError": "Constraint failed: iddsi-axis-food: 'A drink-only IDDSI concept must not be used on texture.modifier, which carries the food axis. IDDSI Lev",
+      "allErrors": "Constraint failed: iddsi-axis-food: 'A drink-only IDDSI concept must not be used on texture.modifier, which carries the food axis. IDDSI Level 3 (1237444002) is a single concept shared by both axes and is therefore permitted here.' (defined in https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-nutrition-order)"
+    },
+    {
+      "fixture": "neg-diet-food-code-on-fluid.json",
+      "resourceType": "NutritionOrder",
+      "profile": "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-nutrition-order",
+      "expected": "food-axis IDDSI concept on fluidConsistencyType — violates invariant iddsi-axis-fluid",
+      "worstSeverity": "error",
+      "signatureMatched": true,
+      "profileUnresolved": false,
+      "correctlyRejected": true,
+      "firstError": "Constraint failed: iddsi-axis-fluid: 'A food-axis IDDSI concept must not be used on fluidConsistencyType, which carries the drink axis (IDDS",
+      "allErrors": "Constraint failed: iddsi-axis-fluid: 'A food-axis IDDSI concept must not be used on fluidConsistencyType, which carries the drink axis (IDDSI Levels 0-4).' (defined in https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-nutrition-order)"
+    },
+    {
+      "fixture": "neg-instrumental-pas-out-of-range.json",
+      "resourceType": "Observation",
+      "profile": "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/instrumental-swallow-assessment",
+      "expected": "PAS component value 99 — violates invariant pas-range (scale is 1-8)",
+      "worstSeverity": "error",
+      "signatureMatched": true,
+      "profileUnresolved": false,
+      "correctlyRejected": true,
+      "firstError": "Constraint failed: pas-range: 'The Penetration-Aspiration Scale is an 8-point ordinal scale; a PAS grade outside 1-8 is not a valid score.' ",
+      "allErrors": "Constraint failed: pas-range: 'The Penetration-Aspiration Scale is an 8-point ordinal scale; a PAS grade outside 1-8 is not a valid score.' (defined in https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/instrumental-swallow-assessment)"
+    },
+    {
+      "fixture": "neg-screening-noeffective.json",
+      "resourceType": "Observation",
+      "profile": "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/swallowing-screening-result",
+      "expected": "effective[x] absent — profile requires effective[x] 1..1",
+      "worstSeverity": "error",
+      "signatureMatched": true,
+      "profileUnresolved": false,
+      "correctlyRejected": true,
+      "firstError": "Observation.effective[x]: minimum required = 1, but only found 0 (from https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefini",
+      "allErrors": "Observation.effective[x]: minimum required = 1, but only found 0 (from https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/swallowing-screening-result)"
+    },
+    {
+      "fixture": "neg-severity-nosubject.json",
+      "resourceType": "Observation",
+      "profile": "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-severity",
+      "expected": "subject absent — profile requires subject 1..1 (tightened from base 0..1)",
+      "worstSeverity": "error",
+      "signatureMatched": true,
+      "profileUnresolved": false,
+      "correctlyRejected": true,
+      "firstError": "Observation.subject: minimum required = 1, but only found 0 (from https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/",
+      "allErrors": "Observation.subject: minimum required = 1, but only found 0 (from https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-severity)"
+    },
+    {
+      "fixture": "neg-summary-no-entry.json",
+      "resourceType": "Composition",
+      "profile": "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-care-transition-summary",
+      "expected": "sections carry narrative but no section.entry — violates invariant dct-has-content (empty envelope)",
+      "worstSeverity": "error",
+      "signatureMatched": true,
+      "profileUnresolved": false,
+      "correctlyRejected": true,
+      "firstError": "Constraint failed: dct-has-content: 'A care-transition summary must carry at least one section entry. An envelope with no dysphagia content ",
+      "allErrors": "Constraint failed: dct-has-content: 'A care-transition summary must carry at least one section entry. An envelope with no dysphagia content is not a transfer.' (defined in https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-care-transition-summary)"
+    }
+  ]
+}

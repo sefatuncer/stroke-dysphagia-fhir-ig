@@ -1,0 +1,45 @@
+{
+  "resourceType": "Composition",
+  "id": "neg-summary-no-entry",
+  "meta": {
+    "profile": [
+      "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-care-transition-summary"
+    ]
+  },
+  "status": "final",
+  "type": {
+    "coding": [
+      {
+        "code": "34133-9",
+        "system": "http://loinc.org",
+        "display": "Summary of episode note"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/ex-patient"
+  },
+  "date": "2026-03-10",
+  "author": [
+    {
+      "reference": "Organization/ex-org"
+    }
+  ],
+  "title": "Dysphagia Care-Transition Summary (section titles only, no entries)",
+  "section": [
+    {
+      "title": "Aspiration risk",
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Aspiration risk was discussed at handover.</p></div>"
+      }
+    },
+    {
+      "title": "Diet and fluid consistency (IDDSI)",
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Diet and fluid consistency were discussed at handover.</p></div>"
+      }
+    }
+  ]
+}

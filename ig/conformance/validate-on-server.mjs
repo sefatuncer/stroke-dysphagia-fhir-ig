@@ -11,6 +11,7 @@
 // Exit code 0 = every example passed (no error/fatal issues); 1 = at least one failed.
 
 import { readdirSync, readFileSync } from 'node:fs';
+import { mkdirSync, writeFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
@@ -49,10 +50,16 @@ const issuesText = (oo) =>
 async function main() {
   // 0) sanity: server reachable
   process.stdout.write(`Server: ${base}\n`);
+  let server = { name: 'unknown', version: 'unknown', fhirVersion: 'unknown' };
   try {
     const cap = await fetch(`${base}/metadata`, { headers: { Accept: FHIR_JSON } });
     const j = await cap.json();
-    console.log(`  ${j.software?.name || 'server'} ${j.software?.version || ''} — FHIR ${j.fhirVersion || '?'}\n`);
+    server = {
+      name: j.software?.name || 'server',
+      version: j.software?.version || 'unknown',
+      fhirVersion: j.fhirVersion || 'unknown',
+    };
+    console.log(`  ${server.name} ${server.version} — FHIR ${server.fhirVersion}\n`);
   } catch (e) {
     console.error(`  UNREACHABLE: ${e.message}`);
     process.exit(2);
@@ -74,6 +81,7 @@ async function main() {
   // 2) validate each example against its declared profile
   console.log(`\nValidating ${examples.length} examples via $validate:`);
   let failed = 0;
+  const results = [];
   for (const r of examples) {
     const profile = r.meta?.profile?.[0];
     const q = profile ? `?profile=${encodeURIComponent(profile)}` : '';
@@ -97,9 +105,57 @@ async function main() {
     const label = r.meta?.profile?.[0]?.split('/').pop() || '(base)';
     console.log(`  ${bad ? '✗' : '✓'} ${r.resourceType}/${r.id}  [${label}]  → ${w}`);
     if (bad) console.log(issuesText(oo));
+    results.push({
+      resource: `${r.resourceType}/${r.id}`,
+      profile: profile || null,
+      validatedAgainst: profile ? 'declared IG profile' : 'base FHIR (no profile declared)',
+      worstSeverity: w,
+      conforms: !bad,
+    });
   }
 
-  console.log(`\n${failed === 0 ? 'PASS' : 'FAIL'}: ${examples.length - failed}/${examples.length} examples conform on ${base}`);
+  const passed = examples.length - failed;
+  const profiled = results.filter((x) => x.profile).length;
+  console.log(
+    `\n${failed === 0 ? 'PASS' : 'FAIL'}: ${passed}/${examples.length} examples conform on ${base}` +
+      `  (${profiled} validated against a declared IG profile, ${examples.length - profiled} against base FHIR)`,
+  );
+
+  // Deposit machine-readable evidence: the headline count alone does not show which
+  // examples carry a profile, so the split is recorded explicitly.
+  const outDir = join(here, 'out');
+  mkdirSync(outDir, { recursive: true });
+  const report = {
+    kind: 'positive-conformance',
+    server: { baseUrl: base, ...server },
+    examplesTested: examples.length,
+    conforming: passed,
+    validatedAgainstDeclaredProfile: profiled,
+    validatedAgainstBaseFhir: examples.length - profiled,
+    pass: failed === 0,
+    results,
+  };
+  writeFileSync(join(outDir, 'positive-conformance.json'), JSON.stringify(report, null, 2));
+  const md = [
+    '# Positive conformance results',
+    '',
+    `Server: **${server.name} ${server.version}** (FHIR ${server.fhirVersion}) at \`${base}\``,
+    '',
+    `**${passed}/${examples.length} examples conform** — ${failed === 0 ? 'PASS' : 'FAIL'}`,
+    '',
+    `Of these, **${profiled}** declare an IG profile and were validated against it; ` +
+      `**${examples.length - profiled}** (Patient, Organization) declare no profile and were validated against base FHIR.`,
+    '',
+    '| Resource | Validated against | Worst severity | Conforms |',
+    '|---|---|---|---|',
+    ...results.map(
+      (x) =>
+        `| \`${x.resource}\` | ${x.profile ? `\`${x.profile.split('/').pop()}\`` : 'base FHIR'} | ${x.worstSeverity} | ${x.conforms ? 'yes' : 'NO'} |`,
+    ),
+  ].join('\n');
+  writeFileSync(join(outDir, 'POSITIVE-CONFORMANCE.md'), md + '\n');
+  console.log(`→ conformance/out/positive-conformance.json + POSITIVE-CONFORMANCE.md`);
+
   process.exit(failed === 0 ? 0 : 1);
 }
 

@@ -1,7 +1,7 @@
 /*
  * AspirationRiskAlert — care-transition safety-consistency rule
  *
- * Purpose (Makale A — computable-CDS FEASIBILITY; NOT a clinical-benefit or
+ * Purpose (computable-CDS FEASIBILITY; NOT a clinical-benefit or
  * diagnostic claim): from the dysphagia care-transition FHIR data, deterministically
  * raise an "aspiration precaution" alert when a coded aspiration-risk flag co-exists
  * with an unmodified (thin, IDDSI Level 0) fluid order and no nil-by-mouth decision.
@@ -12,7 +12,7 @@
  * Codes verified (SNOMED CT Intl 20250201): 371736008 (at risk for aspiration),
  * 182923009 (nil by mouth); IDDSI thin level 1231508001.
  */
-library AspirationRiskAlert version '0.1.0'
+library AspirationRiskAlert version '1.1.0'
 
 using FHIR version '4.0.1'
 
@@ -46,8 +46,14 @@ define "OnThinFluids":
   )
 
 // Nil-by-mouth either as an explicit observation or as an active order with no oral diet.
+// The same status filter as the risk-flag branch is applied deliberately: this branch
+// SUPPRESSES a safety alert, so an entered-in-error or preliminary nil-by-mouth record
+// must not be able to silence it. Filtering only the alert-raising branch would make the
+// rule asymmetric in the unsafe direction.
+// Note: nil-by-mouth is a plain SNOMED code, not an element of any profile in this IG
+// (see Limitations) — it is the one input the rule takes from outside the profiled set.
 define "IsNPO":
-  exists([Observation: "Nil by mouth"])
+  exists([Observation: "Nil by mouth"] O where O.status in { 'final', 'amended' })
     or exists([NutritionOrder] N where N.status = 'active' and not exists(N.oralDiet))
 
 // --- Rule: alert when at-risk AND on thin fluids AND not already NPO ----------

@@ -1,4 +1,4 @@
-# Faz 2 — Computable-CDS feasibility harness (synthetic)
+# Phase 2 — Computable-CDS feasibility harness (synthetic)
 
 Executable-CQL feasibility evaluation for the Stroke-Dysphagia Care-Transition IG.
 **Synthetic data only. No clinical-benefit, diagnostic-accuracy, or PPV claim.**
@@ -59,7 +59,8 @@ plausible values — NOT empirical estimates.**
 | Diet \| screen-positive | NPO .20 / thickened .45 / **thin .35** | care-plan adherence; thin = the under-treatment safety gap |
 | Diet \| screen-negative | NPO .02 / thickened .08 / thin .90 | mostly unmodified fluids |
 
-Verified codes (SNOMED CT Intl 20250201, per `../../Faz0-Tasarim.md`): GUSS `1289999007`,
+Verified codes (SNOMED CT Intl 20250201, re-checked against a later release with no
+change to the classification): GUSS `1289999007`,
 VFSS `241149003`, at-risk-for-aspiration `371736008`, IDDSI thin `1231508001` (+ L1-L3).
 
 ### Reference labels (NOT a diagnostic gold standard)

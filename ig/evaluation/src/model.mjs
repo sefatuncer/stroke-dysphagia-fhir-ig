@@ -1,5 +1,5 @@
 // ============================================================================
-// Synthetic dysphagia-layer model + FHIR R4 resource builders (Makale A, Faz 2)
+// Synthetic dysphagia-layer model + FHIR R4 resource builders
 // ----------------------------------------------------------------------------
 // Purpose: turn a base stroke patient (sampled from Synthea) into a small set of
 // FHIR resources conforming to the Stroke-Dysphagia Care-Transition IG profiles,
@@ -17,7 +17,7 @@
 // ============================================================================
 
 const SCT = 'http://snomed.info/sct';
-const CANON = 'http://example.org/fhir/dysphagia-ct';
+const CANON = 'https://sefatuncer.github.io/stroke-dysphagia-fhir-ig';
 const SCALES = `${CANON}/CodeSystem/dysphagia-scales-temp`;
 
 // --- Model parameters (documented + cited in README.md §Model) --------------
@@ -46,7 +46,8 @@ export const PARAMS = {
   dietGivenScreenNeg: { npo: 0.02, thickened: 0.08, thin: 0.90 },
 };
 
-// --- Verified codes (SNOMED CT Intl 20250201, per Faz0-Tasarim.md) ----------
+// --- Verified codes (SNOMED CT Intl 20250201; see the supplementary
+//     terminology log for the per-item queries) -------------------------------
 const CODES = {
   guss:      { system: SCT, code: '1289999007', display: 'Gugging swallowing screen' },
   vfss:      { system: SCT, code: '241149003',  display: 'Videofluoroscopy swallow' },

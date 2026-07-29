@@ -1,4 +1,4 @@
-# Faz 2 — Computable-CDS feasibility results (synthetic)
+# Phase 2 — Computable-CDS feasibility results (synthetic)
 
 > Synthetic data only (Synthea base + documented dysphagia-layer model). **No clinical-benefit / diagnostic-accuracy / PPV claim.** Framing = executability + interoperability-dependency feasibility.
 
