@@ -1,4 +1,4 @@
-# Aspiration Event Qualifier - Stroke Dysphagia Care-Transition FHIR IG v1.1.0
+# Aspiration Event Qualifier - Stroke Dysphagia Care-Transition FHIR IG v1.1.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,9 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/aspiration-risk-value-vs | *Version*:1.1.0 |
+| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/aspiration-risk-value-vs | *Version*:1.1.1 |
 | Active as of 2026-07-29 | *Computable Name*:AspirationRiskValueVS |
-| **Copyright/Legal**: Value-set definition: MIT (© 2026 N. Kapan Tunçer and S. Tunçer). Content is referenced, not redistributed: this value set enumerates third-party concept identifiers (SNOMED CT © SNOMED International; LOINC © Regenstrief Institute, Inc.; IDDSI framework CC BY-SA 4.0, used unmodified) and carries no display terms, which are supplied at expansion time by the implementer's own terminology server. Implementers must hold the applicable third-party licences. | |
+| **Copyright/Legal**: Value-set definition: MIT (© 2026 N. Kapan Tunçer and S. Tunçer). Content is referenced, not redistributed: this value set enumerates third-party concept identifiers (SNOMED CT © SNOMED International; LOINC © Regenstrief Institute, Inc.; IDDSI framework CC BY-SA 4.0, used unmodified) and carries, for some members, the SNOMED CT International Edition English term as an unmodified display hint (not translated); the authoritative display is supplied at expansion time by the implementer's own terminology server. Implementers must hold the applicable third-party licences. | |
 
  
 Optional qualifier for the Aspiration Risk Flag: the observed aspiration event on which the risk determination was based (pulmonary aspiration; silent aspiration as a proposed temporary local code). Does NOT include the at-risk finding itself, which is carried in Observation.code. 
@@ -47,15 +47,15 @@ Optional qualifier for the Aspiration Risk Flag: the observed aspiration event o
   "resourceType" : "ValueSet",
   "id" : "aspiration-risk-value-vs",
   "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/aspiration-risk-value-vs",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "AspirationRiskValueVS",
   "title" : "Aspiration Event Qualifier",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-29T08:35:16+00:00",
+  "date" : "2026-07-29T12:05:46+00:00",
   "publisher" : "N. Kapan Tunçer; S. Tunçer",
   "description" : "Optional qualifier for the Aspiration Risk Flag: the observed aspiration event on which the risk determination was based (pulmonary aspiration; silent aspiration as a proposed temporary local code). Does NOT include the at-risk finding itself, which is carried in Observation.code.",
-  "copyright" : "Value-set definition: MIT (© 2026 N. Kapan Tunçer and S. Tunçer). Content is referenced, not redistributed: this value set enumerates third-party concept identifiers (SNOMED CT © SNOMED International; LOINC © Regenstrief Institute, Inc.; IDDSI framework CC BY-SA 4.0, used unmodified) and carries no display terms, which are supplied at expansion time by the implementer's own terminology server. Implementers must hold the applicable third-party licences.",
+  "copyright" : "Value-set definition: MIT (© 2026 N. Kapan Tunçer and S. Tunçer). Content is referenced, not redistributed: this value set enumerates third-party concept identifiers (SNOMED CT © SNOMED International; LOINC © Regenstrief Institute, Inc.; IDDSI framework CC BY-SA 4.0, used unmodified) and carries, for some members, the SNOMED CT International Edition English term as an unmodified display hint (not translated); the authoritative display is supplied at expansion time by the implementer's own terminology server. Implementers must hold the applicable third-party licences.",
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",

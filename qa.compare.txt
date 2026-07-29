@@ -48,10 +48,10 @@ INFORMATION: Resource: The resource ImplementationGuide/dysphagia.care.transitio
 == fsh-generated/resources/Observation-ex-aspiration-risk.json ==
 WARNING: Observation/ex-aspiration-risk: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-ex-dysphagia-severity.json ==
-INFORMATION: Observation/ex-dysphagia-severity: Observation.code: Reference to experimental CodeSystem https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp|1.1.0
+INFORMATION: Observation/ex-dysphagia-severity: Observation.code: Reference to experimental CodeSystem https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp|1.1.1
 WARNING: Observation/ex-dysphagia-severity: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-ex-instrumental-swallow.json ==
-INFORMATION: Observation/ex-instrumental-swallow: Observation.component[0].code: Reference to experimental CodeSystem https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp|1.1.0
+INFORMATION: Observation/ex-instrumental-swallow: Observation.component[0].code: Reference to experimental CodeSystem https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp|1.1.1
 WARNING: Observation/ex-instrumental-swallow: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-ex-swallow-screening.json ==
 WARNING: Observation/ex-swallow-screening: Observation: Best Practice Recommendation: In general, all observations should have a performer
@@ -68,28 +68,28 @@ INFORMATION: Resource: The resource StructureDefinition/dysphagia-nutrition-orde
 == fsh-generated/resources/StructureDefinition-dysphagia-severity.json ==
 INFORMATION: Resource: The resource StructureDefinition/dysphagia-severity could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-instrumental-swallow-assessment.json ==
-INFORMATION: StructureDefinition/instrumental-swallow-assessment: StructureDefinition.snapshot.element[54].pattern.ofType(CodeableConcept): Reference to experimental CodeSystem https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp|1.1.0
-INFORMATION: StructureDefinition/instrumental-swallow-assessment: StructureDefinition.differential.element[8].pattern.ofType(CodeableConcept): Reference to experimental CodeSystem https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp|1.1.0
+INFORMATION: StructureDefinition/instrumental-swallow-assessment: StructureDefinition.snapshot.element[54].pattern.ofType(CodeableConcept): Reference to experimental CodeSystem https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp|1.1.1
+INFORMATION: StructureDefinition/instrumental-swallow-assessment: StructureDefinition.differential.element[8].pattern.ofType(CodeableConcept): Reference to experimental CodeSystem https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp|1.1.1
 INFORMATION: StructureDefinition/instrumental-swallow-assessment: StructureDefinition.differential.element[6].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/instrumental-swallow-assessment: StructureDefinition.snapshot.element[41].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: Resource: The resource StructureDefinition/instrumental-swallow-assessment could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-swallowing-screening-result.json ==
 INFORMATION: Resource: The resource StructureDefinition/swallowing-screening-result could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-aspiration-risk-value-vs.json ==
-INFORMATION: ValueSet/aspiration-risk-value-vs: ValueSet.compose.include[1].concept[0]: Reference to experimental CodeSystem https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp|1.1.0
+INFORMATION: ValueSet/aspiration-risk-value-vs: ValueSet.compose.include[1].concept[0]: Reference to experimental CodeSystem https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp|1.1.1
 WARNING: Resource: The resource ValueSet/aspiration-risk-value-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-dysphagia-severity-type-vs.json ==
-INFORMATION: ValueSet/dysphagia-severity-type-vs: ValueSet.compose.include[0].concept[0]: Reference to experimental CodeSystem https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp|1.1.0
+INFORMATION: ValueSet/dysphagia-severity-type-vs: ValueSet.compose.include[0].concept[0]: Reference to experimental CodeSystem https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp|1.1.1
 WARNING: Resource: The resource ValueSet/dysphagia-severity-type-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-iddsi-fluid-levels.json ==
 WARNING: Resource: The resource ValueSet/iddsi-fluid-levels should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-iddsi-food-levels.json ==
 WARNING: Resource: The resource ValueSet/iddsi-food-levels should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-instrumental-swallow-type-vs.json ==
-INFORMATION: ValueSet/instrumental-swallow-type-vs: ValueSet.compose.include[2].concept[0]: Reference to experimental CodeSystem https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp|1.1.0
-INFORMATION: ValueSet/instrumental-swallow-type-vs: ValueSet.compose.include[2].concept[1]: Reference to experimental CodeSystem https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp|1.1.0
+INFORMATION: ValueSet/instrumental-swallow-type-vs: ValueSet.compose.include[2].concept[0]: Reference to experimental CodeSystem https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp|1.1.1
+INFORMATION: ValueSet/instrumental-swallow-type-vs: ValueSet.compose.include[2].concept[1]: Reference to experimental CodeSystem https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp|1.1.1
 WARNING: Resource: The resource ValueSet/instrumental-swallow-type-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-swallow-screening-type-vs.json ==
-INFORMATION: ValueSet/swallow-screening-type-vs: ValueSet.compose.include[1].concept[0]: Reference to experimental CodeSystem https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp|1.1.0
-INFORMATION: ValueSet/swallow-screening-type-vs: ValueSet.compose.include[1].concept[1]: Reference to experimental CodeSystem https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp|1.1.0
+INFORMATION: ValueSet/swallow-screening-type-vs: ValueSet.compose.include[1].concept[0]: Reference to experimental CodeSystem https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp|1.1.1
+INFORMATION: ValueSet/swallow-screening-type-vs: ValueSet.compose.include[1].concept[1]: Reference to experimental CodeSystem https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp|1.1.1
 WARNING: Resource: The resource ValueSet/swallow-screening-type-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)

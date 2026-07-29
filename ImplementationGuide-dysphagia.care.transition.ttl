@@ -13,14 +13,14 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide dysphagia.care.transition</b></p><a name=\"dysphagia.care.transition\"> </a><a name=\"hcdysphagia.care.transition\"> </a><h2>DysphagiaCareTransitionIG</h2><p>The official URL for this implementation guide is: </p><pre>https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ImplementationGuide/dysphagia.care.transition</pre><div><p>Interoperable representation of swallowing assessment, aspiration risk, dysphagia severity and IDDSI diet across stroke care transitions (acute → rehab → home). Reuses SNOMED-embedded IDDSI/GUSS + clinical findings; contributes swallowing-assessment Observation profiles + IDDSI ValueSet/binding + a care-transition summary.</p>\n</div></div>"
   ] ;
   fhir:ImplementationGuide.url [ fhir:value "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ImplementationGuide/dysphagia.care.transition"] ;
-  fhir:ImplementationGuide.version [ fhir:value "1.1.0"] ;
+  fhir:ImplementationGuide.version [ fhir:value "1.1.1"] ;
   fhir:ImplementationGuide.name [ fhir:value "DysphagiaCareTransitionIG"] ;
   fhir:ImplementationGuide.title [ fhir:value "Stroke Dysphagia Care-Transition FHIR IG"] ;
   fhir:ImplementationGuide.status [ fhir:value "active"] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-07-29T08:35:16+00:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-07-29T12:05:46+00:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "N. Kapan Tunçer; S. Tunçer"] ;
   fhir:ImplementationGuide.description [ fhir:value "Interoperable representation of swallowing assessment, aspiration risk, dysphagia severity and IDDSI diet across stroke care transitions (acute → rehab → home). Reuses SNOMED-embedded IDDSI/GUSS + clinical findings; contributes swallowing-assessment Observation profiles + IDDSI ValueSet/binding + a care-transition summary."] ;
-  fhir:ImplementationGuide.copyright [ fhir:value "© 2026 N. Kapan Tunçer and S. Tunçer. IG artifacts licensed under the MIT License. This IG references but does not redistribute SNOMED CT (© SNOMED International), LOINC (© Regenstrief Institute, Inc.) and the IDDSI framework (CC BY-SA 4.0, used unmodified); value sets enumerate concept identifiers only, so display terms are supplied at expansion time by the implementer's own terminology server. Implementers are responsible for holding the applicable third-party licences."] ;
+  fhir:ImplementationGuide.copyright [ fhir:value "© 2026 N. Kapan Tunçer and S. Tunçer. IG artifacts licensed under the MIT License. This IG carries concept identifiers from SNOMED CT (© SNOMED International), LOINC (© Regenstrief Institute, Inc.) and the IDDSI framework (CC BY-SA 4.0, used unmodified); it redistributes no code system release, national extension or semantic content. Value sets enumerate identifiers, and some members additionally carry the English term as an unmodified display hint; the authoritative display is supplied at expansion time by the implementer's own terminology server. Implementers are responsible for holding the applicable third-party licences."] ;
   fhir:ImplementationGuide.packageId [ fhir:value "dysphagia.care.transition"] ;
   fhir:ImplementationGuide.license [ fhir:value "MIT"] ;
   fhir:ImplementationGuide.fhirVersion [

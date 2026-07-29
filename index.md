@@ -1,4 +1,4 @@
-# Home - Stroke Dysphagia Care-Transition FHIR IG v1.1.0
+# Home - Stroke Dysphagia Care-Transition FHIR IG v1.1.1
 
 * [**Table of Contents**](toc.md)
 * **Home**
@@ -7,9 +7,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ImplementationGuide/dysphagia.care.transition | *Version*:1.1.0 |
+| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ImplementationGuide/dysphagia.care.transition | *Version*:1.1.1 |
 | Active as of 2026-07-29 | *Computable Name*:DysphagiaCareTransitionIG |
-| **Copyright/Legal**: © 2026 N. Kapan Tunçer and S. Tunçer. IG artifacts licensed under the MIT License. This IG references but does not redistribute SNOMED CT (© SNOMED International), LOINC (© Regenstrief Institute, Inc.) and the IDDSI framework (CC BY-SA 4.0, used unmodified); value sets enumerate concept identifiers only, so display terms are supplied at expansion time by the implementer's own terminology server. Implementers are responsible for holding the applicable third-party licences. | |
+| **Copyright/Legal**: © 2026 N. Kapan Tunçer and S. Tunçer. IG artifacts licensed under the MIT License. This IG carries concept identifiers from SNOMED CT (© SNOMED International), LOINC (© Regenstrief Institute, Inc.) and the IDDSI framework (CC BY-SA 4.0, used unmodified); it redistributes no code system release, national extension or semantic content. Value sets enumerate identifiers, and some members additionally carry the English term as an unmodified display hint; the authoritative display is supplied at expansion time by the implementer's own terminology server. Implementers are responsible for holding the applicable third-party licences. | |
 
 ### Stroke Dysphagia Care-Transition FHIR IG
 
@@ -42,7 +42,7 @@ This IG **extends, does not reinvent**: it declares dependencies on **IPS 2.0.1*
 
 #### Status
 
-Released, v1.1.0. Terminology verified against SNOMED CT International 20250201 + LOINC v2.82. Conformance is demonstrated on **two independently deployed servers** — the HL7 reference validator and a containerized HAPI FHIR server — rather than by self-validation alone. Both share the HL7 Java validation core, so this establishes portability across deployments, not independence across implementations. Eight positive examples pass (six against a declared IG profile, two against base FHIR) and **eight negative fixtures are correctly rejected**, each for the specific constraint it violates.
+Released, v1.1.1. Terminology verified against SNOMED CT International 20250201 + LOINC v2.82. Conformance is demonstrated on **two independently deployed servers** — the HL7 reference validator and a containerized HAPI FHIR server — rather than by self-validation alone. Both share the HL7 Java validation core, so this establishes portability across deployments, not independence across implementations. Eight positive examples pass (six against a declared IG profile, two against base FHIR) and **eight negative fixtures are correctly rejected**, each for the specific constraint it violates.
 
 #### Dependencies
 
@@ -61,7 +61,7 @@ Released, v1.1.0. Terminology verified against SNOMED CT International 20250201 
 
 #### Intellectual property and terminology licensing
 
-This IG **references** SNOMED CT, LOINC and IDDSI concepts by identifier; it does not redistribute their content. The value sets enumerate concept identifiers, so the official display term is supplied at expansion time by the implementer's own terminology server. Implementers are responsible for their own SNOMED CT affiliate/member licensing, the LOINC license, and IDDSI's CC BY-SA terms. The MIT license covers only the artifacts authored here and does not relicense any third-party terminology.
+This IG **carries** SNOMED CT, LOINC and IDDSI concept identifiers; it redistributes no code system release, national extension or semantic content (relationships, hierarchies, reference sets). The value sets enumerate identifiers, and a small number of members additionally carry the English term as an unmodified display hint; the authoritative display is supplied at expansion time by the implementer's own terminology server. Identifiers and English terms of this kind fall within SNOMED International's [Global Patient Set](https://www.snomed.org/gps), published at no cost under CC BY-ND 4.0, which does not itself require SNOMED CT membership or an Affiliate Licence. Anyone loading SNOMED CT into a terminology server to expand these value sets is responsible for their own SNOMED CT affiliate/member licensing, as implementers are for the LOINC license and IDDSI's CC BY-SA terms. The MIT license covers only the artifacts authored here and does not relicense any third-party terminology.
 
 This publication includes IP covered under the following statements.
 
@@ -89,14 +89,14 @@ This publication includes IP covered under the following statements.
   "resourceType" : "ImplementationGuide",
   "id" : "dysphagia.care.transition",
   "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ImplementationGuide/dysphagia.care.transition",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "name" : "DysphagiaCareTransitionIG",
   "title" : "Stroke Dysphagia Care-Transition FHIR IG",
   "status" : "active",
-  "date" : "2026-07-29T08:35:16+00:00",
+  "date" : "2026-07-29T12:05:46+00:00",
   "publisher" : "N. Kapan Tunçer; S. Tunçer",
   "description" : "Interoperable representation of swallowing assessment, aspiration risk, dysphagia severity and IDDSI diet across stroke care transitions (acute → rehab → home). Reuses SNOMED-embedded IDDSI/GUSS + clinical findings; contributes swallowing-assessment Observation profiles + IDDSI ValueSet/binding + a care-transition summary.",
-  "copyright" : "© 2026 N. Kapan Tunçer and S. Tunçer. IG artifacts licensed under the MIT License. This IG references but does not redistribute SNOMED CT (© SNOMED International), LOINC (© Regenstrief Institute, Inc.) and the IDDSI framework (CC BY-SA 4.0, used unmodified); value sets enumerate concept identifiers only, so display terms are supplied at expansion time by the implementer's own terminology server. Implementers are responsible for holding the applicable third-party licences.",
+  "copyright" : "© 2026 N. Kapan Tunçer and S. Tunçer. IG artifacts licensed under the MIT License. This IG carries concept identifiers from SNOMED CT (© SNOMED International), LOINC (© Regenstrief Institute, Inc.) and the IDDSI framework (CC BY-SA 4.0, used unmodified); it redistributes no code system release, national extension or semantic content. Value sets enumerate identifiers, and some members additionally carry the English term as an unmodified display hint; the authoritative display is supplied at expansion time by the implementer's own terminology server. Implementers are responsible for holding the applicable third-party licences.",
   "packageId" : "dysphagia.care.transition",
   "license" : "MIT",
   "fhirVersion" : ["4.0.1"],
