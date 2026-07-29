@@ -6,14 +6,15 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet iddsi-food-levels</b></p><a name=\"iddsi-food-levels\"> </a><a name=\"hciddsi-food-levels\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/1237447009\">1237447009</a></td><td style=\"color: #cccccc\">IDDSI (International Dysphagia Diet Standardisation Initiative) Framework - Pureed Level 4</td></tr><tr><td><a href=\"http://snomed.info/id/1237448004\">1237448004</a></td><td style=\"color: #cccccc\">IDDSI (International Dysphagia Diet Standardisation Initiative) Framework - Minced &amp; Moist Level 5</td></tr><tr><td><a href=\"http://snomed.info/id/1237449007\">1237449007</a></td><td style=\"color: #cccccc\">IDDSI (International Dysphagia Diet Standardisation Initiative) Framework - Soft &amp; Bite Sized Level 6</td></tr><tr><td><a href=\"http://snomed.info/id/1237450007\">1237450007</a></td><td style=\"color: #cccccc\">International Dysphagia Diet Standardisation Initiative Framework - EC7 (Easy to Chew Level 7)</td></tr><tr><td><a href=\"http://snomed.info/id/1237451006\">1237451006</a></td><td style=\"color: #cccccc\">International Dysphagia Diet Standardisation Initiative Framework - RG7 (Regular Level 7)</td></tr></table></li></ul></div>"
   },
   "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/iddsi-food-levels",
-  "version" : "1.0.1",
+  "version" : "1.1.0",
   "name" : "IDDSIFoodLevels",
   "title" : "IDDSI Food Texture Levels (SNOMED CT)",
-  "status" : "draft",
+  "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-28T10:50:36+00:00",
+  "date" : "2026-07-29T08:35:16+00:00",
   "publisher" : "N. Kapan Tunçer; S. Tunçer",
-  "description" : "IDDSI food-axis texture levels 4–7 (SNOMED CT-embedded IDDSI concepts), for NutritionOrder.oralDiet.texture.modifier.",
+  "description" : "IDDSI food-axis texture levels 4–7 (SNOMED CT-embedded IDDSI concepts), for NutritionOrder.oralDiet.texture.modifier. The IDDSI food axis spans Levels 3–7; Level 3 (Liquidised) is the shared Moderately Thick concept and is not enumerated here, so it is reached through the extensible binding.",
+  "copyright" : "Value-set definition: MIT (© 2026 N. Kapan Tunçer and S. Tunçer). Content is referenced, not redistributed: this value set enumerates third-party concept identifiers (SNOMED CT © SNOMED International; LOINC © Regenstrief Institute, Inc.; IDDSI framework CC BY-SA 4.0, used unmodified) and carries no display terms, which are supplied at expansion time by the implementer's own terminology server. Implementers must hold the applicable third-party licences.",
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",

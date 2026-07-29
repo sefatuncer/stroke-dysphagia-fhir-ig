@@ -1,4 +1,4 @@
-# Aspiration Risk Flag - Stroke Dysphagia Care-Transition FHIR IG v1.0.1
+# Aspiration Risk Flag - Stroke Dysphagia Care-Transition FHIR IG v1.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/aspiration-risk-flag | *Version*:1.0.1 |
-| Active as of 2026-07-28 | *Computable Name*:AspirationRiskFlag |
+| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/aspiration-risk-flag | *Version*:1.1.0 |
+| Active as of 2026-07-29 | *Computable Name*:AspirationRiskFlag |
+| **Copyright/Legal**: © 2026 N. Kapan Tunçer and S. Tunçer. IG artifacts licensed under the MIT License. This IG references but does not redistribute SNOMED CT (© SNOMED International), LOINC (© Regenstrief Institute, Inc.) and the IDDSI framework (CC BY-SA 4.0, used unmodified); value sets enumerate concept identifiers only, so display terms are supplied at expansion time by the implementer's own terminology server. Implementers are responsible for holding the applicable third-party licences. | |
 
  
 
@@ -21,6 +22,7 @@
 
 **Usages:**
 
+* Refer to this Profile: [Dysphagia Care-Transition Summary](StructureDefinition-dysphagia-care-transition-summary.md)
 * Examples for this Profile: [Observation/ex-aspiration-risk](Observation-ex-aspiration-risk.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/dysphagia.care.transition|current/StructureDefinition/StructureDefinition-aspiration-risk-flag.json)
@@ -42,13 +44,14 @@ Other representations of profile: [CSV](StructureDefinition-aspiration-risk-flag
   "resourceType" : "StructureDefinition",
   "id" : "aspiration-risk-flag",
   "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/aspiration-risk-flag",
-  "version" : "1.0.1",
+  "version" : "1.1.0",
   "name" : "AspirationRiskFlag",
   "title" : "Aspiration Risk Flag",
   "status" : "active",
-  "date" : "2026-07-28T10:50:36+00:00",
+  "date" : "2026-07-29T08:35:16+00:00",
   "publisher" : "N. Kapan Tunçer; S. Tunçer",
   "description" : "Patient-level aspiration-risk finding — the minimal, most safety-critical element carried across transitions. The at-risk-for-aspiration finding is asserted by `Observation.code`; the mere PRESENCE of a final instance is the datum the care-transition consistency rule consumes (the rule does not read the value). Status is fixed to final so that every conformant instance is visible to the rule (the rule accepts final|amended, a superset), closing the profile↔rule gap. An optional qualifier value may record the observed aspiration event on which the risk determination was based.",
+  "copyright" : "© 2026 N. Kapan Tunçer and S. Tunçer. IG artifacts licensed under the MIT License. This IG references but does not redistribute SNOMED CT (© SNOMED International), LOINC (© Regenstrief Institute, Inc.) and the IDDSI framework (CC BY-SA 4.0, used unmodified); value sets enumerate concept identifiers only, so display terms are supplied at expansion time by the implementer's own terminology server. Implementers are responsible for holding the applicable third-party licences.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "workflow",
@@ -97,15 +100,14 @@ Other representations of profile: [CSV](StructureDefinition-aspiration-risk-flag
       "mustSupport" : true
     },
     {
-      "id" : "Observation.code",
-      "path" : "Observation.code",
-      "patternCodeableConcept" : {
-        "coding" : [{
-          "system" : "http://snomed.info/sct",
-          "code" : "371736008",
-          "display" : "At risk for aspiration"
-        }]
-      }
+      "id" : "Observation.code.coding.system",
+      "path" : "Observation.code.coding.system",
+      "patternUri" : "http://snomed.info/sct"
+    },
+    {
+      "id" : "Observation.code.coding.code",
+      "path" : "Observation.code.coding.code",
+      "patternCode" : "371736008"
     },
     {
       "id" : "Observation.subject",

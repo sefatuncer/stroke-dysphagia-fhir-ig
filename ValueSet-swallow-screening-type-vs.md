@@ -1,4 +1,4 @@
-# Swallowing Screening Type - Stroke Dysphagia Care-Transition FHIR IG v1.0.1
+# Swallowing Screening Type - Stroke Dysphagia Care-Transition FHIR IG v1.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,11 +8,12 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/swallow-screening-type-vs | *Version*:1.0.1 |
-| Draft as of 2026-07-28 | *Computable Name*:SwallowScreeningTypeVS |
+| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/swallow-screening-type-vs | *Version*:1.1.0 |
+| Active as of 2026-07-29 | *Computable Name*:SwallowScreeningTypeVS |
+| **Copyright/Legal**: Value-set definition: MIT (© 2026 N. Kapan Tunçer and S. Tunçer). Content is referenced, not redistributed: this value set enumerates third-party concept identifiers (SNOMED CT © SNOMED International; LOINC © Regenstrief Institute, Inc.; IDDSI framework CC BY-SA 4.0, used unmodified) and carries no display terms, which are supplied at expansion time by the implementer's own terminology server. Implementers must hold the applicable third-party licences. | |
 
  
-Bedside swallowing screening instruments (GUSS + Yale Swallow Protocol/3-oz reused from SNOMED; EAT-10 / TOR-BSST as temporary local codes pending LOINC/SNOMED submission). 
+Swallowing screening instruments for the stroke care transition (GUSS + Yale Swallow Protocol/3-oz reused from SNOMED; TOR-BSST and EAT-10 as temporary local codes pending LOINC/SNOMED submission). Note that EAT-10 is a patient-reported symptom-severity tool used as a screen rather than a clinician-administered bedside swallow test, and its applicability in acute stroke is limited by aphasia and cognitive impairment. 
 
  **References** 
 
@@ -46,14 +47,15 @@ Bedside swallowing screening instruments (GUSS + Yale Swallow Protocol/3-oz reus
   "resourceType" : "ValueSet",
   "id" : "swallow-screening-type-vs",
   "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/swallow-screening-type-vs",
-  "version" : "1.0.1",
+  "version" : "1.1.0",
   "name" : "SwallowScreeningTypeVS",
   "title" : "Swallowing Screening Type",
-  "status" : "draft",
+  "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-28T10:50:36+00:00",
+  "date" : "2026-07-29T08:35:16+00:00",
   "publisher" : "N. Kapan Tunçer; S. Tunçer",
-  "description" : "Bedside swallowing screening instruments (GUSS + Yale Swallow Protocol/3-oz reused from SNOMED; EAT-10 / TOR-BSST as temporary local codes pending LOINC/SNOMED submission).",
+  "description" : "Swallowing screening instruments for the stroke care transition (GUSS + Yale Swallow Protocol/3-oz reused from SNOMED; TOR-BSST and EAT-10 as temporary local codes pending LOINC/SNOMED submission). Note that EAT-10 is a patient-reported symptom-severity tool used as a screen rather than a clinician-administered bedside swallow test, and its applicability in acute stroke is limited by aphasia and cognitive impairment.",
+  "copyright" : "Value-set definition: MIT (© 2026 N. Kapan Tunçer and S. Tunçer). Content is referenced, not redistributed: this value set enumerates third-party concept identifiers (SNOMED CT © SNOMED International; LOINC © Regenstrief Institute, Inc.; IDDSI framework CC BY-SA 4.0, used unmodified) and carries no display terms, which are supplied at expansion time by the implementer's own terminology server. Implementers must hold the applicable third-party licences.",
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",

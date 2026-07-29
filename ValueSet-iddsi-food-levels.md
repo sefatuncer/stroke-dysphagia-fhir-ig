@@ -1,4 +1,4 @@
-# IDDSI Food Texture Levels (SNOMED CT) - Stroke Dysphagia Care-Transition FHIR IG v1.0.1
+# IDDSI Food Texture Levels (SNOMED CT) - Stroke Dysphagia Care-Transition FHIR IG v1.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,11 +8,12 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/iddsi-food-levels | *Version*:1.0.1 |
-| Draft as of 2026-07-28 | *Computable Name*:IDDSIFoodLevels |
+| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/iddsi-food-levels | *Version*:1.1.0 |
+| Active as of 2026-07-29 | *Computable Name*:IDDSIFoodLevels |
+| **Copyright/Legal**: Value-set definition: MIT (© 2026 N. Kapan Tunçer and S. Tunçer). Content is referenced, not redistributed: this value set enumerates third-party concept identifiers (SNOMED CT © SNOMED International; LOINC © Regenstrief Institute, Inc.; IDDSI framework CC BY-SA 4.0, used unmodified) and carries no display terms, which are supplied at expansion time by the implementer's own terminology server. Implementers must hold the applicable third-party licences. | |
 
  
-IDDSI food-axis texture levels 4–7 (SNOMED CT-embedded IDDSI concepts), for NutritionOrder.oralDiet.texture.modifier. 
+IDDSI food-axis texture levels 4–7 (SNOMED CT-embedded IDDSI concepts), for NutritionOrder.oralDiet.texture.modifier. The IDDSI food axis spans Levels 3–7; Level 3 (Liquidised) is the shared Moderately Thick concept and is not enumerated here, so it is reached through the extensible binding. 
 
  **References** 
 
@@ -46,14 +47,15 @@ IDDSI food-axis texture levels 4–7 (SNOMED CT-embedded IDDSI concepts), for Nu
   "resourceType" : "ValueSet",
   "id" : "iddsi-food-levels",
   "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/iddsi-food-levels",
-  "version" : "1.0.1",
+  "version" : "1.1.0",
   "name" : "IDDSIFoodLevels",
   "title" : "IDDSI Food Texture Levels (SNOMED CT)",
-  "status" : "draft",
+  "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-28T10:50:36+00:00",
+  "date" : "2026-07-29T08:35:16+00:00",
   "publisher" : "N. Kapan Tunçer; S. Tunçer",
-  "description" : "IDDSI food-axis texture levels 4–7 (SNOMED CT-embedded IDDSI concepts), for NutritionOrder.oralDiet.texture.modifier.",
+  "description" : "IDDSI food-axis texture levels 4–7 (SNOMED CT-embedded IDDSI concepts), for NutritionOrder.oralDiet.texture.modifier. The IDDSI food axis spans Levels 3–7; Level 3 (Liquidised) is the shared Moderately Thick concept and is not enumerated here, so it is reached through the extensible binding.",
+  "copyright" : "Value-set definition: MIT (© 2026 N. Kapan Tunçer and S. Tunçer). Content is referenced, not redistributed: this value set enumerates third-party concept identifiers (SNOMED CT © SNOMED International; LOINC © Regenstrief Institute, Inc.; IDDSI framework CC BY-SA 4.0, used unmodified) and carries no display terms, which are supplied at expansion time by the implementer's own terminology server. Implementers must hold the applicable third-party licences.",
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",

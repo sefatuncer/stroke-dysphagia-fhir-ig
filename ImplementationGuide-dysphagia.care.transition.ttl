@@ -13,15 +13,16 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide dysphagia.care.transition</b></p><a name=\"dysphagia.care.transition\"> </a><a name=\"hcdysphagia.care.transition\"> </a><h2>DysphagiaCareTransitionIG</h2><p>The official URL for this implementation guide is: </p><pre>https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ImplementationGuide/dysphagia.care.transition</pre><div><p>Interoperable representation of swallowing assessment, aspiration risk, dysphagia severity and IDDSI diet across stroke care transitions (acute → rehab → home). Reuses SNOMED-embedded IDDSI/GUSS + clinical findings; contributes swallowing-assessment Observation profiles + IDDSI ValueSet/binding + a care-transition summary.</p>\n</div></div>"
   ] ;
   fhir:ImplementationGuide.url [ fhir:value "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ImplementationGuide/dysphagia.care.transition"] ;
-  fhir:ImplementationGuide.version [ fhir:value "1.0.1"] ;
+  fhir:ImplementationGuide.version [ fhir:value "1.1.0"] ;
   fhir:ImplementationGuide.name [ fhir:value "DysphagiaCareTransitionIG"] ;
   fhir:ImplementationGuide.title [ fhir:value "Stroke Dysphagia Care-Transition FHIR IG"] ;
   fhir:ImplementationGuide.status [ fhir:value "active"] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-07-28T10:50:36+00:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-07-29T08:35:16+00:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "N. Kapan Tunçer; S. Tunçer"] ;
   fhir:ImplementationGuide.description [ fhir:value "Interoperable representation of swallowing assessment, aspiration risk, dysphagia severity and IDDSI diet across stroke care transitions (acute → rehab → home). Reuses SNOMED-embedded IDDSI/GUSS + clinical findings; contributes swallowing-assessment Observation profiles + IDDSI ValueSet/binding + a care-transition summary."] ;
+  fhir:ImplementationGuide.copyright [ fhir:value "© 2026 N. Kapan Tunçer and S. Tunçer. IG artifacts licensed under the MIT License. This IG references but does not redistribute SNOMED CT (© SNOMED International), LOINC (© Regenstrief Institute, Inc.) and the IDDSI framework (CC BY-SA 4.0, used unmodified); value sets enumerate concept identifiers only, so display terms are supplied at expansion time by the implementer's own terminology server. Implementers are responsible for holding the applicable third-party licences."] ;
   fhir:ImplementationGuide.packageId [ fhir:value "dysphagia.care.transition"] ;
-  fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"] ;
+  fhir:ImplementationGuide.license [ fhir:value "MIT"] ;
   fhir:ImplementationGuide.fhirVersion [
      fhir:value "4.0.1" ;
      fhir:index 0
@@ -775,7 +776,7 @@
          fhir:Reference.reference [ fhir:value "ValueSet/dysphagia-severity-type-vs" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Dysphagia Severity / Oral-Intake Scale Type" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Overall dysphagia severity / functional oral-intake measures (DOSS + IDDSI Functional Diet Scale reused from SNOMED; FOIS, DIGEST as temporary local codes pending LOINC/SNOMED submission)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Overall dysphagia severity / functional oral-intake measures for the stroke care transition (DOSS + IDDSI Functional Diet Scale reused from SNOMED; FOIS as a temporary local code pending LOINC/SNOMED submission). DIGEST is deliberately excluded: it is validated for head-and-neck-cancer radiation toxicity, not for stroke, and is surveyed in the coverage assessment only. Its temporary code remains in the local CodeSystem as an upstream-submission candidate." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 7 ;
@@ -925,7 +926,7 @@
          fhir:Reference.reference [ fhir:value "ValueSet/iddsi-food-levels" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "IDDSI Food Texture Levels (SNOMED CT)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "IDDSI food-axis texture levels 4–7 (SNOMED CT-embedded IDDSI concepts), for NutritionOrder.oralDiet.texture.modifier." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "IDDSI food-axis texture levels 4–7 (SNOMED CT-embedded IDDSI concepts), for NutritionOrder.oralDiet.texture.modifier. The IDDSI food axis spans Levels 3–7; Level 3 (Liquidised) is the shared Moderately Thick concept and is not enumerated here, so it is reached through the extensible binding." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 17 ;
@@ -981,7 +982,7 @@
          fhir:Reference.reference [ fhir:value "ValueSet/swallow-screening-type-vs" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Swallowing Screening Type" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Bedside swallowing screening instruments (GUSS + Yale Swallow Protocol/3-oz reused from SNOMED; EAT-10 / TOR-BSST as temporary local codes pending LOINC/SNOMED submission)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Swallowing screening instruments for the stroke care transition (GUSS + Yale Swallow Protocol/3-oz reused from SNOMED; TOR-BSST and EAT-10 as temporary local codes pending LOINC/SNOMED submission). Note that EAT-10 is a patient-reported symptom-severity tool used as a screen rather than a clinician-administered bedside swallow test, and its applicability in acute stroke is limited by aphasia and cognitive impairment." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ] ;
      fhir:ImplementationGuide.definition.page [

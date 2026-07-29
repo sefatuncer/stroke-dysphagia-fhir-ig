@@ -1,4 +1,4 @@
-# Home - Stroke Dysphagia Care-Transition FHIR IG v1.0.1
+# Home - Stroke Dysphagia Care-Transition FHIR IG v1.1.0
 
 * [**Table of Contents**](toc.md)
 * **Home**
@@ -7,8 +7,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ImplementationGuide/dysphagia.care.transition | *Version*:1.0.1 |
-| Active as of 2026-07-28 | *Computable Name*:DysphagiaCareTransitionIG |
+| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ImplementationGuide/dysphagia.care.transition | *Version*:1.1.0 |
+| Active as of 2026-07-29 | *Computable Name*:DysphagiaCareTransitionIG |
+| **Copyright/Legal**: © 2026 N. Kapan Tunçer and S. Tunçer. IG artifacts licensed under the MIT License. This IG references but does not redistribute SNOMED CT (© SNOMED International), LOINC (© Regenstrief Institute, Inc.) and the IDDSI framework (CC BY-SA 4.0, used unmodified); value sets enumerate concept identifiers only, so display terms are supplied at expansion time by the implementer's own terminology server. Implementers are responsible for holding the applicable third-party licences. | |
 
 ### Stroke Dysphagia Care-Transition FHIR IG
 
@@ -33,7 +34,7 @@ Diet/IDDSI ordering is already covered by base FHIR `NutritionOrder`, PACIO PFE 
 
 #### Computable decision support (feasibility)
 
-An executable **CQL** rule (`AspirationRiskAlert`) surfaces a care-transition **safety inconsistency** — an at-risk patient still on unmodified (thin, IDDSI Level 0) fluids and not NPO — directly from the profiled data. It compiles to ELM and runs, **unmodified, on a real CQL engine** (cql-execution) over a synthetic Synthea stroke cohort (N = 333). Reported outcomes are **executability**, authoring **concordance**, trigger rate, and — the point — the **interoperability dependency**: of the clinically-unsafe cases that should surface, **34% are invisible to the rule when the aspiration-risk flag is left as un-coded free text** rather than the coded Observation this IG defines. This is a **feasibility / interoperability** result — **no diagnostic-accuracy or PPV claim**. All data are synthetic.
+An executable **CQL** rule (`AspirationRiskAlert`) surfaces a care-transition **safety inconsistency** — an at-risk patient still on unmodified (thin, IDDSI Level 0) fluids and not NPO — directly from the profiled data. It compiles to ELM and runs, **unmodified, on a real CQL engine** (cql-execution) over a synthetic Synthea stroke cohort (N = 333). Reported outcomes are **executability**, authoring **concordance**, trigger rate, and — the point — the **interoperability dependency**: clinically-unsafe cases become **invisible to the rule when the aspiration-risk flag is left as un-coded free text** rather than the coded Observation this IG defines. The invisibility rate tracks the un-coded fraction **by construction** (30.0% ± 7.5 percentage points across 40 seeds at P(coded) = 0.70), so it illustrates a mechanism, not an empirical estimate. This is a **feasibility / interoperability** result — **no diagnostic-accuracy or PPV claim**. All data are synthetic.
 
 #### Standards alignment
 
@@ -41,7 +42,43 @@ This IG **extends, does not reinvent**: it declares dependencies on **IPS 2.0.1*
 
 #### Status
 
-Released, v1.0.1. Terminology verified against SNOMED CT International 20250201 + LOINC/NLM. Conformance is demonstrated with the FHIR Validator plus **≥2 independent servers** (not self-validation only).
+Released, v1.1.0. Terminology verified against SNOMED CT International 20250201 + LOINC v2.82. Conformance is demonstrated on **two independently deployed servers** — the HL7 reference validator and a containerized HAPI FHIR server — rather than by self-validation alone. Both share the HL7 Java validation core, so this establishes portability across deployments, not independence across implementations. Eight positive examples pass (six against a declared IG profile, two against base FHIR) and **eight negative fixtures are correctly rejected**, each for the specific constraint it violates.
+
+#### Dependencies
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### Intellectual property and terminology licensing
+
+This IG **references** SNOMED CT, LOINC and IDDSI concepts by identifier; it does not redistribute their content. The value sets enumerate concept identifiers, so the official display term is supplied at expansion time by the implementer's own terminology server. Implementers are responsible for their own SNOMED CT affiliate/member licensing, the LOINC license, and IDDSI's CC BY-SA terms. The MIT license covers only the artifacts authored here and does not relicense any third-party terminology.
+
+This publication includes IP covered under the following statements.
+
+* MIT (© 2026 N. Kapan Tunçer and S. Tunçer). These are locally minted placeholder identifiers only. They name validated instruments whose own copyright rests with their developers; no instrument content, scoring rule or item text is reproduced here. The codes are temporary and are expected to be retired once equivalent concepts exist in LOINC or SNOMED CT.
+
+* [Dysphagia Scales — temporary local codes (proposed for LOINC/SNOMED)](CodeSystem-dysphagia-scales-temp.md): [AspirationRiskFlag](StructureDefinition-aspiration-risk-flag.md), [AspirationRiskValueVS](ValueSet-aspiration-risk-value-vs.md)... Show 8 more, [DysphagiaSeverity](StructureDefinition-dysphagia-severity.md), [DysphagiaSeverityTypeVS](ValueSet-dysphagia-severity-type-vs.md), [InstrumentalSwallowAssessment](StructureDefinition-instrumental-swallow-assessment.md), [InstrumentalSwallowTypeVS](ValueSet-instrumental-swallow-type-vs.md), [Observation/ex-dysphagia-severity](Observation-ex-dysphagia-severity.md), [Observation/ex-instrumental-swallow](Observation-ex-instrumental-swallow.md), [SwallowScreeningTypeVS](ValueSet-swallow-screening-type-vs.md) and [SwallowingScreeningResult](StructureDefinition-swallowing-screening-result.md)
+
+
+* This material contains content from [LOINC](http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the [license](http://loinc.org/license). LOINC® is a registered United States trademark of Regenstrief Institute, Inc.
+
+* [LOINC](http://terminology.hl7.org/6.5.0/CodeSystem-v3-loinc.html): [Composition/ex-care-transition-summary](Composition-ex-care-transition-summary.md), [DysphagiaCareTransitionSummary](StructureDefinition-dysphagia-care-transition-summary.md), [InstrumentalSwallowAssessment](StructureDefinition-instrumental-swallow-assessment.md) and [InstrumentalSwallowTypeVS](ValueSet-instrumental-swallow-type-vs.md)
+
+
+* This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact [https://www.snomed.org/get-snomed](https://www.snomed.org/get-snomed) or [info@snomed.org](mailto:info@snomed.org).
+
+* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](http://hl7.org/fhir/R4/codesystem-snomedct.html): [AspirationRiskFlag](StructureDefinition-aspiration-risk-flag.md), [AspirationRiskValueVS](ValueSet-aspiration-risk-value-vs.md)... Show 13 more, [DysphagiaNutritionOrder](StructureDefinition-dysphagia-nutrition-order.md), [DysphagiaSeverity](StructureDefinition-dysphagia-severity.md), [DysphagiaSeverityTypeVS](ValueSet-dysphagia-severity-type-vs.md), [IDDSIFluidLevels](ValueSet-iddsi-fluid-levels.md), [IDDSIFoodLevels](ValueSet-iddsi-food-levels.md), [InstrumentalSwallowAssessment](StructureDefinition-instrumental-swallow-assessment.md), [InstrumentalSwallowTypeVS](ValueSet-instrumental-swallow-type-vs.md), [NutritionOrder/ex-dysphagia-diet](NutritionOrder-ex-dysphagia-diet.md), [Observation/ex-aspiration-risk](Observation-ex-aspiration-risk.md), [Observation/ex-instrumental-swallow](Observation-ex-instrumental-swallow.md), [Observation/ex-swallow-screening](Observation-ex-swallow-screening.md), [SwallowScreeningTypeVS](ValueSet-swallow-screening-type-vs.md) and [SwallowingScreeningResult](StructureDefinition-swallowing-screening-result.md)
+
 
 
 
@@ -52,15 +89,16 @@ Released, v1.0.1. Terminology verified against SNOMED CT International 20250201 
   "resourceType" : "ImplementationGuide",
   "id" : "dysphagia.care.transition",
   "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ImplementationGuide/dysphagia.care.transition",
-  "version" : "1.0.1",
+  "version" : "1.1.0",
   "name" : "DysphagiaCareTransitionIG",
   "title" : "Stroke Dysphagia Care-Transition FHIR IG",
   "status" : "active",
-  "date" : "2026-07-28T10:50:36+00:00",
+  "date" : "2026-07-29T08:35:16+00:00",
   "publisher" : "N. Kapan Tunçer; S. Tunçer",
   "description" : "Interoperable representation of swallowing assessment, aspiration risk, dysphagia severity and IDDSI diet across stroke care transitions (acute → rehab → home). Reuses SNOMED-embedded IDDSI/GUSS + clinical findings; contributes swallowing-assessment Observation profiles + IDDSI ValueSet/binding + a care-transition summary.",
+  "copyright" : "© 2026 N. Kapan Tunçer and S. Tunçer. IG artifacts licensed under the MIT License. This IG references but does not redistribute SNOMED CT (© SNOMED International), LOINC (© Regenstrief Institute, Inc.) and the IDDSI framework (CC BY-SA 4.0, used unmodified); value sets enumerate concept identifiers only, so display terms are supplied at expansion time by the implementer's own terminology server. Implementers are responsible for holding the applicable third-party licences.",
   "packageId" : "dysphagia.care.transition",
-  "license" : "CC0-1.0",
+  "license" : "MIT",
   "fhirVersion" : ["4.0.1"],
   "dependsOn" : [{
     "id" : "hl7tx",
@@ -758,7 +796,7 @@ Released, v1.0.1. Terminology verified against SNOMED CT International 20250201 
         "reference" : "ValueSet/dysphagia-severity-type-vs"
       },
       "name" : "Dysphagia Severity / Oral-Intake Scale Type",
-      "description" : "Overall dysphagia severity / functional oral-intake measures (DOSS + IDDSI Functional Diet Scale reused from SNOMED; FOIS, DIGEST as temporary local codes pending LOINC/SNOMED submission).",
+      "description" : "Overall dysphagia severity / functional oral-intake measures for the stroke care transition (DOSS + IDDSI Functional Diet Scale reused from SNOMED; FOIS as a temporary local code pending LOINC/SNOMED submission). DIGEST is deliberately excluded: it is validated for head-and-neck-cancer radiation toxicity, not for stroke, and is surveyed in the coverage assessment only. Its temporary code remains in the local CodeSystem as an upstream-submission candidate.",
       "exampleBoolean" : false
     },
     {
@@ -910,7 +948,7 @@ Released, v1.0.1. Terminology verified against SNOMED CT International 20250201 
         "reference" : "ValueSet/iddsi-food-levels"
       },
       "name" : "IDDSI Food Texture Levels (SNOMED CT)",
-      "description" : "IDDSI food-axis texture levels 4–7 (SNOMED CT-embedded IDDSI concepts), for NutritionOrder.oralDiet.texture.modifier.",
+      "description" : "IDDSI food-axis texture levels 4–7 (SNOMED CT-embedded IDDSI concepts), for NutritionOrder.oralDiet.texture.modifier. The IDDSI food axis spans Levels 3–7; Level 3 (Liquidised) is the shared Moderately Thick concept and is not enumerated here, so it is reached through the extensible binding.",
       "exampleBoolean" : false
     },
     {
@@ -974,7 +1012,7 @@ Released, v1.0.1. Terminology verified against SNOMED CT International 20250201 
         "reference" : "ValueSet/swallow-screening-type-vs"
       },
       "name" : "Swallowing Screening Type",
-      "description" : "Bedside swallowing screening instruments (GUSS + Yale Swallow Protocol/3-oz reused from SNOMED; EAT-10 / TOR-BSST as temporary local codes pending LOINC/SNOMED submission).",
+      "description" : "Swallowing screening instruments for the stroke care transition (GUSS + Yale Swallow Protocol/3-oz reused from SNOMED; TOR-BSST and EAT-10 as temporary local codes pending LOINC/SNOMED submission). Note that EAT-10 is a patient-reported symptom-severity tool used as a screen rather than a clinician-administered bedside swallow test, and its applicability in acute stroke is limited by aphasia and cognitive impairment.",
       "exampleBoolean" : false
     }],
     "page" : {

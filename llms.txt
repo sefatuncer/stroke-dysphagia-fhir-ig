@@ -1,4 +1,4 @@
-# dysphagia.care.transition#1.0.1: Stroke Dysphagia Care-Transition FHIR IG
+# dysphagia.care.transition#1.1.0: Stroke Dysphagia Care-Transition FHIR IG
 
 ## Pages
 

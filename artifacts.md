@@ -1,4 +1,4 @@
-# Artifacts Summary - Stroke Dysphagia Care-Transition FHIR IG v1.0.1
+# Artifacts Summary - Stroke Dysphagia Care-Transition FHIR IG v1.1.0
 
 * [**Table of Contents**](toc.md)
 * **Artifacts Summary**
@@ -31,11 +31,11 @@ These define sets of codes used by systems conforming to this implementation gui
 | | |
 | :--- | :--- |
 | [Aspiration Event Qualifier](ValueSet-aspiration-risk-value-vs.md) | Optional qualifier for the Aspiration Risk Flag: the observed aspiration event on which the risk determination was based (pulmonary aspiration; silent aspiration as a proposed temporary local code). Does NOT include the at-risk finding itself, which is carried in Observation.code. |
-| [Dysphagia Severity / Oral-Intake Scale Type](ValueSet-dysphagia-severity-type-vs.md) | Overall dysphagia severity / functional oral-intake measures (DOSS + IDDSI Functional Diet Scale reused from SNOMED; FOIS, DIGEST as temporary local codes pending LOINC/SNOMED submission). |
+| [Dysphagia Severity / Oral-Intake Scale Type](ValueSet-dysphagia-severity-type-vs.md) | Overall dysphagia severity / functional oral-intake measures for the stroke care transition (DOSS + IDDSI Functional Diet Scale reused from SNOMED; FOIS as a temporary local code pending LOINC/SNOMED submission). DIGEST is deliberately excluded: it is validated for head-and-neck-cancer radiation toxicity, not for stroke, and is surveyed in the coverage assessment only. Its temporary code remains in the local CodeSystem as an upstream-submission candidate. |
 | [IDDSI Drink/Fluid Consistency Levels (SNOMED CT)](ValueSet-iddsi-fluid-levels.md) | IDDSI drink-axis consistency levels 0???4 (SNOMED CT-embedded IDDSI concepts), for NutritionOrder.oralDiet.fluidConsistencyType. Level 3 is the transitional Moderately Thick concept shared with the food axis. |
-| [IDDSI Food Texture Levels (SNOMED CT)](ValueSet-iddsi-food-levels.md) | IDDSI food-axis texture levels 4???7 (SNOMED CT-embedded IDDSI concepts), for NutritionOrder.oralDiet.texture.modifier. |
+| [IDDSI Food Texture Levels (SNOMED CT)](ValueSet-iddsi-food-levels.md) | IDDSI food-axis texture levels 4???7 (SNOMED CT-embedded IDDSI concepts), for NutritionOrder.oralDiet.texture.modifier. The IDDSI food axis spans Levels 3???7; Level 3 (Liquidised) is the shared Moderately Thick concept and is not enumerated here, so it is reached through the extensible binding. |
 | [Instrumental Swallow Assessment Type](ValueSet-instrumental-swallow-type-vs.md) | Instrumental swallowing assessments (VFSS/FEES) and associated graded scales (PAS, Yale residue) ??? SNOMED/LOINC where coded, temporary local codes otherwise. |
-| [Swallowing Screening Type](ValueSet-swallow-screening-type-vs.md) | Bedside swallowing screening instruments (GUSS + Yale Swallow Protocol/3-oz reused from SNOMED; EAT-10 / TOR-BSST as temporary local codes pending LOINC/SNOMED submission). |
+| [Swallowing Screening Type](ValueSet-swallow-screening-type-vs.md) | Swallowing screening instruments for the stroke care transition (GUSS + Yale Swallow Protocol/3-oz reused from SNOMED; TOR-BSST and EAT-10 as temporary local codes pending LOINC/SNOMED submission). Note that EAT-10 is a patient-reported symptom-severity tool used as a screen rather than a clinician-administered bedside swallow test, and its applicability in acute stroke is limited by aphasia and cognitive impairment. |
 
 ### Terminology: Code Systems 
 

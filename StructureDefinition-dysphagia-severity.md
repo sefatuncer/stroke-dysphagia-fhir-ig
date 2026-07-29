@@ -1,4 +1,4 @@
-# Dysphagia Severity - Stroke Dysphagia Care-Transition FHIR IG v1.0.1
+# Dysphagia Severity - Stroke Dysphagia Care-Transition FHIR IG v1.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,14 +8,16 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-severity | *Version*:1.0.1 |
-| Active as of 2026-07-28 | *Computable Name*:DysphagiaSeverity |
+| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-severity | *Version*:1.1.0 |
+| Active as of 2026-07-29 | *Computable Name*:DysphagiaSeverity |
+| **Copyright/Legal**: © 2026 N. Kapan Tunçer and S. Tunçer. IG artifacts licensed under the MIT License. This IG references but does not redistribute SNOMED CT (© SNOMED International), LOINC (© Regenstrief Institute, Inc.) and the IDDSI framework (CC BY-SA 4.0, used unmodified); value sets enumerate concept identifiers only, so display terms are supplied at expansion time by the implementer's own terminology server. Implementers are responsible for holding the applicable third-party licences. | |
 
  
 Overall severity / oral-intake level (FOIS, DIGEST, or IDDSI FDS). 
 
 **Usages:**
 
+* Refer to this Profile: [Dysphagia Care-Transition Summary](StructureDefinition-dysphagia-care-transition-summary.md)
 * Examples for this Profile: [Observation/ex-dysphagia-severity](Observation-ex-dysphagia-severity.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/dysphagia.care.transition|current/StructureDefinition/StructureDefinition-dysphagia-severity.json)
@@ -37,13 +39,14 @@ Other representations of profile: [CSV](StructureDefinition-dysphagia-severity.c
   "resourceType" : "StructureDefinition",
   "id" : "dysphagia-severity",
   "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-severity",
-  "version" : "1.0.1",
+  "version" : "1.1.0",
   "name" : "DysphagiaSeverity",
   "title" : "Dysphagia Severity",
   "status" : "active",
-  "date" : "2026-07-28T10:50:36+00:00",
+  "date" : "2026-07-29T08:35:16+00:00",
   "publisher" : "N. Kapan Tunçer; S. Tunçer",
   "description" : "Overall severity / oral-intake level (FOIS, DIGEST, or IDDSI FDS).",
+  "copyright" : "© 2026 N. Kapan Tunçer and S. Tunçer. IG artifacts licensed under the MIT License. This IG references but does not redistribute SNOMED CT (© SNOMED International), LOINC (© Regenstrief Institute, Inc.) and the IDDSI framework (CC BY-SA 4.0, used unmodified); value sets enumerate concept identifiers only, so display terms are supplied at expansion time by the implementer's own terminology server. Implementers are responsible for holding the applicable third-party licences.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "workflow",

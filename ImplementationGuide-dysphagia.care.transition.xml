@@ -7,15 +7,16 @@
 </div></div>
   </text>
   <url value="https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ImplementationGuide/dysphagia.care.transition"/>
-  <version value="1.0.1"/>
+  <version value="1.1.0"/>
   <name value="DysphagiaCareTransitionIG"/>
   <title value="Stroke Dysphagia Care-Transition FHIR IG"/>
   <status value="active"/>
-  <date value="2026-07-28T10:50:36+00:00"/>
+  <date value="2026-07-29T08:35:16+00:00"/>
   <publisher value="N. Kapan Tunçer; S. Tunçer"/>
   <description value="Interoperable representation of swallowing assessment, aspiration risk, dysphagia severity and IDDSI diet across stroke care transitions (acute → rehab → home). Reuses SNOMED-embedded IDDSI/GUSS + clinical findings; contributes swallowing-assessment Observation profiles + IDDSI ValueSet/binding + a care-transition summary."/>
+  <copyright value="© 2026 N. Kapan Tunçer and S. Tunçer. IG artifacts licensed under the MIT License. This IG references but does not redistribute SNOMED CT (© SNOMED International), LOINC (© Regenstrief Institute, Inc.) and the IDDSI framework (CC BY-SA 4.0, used unmodified); value sets enumerate concept identifiers only, so display terms are supplied at expansion time by the implementer's own terminology server. Implementers are responsible for holding the applicable third-party licences."/>
   <packageId value="dysphagia.care.transition"/>
-  <license value="CC0-1.0"/>
+  <license value="MIT"/>
   <fhirVersion value="4.0.1"/>
   <dependsOn id="hl7tx">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -521,7 +522,7 @@
         <reference value="ValueSet/dysphagia-severity-type-vs"/>
       </reference>
       <name value="Dysphagia Severity / Oral-Intake Scale Type"/>
-      <description value="Overall dysphagia severity / functional oral-intake measures (DOSS + IDDSI Functional Diet Scale reused from SNOMED; FOIS, DIGEST as temporary local codes pending LOINC/SNOMED submission)."/>
+      <description value="Overall dysphagia severity / functional oral-intake measures for the stroke care transition (DOSS + IDDSI Functional Diet Scale reused from SNOMED; FOIS as a temporary local code pending LOINC/SNOMED submission). DIGEST is deliberately excluded: it is validated for head-and-neck-cancer radiation toxicity, not for stroke, and is surveyed in the coverage assessment only. Its temporary code remains in the local CodeSystem as an upstream-submission candidate."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -623,7 +624,7 @@
         <reference value="ValueSet/iddsi-food-levels"/>
       </reference>
       <name value="IDDSI Food Texture Levels (SNOMED CT)"/>
-      <description value="IDDSI food-axis texture levels 4–7 (SNOMED CT-embedded IDDSI concepts), for NutritionOrder.oralDiet.texture.modifier."/>
+      <description value="IDDSI food-axis texture levels 4–7 (SNOMED CT-embedded IDDSI concepts), for NutritionOrder.oralDiet.texture.modifier. The IDDSI food axis spans Levels 3–7; Level 3 (Liquidised) is the shared Moderately Thick concept and is not enumerated here, so it is reached through the extensible binding."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -667,7 +668,7 @@
         <reference value="ValueSet/swallow-screening-type-vs"/>
       </reference>
       <name value="Swallowing Screening Type"/>
-      <description value="Bedside swallowing screening instruments (GUSS + Yale Swallow Protocol/3-oz reused from SNOMED; EAT-10 / TOR-BSST as temporary local codes pending LOINC/SNOMED submission)."/>
+      <description value="Swallowing screening instruments for the stroke care transition (GUSS + Yale Swallow Protocol/3-oz reused from SNOMED; TOR-BSST and EAT-10 as temporary local codes pending LOINC/SNOMED submission). Note that EAT-10 is a patient-reported symptom-severity tool used as a screen rather than a clinician-administered bedside swallow test, and its applicability in acute stroke is limited by aphasia and cognitive impairment."/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

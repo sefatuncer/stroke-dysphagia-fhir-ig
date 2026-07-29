@@ -1,7 +1,7 @@
 {
   "codeSystems" : [{
     "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp",
-    "version" : "1.0.1",
+    "version" : "1.1.0",
     "status" : "draft",
     "name" : "DysphagiaScalesTemp",
     "title" : "Dysphagia Scales — temporary local codes (proposed for LOINC/SNOMED)",

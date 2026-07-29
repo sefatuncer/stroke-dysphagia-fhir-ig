@@ -1,4 +1,4 @@
-# Instrumental Swallow Assessment (VFSS/FEES) with Penetration-Aspiration Scale - Stroke Dysphagia Care-Transition FHIR IG v1.0.1
+# Instrumental Swallow Assessment (VFSS/FEES) with Penetration-Aspiration Scale - Stroke Dysphagia Care-Transition FHIR IG v1.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,14 +8,16 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/instrumental-swallow-assessment | *Version*:1.0.1 |
-| Active as of 2026-07-28 | *Computable Name*:InstrumentalSwallowAssessment |
+| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/instrumental-swallow-assessment | *Version*:1.1.0 |
+| Active as of 2026-07-29 | *Computable Name*:InstrumentalSwallowAssessment |
+| **Copyright/Legal**: © 2026 N. Kapan Tunçer and S. Tunçer. IG artifacts licensed under the MIT License. This IG references but does not redistribute SNOMED CT (© SNOMED International), LOINC (© Regenstrief Institute, Inc.) and the IDDSI framework (CC BY-SA 4.0, used unmodified); value sets enumerate concept identifiers only, so display terms are supplied at expansion time by the implementer's own terminology server. Implementers are responsible for holding the applicable third-party licences. | |
 
  
 VFSS/FEES result incl. PAS (Rosenbek). PAS lacks LOINC/SNOMED → temp code; proposed upstream. 
 
 **Usages:**
 
+* Refer to this Profile: [Dysphagia Care-Transition Summary](StructureDefinition-dysphagia-care-transition-summary.md)
 * Examples for this Profile: [Observation/ex-instrumental-swallow](Observation-ex-instrumental-swallow.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/dysphagia.care.transition|current/StructureDefinition/StructureDefinition-instrumental-swallow-assessment.json)
@@ -37,13 +39,14 @@ Other representations of profile: [CSV](StructureDefinition-instrumental-swallow
   "resourceType" : "StructureDefinition",
   "id" : "instrumental-swallow-assessment",
   "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/instrumental-swallow-assessment",
-  "version" : "1.0.1",
+  "version" : "1.1.0",
   "name" : "InstrumentalSwallowAssessment",
   "title" : "Instrumental Swallow Assessment (VFSS/FEES) with Penetration-Aspiration Scale",
   "status" : "active",
-  "date" : "2026-07-28T10:50:36+00:00",
+  "date" : "2026-07-29T08:35:16+00:00",
   "publisher" : "N. Kapan Tunçer; S. Tunçer",
   "description" : "VFSS/FEES result incl. PAS (Rosenbek). PAS lacks LOINC/SNOMED → temp code; proposed upstream.",
+  "copyright" : "© 2026 N. Kapan Tunçer and S. Tunçer. IG artifacts licensed under the MIT License. This IG references but does not redistribute SNOMED CT (© SNOMED International), LOINC (© Regenstrief Institute, Inc.) and the IDDSI framework (CC BY-SA 4.0, used unmodified); value sets enumerate concept identifiers only, so display terms are supplied at expansion time by the implementer's own terminology server. Implementers are responsible for holding the applicable third-party licences.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "workflow",
@@ -137,6 +140,13 @@ Other representations of profile: [CSV](StructureDefinition-instrumental-swallow
       "sliceName" : "pas",
       "min" : 0,
       "max" : "1",
+      "constraint" : [{
+        "key" : "pas-range",
+        "severity" : "error",
+        "human" : "The Penetration-Aspiration Scale is an 8-point ordinal scale; a PAS grade outside 1-8 is not a valid score.",
+        "expression" : "value.ofType(integer) >= 1 and value.ofType(integer) <= 8",
+        "source" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/instrumental-swallow-assessment"
+      }],
       "mustSupport" : true
     },
     {
