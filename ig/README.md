@@ -41,6 +41,7 @@ sushi ig            # expect: 0 errors, 0 warnings
 > `docker run --rm -v "$PWD/ig:/ig" alpine rm -rf /ig/fsh-generated`.
 
 ## Status
-Validated: SUSHI 0/0; IG Publisher 0 errors; conformance on two independent servers (reference
-validator + HAPI FHIR) with negative fixtures. Build outputs (`output/`, `temp/`, `fsh-generated/`,
+Validated: SUSHI 0/0; IG Publisher 0 errors. The eight positive examples validated on both
+deployments — the reference validator, which runs inside this build, and a separately deployed
+HAPI FHIR server. The eight negative fixtures were run on the HAPI server only. Build outputs (`output/`, `temp/`, `fsh-generated/`,
 `input-cache/`, `template/`) are regenerated and not committed.

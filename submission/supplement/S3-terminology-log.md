@@ -149,7 +149,7 @@ SNOMED CT moved to a monthly International Edition release cadence during this w
 |---|---|
 | Later SNOMED edition available on tx.fhir.org | US Edition 20250901 and a national edition carrying International content to 2026-03 |
 | LOINC current version | v2.82 remained current (next scheduled release later in 2026) |
-| All 22 reuse codes still active | **Yes** — no inactivations, no display changes affecting the bindings |
+| All codes underlying the 12 *reuse* items still active | **Yes** — no inactivations, no display changes affecting the bindings |
 | Any of the 10 gaps filled | **No** — enumeration under the assessment-scale and finding hierarchies returned no concept for FOIS, PAS, DIGEST, EAT-10, TOR-BSST, V-VST, Yale Pharyngeal Residue, MBSImP, silent aspiration, or laryngeal penetration |
 | SNOMED 2026 release notes | No swallowing/dysphagia-related concept additions identified |
 

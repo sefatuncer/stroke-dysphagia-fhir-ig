@@ -6,8 +6,14 @@ ig/input-cache/
 ig/template/
 ig/evaluation/.tools/
 ig/evaluation/elm/
-ig/evaluation/cohort/
-ig/evaluation/synthea-out/
+# ig/evaluation/cohort/ is deliberately NOT ignored. Every downstream step —
+# CQL execution, the mutation controls, the metrics — reads the cohort rather
+# than the Synthea export, so depositing it (0.7 MB, 333 bundles) reproduces
+# every reported result without re-running the generator.
+# The Synthea export itself is 232 MB and stays out, but its run record does
+# not: metadata/ carries the build, the seeds and the generation parameters.
+ig/evaluation/synthea-out/*
+!ig/evaluation/synthea-out/metadata/
 **/node_modules/
 
 # Large binaries fetched by the toolchain (not source)

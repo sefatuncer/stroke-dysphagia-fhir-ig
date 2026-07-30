@@ -43,10 +43,13 @@ ig/
     negative-fixtures/      Eight should-fail instances, one per constraint under test
     out/                    Deposited conformance evidence (positive + negative, .json/.md)
   evaluation/               Synthea → cohort → CQL→ELM → execution pipeline
+    cohort/                 The 333 deposited evaluation bundles every reported result reads
+    synthea-out/metadata/   Generator run record: build, seeds, generation parameters
     mutation-test.mjs       Two-way rule-mutation control (suppressing and alarm-raising)
     out/                    Reported results, sensitivity sweep, mutation control
 submission/
-  supplement/               Supplementary files S2-S4 (checklist, terminology log, search log)
+  supplement/               Supplementary files S2-S6 (checklist, terminology log, search log,
+                            negative-fixture signatures, terminology license inventory)
 figures/                    Editable draw.io sources + exported PNGs (≥300 dpi)
 ```
 
@@ -65,8 +68,10 @@ cd ig && sushi .
 # 2. Build the IG (HL7 IG Publisher, containerized) — see ig/Dockerfile.igbuild and ig/README.md
 #    Result: 0 errors; terminology validated against tx.fhir.org.
 
-# 3. Conformance on two independent servers (reference validator + HAPI FHIR)
-#    plus negative ("should-fail") fixtures — see ig/conformance/README.md
+# 3. Conformance: the eight positive examples on both deployments (the reference
+#    validator, which runs inside step 2, and a separately deployed HAPI FHIR
+#    server); the eight negative ("should-fail") fixtures on the HAPI server
+#    — see ig/conformance/README.md
 
 # 4. Decision-support feasibility evaluation (synthetic data only)
 cd ig/evaluation && npm ci && node generate-cohort.mjs && node compile-cql.mjs && node run-cql.mjs
@@ -82,7 +87,7 @@ release, national extension, or semantic content (relationships, hierarchies, re
 The identifiers and English terms carried here fall within SNOMED International's
 [Global Patient Set](https://www.snomed.org/gps), published at no cost under CC BY-ND 4.0, which
 does not require SNOMED CT membership or an Affiliate License. Anyone loading SNOMED CT itself
-into a terminology server to expand these value sets needs their own Affiliate/member licence for
+into a terminology server to expand these value sets needs their own Affiliate/member license for
 their territory. LOINC is used under the LOINC license; the IDDSI framework is © The IDDSI
 Committee (CC BY-SA, used unmodified). See [`LICENSE`](LICENSE) for the full notice.
 
@@ -95,9 +100,14 @@ Source code and the IG artifacts authored here are released under the **MIT Lice
 
 If you use this work, please cite the archived release:
 
-> Kapan Tunçer N, Tunçer S. Stroke–Dysphagia Care-Transition FHIR Implementation Guide (v1.1.1). Zenodo; 2026. DOI: 10.5281/zenodo.21629526.
+> Kapan Tunçer N, Tunçer S. Stroke–Dysphagia Care-Transition FHIR Implementation Guide (v1.1.2). Zenodo; 2026. DOI: 10.5281/zenodo.21629526.
 
 The DOI above is the *concept* DOI: it always resolves to the latest archived version.
+
+**Release 1.1.2** leaves every IG artifact byte-identical to 1.1.1 — the profiles, value sets,
+invariants and examples the reported conformance and evaluation runs were made against are
+unchanged. It adds what those runs consume and produce: the 333-bundle evaluation cohort, the
+Synthea run record, the reference validator's QA output, and supplementary files S5 and S6.
 
 **Authors:**
 Nazife Kapan Tunçer (ORCID 0000-0002-8161-5669). Department of Physical Medicine and Rehabilitation, Faculty of Medicine, Kırşehir Ahi Evran University, Kırşehir, Türkiye.

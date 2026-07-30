@@ -19,21 +19,58 @@ cql-translation-service (Docker) → CQL → ELM
   └─ evaluate.mjs                → out/RESULTS.md + results.json
 ```
 
+## What is deposited, and what is not
+
+| Path | In the archive? | Why |
+|---|---|---|
+| `cohort/` (333 bundles, 0.7 MB) | **yes** | the evaluation input. Every reported result is reproducible from it. |
+| `synthea-out/metadata/` (519 B) | **yes** | the generator run record: build, seeds, parameters (below). |
+| `out/` | **yes** | reported results. |
+| `synthea-out/csv/`, `synthea-out/fhir/` (232 MB) | no | the raw Synthea export. Only `generate-cohort.mjs` reads it. |
+| `.tools/synthea-with-dependencies.jar` (197 MB) | no | third-party binary; identified by build below. |
+| `elm/` | no | build product of `compile-cql.mjs`. |
+
+Because the cohort is deposited and everything downstream of it (`compile-cql`,
+`run-cql`, `mutation-test`, `evaluate`) reads `cohort/` rather than the Synthea
+export, **steps 1–2 below can be skipped** when re-running the evaluation. They
+are documented for anyone rebuilding the cohort from scratch.
+
+`sensitivity.mjs` is the one exception: it re-seeds the dysphagia overlay onto
+the Synthea demographic spine, so it reads `synthea-out/csv/` and does require
+step 1.
+
+### Generator provenance (the run that produced the deposited cohort)
+
+| Field | Value |
+|---|---|
+| Synthea build | `2b0a55b` (jar manifest `Build-Version`; built 2026-06-30, Gradle 9.2.1, JDK 17.0.19) |
+| Run ID | `26c9ee22-3d42-4bf4-aebc-a37ea4f33e77` |
+| Population seed | `20260716` |
+| Clinician seed | `1784199237551` — time-derived at run time, **not** preset; recorded in `synthea-out/metadata/` and pinned in the command below so a re-run reproduces it |
+| Reference / end time | `20260716` |
+| Population / age / state | 25,000 · 55–95 · Massachusetts |
+| Years of history | 10 |
+| Java | 17.0.19 |
+
 ## Reproduce
 ```bash
 # 0. deps
 npm install
 
-# 1. synthetic base population (older cohort → stroke-enriched; CSV only)
+# 1. synthetic base population (stroke-enriched; CSV only)
+#    SKIP unless you are rebuilding the cohort or running sensitivity.mjs —
+#    cohort/ is deposited. Synthea build 2b0a55b; -cs/-r/-e pin the values the
+#    original run derived from the clock (see the provenance table above).
 docker run --rm -v "$PWD:/work" -w /work eclipse-temurin:17-jdk \
   java -Xmx5g -jar .tools/synthea-with-dependencies.jar \
-  -s 20260716 -p 25000 -a 55-95 \
+  -s 20260716 -cs 1784199237551 -r 20260716 -e 20260716 \
+  -p 25000 -a 55-95 \
   --exporter.baseDirectory /work/synthea-out \
   --exporter.fhir.export false --exporter.csv.export true \
   --exporter.csv.included_files "patients.csv,conditions.csv" \
   --generate.only_alive_patients true Massachusetts
 
-# 2. build the evaluation cohort (deterministic, seeded)
+# 2. build the evaluation cohort (deterministic, seeded) — SKIP, see above
 node generate-cohort.mjs
 
 # 3. compile the CQL (translation service must be running)

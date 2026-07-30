@@ -1,8 +1,10 @@
 # Conformance — cross-implementation validation (not self-validation)
 
-**Claim for the paper:** the IG's synthetic examples validate against **≥2 independent
-FHIR server implementations**' `$validate` operation — not only the reference validator /
-IG Publisher we author against.
+**Claim for the paper:** the IG's eight synthetic examples validate on **two independently
+deployed servers** — not only the reference validator / IG Publisher we author against. The
+eight negative fixtures were run on the separately deployed HAPI server. Both servers share
+the HL7 Java validation core, so this is portability across deployments, not independence
+across implementations (see below).
 
 | # | Server | Implementation | Status |
 |---|--------|----------------|--------|
@@ -36,6 +38,11 @@ node validate-negatives.mjs http://localhost:8080/fhir
 
 # Both scripts deposit machine-readable evidence under conformance/out/
 # (positive-conformance.json / negative-conformance.json + .md summaries).
+#
+# The reference validator leaves its own record there too: ig-publisher-qa.txt
+# and ig-publisher-qa.json are the IG Publisher's validation summary for the
+# reported build (0 errors, 22 warnings, IG 1.1.1). That run happens inside the
+# authoring toolchain, so it is deposited for audit, not as independent evidence.
 
 # 3) OPTIONAL, not part of the reported results: a genuinely independent
 #    implementation (Firely/.NET). Reported as future work.
