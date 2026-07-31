@@ -59,7 +59,7 @@ This log records, per measure, how coverage was established, what the terminolog
 | Measure | Filter terms used | LOINC | SNOMED CT | Classification |
 |---|---|---|---|---|
 | VFSS (videofluoroscopic swallow study) | "videofluoroscopy", "barium swallow", "swallowing function" | **24681-9** (general RF videography); **86395-1** (swallowing-specific, with barium contrast PO) | **241149003** *Videofluoroscopy swallow (procedure)* | **reuse** |
-| FEES | "FEES", "fiberoptic endoscopic evaluation" | none | **311834001** *Fiberoptic endoscopic evaluation of swallowing*; FEEST **870569005** | **reuse** (procedure coded; no LOINC observation code) |
+| FEES | "FEES", "fiberoptic endoscopic evaluation" | none | **311834001** *Fibreoptic endoscopic evaluation of swallowing* (SNOMED's own British spelling, reproduced verbatim); FEEST **870569005** | **reuse** (procedure coded; no LOINC observation code) |
 | PAS (Penetration-Aspiration Scale, 1–8) | "penetration aspiration", "Rosenbek", "aspiration scale" | none | none (neither the scale nor an ordinal answer set) | **gap** |
 | DIGEST (grade 0–4) | "DIGEST", "swallowing toxicity" | none | none | **gap** |
 | Yale Pharyngeal Residue Severity Rating | "pharyngeal residue", "residue severity" | none | none | **gap** |

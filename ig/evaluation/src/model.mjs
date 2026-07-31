@@ -48,14 +48,19 @@ export const PARAMS = {
 
 // --- Verified codes (SNOMED CT Intl 20250201; see the supplementary
 //     terminology log for the per-item queries) -------------------------------
+// Identifiers only, no display terms. Retrieval matches on system + code, so a
+// label would change nothing computationally — but writing our own shorthand
+// for a SNOMED concept into 333 deposited bundles would put an altered term in
+// the archive, which the CC BY-ND basis this artifact publishes under does not
+// allow. The implementer's terminology server supplies the official display.
 const CODES = {
-  guss:      { system: SCT, code: '1289999007', display: 'Gugging swallowing screen' },
-  vfss:      { system: SCT, code: '241149003',  display: 'Videofluoroscopy swallow' },
-  atRisk:    { system: SCT, code: '371736008',  display: 'At risk for aspiration' },
-  iddsiThin: { system: SCT, code: '1231508001', display: 'Thin (IDDSI Level 0)' },
-  iddsiL1:   { system: SCT, code: '1237441005', display: 'Slightly Thick (IDDSI Level 1)' },
-  iddsiL2:   { system: SCT, code: '1237442003', display: 'Mildly Thick (IDDSI Level 2)' },
-  iddsiL3:   { system: SCT, code: '1237444002', display: 'Moderately Thick (IDDSI Level 3)' },
+  guss:      { system: SCT, code: '1289999007' },
+  vfss:      { system: SCT, code: '241149003'  },
+  atRisk:    { system: SCT, code: '371736008'  },
+  iddsiThin: { system: SCT, code: '1231508001' },
+  iddsiL1:   { system: SCT, code: '1237441005' },
+  iddsiL2:   { system: SCT, code: '1237442003' },
+  iddsiL3:   { system: SCT, code: '1237444002' },
 };
 
 // --- Seeded PRNG (mulberry32) — deterministic, reproducible -----------------
@@ -81,8 +86,20 @@ function normInt(rng, mean, sd, lo, hi) {
 }
 
 // --- FHIR resource builders -------------------------------------------------
-const cc = (c) => ({ coding: [{ system: c.system, code: c.code, display: c.display }] });
+const cc = (c) => ({ coding: [{ system: c.system, code: c.code }] });
 
+// The cohort's inclusion criterion is a cerebrovascular-accident condition, which
+// is applied upstream against the Synthea export. That export is too large to
+// deposit, so without this resource a reader of the archive could not check that
+// the deposited bundles are the cohort the Methods describe.
+function strokeCondition(pid, date) {
+  return {
+    resourceType: 'Condition', id: `${pid}-cva`,
+    clinicalStatus: { coding: [{ system: 'http://terminology.hl7.org/CodeSystem/condition-clinical', code: 'active' }] },
+    code: { coding: [{ system: SCT, code: '230690007' }] },
+    subject: { reference: `Patient/${pid}` }, onsetDateTime: date,
+  };
+}
 function gussObs(pid, score, date) {
   return {
     resourceType: 'Observation', id: `${pid}-guss`,
@@ -163,6 +180,7 @@ export function generatePatient(basePatient, rng, params = PARAMS) {
   // 5) Assemble FHIR bundle -------------------------------------------------
   const entries = [
     { resource: basePatientResource(basePatient) },
+    { resource: strokeCondition(pid, dScreen) },
     { resource: gussObs(pid, guss, dScreen) },
     { resource: foisSeverity(pid, fois, dInstr) },
     { resource: nutritionOrder(pid, dietKind, dOrder) },

@@ -74,9 +74,16 @@ cd ig && sushi .
 #    — see ig/conformance/README.md
 
 # 4. Decision-support feasibility evaluation (synthetic data only)
-cd ig/evaluation && npm ci && node generate-cohort.mjs && node compile-cql.mjs && node run-cql.mjs
-node evaluate.mjs && node sensitivity.mjs && node mutation-test.mjs
-#    Reported metrics are in ig/evaluation/out/: RESULTS.md, SENSITIVITY.md, MUTATION-TEST.md
+#    The 333-bundle cohort is deposited, and every step below reads it rather than
+#    the Synthea export, so this is the whole reproduction path:
+cd ig/evaluation && npm ci && node compile-cql.mjs && node run-cql.mjs
+node evaluate.mjs && node mutation-test.mjs
+#    Reported metrics are in ig/evaluation/out/: RESULTS.md, MUTATION-TEST.md
+#
+#    generate-cohort.mjs and sensitivity.mjs are the two exceptions: they read the
+#    232 MB Synthea export, which is not deposited (see ig/evaluation/README.md for
+#    the command that rebuilds it). Note that generate-cohort.mjs CLEARS cohort/ and
+#    out/ before writing, so run it only when rebuilding the cohort from scratch.
 ```
 
 ## Terminology notice

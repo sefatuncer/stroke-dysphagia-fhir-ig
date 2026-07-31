@@ -70,11 +70,17 @@ docker run --rm -v "$PWD:/work" -w /work eclipse-temurin:17-jdk \
   --exporter.csv.included_files "patients.csv,conditions.csv" \
   --generate.only_alive_patients true Massachusetts
 
-# 2. build the evaluation cohort (deterministic, seeded) — SKIP, see above
+# 2. build the evaluation cohort (deterministic, seeded) — SKIP, see above.
+#    WARNING: this clears cohort/ and out/ before writing, so running it discards
+#    the deposited bundles and the reported results until the steps below re-run.
 node generate-cohort.mjs
 
 # 3. compile the CQL (translation service must be running)
-docker run -d --name cql-xlate -p 8083:8080 cqframework/cql-translation-service:latest
+# Digest-pinned, like the conformance server: `:latest` is mutable, and the ELM is a
+# build product rather than a deposited file, so an unpinned translator would be the
+# one step of §4.4 that a later reader could not reproduce byte for byte.
+docker run -d --name cql-xlate -p 8083:8080 \
+  cqframework/cql-translation-service@sha256:11b1b14c6179c9e9a515ed0295e2394ecb93747076ce8e7ae89150c25ed679af
 node compile-cql.mjs
 
 # 4. execute + evaluate

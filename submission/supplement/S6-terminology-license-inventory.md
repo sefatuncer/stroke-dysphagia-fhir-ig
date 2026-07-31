@@ -1,34 +1,38 @@
-﻿# Supplementary File S6 â€” Terminology license inventory
+# Supplementary File S6 — Terminology license inventory
 
 The manuscript states that this work references terminology identifiers rather than
 redistributing terminology content. That claim is only auditable if the reader can see
 *exactly* which third-party concepts the deposited artifact carries and which of them
 travel with an English display term. This file is that list. It is complete: it was
-extracted from the artifact source, not summarized from memory, and it covers the
-Implementation Guide (profiles, value sets, code system, example instances) **and** the
-evaluation code.
+extracted from the artifact source, not summarized from memory, and it covers everything
+the archive carries — the Implementation Guide (profiles, value sets, code system,
+example instances), the negative conformance fixtures, the CQL library and the deposited
+evaluation cohort.
 
-Source of truth: `ig/input/fsh/dysphagia-ct.fsh` and `ig/evaluation/cql-src/`, at IG
-v1.1.1, commit `eb37ea6`. Codes were verified against SNOMED CT International Edition
-20250201 and LOINC v2.82 on the access dates recorded in Supplementary File S3.
+Source of truth: `ig/input/fsh/dysphagia-ct.fsh`, `ig/conformance/negative-fixtures/`,
+`ig/evaluation/cql-src/` and `ig/evaluation/cohort/`, at the archived release identified
+in the manuscript's Data and Code Availability statement. Codes were verified against
+SNOMED CT International Edition 20250201 and LOINC v2.82 on the access dates recorded in
+Supplementary File S3.
 
 ## 1. Summary
 
-| | Concepts carried | Of which carry a display term |
+| | Distinct concepts carried | Of which carry a display term |
 |---|---|---|
-| SNOMED CT | 18 | 10 |
+| SNOMED CT | 21 | 13 |
 | LOINC | 3 | 1 |
 | Local (`dysphagia-scales-temp`, minted here, MIT) | 7 | 7 (our own text) |
 
-The seven display terms reported in the manuscript's Data and Code Availability
-statement are the seven that appear **in value sets**. Three further SNOMED display
-terms and one LOINC display term appear in the **example instances**, which are
-illustrative resources rather than conformance artifacts. All eleven are itemized below
-so the count is not left to inference.
+Where the display terms sit: **seven** in the value sets (§2.3), **three more** first
+appearing in the example instances (§2.5), **three more** first appearing in the negative
+fixtures (§2.7), and **one** LOINC term (§3). The 333-bundle evaluation cohort carries
+**no third-party display term at all** (§2.6): it matches on identifiers, so the archive
+holds no label of ours standing in for a SNOMED term. Every item is listed below, so no
+count rests on inference.
 
 ## 2. SNOMED CT concepts
 
-### 2.1 IDDSI drink axis â€” `IDDSIFluidLevels` value set (no display terms)
+### 2.1 IDDSI drink axis — `IDDSIFluidLevels` value set (no display terms)
 
 | Code | IDDSI level | Display carried? |
 |---|---|---|
@@ -38,7 +42,7 @@ so the count is not left to inference.
 | 1237444002 | Moderately Thick (Level 3) | no |
 | 1237446000 | Extremely Thick (Level 4, fluids) | no |
 
-### 2.2 IDDSI food axis â€” `IDDSIFoodLevels` value set (no display terms)
+### 2.2 IDDSI food axis — `IDDSIFoodLevels` value set (no display terms)
 
 | Code | IDDSI level | Display carried? |
 |---|---|---|
@@ -71,7 +75,7 @@ English term of the International Edition; none is translated, abbreviated or ed
 
 | Code | Element | Display carried? |
 |---|---|---|
-| 371736008 | `AspirationRiskFlag.code.coding.code` | **no** â€” deliberately excluded from the pattern, so a conformant instance may carry a localized or edition-current term |
+| 371736008 | `AspirationRiskFlag.code.coding.code` | **no** — deliberately excluded from the pattern, so a conformant instance may carry a localized or edition-current term |
 
 ### 2.5 Concepts in example instances (display terms carried)
 
@@ -86,13 +90,35 @@ English term of the International Edition; none is translated, abbreviated or ed
 The two IDDSI strings here are the **SNOMED CT** terms for the SNOMED-embedded IDDSI
 concepts. They are not text taken from an IDDSI publication.
 
-### 2.6 Concepts referenced in the evaluation code (identifiers only)
+### 2.6 Concepts in the CQL library and the deposited cohort (identifiers only)
 
-`ig/evaluation/cql-src/AspirationRiskAlert.cql` and the cohort generator match on bare
-identifiers with no display term: 371736008 (at risk for aspiration), 1231508001 (thin,
-IDDSI Level 0), 182923009 (nil by mouth), 230690007 (cerebrovascular accident). One
-further code, 40739000 (dysphagia), appears only in a negative conformance fixture as a
-deliberately wrong value.
+`ig/evaluation/cql-src/AspirationRiskAlert.cql` retrieves on bare identifiers: 371736008
+(at risk for aspiration), 1231508001 (thin, IDDSI Level 0), 182923009 (nil by mouth).
+The 333 deposited bundles carry 371736008, 1231508001, 1237441005, 1237442003,
+1237444002, 1289999007, 241149003 and 230690007 (cerebrovascular accident, the cohort's
+inclusion criterion) — **all without a display term**. Retrieval matches on system and
+code, so a label would change nothing computationally; writing our own shorthand for a
+SNOMED concept into 333 archived files would, however, put an altered term in the
+archive, which the CC BY-ND basis below does not allow. The only display strings the
+cohort carries are our own local scale labels (§4), which are MIT-licensed.
+
+Three of these — 182923009, 230690007 and 40739000 (§2.7) — appear nowhere in the IG's
+own value sets, which is why the distinct-concept count in §1 is 21 rather than 18.
+
+### 2.7 Concepts in the negative conformance fixtures (display terms carried)
+
+The eight should-fail fixtures are illustrative instances, not conformance artifacts, and
+carry verbatim SNOMED terms. Three concepts appear here that carry no display term
+elsewhere in the artifact:
+
+| Code | Display term carried (verbatim) | Fixture |
+|---|---|---|
+| 40739000 | `Dysphagia` | `neg-aspiration-wrongcode` (a deliberately wrong value) |
+| 1231508001 | `International Dysphagia Diet Standardisation Initiative Framework - Thin Level 0` | `neg-diet-drink-code-on-food` |
+| 1237449007 | `International Dysphagia Diet Standardisation Initiative Framework - Soft and Bite-Sized Level 6` | `neg-diet-food-code-on-fluid` |
+
+The remaining fixture codes (371736008, 1237442003, 1237448004, 241149003, 1289999007 and
+LOINC 34133-9) carry the same verbatim terms already listed in §2.3, §2.5 and §3.
 
 ## 3. LOINC codes
 
@@ -101,9 +127,9 @@ deliberately wrong value.
 | 24681-9 | `InstrumentalSwallowTypeVS` | no |
 | 86395-1 | `InstrumentalSwallowTypeVS` | no |
 | 34133-9 | `DysphagiaCareTransitionSummary.type` (fixed) | no |
-| 34133-9 | `ex-care-transition-summary` | yes â€” `Summary of episode note` |
+| 34133-9 | `ex-care-transition-summary` | yes — `Summary of episode note` |
 
-LOINC 99852-6 (FCMâ€“Swallowing panel, ASHA NOMS) is discussed in the manuscript as an
+LOINC 99852-6 (FCM–Swallowing panel, ASHA NOMS) is discussed in the manuscript as an
 existing coded instrument but is **not** carried by any artifact.
 
 ## 4. Local codes (ours, MIT)
@@ -118,30 +144,32 @@ retirement once equivalent concepts exist upstream.
 
 ## 5. License basis
 
-**SNOMED CT.** The artifact carries concept identifiers and, for the ten concepts listed
-in Â§2.3 and Â§2.5, the unmodified English preferred term. It redistributes no SNOMED CT
-release, national extension, or semantic content â€” no relationships, hierarchies,
+**SNOMED CT.** The artifact carries concept identifiers and, for the thirteen concepts
+listed in §2.3, §2.5 and §2.7, the unmodified English preferred term. It redistributes no SNOMED CT
+release, national extension, or semantic content — no relationships, hierarchies,
 reference sets, or subsets beyond the enumerated value-set membership the authors defined
 themselves. The authors' territory is not a SNOMED International Member territory; the
 publication basis relied on is the **Global Patient Set (GPS)**, published worldwide at
 no cost under **CC BY-ND 4.0**, which SNOMED International states does not require SNOMED
 CT membership or an Affiliate License.
 
-- *Attribution (BY).* SNOMED CTÂ® is a registered trademark of SNOMED International.
-  Concept identifiers and English terms are Â© SNOMED International, used under the GPS
+- *Attribution (BY).* SNOMED CT® is a registered trademark of SNOMED International.
+  Concept identifiers and English terms are © SNOMED International, used under the GPS
   License. This notice also appears in the `copyright` element of every artifact that
   carries a SNOMED concept.
-- *No derivatives (ND).* Every display string in Â§2.3 and Â§2.5 is reproduced verbatim as
-  returned by the HL7 reference terminology server; none is translated, shortened or
-  otherwise altered. Selecting a subset of concepts for a value set is not a modification
+- *No derivatives (ND).* Every display string in §2.3, §2.5 and §2.7 is reproduced
+  verbatim as returned by the HL7 reference terminology server — including the British
+  spelling in `Fibreoptic endoscopic evaluation of swallowing`, which is the term as
+  published and is therefore not Americanized here; none is translated, shortened or
+  otherwise altered. The evaluation cohort carries no SNOMED term at all (§2.6). Selecting a subset of concepts for a value set is not a modification
   of the terms themselves.
 - The authors have not individually re-verified GPS membership for each concept against a
   GPS release file; the per-concept list above is provided precisely so that a licensor or
   reviewer can perform that check directly.
 
-**LOINC.** Three LOINC codes are carried, one with its name (Â§3). These are distributed by
+**LOINC.** Three LOINC codes are carried, one with its name (§3). These are distributed by
 the authors, not merely referenced by implementers, and are used under the terms of the
-LOINC License (Regenstrief Institute, Inc.). LOINCÂ® is a registered trademark of
+LOINC License (Regenstrief Institute, Inc.). LOINC® is a registered trademark of
 Regenstrief Institute, Inc. The notice appears in the `copyright` element of each artifact
 that carries a LOINC code. Implementers deploying LOINC content remain bound by the same
 license.
@@ -152,8 +180,8 @@ SNOMED CT concepts into which SNOMED International embedded the framework, plus 
 two-axis value-set partition and two FHIRPath invariants that are the authors' own work
 and are MIT-licensed.
 
-**This work.** All artifacts authored here â€” profiles, invariants, value-set definitions,
-the local code system, the CQL library, harnesses, generators and pipelines â€” are released
+**This work.** All artifacts authored here — profiles, invariants, value-set definitions,
+the local code system, the CQL library, harnesses, generators and pipelines — are released
 under the **MIT License**. That license covers only this work and neither extends to nor
 relicenses any third-party terminology.
 

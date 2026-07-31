@@ -109,7 +109,7 @@ const MUTATIONS = [
     // outcome-discriminating in this cohort. Expected change is zero, and observing
     // zero is the finding.
     expectChange: false,
-    why: 'Removes the NPO signal (nil-by-mouth observation and diet-less active orders). Because NPO and thin-fluid orders are mutually exclusive by construction, no verdict should change; this documents that the NPO branch is not outcome-discriminating in this cohort.',
+    why: 'Removes the NPO signal. The rule reads nil-by-mouth as a disjunction — a nil-by-mouth Observation or an active order carrying no oral diet — and the generative model emits only the second form, so this control perturbs the diet-less orders. Because NPO and thin-fluid orders are mutually exclusive by construction, no verdict should change; this documents that the NPO branch is not outcome-discriminating in this cohort.',
     apply: (bundles) =>
       eachEntry(bundles, (r) => {
         if (r?.resourceType === 'Observation') {

@@ -1,6 +1,8 @@
-# Independent conformance server #1 — HAPI FHIR (Java / Smile CDR OSS).
-# Used to demonstrate that the IG's synthetic examples validate against an
-# INDEPENDENT server implementation's $validate operation — not self-validation.
+# Second conformance deployment — HAPI FHIR (Java / Smile CDR OSS).
+# Used to show that the IG's synthetic examples validate somewhere other than the
+# toolchain that produced them, and to run the negative fixtures. It shares the HL7
+# Java validation core with the reference validator, so this is portability across
+# deployments, not independence across implementations.
 #
 #   docker compose -f docker-compose.hapi.yml up -d
 #   # FHIR base: http://localhost:8080/fhir   (metadata: .../fhir/metadata)
