@@ -46,6 +46,10 @@ export const PARAMS = {
   dietGivenScreenNeg: { npo: 0.02, thickened: 0.08, thin: 0.90 },
 };
 
+// Base for Bundle.entry.fullUrl. `.invalid` is reserved by RFC 2606 and can
+// never resolve, so nothing here can be mistaken for a real endpoint.
+const SYNTHETIC_BASE = 'https://synthetic.invalid/fhir';
+
 // --- Verified codes (SNOMED CT Intl 20250201; see the supplementary
 //     terminology log for the per-item queries) -------------------------------
 // Identifiers only, no display terms. Retrieval matches on system + code, so a
@@ -187,6 +191,11 @@ export function generatePatient(basePatient, rng, params = PARAMS) {
   ];
   if (flagCoded) entries.push({ resource: aspirationFlag(pid, dScreen) }); // ← coded flag only when recorded interoperably
   if (screenPos) entries.push({ resource: vfssPas(pid, pas, dInstr) });
+  // Every entry needs a fullUrl: base FHIR requires one outside transactions and
+  // batches, and without it the relative subject references cannot be resolved
+  // inside the bundle. The host is an RFC 2606 reserved name that can never
+  // resolve, which is the honest base for data that exists nowhere.
+  for (const e of entries) e.fullUrl = `${SYNTHETIC_BASE}/${e.resource.resourceType}/${e.resource.id}`;
   const bundle = { resourceType: 'Bundle', id: `bundle-${pid}`, type: 'collection', entry: entries };
 
   // 6) Reference labels (NOT a diagnostic gold standard) --------------------

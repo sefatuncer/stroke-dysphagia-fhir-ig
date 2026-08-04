@@ -31,8 +31,8 @@
       "signatureMatched": true,
       "profileUnresolved": false,
       "correctlyRejected": true,
-      "firstError": "Value is '40739000' but is fixed to '371736008' in the profile https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/asp",
-      "allErrors": "Value is '40739000' but is fixed to '371736008' in the profile https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/aspiration-risk-flag#Observation.code.coding.code"
+      "firstError": "The pattern [system http://snomed.info/sct, code 371736008, and display 'null'] defined in the profile https://sefatuncer.github.io/stroke-d",
+      "allErrors": "The pattern [system http://snomed.info/sct, code 371736008, and display 'null'] defined in the profile https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/aspiration-risk-flag not found. Issues: [ValidationMessage[level=ERROR,type=VALUE,location=Observation.code.coding.code,message=Value is '40739000' but is fixed to '371736008' in the profile https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/aspiration-risk-flag#Observation]]"
     },
     {
       "fixture": "neg-diet-drink-code-on-food.json",

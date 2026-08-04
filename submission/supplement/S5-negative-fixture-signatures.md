@@ -19,7 +19,7 @@ validator and this server; the negative suite was run on this server only (§3.5
 | # | Fixture | Resource | Constraint under test | Constraint type | Rejection signature (verbatim) |
 |---|---|---|---|---|---|
 | 1 | `neg-aspiration-preliminary` | Observation | `AspirationRiskFlag.status` fixed to `final` | fixed value | `Value is 'preliminary' but is fixed to 'final' in the profile …/aspiration-risk-flag` |
-| 2 | `neg-aspiration-wrongcode` | Observation | `AspirationRiskFlag.code` fixed to SNOMED `371736008` | fixed value | `Value is '40739000' but is fixed to '371736008' in the profile …/aspiration-risk-flag` |
+| 2 | `neg-aspiration-wrongcode` | Observation | `AspirationRiskFlag.code` pattern SNOMED `371736008` | pattern on CodeableConcept | `The pattern [system http://snomed.info/sct, code 371736008, and display 'null'] defined in the profile …/aspiration-risk-flag not found` |
 | 3 | `neg-diet-drink-code-on-food` | NutritionOrder | invariant `iddsi-axis-food` | FHIRPath invariant | `Constraint failed: iddsi-axis-food: 'A drink-only IDDSI concept must not be used on texture.modifier…'` |
 | 4 | `neg-diet-food-code-on-fluid` | NutritionOrder | invariant `iddsi-axis-fluid` | FHIRPath invariant | `Constraint failed: iddsi-axis-fluid: 'A food-axis IDDSI concept must not be used on fluidConsistencyType…'` |
 | 5 | `neg-instrumental-pas-out-of-range` | Observation | invariant `pas-range` (1–8) | FHIRPath invariant | `Constraint failed: pas-range: 'The Penetration-Aspiration Scale is an 8-point ordinal scale…'` |
@@ -43,7 +43,7 @@ above is from the tightened fixture.
 
 | Profile | Covered by fixture | Constraint exercised |
 |---|---|---|
-| `AspirationRiskFlag` | 1, 2 | fixed status, fixed code |
+| `AspirationRiskFlag` | 1, 2 | fixed status, required SNOMED coding |
 | `DysphagiaNutritionOrder` | 3, 4 | both IDDSI axis invariants |
 | `InstrumentalSwallowAssessment` | 5 | PAS range invariant |
 | `SwallowingScreeningResult` | 6 | tightened cardinality |
@@ -66,3 +66,18 @@ Reported so that the suite's coverage is not overstated:
   directly and the harness needs no external terminology server, so these paths are untested here.
 
 Extending the suite to the first group is straightforward and is the obvious next increment.
+
+## A note on fixture 2, and on what the flag profile does *not* reject
+
+Up to IG v1.1.1 the aspiration-risk flag fixed `code.coding.system` and `code.coding.code`
+directly. A constraint on a repeating element applies to every repetition, so an instance
+carrying a site's local flag code *alongside* the SNOMED translation — the ordinary shape of
+mapped EHR data, and the situation the manuscript's §5.4 describes — failed validation. From
+v1.2.0 the pattern sits on `code` itself, which requires one matching SNOMED coding and lets
+translations travel beside it. Fixture 2 still fails, for the same reason and with the
+signature quoted above; the rejection message changed with the constraint, which is why the
+table records the current one.
+
+The suite therefore does not test, and the profile does not reject, an instance that carries
+the required SNOMED coding plus additional local codings. That is intended behavior rather
+than a coverage gap, and it is recorded here so the two are not confused.

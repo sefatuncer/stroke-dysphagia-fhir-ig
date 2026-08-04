@@ -6,6 +6,9 @@ ig/input-cache/
 ig/template/
 ig/evaluation/.tools/
 ig/evaluation/elm/
+# 4 MB of per-resource OperationOutcomes; conformance/out/cohort-conformance.{json,md}
+# carries the verdict and the error/warning signatures.
+ig/conformance/out/cohort-validator-raw.json
 # ig/evaluation/cohort/ is deliberately NOT ignored. Every downstream step —
 # CQL execution, the mutation controls, the metrics — reads the cohort rather
 # than the Synthea export, so depositing it (0.7 MB, 333 bundles) reproduces
@@ -27,7 +30,7 @@ ig/evaluation/synthea-out/*
 # Local working directories (not part of the public artifact)
 /review/
 # The manuscript sources stay private, but the supplementary files the paper
-# declares as openly available (S2-S4) are part of the public artifact.
+# declares as openly available (S2-S6) are part of the public artifact.
 /submission/*
 !/submission/supplement/
 

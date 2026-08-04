@@ -39,7 +39,7 @@ ig/
     fsh/dysphagia-ct.fsh    FHIR Shorthand: profiles, value sets, code system, examples
     cql/AspirationRiskAlert.cql
     pagecontent/index.md
-  conformance/              Independent-server conformance harness + negative fixtures
+  conformance/              Second-deployment conformance harness + negative fixtures
     negative-fixtures/      Eight should-fail instances, one per constraint under test
     out/                    Deposited conformance evidence (positive + negative, .json/.md)
   evaluation/               Synthea → cohort → CQL→ELM → execution pipeline
@@ -107,14 +107,23 @@ Source code and the IG artifacts authored here are released under the **MIT Lice
 
 If you use this work, please cite the archived release:
 
-> Kapan Tunçer N, Tunçer S. Stroke–Dysphagia Care-Transition FHIR Implementation Guide (v1.1.2). Zenodo; 2026. DOI: 10.5281/zenodo.21629526.
+> Kapan Tunçer N, Tunçer S. Stroke–Dysphagia Care-Transition FHIR Implementation Guide (v1.2.0). Zenodo; 2026. DOI: 10.5281/zenodo.21629526.
 
 The DOI above is the *concept* DOI: it always resolves to the latest archived version.
 
-**Release 1.1.2** leaves every IG artifact byte-identical to 1.1.1 — the profiles, value sets,
-invariants and examples the reported conformance and evaluation runs were made against are
-unchanged. It adds what those runs consume and produce: the 333-bundle evaluation cohort, the
-Synthea run record, the reference validator's QA output, and supplementary files S5 and S6.
+**Releases 1.1.2 and 1.1.3** left every IG artifact byte-identical to 1.1.1 and added what the
+reported runs consume and produce: the 333-bundle evaluation cohort, the Synthea run record,
+the reference validator's QA output, and supplementary files S5 and S6.
+
+**Release 1.2.0** changes one profile. `AspirationRiskFlag` fixed the SNOMED code on
+`code.coding`, and a constraint on a repeating element applies to *every* repetition — so an
+instance carrying a site's local flag code alongside the SNOMED translation, which is what
+mapped EHR data normally looks like, failed validation. The pattern now sits on `code`
+itself: one matching SNOMED coding is required, translations may travel beside it. Nothing
+else about the profiles changed, and the conformance results are unchanged (8/8 positive,
+8/8 negative). This release also adds `ig/conformance/validate-cohort.mjs`, which validates
+all 333 deposited bundles against the built IG — they pass with 0 errors, which the earlier
+releases asserted but never checked.
 
 **Authors:**
 Nazife Kapan Tunçer (ORCID 0000-0002-8161-5669). Department of Physical Medicine and Rehabilitation, Faculty of Medicine, Kırşehir Ahi Evran University, Kırşehir, Türkiye.

@@ -10,7 +10,7 @@
 The IG's `AspirationRiskAlert` CQL compiled to ELM with **0 errors** and executed **unmodified on a real CQL engine** (cql-execution + cql-exec-fhir) over **333/333** FHIR R4 instances conforming to the IG profiles — a full profile-authoring → terminology → executable-rule round-trip.
 
 ## 2. Toolchain-fidelity (round-trip) check
-Engine output matched a deterministic reference implementation of the same boolean logic on **333/333** patients (**100.0%**). Because both apply the same specification to the same synthetic data, this is the expected ceiling: it confirms the profile → code → retrieve → engine chain is defect-free — NOT that the rule is logically or clinically valid.
+Engine output matched the generative model's own labels (its latent state, computed before serialization — not a second implementation of the rule) on **333/333** patients (**100.0%**). Because both apply the same specification to the same synthetic data, this is the expected ceiling: it confirms the profile → code → retrieve → engine chain is defect-free — NOT that the rule is logically or clinically valid.
 
 ## 3. Trigger rate
 The rule fired on **31/333** patients (**9.3%**).

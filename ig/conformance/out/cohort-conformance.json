@@ -1,0 +1,13 @@
+{
+  "bundles": 333,
+  "outcomes": 333,
+  "bundlesWithError": 0,
+  "issues": {
+    "fatal": 0,
+    "error": 0,
+    "warning": 2731,
+    "information": 0
+  },
+  "errorSignatures": [],
+  "validator": "HL7 reference validator (validator_cli.jar), FHIR R4, IG package from ig/output"
+}

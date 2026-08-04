@@ -2,7 +2,7 @@
 // mutation-test.mjs — negative control for the round-trip / toolchain-fidelity check.
 //
 // The reported 100% agreement between the CQL engine and the deterministic
-// reference implementation only carries information if the comparison is capable
+// model labels only carries information if the comparison is capable
 // of DISAGREEING. This script injects deliberate defects into the cohort and
 // verifies that each one is detected, i.e. that the check is sensitive rather
 // than trivially returning "equal".

@@ -74,6 +74,8 @@ Included in the search per §3.4. Scholar applies automated-access protection, s
 
 The substrate exists and is reused: base FHIR resources (Observation, NutritionOrder, Composition) and adjacent Implementation Guides (US Core, IPS, PACIO PFE). What was not found is any artifact dedicated to swallowing-assessment, dysphagia-severity, or aspiration-risk representation, or any value set binding IDDSI levels to diet orders.
 
+**A note on the comparators named in the manuscript.** The ICHOM-anchored stroke-pathway IG that §3.4 calls the closest published artifact is *not* a hit in the queries above: it was reached by following stroke-pathway work rather than by a swallowing-term query, which is consistent with the finding — it contains no swallowing, aspiration-risk or diet-consistency content, so a swallowing-term search would not surface it. The SNOMED NCPT IG, discussed in Supplementary File S3 for its lack of IDDSI value sets, was likewise examined outside these queries. Both are recorded here so that the comparison set in the manuscript is traceable, and neither changes the count above.
+
 ---
 
 ## 4. Limitations of this search

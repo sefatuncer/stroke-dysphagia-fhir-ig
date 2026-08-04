@@ -179,8 +179,12 @@ Description: "Patient-level aspiration-risk finding — the minimal, most safety
 // term is supplied at expansion time by the implementer's own terminology server. Fixing
 // a display string here would both contradict that policy and reject conformant instances
 // that carry a language-localised or edition-current term.
-* code.coding.system = "http://snomed.info/sct"
-* code.coding.code = #371736008                         // at risk for aspiration (verified SNOMED Intl 20250201)
+// The pattern sits on `code`, not on `code.coding`: a constraint on the repeating
+// coding applies to EVERY repetition, so a site sending its local flag code alongside
+// the SNOMED translation — the normal shape of mapped EHR data, and exactly what §5.4
+// describes — would fail validation. On the CodeableConcept it requires one matching
+// coding and lets translations travel beside it.
+* code = $SCT#371736008                                 // at risk for aspiration (verified SNOMED Intl 20250201)
 * subject 1..1 MS
 * subject only Reference(Patient)
 * effective[x] 1..1 MS

@@ -107,8 +107,9 @@ own value sets, which is why the distinct-concept count in §1 is 21 rather than
 
 ### 2.7 Concepts in the negative conformance fixtures (display terms carried)
 
-The eight should-fail fixtures are illustrative instances, not conformance artifacts, and
-carry verbatim SNOMED terms. Three concepts appear here that carry no display term
+The eight should-fail fixtures are illustrative in the licensing sense — conformance inputs
+rather than published example resources — and carry verbatim SNOMED terms. (They are, of
+course, load-bearing as evidence: see the manuscript's §4.3 and Supplementary File S5.) Three concepts appear here that carry no display term
 elsewhere in the artifact:
 
 | Code | Display term carried (verbatim) | Fixture |
