@@ -1,4 +1,4 @@
-# Example ??? synthetic stroke patient (no real data) - Stroke Dysphagia Care-Transition FHIR IG v1.1.1
+# Example ??? synthetic stroke patient (no real data) - Stroke Dysphagia Care-Transition FHIR IG v1.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

@@ -21,16 +21,16 @@
     "oids" : ["2.16.840.1.113883.6.96"],
     "uses" : {
     },
-    "ValueSet-iddsi-food-levels.html" : "IDDSI Food Texture Levels (SNOMED CT)",
     "ValueSet-instrumental-swallow-type-vs.html" : "Instrumental Swallow Assessment Type",
-    "ValueSet-iddsi-fluid-levels.html" : "IDDSI Drink/Fluid Consistency Levels (SNOMED CT)",
     "ValueSet-aspiration-risk-value-vs.html" : "Aspiration Event Qualifier",
+    "ValueSet-iddsi-food-levels.html" : "IDDSI Food Texture Levels (SNOMED CT)",
+    "ValueSet-iddsi-fluid-levels.html" : "IDDSI Drink/Fluid Consistency Levels (SNOMED CT)",
     "ValueSet-dysphagia-severity-type-vs.html" : "Dysphagia Severity / Oral-Intake Scale Type",
     "ValueSet-swallow-screening-type-vs.html" : "Swallowing Screening Type"
   },
   {
     "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp",
-    "version" : "1.1.1",
+    "version" : "1.2.0",
     "status" : "draft",
     "name" : "DysphagiaScalesTemp",
     "title" : "Dysphagia Scales — temporary local codes (proposed for LOINC/SNOMED)",

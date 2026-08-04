@@ -1,4 +1,4 @@
-# Swallowing Screening Result - Stroke Dysphagia Care-Transition FHIR IG v1.1.1
+# Swallowing Screening Result - Stroke Dysphagia Care-Transition FHIR IG v1.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/swallowing-screening-result | *Version*:1.1.1 |
-| Active as of 2026-07-29 | *Computable Name*:SwallowingScreeningResult |
+| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/swallowing-screening-result | *Version*:1.2.0 |
+| Active as of 2026-07-31 | *Computable Name*:SwallowingScreeningResult |
 | **Copyright/Legal**: © 2026 N. Kapan Tunçer and S. Tunçer. IG artifacts licensed under the MIT License. This IG carries concept identifiers from SNOMED CT (© SNOMED International), LOINC (© Regenstrief Institute, Inc.) and the IDDSI framework (CC BY-SA 4.0, used unmodified); it redistributes no code system release, national extension or semantic content. Value sets enumerate identifiers, and some members additionally carry the English term as an unmodified display hint; the authoritative display is supplied at expansion time by the implementer's own terminology server. Implementers are responsible for holding the applicable third-party licences. | |
 
  
@@ -39,11 +39,11 @@ Other representations of profile: [CSV](StructureDefinition-swallowing-screening
   "resourceType" : "StructureDefinition",
   "id" : "swallowing-screening-result",
   "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/swallowing-screening-result",
-  "version" : "1.1.1",
+  "version" : "1.2.0",
   "name" : "SwallowingScreeningResult",
   "title" : "Swallowing Screening Result",
   "status" : "active",
-  "date" : "2026-07-29T12:05:46+00:00",
+  "date" : "2026-07-31T09:21:13+00:00",
   "publisher" : "N. Kapan Tunçer; S. Tunçer",
   "description" : "Bedside dysphagia screening (GUSS/EAT-10/TOR-BSST). GUSS reuses SNOMED 1289999007.",
   "copyright" : "© 2026 N. Kapan Tunçer and S. Tunçer. IG artifacts licensed under the MIT License. This IG carries concept identifiers from SNOMED CT (© SNOMED International), LOINC (© Regenstrief Institute, Inc.) and the IDDSI framework (CC BY-SA 4.0, used unmodified); it redistributes no code system release, national extension or semantic content. Value sets enumerate identifiers, and some members additionally carry the English term as an unmodified display hint; the authoritative display is supplied at expansion time by the implementer's own terminology server. Implementers are responsible for holding the applicable third-party licences.",
