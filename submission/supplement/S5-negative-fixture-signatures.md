@@ -69,14 +69,14 @@ Extending the suite to the first group is straightforward and is the obvious nex
 
 ## A note on fixture 2, and on what the flag profile does *not* reject
 
-Up to IG v1.1.1 the aspiration-risk flag fixed `code.coding.system` and `code.coding.code`
+An earlier release of the flag profile fixed `code.coding.system` and `code.coding.code`
 directly. A constraint on a repeating element applies to every repetition, so an instance
 carrying a site's local flag code *alongside* the SNOMED translation — the ordinary shape of
-mapped EHR data, and the situation the manuscript's §5.4 describes — failed validation. From
-v1.2.0 the pattern sits on `code` itself, which requires one matching SNOMED coding and lets
-translations travel beside it. Fixture 2 still fails, for the same reason and with the
-signature quoted above; the rejection message changed with the constraint, which is why the
-table records the current one.
+mapped EHR data, and the situation the manuscript's §5.4 describes — failed validation. In
+the release reported here the pattern sits on `code` itself, which requires one matching
+SNOMED coding and lets translations travel beside it. Fixture 2 still fails, for the same
+reason and with the signature quoted above; the rejection message changed with the
+constraint, which is why the table records the current one.
 
 The suite therefore does not test, and the profile does not reject, an instance that carries
 the required SNOMED coding plus additional local codings. That is intended behavior rather
