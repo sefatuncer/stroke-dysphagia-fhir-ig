@@ -121,7 +121,7 @@ instance carrying a site's local flag code alongside the SNOMED translation, whi
 mapped EHR data normally looks like, failed validation. The pattern now sits on `code`
 itself: one matching SNOMED coding is required, translations may travel beside it. Nothing
 else about the profiles changed, and the conformance results are unchanged (8/8 positive,
-8/8 negative). This release also adds `ig/conformance/validate-cohort.mjs`, which validates
+10/10 negative). This release also adds `ig/conformance/validate-cohort.mjs`, which validates
 all 333 deposited bundles against the built IG — they pass with 0 errors, which the earlier
 releases asserted but never checked.
 

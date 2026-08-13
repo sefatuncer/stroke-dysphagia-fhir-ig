@@ -1,10 +1,11 @@
 # Conformance — cross-implementation validation (not self-validation)
 
-**Claim for the paper:** the IG's eight synthetic examples validate on **two independently
-deployed servers** — not only the reference validator / IG Publisher we author against. The
-eight negative fixtures were run on the separately deployed HAPI server. Both servers share
-the HL7 Java validation core, so this is portability across deployments, not independence
-across implementations (see below).
+**Claim for the paper:** both suites — the eight synthetic examples and the ten negative
+fixtures — run on **two deployments outside the authoring build**: the HL7 reference validator
+invoked standalone against the built package, and a separately deployed HAPI FHIR server.
+Four machine-readable records are deposited, one per suite per deployment. Both share the HL7
+Java validation core, so this is portability across deployments, not independence across
+implementations (see below).
 
 | # | Server | Implementation | Status |
 |---|--------|----------------|--------|
@@ -31,18 +32,24 @@ docker compose -f docker-compose.hapi.yml up -d
 node validate-on-server.mjs http://localhost:8080/fhir
 
 # 2b) NEGATIVE test — prove the profiles CONSTRAIN, not merely accept:
-#     8 should-fail fixtures (negative-fixtures/) must ALL be rejected, and each
+#     10 should-fail fixtures (negative-fixtures/) must ALL be rejected, and each
 #     rejection must carry the signature of the constraint under test (not merely
-#     "some error"), covering all six profiles.
+#     "some error"), covering all six profiles and every constraint Table 1 names.
 node validate-negatives.mjs http://localhost:8080/fhir
 
-# Both scripts deposit machine-readable evidence under conformance/out/
-# (positive-conformance.json / negative-conformance.json + .md summaries).
+# 2c) the same two suites on the second deployment: the HL7 reference validator
+#     invoked standalone against the built package (requires ig/output/package.tgz).
+node validate-positives-cli.mjs
+node validate-negatives-cli.mjs
+
+# The four scripts deposit machine-readable evidence under conformance/out/
+# (positive-/negative-conformance.json for HAPI, positive-/negative-conformance-cli.json
+# for the reference validator, each with a .md summary).
 #
 # The reference validator leaves its own record there too: ig-publisher-qa.txt
 # and ig-publisher-qa.json are the IG Publisher's validation summary for the
-# reported build (0 errors, 22 warnings, IG 1.1.1). That run happens inside the
-# authoring toolchain, so it is deposited for audit, not as independent evidence.
+# reported build. That run happens inside the authoring toolchain, so it is
+# deposited for audit, not counted as one of the two deployments above.
 
 # 3) OPTIONAL, not part of the reported results: a genuinely independent
 #    implementation (Firely/.NET). Reported as future work.
