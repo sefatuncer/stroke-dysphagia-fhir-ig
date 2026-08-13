@@ -84,9 +84,9 @@ writeFileSync(join(OUT, 'sensitivity.json'), JSON.stringify(out, null, 2));
 
 // --- Human-readable report --------------------------------------------------
 let md = `# Sensitivity analysis — interoperability-gap vs coding-completeness (synthetic)\n\n`;
-md += `Cohort N = ${N} synthetic stroke patients. 40 seeds per parameter value. **The invisibility rate among clinically-unsafe cases tracks (1 − P(coded)) by construction; this demonstrates the mechanism, it is not an empirical estimate.**\n\n`;
+md += `Cohort N = ${N} synthetic stroke patients. 40 seeds per parameter value. **The invisibility rate among rule-target cases tracks (1 − P(coded)) by construction; this demonstrates the mechanism, it is not an empirical estimate.**\n\n`;
 md += `## Primary run (paper's headline; seed ${PRIMARY_SEED}, P(coded)=0.70)\n`;
-md += `- clinically-unsafe cases: **${primary.unsafe}**; invisible (un-coded flag): **${primary.gap}**\n`;
+md += `- rule-target cases: **${primary.unsafe}**; invisible (un-coded flag): **${primary.gap}**\n`;
 md += `- invisibility rate = ${primary.gap}/${primary.unsafe} = **${pct(primary.invis)}%** (no inferential interval is attached: this is a by-construction property of the model, not an estimate of a real-world quantity)\n`;
 md += `- expected by design: 1 − 0.70 = 30.0%\n\n`;
 md += `## Sweep over coding-completeness P(coded) — 40 seeds each\n\n`;

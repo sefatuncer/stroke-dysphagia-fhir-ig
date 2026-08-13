@@ -38,10 +38,10 @@ const out = {
   authoringConcordance: { concordant, of: executed, rate: pct(concordant, executed), discordantIds: discord },
   triggerRate: { fired, of: n, rate: pct(fired) },
   interoperabilityDependency: {
-    clinicalUnsafe_shouldSurface: clinicalUnsafe,
+    ruleTargetConfigurations: clinicalUnsafe,
     surfacedByRule_flagCoded: surfaced,
     missedDueToUncodedFlag: interopMissed,
-    missedShare_ofUnsafe: pct(interopMissed, clinicalUnsafe),
+    missedShare_ofRuleTarget: pct(interopMissed, clinicalUnsafe),
   },
 };
 writeFileSync(join(OUT, 'results.json'), JSON.stringify(out, null, 2));
@@ -64,9 +64,9 @@ Engine output matched the generative model's own labels (its latent state, compu
 The rule fired on **${fired}/${n}** patients (**${pct(fired)}**).
 
 ## 4. Interoperability dependency (the paper's thesis, quantified — feasibility, not effect)
-Of **${clinicalUnsafe}** patients in a clinically-unsafe configuration (screen-positive + thin fluids + not NPO) that *should* surface at the care transition:
+Of **${clinicalUnsafe}** patients in the rule-target configuration (screen-positive + thin fluids + not NPO):
 - **${surfaced}** were surfaced by the computable rule (aspiration-risk flag recorded as a **coded** Observation);
-- **${interopMissed}** (**${pct(interopMissed, clinicalUnsafe)}** of unsafe cases) were **invisible to the rule solely because the flag was documented as un-coded free text** — i.e., the computable safety check is only as complete as the *structured, standardized* representation the IG defines.
+- **${interopMissed}** (**${pct(interopMissed, clinicalUnsafe)}** of rule-target cases) were **invisible to the rule solely because the flag was documented as un-coded free text** — i.e., the computable safety check is only as complete as the *structured, standardized* representation the IG defines.
 
 This is a **feasibility demonstration of the interoperability dependency**, not a measurement of clinical benefit or information-loss reduction.
 `;
