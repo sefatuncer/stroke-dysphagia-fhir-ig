@@ -37,3 +37,6 @@ ig/evaluation/synthea-out/*
 # OS and editor cruft
 .DS_Store
 Thumbs.db
+
+# Gönderim için üretilen ek kopyaları (kaynak .md depoda; .docx yalnız yükleme içindir)
+submission/supplement/*.docx
