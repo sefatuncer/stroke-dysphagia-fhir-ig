@@ -1,15 +1,15 @@
 {
   "kind": "negative-conformance",
-  "igVersion": "1.2.1",
-  "runTimestamp": "2026-08-13T14:19:26.694Z",
+  "igVersion": "1.2.2",
+  "runTimestamp": "2026-08-13T23:57:32.163Z",
   "server": {
     "baseUrl": "http://localhost:8080/fhir",
     "name": "HAPI FHIR Server",
     "version": "8.10.0",
     "fhirVersion": "4.0.1"
   },
-  "fixturesTested": 8,
-  "correctlyRejected": 8,
+  "fixturesTested": 10,
+  "correctlyRejected": 10,
   "pass": true,
   "results": [
     {
@@ -97,6 +97,18 @@
       "allErrors": "Observation.subject: minimum required = 1, but only found 0 (from https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-severity)"
     },
     {
+      "fixture": "neg-summary-foreign-entry.json",
+      "resourceType": "Composition",
+      "profile": "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-care-transition-summary",
+      "expected": "section.entry references a Condition — profile restricts entries to the IG profiles",
+      "worstSeverity": "error",
+      "signatureMatched": true,
+      "profileUnresolved": false,
+      "correctlyRejected": true,
+      "firstError": "Invalid Resource target type. Found Condition, but expected one of ([NutritionOrder, Observation])",
+      "allErrors": "Invalid Resource target type. Found Condition, but expected one of ([NutritionOrder, Observation])"
+    },
+    {
       "fixture": "neg-summary-no-entry.json",
       "resourceType": "Composition",
       "profile": "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-care-transition-summary",
@@ -107,6 +119,18 @@
       "correctlyRejected": true,
       "firstError": "Constraint failed: dct-has-content: 'A care-transition summary must carry at least one section entry. An envelope with no dysphagia content ",
       "allErrors": "Constraint failed: dct-has-content: 'A care-transition summary must carry at least one section entry. An envelope with no dysphagia content is not a transfer.' (defined in https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-care-transition-summary)"
+    },
+    {
+      "fixture": "neg-summary-wrong-type.json",
+      "resourceType": "Composition",
+      "profile": "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-care-transition-summary",
+      "expected": "wrong Composition.type code — profile fixes type to LOINC 34133-9",
+      "worstSeverity": "error",
+      "signatureMatched": true,
+      "profileUnresolved": false,
+      "correctlyRejected": true,
+      "firstError": "The pattern [system http://loinc.org, code 34133-9, and display 'null'] defined in the profile https://sefatuncer.github.io/stroke-dysphagia",
+      "allErrors": "The pattern [system http://loinc.org, code 34133-9, and display 'null'] defined in the profile https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-care-transition-summary not found. Issues: [ValidationMessage[level=ERROR,type=VALUE,location=Composition.type.coding.code,message=Value is '11488-4' but is fixed to '34133-9' in the profile https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-care-transition-summary#Composition]]"
     }
   ]
 }

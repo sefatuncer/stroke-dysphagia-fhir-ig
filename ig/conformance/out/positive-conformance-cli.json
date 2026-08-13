@@ -1,0 +1,86 @@
+{
+  "igVersion": "1.2.2",
+  "runTimestamp": "2026-08-13T23:50:30.730Z",
+  "validator": "HL7 reference validator (validator_cli.jar), FHIR R4, IG package from ig/output",
+  "deployment": "in-toolchain reference validator (the second deployment for the accepting side)",
+  "note": "Both this validator and the HAPI server share the HL7 Java validation core: portability across deployments, not independence across implementations.",
+  "examplesTested": 8,
+  "conforming": 8,
+  "validatedAgainstDeclaredProfile": 6,
+  "validatedAgainstBaseFhir": 2,
+  "pass": true,
+  "results": [
+    {
+      "example": "Composition-ex-care-transition-summary.json",
+      "resourceType": "Composition",
+      "declaredProfile": "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-care-transition-summary",
+      "errorCount": 0,
+      "warningCount": 1,
+      "conforms": true,
+      "firstError": ""
+    },
+    {
+      "example": "NutritionOrder-ex-dysphagia-diet.json",
+      "resourceType": "NutritionOrder",
+      "declaredProfile": "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-nutrition-order",
+      "errorCount": 0,
+      "warningCount": 1,
+      "conforms": true,
+      "firstError": ""
+    },
+    {
+      "example": "Observation-ex-aspiration-risk.json",
+      "resourceType": "Observation",
+      "declaredProfile": "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/aspiration-risk-flag",
+      "errorCount": 0,
+      "warningCount": 2,
+      "conforms": true,
+      "firstError": ""
+    },
+    {
+      "example": "Observation-ex-dysphagia-severity.json",
+      "resourceType": "Observation",
+      "declaredProfile": "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-severity",
+      "errorCount": 0,
+      "warningCount": 2,
+      "conforms": true,
+      "firstError": ""
+    },
+    {
+      "example": "Observation-ex-instrumental-swallow.json",
+      "resourceType": "Observation",
+      "declaredProfile": "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/instrumental-swallow-assessment",
+      "errorCount": 0,
+      "warningCount": 2,
+      "conforms": true,
+      "firstError": ""
+    },
+    {
+      "example": "Observation-ex-swallow-screening.json",
+      "resourceType": "Observation",
+      "declaredProfile": "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/swallowing-screening-result",
+      "errorCount": 0,
+      "warningCount": 2,
+      "conforms": true,
+      "firstError": ""
+    },
+    {
+      "example": "Organization-ex-org.json",
+      "resourceType": "Organization",
+      "declaredProfile": null,
+      "errorCount": 0,
+      "warningCount": 1,
+      "conforms": true,
+      "firstError": ""
+    },
+    {
+      "example": "Patient-ex-patient.json",
+      "resourceType": "Patient",
+      "declaredProfile": null,
+      "errorCount": 0,
+      "warningCount": 1,
+      "conforms": true,
+      "firstError": ""
+    }
+  ]
+}

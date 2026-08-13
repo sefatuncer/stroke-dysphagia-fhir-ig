@@ -22,7 +22,7 @@ Several STARE-HI items assume a *deployed* system evaluated in a care setting. T
 | 6.3 | Participants | ⊘ | No human participants. The nearest analogue is who performed the terminology classification: §3.2 states that both authors classified each measure jointly, and S3 §6.3 records that disagreements were adjudicated internally, with no external adjudicator. |
 | 6.4 | Study flow | ✅ | Figure 3 gives the authoring → build → conformance → evaluation pipeline; §3.7 states that each step is scripted and re-runnable. |
 | 6.5 | Outcome measures | ✅ | §3.6 defines four quantities and labels the fourth an analytic illustration rather than a finding. |
-| 6.6 | Data collection / measurement | ✅ | Terminology queries, filter terms, per-item results and access dates are in **S3**; artifact and literature search queries, per-source results and screening decisions with reasons are in **S4**; cohort generation parameters are in Table 2 and the seed is given in §3.6. |
+| 6.6 | Data collection / measurement | ✅ | Terminology queries, filter terms, per-item results and access dates are in **S3**; artifact and literature search queries, per-source results and screening decisions with reasons are in **S4**; cohort generation parameters are in Table 3 and the seed is given in §3.6. |
 | 6.7 | Data analysis methods | ✅ | §3.6 states the per-seed rate definition and the seed count with its a-priori Monte-Carlo rationale; §4.4 and §5.3-11 state that no inferential statistic is attached; Table 4 reports SD, MCSE and the closed-form binomial expectation. |
 | 7.1 | Demographic and other characteristics | ◐ (adapted) | The cohort is synthetic and its clinical attributes are assigned independently of demographics, so demographic description would not inform the results. Branch-level counts are reported instead: the alert count (31/333) in §4.4, and the full branch coverage — 75 coded flags, 240 on thin fluids, 20 NPO, 31 alerts — in the deposited `MUTATION-TEST.md`, which is the auditable source for these figures. |
 | 7.2 | Unexpected events during the study | ◐ | The evaluation surfaced two structural findings that are reported rather than suppressed: the NPO branch executes without discriminating any verdict, and the rule's `amended` status arm is unreachable for conformant data (§4.4, §5.3-17). Earlier design iterations are not narrated step by step; the design decisions that were revised are recorded where they bear on interpretation (§3.3, §5.3-9, §5.3-13). |
@@ -37,7 +37,7 @@ Several STARE-HI items assume a *deployed* system evaluated in a care setting. T
 | 10 | Author contributions | ✅ | CRediT-style statement for both authors. |
 | 11 | Competing interests | ✅ | Declared, including the verifiable-credentials interest relevant to the future-work direction in §5.4. |
 | 12 | Acknowledgements | ◐ | Present; the acknowledgement is to the standards communities whose work is reused, with no individual contributors to name. |
-| 13 | References | ✅ | 43 references, Vancouver/AMA style, numbered by order of first citation. |
+| 13 | References | ✅ | 48 references, Vancouver/AMA style, numbered by order of first citation. |
 | 14 | Appendices / supplementary material | ✅ | S1 (element provenance), S2 (this checklist), S3 (terminology log), S4 (search log), S5 (negative-fixture rejection signatures and the constraints the suite leaves untested), S6 (per-concept terminology license inventory), plus the deposited cohort, conformance, mutation-control and sensitivity outputs. |
 
 ## Toolchain versions (STARE-HI item 5.2)

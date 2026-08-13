@@ -16,8 +16,8 @@ Engine output matched the generative model's own labels (its latent state, compu
 The rule fired on **31/333** patients (**9.3%**).
 
 ## 4. Interoperability dependency (the paper's thesis, quantified — feasibility, not effect)
-Of **47** patients in a clinically-unsafe configuration (screen-positive + thin fluids + not NPO) that *should* surface at the care transition:
+Of **47** patients in the rule-target configuration (screen-positive + thin fluids + not NPO):
 - **31** were surfaced by the computable rule (aspiration-risk flag recorded as a **coded** Observation);
-- **16** (**34.0%** of unsafe cases) were **invisible to the rule solely because the flag was documented as un-coded free text** — i.e., the computable safety check is only as complete as the *structured, standardized* representation the IG defines.
+- **16** (**34.0%** of rule-target cases) were **invisible to the rule solely because the flag was documented as un-coded free text** — i.e., the computable safety check is only as complete as the *structured, standardized* representation the IG defines.
 
 This is a **feasibility demonstration of the interoperability dependency**, not a measurement of clinical benefit or information-loss reduction.

@@ -22,9 +22,9 @@
     "rate": "9.3%"
   },
   "interoperabilityDependency": {
-    "clinicalUnsafe_shouldSurface": 47,
+    "ruleTargetConfigurations": 47,
     "surfacedByRule_flagCoded": 31,
     "missedDueToUncodedFlag": 16,
-    "missedShare_ofUnsafe": "34.0%"
+    "missedShare_ofRuleTarget": "34.0%"
   }
 }

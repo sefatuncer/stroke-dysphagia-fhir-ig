@@ -1,6 +1,6 @@
 # Negative fixtures — reference validator (second deployment)
 
-8/8 fixtures were rejected for the constraint they target.
+10/10 fixtures were rejected for the constraint they target.
 
 | Fixture | Constraint under test | errors | signature matched | correctly rejected |
 |---|---|---|---|---|
@@ -11,6 +11,8 @@
 | `neg-instrumental-pas-out-of-range.json` | PAS component value 99 — invariant pas-range (scale is 1–8) | 1 | yes | yes |
 | `neg-screening-noeffective.json` | effective[x] absent — profile requires effective[x] 1..1 | 1 | yes | yes |
 | `neg-severity-nosubject.json` | subject absent — profile requires subject 1..1 | 1 | yes | yes |
+| `neg-summary-foreign-entry.json` | section.entry references a Condition — profile restricts entries to the IG profiles | 1 | yes | yes |
 | `neg-summary-no-entry.json` | sections without section.entry — invariant dct-has-content | 1 | yes | yes |
+| `neg-summary-wrong-type.json` | wrong Composition.type code — profile fixes type to LOINC 34133-9 | 1 | yes | yes |
 
 Both this validator and the HAPI server share the HL7 Java validation core: portability across deployments, not independence across implementations.

@@ -1,9 +1,9 @@
 # Sensitivity analysis — interoperability-gap vs coding-completeness (synthetic)
 
-Cohort N = 333 synthetic stroke patients. 40 seeds per parameter value. **The invisibility rate among clinically-unsafe cases tracks (1 − P(coded)) by construction; this demonstrates the mechanism, it is not an empirical estimate.**
+Cohort N = 333 synthetic stroke patients. 40 seeds per parameter value. **The invisibility rate among rule-target cases tracks (1 − P(coded)) by construction; this demonstrates the mechanism, it is not an empirical estimate.**
 
 ## Primary run (paper's headline; seed 20260716, P(coded)=0.70)
-- clinically-unsafe cases: **47**; invisible (un-coded flag): **16**
+- rule-target cases: **47**; invisible (un-coded flag): **16**
 - invisibility rate = 16/47 = **34.0%** (no inferential interval is attached: this is a by-construction property of the model, not an estimate of a real-world quantity)
 - expected by design: 1 − 0.70 = 30.0%
 

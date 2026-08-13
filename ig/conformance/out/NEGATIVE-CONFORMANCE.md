@@ -2,7 +2,7 @@
 
 Server: **HAPI FHIR Server 8.10.0** (FHIR 4.0.1) at `http://localhost:8080/fhir`
 
-**8/8 negative fixtures correctly rejected** — PASS
+**10/10 negative fixtures correctly rejected** — PASS
 
 | Fixture | Profile constraint under test | Worst severity | Signature matched | Correctly rejected |
 |---|---|---|---|---|
@@ -13,7 +13,9 @@ Server: **HAPI FHIR Server 8.10.0** (FHIR 4.0.1) at `http://localhost:8080/fhir`
 | `neg-instrumental-pas-out-of-range.json` | PAS component value 99 — violates invariant pas-range (scale is 1-8) | error | yes | yes |
 | `neg-screening-noeffective.json` | effective[x] absent — profile requires effective[x] 1..1 | error | yes | yes |
 | `neg-severity-nosubject.json` | subject absent — profile requires subject 1..1 (tightened from base 0..1) | error | yes | yes |
+| `neg-summary-foreign-entry.json` | section.entry references a Condition — profile restricts entries to the IG profiles | error | yes | yes |
 | `neg-summary-no-entry.json` | sections carry narrative but no section.entry — violates invariant dct-has-content (empty envelope) | error | yes | yes |
+| `neg-summary-wrong-type.json` | wrong Composition.type code — profile fixes type to LOINC 34133-9 | error | yes | yes |
 
 A fixture counts as correctly rejected only when the server errors, the error carries the
 signature of the constraint under test, and the error is not merely an unresolvable-profile

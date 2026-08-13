@@ -103,7 +103,7 @@ Included in the search per §3.4. Scholar applies automated-access protection, s
 
 ## 3. Result
 
-**Records screened: 5 (PubMed, with reasons above). Artifacts identified across four registries: 0. Included: 0.**
+**Records screened: 7 (5 in the first round, 2 in the second; PubMed, with reasons above). Artifacts identified across four registries: 0. Included: 0.**
 
 The substrate exists and is reused: base FHIR resources (Observation, NutritionOrder, Composition) and adjacent Implementation Guides (US Core, IPS, PACIO PFE). What was not found is any artifact dedicated to swallowing-assessment, dysphagia-severity, or aspiration-risk representation, or any value set binding IDDSI levels to diet orders.
 
@@ -117,4 +117,4 @@ The substrate exists and is reused: base FHIR resources (Observation, NutritionO
 2. **The build-server check is partial.** The `build.fhir.org/ig/` index lists publishing organizations, not every IG title; an un-indexed or build-only IG could be missed. This is the residual limitation stated in §5.3.
 3. **Google Scholar hit counts are not transcribed** because of automated-access protection.
 4. **Single screener.** Records were screened by one author (informatics) and the decisions were reviewed by the second author; there was no independent double screening, so screening reliability is not quantified.
-5. **Scope of the query vocabulary.** The search combined "dysphagia", "deglutition", "swallowing", and "aspiration" with FHIR-artifact terms. Non-FHIR representations (openEHR archetypes, HL7 CDA/C-CDA templates) were **not** searched; the claim is therefore specific to FHIR and should not be read as a claim about clinical modelling in general.
+5. **Scope of the query vocabulary.** The first round combined "dysphagia", "deglutition", "swallowing", and "aspiration" with FHIR-artifact terms; the second round added the diet/consistency vocabulary ("IDDSI", "texture-modified", "nutrition order", "diet order"). Non-FHIR representations (openEHR archetypes, HL7 CDA/C-CDA templates) were **not** searched; the claim is therefore specific to FHIR and should not be read as a claim about clinical modelling in general.

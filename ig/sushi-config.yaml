@@ -6,7 +6,7 @@ name: DysphagiaCareTransitionIG
 title: "Stroke Dysphagia Care-Transition FHIR IG"
 description: "Interoperable representation of swallowing assessment, aspiration risk, dysphagia severity and IDDSI diet across stroke care transitions (acute → rehab → home). Reuses SNOMED-embedded IDDSI/GUSS + clinical findings; contributes swallowing-assessment Observation profiles + IDDSI ValueSet/binding + a care-transition summary."
 status: active
-version: 1.2.1
+version: 1.2.2
 fhirVersion: 4.0.1
 copyrightYear: 2026+
 releaseLabel: release

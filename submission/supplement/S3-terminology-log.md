@@ -1,6 +1,6 @@
 # Supplementary File S3 — Terminology coverage log
 
-Companion to §3.2 (*Structured terminology-coverage assessment*) and §4.1 / Table 3.
+Companion to §3.2 (*Structured terminology-coverage assessment*) and §4.1 / Table 2.
 This log records, per measure, how coverage was established, what the terminology server returned, and how the item was classified.
 
 ---
@@ -113,16 +113,16 @@ The food value set enumerates Levels 4–7 and therefore does **not** list `1237
 
 **Denominator (22 items):** 15 instruments/procedures + 6 finding-level concepts (four coded, two gaps) + the IDDSI framework as a single diet/consistency entry.
 
-**Sensitivity of the 12/10 split to the counting rule.** The denominator counts one entry per *measure to be represented*, which is why the IDDSI framework — 10 SNOMED concepts spanning two axes — is one entry, exactly as GUSS is one entry rather than one per score band. Two alternative rules change the headline without changing any classification: counting each IDDSI concept separately gives 21/10 of 31 (coverage looks better), and adding CMS Eating gives 13/10 of 23 (also better). Both alternatives move the ratio in the direction *against* the paper's contribution, so the rule chosen is not the one that flatters it. Two entries in the gap column carry caveats that the count alone does not show: EAT-10 is a patient-reported symptom questionnaire rather than a bedside test and is not bound by any profile, and MBSImP is proprietary, so an upstream submission is realistic for eight of the ten rather than all ten.
+**Sensitivity of the 12/10 split to the counting rule.** The denominator counts one entry per *measure to be represented*, which is why the IDDSI framework — 10 SNOMED concepts spanning two axes — is one entry, exactly as GUSS is one entry rather than one per score band. Two alternative rules change the headline without changing any classification: counting each IDDSI concept separately gives 21/10 of 31 (coverage looks better), and adding CMS Eating gives 13/10 of 23 (also better). Of the three, the rule used here yields the largest gap share (10 of 22, 45.5%; the alternatives give 32.3% and 43.5%), so it is the most favourable to the contribution — as §5.3-18 of the manuscript states. It was fixed before the survey, and both alternatives are reported here so that the reader can apply either denominator. Two entries in the gap column carry caveats that the count alone does not show: EAT-10 is a patient-reported symptom questionnaire rather than a bedside test and is not bound by any profile, and MBSImP is proprietary, so an upstream submission is realistic for eight of the ten rather than all ten.
 
 ### The *partial* class
 
-§3.2 defines three classes, but Table 3 reports two. This is deliberate and is recorded here rather than left implicit:
+§3.2 defines three classes, but Table 2 reports two. This is deliberate and is recorded here rather than left implicit:
 
-- **DOSS** meets the *partial* definition exactly — the scale concept is coded (`767131006`) but **no coded level answer set exists**. It is reported under *reuse* in Table 3 because the IG binds the scale concept itself; the missing answer set is a candidate for an upstream answer-list submission and is listed as such in the submission plan.
+- **DOSS** meets the *partial* definition exactly — the scale concept is coded (`767131006`) but **no coded level answer set exists**. It is reported under *reuse* in Table 2 because the IG binds the scale concept itself; the missing answer set is a candidate for an upstream answer-list submission and is listed as such in the submission plan.
 - **FEES** is partial in a different sense: the SNOMED procedure concept exists (`311834001`) but there is no LOINC observation/report code. It is reported under *reuse* because the element the IG binds (the procedure) is coded.
 
-No other item met the definition. The two cases above are the reason the *partial* column does not appear in Table 3; where an item is coded at the level the IG actually binds, it is counted as *reuse*, and the residual gap (answer set, or a second code system) is recorded here.
+No other item met the definition. The two cases above are the reason the *partial* column does not appear in Table 2; where an item is coded at the level the IG actually binds, it is counted as *reuse*, and the residual gap (answer set, or a second code system) is recorded here.
 
 ### Surveyed but outside the 22-item denominator
 

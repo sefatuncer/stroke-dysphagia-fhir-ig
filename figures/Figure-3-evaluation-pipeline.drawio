@@ -23,7 +23,7 @@
         <mxCell id="pubig" value="Published IG&#10;0 errors" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=11;fontStyle=1;" vertex="1" parent="1">
           <mxGeometry x="760" y="76" width="140" height="48" as="geometry" />
         </mxCell>
-        <mxCell id="servers" value="Two deployments (shared HL7 validation core):&#10;reference validator + HAPI FHIR&#10;8/8 examples pass; 8/8 negative fixtures rejected" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+        <mxCell id="servers" value="Two deployments (shared HL7 validation core):&#10;reference validator + HAPI FHIR&#10;8/8 examples pass; 10/10 negative fixtures rejected" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;fontStyle=1;" vertex="1" parent="1">
           <mxGeometry x="940" y="68" width="230" height="64" as="geometry" />
         </mxCell>
         <mxCell id="a1" style="endArrow=classic;html=1;strokeColor=#666666;" edge="1" parent="1" source="fsh" target="sushi"><mxGeometry relative="1" as="geometry" /></mxCell>
