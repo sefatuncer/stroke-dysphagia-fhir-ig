@@ -18,7 +18,9 @@
       "minInvis": 0.32608695652173914,
       "maxInvis": 0.6470588235294118,
       "meanUnsafe": 43.4,
-      "meanTrigger": 0.06501501501501501
+      "meanTrigger": 0.06501501501501501,
+      "mcse": 0.013434822150059011,
+      "analyticSd": 0.07589709258986453
     },
     {
       "pFlagCoded": 0.6,
@@ -28,7 +30,9 @@
       "minInvis": 0.25,
       "maxInvis": 0.5853658536585366,
       "meanUnsafe": 43.4,
-      "meanTrigger": 0.0783033033033033
+      "meanTrigger": 0.0783033033033033,
+      "mcse": 0.011937226052286878,
+      "analyticSd": 0.07436365992237533
     },
     {
       "pFlagCoded": 0.7,
@@ -38,7 +42,9 @@
       "minInvis": 0.15,
       "maxInvis": 0.5121951219512195,
       "meanUnsafe": 43.4,
-      "meanTrigger": 0.09099099099099098
+      "meanTrigger": 0.09099099099099098,
+      "mcse": 0.011831491382690731,
+      "analyticSd": 0.06956083436402524
     },
     {
       "pFlagCoded": 0.8,
@@ -48,7 +54,9 @@
       "minInvis": 0.075,
       "maxInvis": 0.3181818181818182,
       "meanUnsafe": 43.4,
-      "meanTrigger": 0.1038288288288288
+      "meanTrigger": 0.1038288288288288,
+      "mcse": 0.009517414504938431,
+      "analyticSd": 0.060717674071891624
     },
     {
       "pFlagCoded": 0.9,
@@ -58,7 +66,9 @@
       "minInvis": 0,
       "maxInvis": 0.21212121212121213,
       "meanUnsafe": 43.4,
-      "meanTrigger": 0.11666666666666663
+      "meanTrigger": 0.11666666666666663,
+      "mcse": 0.007976046409231394,
+      "analyticSd": 0.045538255553918716
     }
   ]
 }

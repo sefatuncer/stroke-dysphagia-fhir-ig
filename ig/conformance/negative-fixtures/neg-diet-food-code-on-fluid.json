@@ -19,8 +19,7 @@
           "coding": [
             {
               "code": "1237449007",
-              "system": "http://snomed.info/sct",
-              "display": "International Dysphagia Diet Standardisation Initiative Framework - Soft and Bite-Sized Level 6"
+              "system": "http://snomed.info/sct"
             }
           ]
         }

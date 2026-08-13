@@ -10,9 +10,21 @@ Fixtures are in `ig/conformance/negative-fixtures/`; the machine-readable run is
 `ig/conformance/out/negative-conformance.json`, deposited with the artifact. Signatures are quoted
 verbatim from that file and truncated only where the canonical URL repeats.
 
-**Server:** the independently deployed HAPI FHIR server (v8.10.0, digest-pinned), via
-`$validate` against the declared profile. Positive examples were validated on both the reference
-validator and this server; the negative suite was run on this server only (§3.5, §5.3-3).
+**Deployments:** both the independently deployed HAPI FHIR server (v8.10.0, digest-pinned,
+via `$validate` against the declared profile) and the HL7 reference validator
+(`validator_cli.jar`, against the built IG package). Positive examples and the negative suite
+were each run on both deployments; the machine-readable records are `negative-conformance.json`
+(HAPI) and `negative-conformance-cli.json` (reference validator). Both share the HL7 Java
+validation core, so this is portability across deployments, not independence across
+implementations (§5.3-3).
+
+> **Fixture 4 was corrected (13 Aug 2026).** `neg-diet-food-code-on-fluid` carried a display term
+> on `1237449007` that the reference validator rejected as a wrong display name for the concept.
+> It produced a second error alongside the invariant under test, so the fixture did not satisfy
+> the "exactly one violated rule" rule this suite is built on — and the string was not verbatim,
+> which the licensing argument requires of every display the artifact carries. The identifier now
+> travels alone, and all eight fixtures fail for exactly the constraint they target on both
+> deployments.
 
 ## Rejection signatures
 

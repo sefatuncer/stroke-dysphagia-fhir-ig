@@ -84,7 +84,7 @@ This log records, per measure, how coverage was established, what the terminolog
 | 7 | `1237450007` | Easy to Chew | food |
 | 7 | `1237451006` | Regular | food |
 
-**Arithmetic of the two value sets (this resolves an apparent discrepancy).** The drink axis enumerates 5 concepts (Levels 0–4) and the food axis enumerates 5 concepts (Levels 4–7), giving **10 with no overlap**: IDDSI Level 4 has **two distinct SNOMED concepts**, one per axis (`1237446000` Extremely Thick for drinks, `1237447009` Pureed for foods), and Level 7 likewise has two variants (Easy to Chew, Regular). The two axes therefore share no concept.
+**Arithmetic of the two value sets (this resolves an apparent discrepancy).** The drink axis enumerates 5 concepts (Levels 0–4) and the food axis enumerates 5 concepts (Levels 4–7), giving **10 with no overlap**: IDDSI Level 4 has **two distinct SNOMED concepts**, one per axis (`1237446000` Extremely Thick for drinks, `1237447009` Pureed for foods), and Level 7 likewise has two variants (Easy to Chew, Regular). The two **value sets** therefore share no concept.
 
 **Level 3 on the food axis.** In the IDDSI framework the food axis spans Levels 3–7 (Level 3 = *Liquidised*). SNOMED CT 20250201 carries **one** Level-3 concept, `1237444002` *Moderately Thick*, which IDDSI treats as the transitional level shared by both axes: the same concept is *Moderately Thick* as a drink and *Liquidised* as a food. There is no separate pre-coordinated concept for Liquidised food.
 
@@ -113,6 +113,8 @@ The food value set enumerates Levels 4–7 and therefore does **not** list `1237
 
 **Denominator (22 items):** 15 instruments/procedures + 6 finding-level concepts (four coded, two gaps) + the IDDSI framework as a single diet/consistency entry.
 
+**Sensitivity of the 12/10 split to the counting rule.** The denominator counts one entry per *measure to be represented*, which is why the IDDSI framework — 10 SNOMED concepts spanning two axes — is one entry, exactly as GUSS is one entry rather than one per score band. Two alternative rules change the headline without changing any classification: counting each IDDSI concept separately gives 21/10 of 31 (coverage looks better), and adding CMS Eating gives 13/10 of 23 (also better). Both alternatives move the ratio in the direction *against* the paper's contribution, so the rule chosen is not the one that flatters it. Two entries in the gap column carry caveats that the count alone does not show: EAT-10 is a patient-reported symptom questionnaire rather than a bedside test and is not bound by any profile, and MBSImP is proprietary, so an upstream submission is realistic for eight of the ten rather than all ten.
+
 ### The *partial* class
 
 §3.2 defines three classes, but Table 3 reports two. This is deliberate and is recorded here rather than left implicit:
@@ -135,7 +137,7 @@ Two measures were examined during the survey and are **not** part of the 22-item
 
 ## 4. Item selection
 
-Measures were included if they (a) are referenced by the two anchor guidelines used for the clinical content model (AHA/ASA acute ischemic stroke; ESO–ESSD post-stroke dysphagia), or (b) are validated instruments whose output is a care-critical element of the stroke care-transition data set (screening result, instrumental grading, severity/functional oral intake, aspiration-risk status, diet/fluid consistency), or (c) are coded neighbours of such instruments that a coverage assessment must account for (ASHA-NOMS, CMS Eating, IDDSI-FDS).
+Measures were included if they (a) are referenced by the two anchor guidelines used for the clinical content model (AHA/ASA acute ischemic stroke; ESO–ESSD post-stroke dysphagia), or (b) are validated instruments whose output is a care-critical element of the stroke care-transition data set (screening result, instrumental grading, severity/functional oral intake, aspiration-risk status, diet/fluid consistency), or (c) are coded neighbours *of the elements this IG binds* that a coverage assessment must account for (ASHA-NOMS, IDDSI-FDS). CMS Eating (LOINC 45602-0) meets criterion (c) read broadly but was left out: it scores a self-care activity of daily living, not a swallowing or diet-consistency element, so no profile in this IG could bind it. Because it is coded, including it would move the split from 12/10 of 22 to 13/10 of 23 — that is, it would make the coverage look *better*, not worse; the exclusion is recorded here so the reader can apply either denominator.
 
 Instruments used chiefly for quality-of-life or symptom burden rather than care-transition transfer (e.g., SWAL-QOL), and instruments outside the stroke setting whose coverage does not bear on this transfer, were not surveyed. DIGEST and MBSImP are surveyed for completeness although they originate outside stroke care; this is stated in §3.1.
 

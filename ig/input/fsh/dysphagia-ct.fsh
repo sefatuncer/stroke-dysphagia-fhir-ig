@@ -117,6 +117,7 @@ Parent: Observation
 Id: swallowing-screening-result
 Title: "Swallowing Screening Result"
 Description: "Bedside dysphagia screening (GUSS/EAT-10/TOR-BSST). GUSS reuses SNOMED 1289999007."
+* ^copyright = "Profile definition: MIT (© 2026 N. Kapan Tunçer and S. Tunçer). This profile carries third-party concept identifiers rather than the terminologies themselves. SNOMED CT® is a registered trademark of SNOMED International; concept identifiers and English terms are © SNOMED International, used under the Global Patient Set licence (CC BY-ND 4.0) and reproduced verbatim, with none translated, shortened or otherwise altered. Implementers remain responsible for holding the applicable third-party licences in their own territory."
 * status MS
 * status = #final (exactly)
 * code MS
@@ -136,6 +137,7 @@ Parent: Observation
 Id: instrumental-swallow-assessment
 Title: "Instrumental Swallow Assessment (VFSS/FEES) with Penetration-Aspiration Scale"
 Description: "VFSS/FEES result incl. PAS (Rosenbek). PAS lacks LOINC/SNOMED → temp code; proposed upstream."
+* ^copyright = "Profile definition: MIT (© 2026 N. Kapan Tunçer and S. Tunçer). This profile carries third-party concept identifiers rather than the terminologies themselves. SNOMED CT® is a registered trademark of SNOMED International; concept identifiers and English terms are © SNOMED International, used under the Global Patient Set licence (CC BY-ND 4.0) and reproduced verbatim, with none translated, shortened or otherwise altered. LOINC® is a registered trademark of Regenstrief Institute, Inc.; LOINC codes are used under the LOINC License (http://loinc.org/license). Implementers remain responsible for holding the applicable third-party licences in their own territory."
 * status MS
 * code MS
 * code from InstrumentalSwallowTypeVS (extensible)
@@ -159,6 +161,7 @@ Parent: Observation
 Id: dysphagia-severity
 Title: "Dysphagia Severity"
 Description: "Overall severity / oral-intake level (FOIS, DIGEST, or IDDSI FDS)."
+* ^copyright = "Profile definition: MIT (© 2026 N. Kapan Tunçer and S. Tunçer). This profile carries third-party concept identifiers rather than the terminologies themselves. SNOMED CT® is a registered trademark of SNOMED International; concept identifiers and English terms are © SNOMED International, used under the Global Patient Set licence (CC BY-ND 4.0) and reproduced verbatim, with none translated, shortened or otherwise altered. Implementers remain responsible for holding the applicable third-party licences in their own territory."
 * status MS
 * code MS
 * code from DysphagiaSeverityTypeVS (extensible)
@@ -172,6 +175,7 @@ Parent: Observation
 Id: aspiration-risk-flag
 Title: "Aspiration Risk Flag"
 Description: "Patient-level aspiration-risk finding — the minimal, most safety-critical element carried across transitions. The at-risk-for-aspiration finding is asserted by `Observation.code`; the mere PRESENCE of a final instance is the datum the care-transition consistency rule consumes (the rule does not read the value). Status is fixed to final so that every conformant instance is visible to the rule (the rule accepts final|amended, a superset), closing the profile↔rule gap. An optional qualifier value may record the observed aspiration event on which the risk determination was based."
+* ^copyright = "Profile definition: MIT (© 2026 N. Kapan Tunçer and S. Tunçer). This profile carries third-party concept identifiers rather than the terminologies themselves. SNOMED CT® is a registered trademark of SNOMED International; concept identifiers and English terms are © SNOMED International, used under the Global Patient Set licence (CC BY-ND 4.0) and reproduced verbatim, with none translated, shortened or otherwise altered. Implementers remain responsible for holding the applicable third-party licences in their own territory."
 * status MS
 * status = #final (exactly)                             // rule-visible: a preliminary flag must not silently conform
 // Only the code and system are fixed. The display term is deliberately NOT part of the
@@ -229,6 +233,7 @@ Parent: NutritionOrder
 Id: dysphagia-nutrition-order
 Title: "Dysphagia Nutrition Order (IDDSI-bound)"
 Description: "NutritionOrder constrained to bind IDDSI levels (extensible) — base FHIR only binds these 'example'."
+* ^copyright = "Profile definition: MIT (© 2026 N. Kapan Tunçer and S. Tunçer). This profile carries third-party concept identifiers rather than the terminologies themselves. SNOMED CT® is a registered trademark of SNOMED International; concept identifiers and English terms are © SNOMED International, used under the Global Patient Set licence (CC BY-ND 4.0) and reproduced verbatim, with none translated, shortened or otherwise altered. The IDDSI framework is used unmodified under CC BY-SA 4.0; no IDDSI document text, table, image or testing method is reproduced. Implementers remain responsible for holding the applicable third-party licences in their own territory."
 * patient 1..1 MS
 * oralDiet.fluidConsistencyType from IDDSIFluidLevels (extensible)   // drink axis (levels 0–4)
 * oralDiet.texture.modifier from IDDSIFoodLevels (extensible)        // food axis: value set enumerates 4–7
@@ -248,6 +253,7 @@ Parent: Composition
 Id: dysphagia-care-transition-summary
 Title: "Dysphagia Care-Transition Summary"
 Description: "Composition bundling swallowing assessment + severity + aspiration risk + IDDSI diet + precautions for a stroke care transition."
+* ^copyright = "Profile definition: MIT (© 2026 N. Kapan Tunçer and S. Tunçer). This profile carries third-party concept identifiers rather than the terminologies themselves. LOINC® is a registered trademark of Regenstrief Institute, Inc.; LOINC codes are used under the LOINC License (http://loinc.org/license). SNOMED CT® is a registered trademark of SNOMED International; concept identifiers and English terms are © SNOMED International, used under the Global Patient Set licence (CC BY-ND 4.0) and reproduced verbatim, with none translated, shortened or otherwise altered. Implementers remain responsible for holding the applicable third-party licences in their own territory."
 * obeys dct-has-content
 * status MS
 * type = $LOINC#34133-9

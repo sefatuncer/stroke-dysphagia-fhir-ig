@@ -1,0 +1,780 @@
+{
+  "resourceType" : "Bundle",
+  "type" : "collection",
+  "entry" : [{
+    "resource" : {
+      "resourceType" : "OperationOutcome",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Warning</td><td>Observation</td><td>Validation rule failed</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>Observation</td><td>Invalid Content</td><td>Best Practice Recommendation: In general, all observations should have a performer</td><td/><td>InstanceValidator</td></tr><tr><td>Error</td><td>Observation.status</td><td>Element value invalid</td><td>Value is 'preliminary' but is fixed to 'final' in the profile https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/aspiration-risk-flag|1.2.0#Observation.status</td><td/><td>InstanceValidator</td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
+        "valueString" : "/ig/conformance/negative-fixtures/neg-aspiration-preliminary.json"
+      }],
+      "issue" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 2
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context",
+          "valueString" : "http://hl7.org/fhir/StructureDefinition/Observation|4.0.1"
+        }],
+        "severity" : "warning",
+        "code" : "invariant",
+        "details" : {
+          "text" : "Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)"
+        },
+        "expression" : ["Observation"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 2
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "All_observations_should_have_a_performer"
+        }],
+        "severity" : "warning",
+        "code" : "invalid",
+        "details" : {
+          "text" : "Best Practice Recommendation: In general, all observations should have a performer"
+        },
+        "expression" : ["Observation"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 5
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 26
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "_DT_Fixed_Wrong"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context",
+          "valueString" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/aspiration-risk-flag|1.2.0"
+        }],
+        "severity" : "error",
+        "code" : "value",
+        "details" : {
+          "text" : "Value is 'preliminary' but is fixed to 'final' in the profile https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/aspiration-risk-flag|1.2.0#Observation.status"
+        },
+        "expression" : ["Observation.status"]
+      }]
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "OperationOutcome",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Warning</td><td>Observation</td><td>Validation rule failed</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>Observation</td><td>Invalid Content</td><td>Best Practice Recommendation: In general, all observations should have a performer</td><td/><td>InstanceValidator</td></tr><tr><td>Error</td><td>Observation.code</td><td>Element value invalid</td><td>The pattern [system http://snomed.info/sct, code 371736008, and display 'null'] defined in the profile https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/aspiration-risk-flag|1.2.0 not found. Issues: [ValidationMessage[level=ERROR,type=VALUE,location=Observation.code.coding.code,message=Value is '40739000' but is fixed to '371736008' in the profile https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/aspiration-risk-flag|1.2.0#Observation]]</td><td/><td>InstanceValidator</td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
+        "valueString" : "/ig/conformance/negative-fixtures/neg-aspiration-wrongcode.json"
+      }],
+      "issue" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 2
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context",
+          "valueString" : "http://hl7.org/fhir/StructureDefinition/Observation|4.0.1"
+        }],
+        "severity" : "warning",
+        "code" : "invariant",
+        "details" : {
+          "text" : "Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)"
+        },
+        "expression" : ["Observation"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 2
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "All_observations_should_have_a_performer"
+        }],
+        "severity" : "warning",
+        "code" : "invalid",
+        "details" : {
+          "text" : "Best Practice Recommendation: In general, all observations should have a performer"
+        },
+        "expression" : ["Observation"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 6
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 109
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "TYPE_CHECKS_PATTERN_CC"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context",
+          "valueString" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/aspiration-risk-flag|1.2.0"
+        }],
+        "severity" : "error",
+        "code" : "value",
+        "details" : {
+          "text" : "The pattern [system http://snomed.info/sct, code 371736008, and display 'null'] defined in the profile https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/aspiration-risk-flag|1.2.0 not found. Issues: [ValidationMessage[level=ERROR,type=VALUE,location=Observation.code.coding.code,message=Value is '40739000' but is fixed to '371736008' in the profile https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/aspiration-risk-flag|1.2.0#Observation]]"
+        },
+        "expression" : ["Observation.code"]
+      }]
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "OperationOutcome",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Warning</td><td>NutritionOrder</td><td>Validation rule failed</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td><td/><td>InstanceValidator</td></tr><tr><td>Error</td><td>NutritionOrder.oralDiet</td><td>Validation rule failed</td><td>Constraint failed: iddsi-axis-food: 'A drink-only IDDSI concept must not be used on texture.modifier, which carries the food axis. IDDSI Level 3 (1237444002) is a single concept shared by both axes and is therefore permitted here.' (defined in https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-nutrition-order)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>NutritionOrder.oralDiet.texture[0].modifier</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'IDDSI Food Texture Levels (SNOMED CT)' (https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/iddsi-food-levels|1.2.0), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://snomed.info/sct#1231508001)</td><td/><td>TerminologyEngine</td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
+        "valueString" : "/ig/conformance/negative-fixtures/neg-diet-drink-code-on-food.json"
+      }],
+      "issue" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 2
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context",
+          "valueString" : "http://hl7.org/fhir/StructureDefinition/NutritionOrder|4.0.1"
+        }],
+        "severity" : "warning",
+        "code" : "invariant",
+        "details" : {
+          "text" : "Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)"
+        },
+        "expression" : ["NutritionOrder"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 15
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 4
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-nutrition-order#iddsi-axis-food"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context",
+          "valueString" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-nutrition-order|1.2.0"
+        }],
+        "severity" : "error",
+        "code" : "invariant",
+        "details" : {
+          "text" : "Constraint failed: iddsi-axis-food: 'A drink-only IDDSI concept must not be used on texture.modifier, which carries the food axis. IDDSI Level 3 (1237444002) is a single concept shared by both axes and is therefore permitted here.' (defined in https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-nutrition-order)"
+        },
+        "expression" : ["NutritionOrder.oralDiet"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 18
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 10
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "TerminologyEngine"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Terminology_TX_NoValid_2_CC"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context",
+          "valueString" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-nutrition-order|1.2.0"
+        }],
+        "severity" : "warning",
+        "code" : "code-invalid",
+        "details" : {
+          "text" : "None of the codings provided are in the value set 'IDDSI Food Texture Levels (SNOMED CT)' (https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/iddsi-food-levels|1.2.0), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://snomed.info/sct#1231508001)"
+        },
+        "expression" : ["NutritionOrder.oralDiet.texture[0].modifier"]
+      }]
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "OperationOutcome",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Warning</td><td>NutritionOrder</td><td>Validation rule failed</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td><td/><td>InstanceValidator</td></tr><tr><td>Error</td><td>NutritionOrder.oralDiet</td><td>Validation rule failed</td><td>Constraint failed: iddsi-axis-fluid: 'A food-axis IDDSI concept must not be used on fluidConsistencyType, which carries the drink axis (IDDSI Levels 0-4).' (defined in https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-nutrition-order)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>NutritionOrder.oralDiet.fluidConsistencyType[0]</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'IDDSI Drink/Fluid Consistency Levels (SNOMED CT)' (https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/iddsi-fluid-levels|1.2.0), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://snomed.info/sct#1237448004)</td><td/><td>TerminologyEngine</td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
+        "valueString" : "/ig/conformance/negative-fixtures/neg-diet-food-code-on-fluid.json"
+      }],
+      "issue" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 2
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context",
+          "valueString" : "http://hl7.org/fhir/StructureDefinition/NutritionOrder|4.0.1"
+        }],
+        "severity" : "warning",
+        "code" : "invariant",
+        "details" : {
+          "text" : "Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)"
+        },
+        "expression" : ["NutritionOrder"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 15
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 4
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-nutrition-order#iddsi-axis-fluid"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context",
+          "valueString" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-nutrition-order|1.2.0"
+        }],
+        "severity" : "error",
+        "code" : "invariant",
+        "details" : {
+          "text" : "Constraint failed: iddsi-axis-fluid: 'A food-axis IDDSI concept must not be used on fluidConsistencyType, which carries the drink axis (IDDSI Levels 0-4).' (defined in https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-nutrition-order)"
+        },
+        "expression" : ["NutritionOrder.oralDiet"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 29
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 8
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "TerminologyEngine"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Terminology_TX_NoValid_2_CC"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context",
+          "valueString" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-nutrition-order|1.2.0"
+        }],
+        "severity" : "warning",
+        "code" : "code-invalid",
+        "details" : {
+          "text" : "None of the codings provided are in the value set 'IDDSI Drink/Fluid Consistency Levels (SNOMED CT)' (https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/iddsi-fluid-levels|1.2.0), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://snomed.info/sct#1237448004)"
+        },
+        "expression" : ["NutritionOrder.oralDiet.fluidConsistencyType[0]"]
+      }]
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "OperationOutcome",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Warning</td><td>Observation</td><td>Validation rule failed</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>Observation</td><td>Invalid Content</td><td>Best Practice Recommendation: In general, all observations should have a performer</td><td/><td>InstanceValidator</td></tr><tr><td>Error</td><td>Observation.component[0]</td><td>Validation rule failed</td><td>Constraint failed: pas-range: 'The Penetration-Aspiration Scale is an 8-point ordinal scale; a PAS grade outside 1-8 is not a valid score.' (defined in https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/instrumental-swallow-assessment)</td><td/><td>InstanceValidator</td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
+        "valueString" : "/ig/conformance/negative-fixtures/neg-instrumental-pas-out-of-range.json"
+      }],
+      "issue" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 2
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context",
+          "valueString" : "http://hl7.org/fhir/StructureDefinition/Observation|4.0.1"
+        }],
+        "severity" : "warning",
+        "code" : "invariant",
+        "details" : {
+          "text" : "Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)"
+        },
+        "expression" : ["Observation"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 2
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "All_observations_should_have_a_performer"
+        }],
+        "severity" : "warning",
+        "code" : "invalid",
+        "details" : {
+          "text" : "Best Practice Recommendation: In general, all observations should have a performer"
+        },
+        "expression" : ["Observation"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 10
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 6
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/instrumental-swallow-assessment#pas-range"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context",
+          "valueString" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/instrumental-swallow-assessment|1.2.0"
+        }],
+        "severity" : "error",
+        "code" : "invariant",
+        "details" : {
+          "text" : "Constraint failed: pas-range: 'The Penetration-Aspiration Scale is an 8-point ordinal scale; a PAS grade outside 1-8 is not a valid score.' (defined in https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/instrumental-swallow-assessment)"
+        },
+        "expression" : ["Observation.component[0]"]
+      }]
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "OperationOutcome",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Warning</td><td>Observation</td><td>Validation rule failed</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>Observation</td><td>Invalid Content</td><td>Best Practice Recommendation: In general, all observations should have a performer</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>Observation</td><td>Invalid Content</td><td>Best Practice Recommendation: In general, all observations should have an effective[x] ()</td><td/><td>InstanceValidator</td></tr><tr><td>Error</td><td>Observation</td><td>Structural Issue</td><td>Observation.effective[x]: minimum required = 1, but only found 0 (from https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/swallowing-screening-result|1.2.0)</td><td/><td>InstanceValidator</td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
+        "valueString" : "/ig/conformance/negative-fixtures/neg-screening-noeffective.json"
+      }],
+      "issue" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 2
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context",
+          "valueString" : "http://hl7.org/fhir/StructureDefinition/Observation|4.0.1"
+        }],
+        "severity" : "warning",
+        "code" : "invariant",
+        "details" : {
+          "text" : "Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)"
+        },
+        "expression" : ["Observation"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 2
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "All_observations_should_have_a_performer"
+        }],
+        "severity" : "warning",
+        "code" : "invalid",
+        "details" : {
+          "text" : "Best Practice Recommendation: In general, all observations should have a performer"
+        },
+        "expression" : ["Observation"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 2
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "All_observations_should_have_an_effectiveDateTime_or_an_effectivePeriod"
+        }],
+        "severity" : "warning",
+        "code" : "invalid",
+        "details" : {
+          "text" : "Best Practice Recommendation: In general, all observations should have an effective[x] ()"
+        },
+        "expression" : ["Observation"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 2
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Validation_VAL_Profile_Minimum"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context",
+          "valueString" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/swallowing-screening-result|1.2.0"
+        }],
+        "severity" : "error",
+        "code" : "structure",
+        "details" : {
+          "text" : "Observation.effective[x]: minimum required = 1, but only found 0 (from https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/swallowing-screening-result|1.2.0)"
+        },
+        "expression" : ["Observation"]
+      }]
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "OperationOutcome",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Warning</td><td>Observation</td><td>Validation rule failed</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>Observation</td><td>Invalid Content</td><td>Best Practice Recommendation: In general, all observations should have a subject</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>Observation</td><td>Invalid Content</td><td>Best Practice Recommendation: In general, all observations should have a performer</td><td/><td>InstanceValidator</td></tr><tr><td>Error</td><td>Observation</td><td>Structural Issue</td><td>Observation.subject: minimum required = 1, but only found 0 (from https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-severity|1.2.0)</td><td/><td>InstanceValidator</td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
+        "valueString" : "/ig/conformance/negative-fixtures/neg-severity-nosubject.json"
+      }],
+      "issue" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 2
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context",
+          "valueString" : "http://hl7.org/fhir/StructureDefinition/Observation|4.0.1"
+        }],
+        "severity" : "warning",
+        "code" : "invariant",
+        "details" : {
+          "text" : "Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)"
+        },
+        "expression" : ["Observation"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 2
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "All_observations_should_have_a_subject"
+        }],
+        "severity" : "warning",
+        "code" : "invalid",
+        "details" : {
+          "text" : "Best Practice Recommendation: In general, all observations should have a subject"
+        },
+        "expression" : ["Observation"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 2
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "All_observations_should_have_a_performer"
+        }],
+        "severity" : "warning",
+        "code" : "invalid",
+        "details" : {
+          "text" : "Best Practice Recommendation: In general, all observations should have a performer"
+        },
+        "expression" : ["Observation"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 2
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Validation_VAL_Profile_Minimum"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context",
+          "valueString" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-severity|1.2.0"
+        }],
+        "severity" : "error",
+        "code" : "structure",
+        "details" : {
+          "text" : "Observation.subject: minimum required = 1, but only found 0 (from https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-severity|1.2.0)"
+        },
+        "expression" : ["Observation"]
+      }]
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "OperationOutcome",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Warning</td><td>Composition</td><td>Validation rule failed</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td><td/><td>InstanceValidator</td></tr><tr><td>Error</td><td>Composition</td><td>Validation rule failed</td><td>Constraint failed: dct-has-content: 'A care-transition summary must carry at least one section entry. An envelope with no dysphagia content is not a transfer.' (defined in https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-care-transition-summary)</td><td/><td>InstanceValidator</td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
+        "valueString" : "/ig/conformance/negative-fixtures/neg-summary-no-entry.json"
+      }],
+      "issue" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 2
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context",
+          "valueString" : "http://hl7.org/fhir/StructureDefinition/Composition|4.0.1"
+        }],
+        "severity" : "warning",
+        "code" : "invariant",
+        "details" : {
+          "text" : "Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)"
+        },
+        "expression" : ["Composition"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 2
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-care-transition-summary#dct-has-content"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context",
+          "valueString" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-care-transition-summary|1.2.0"
+        }],
+        "severity" : "error",
+        "code" : "invariant",
+        "details" : {
+          "text" : "Constraint failed: dct-has-content: 'A care-transition summary must carry at least one section entry. An envelope with no dysphagia content is not a transfer.' (defined in https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-care-transition-summary)"
+        },
+        "expression" : ["Composition"]
+      }]
+    }
+  }]
+}

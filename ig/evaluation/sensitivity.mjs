@@ -9,10 +9,10 @@
 // an empirical measurement. Synthetic data only. No fabricated numbers — the
 // tables below are produced by running the same generative model used in the paper.
 // ============================================================================
-import { writeFileSync, mkdirSync, existsSync } from 'node:fs';
+import { writeFileSync, mkdirSync, existsSync, readdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { readBasePatients } from './src/base.mjs';
+import { readBasePatients, readBasePatientsFromCohort } from './src/base.mjs';
 import { generatePatient, makeRng, PARAMS } from './src/model.mjs';
 
 const __dir = dirname(fileURLToPath(import.meta.url));
@@ -20,8 +20,14 @@ const CSV_DIR = join(__dir, 'synthea-out', 'csv');
 const OUT = join(__dir, 'out');
 if (!existsSync(OUT)) mkdirSync(OUT, { recursive: true });
 
-const base = readBasePatients(CSV_DIR);
+// A3: prefer the deposited cohort so Table 4 is reproducible from the archive alone;
+// fall back to the Synthea CSV export when the cohort has not been generated yet.
+const COHORT_DIR = join(__dir, 'cohort');
+const useCohort = existsSync(COHORT_DIR) && readdirSync(COHORT_DIR).some((f) => f.endsWith('.json'));
+const base = useCohort ? readBasePatientsFromCohort(COHORT_DIR) : readBasePatients(CSV_DIR);
+const SOURCE = useCohort ? 'deposited cohort (ig/evaluation/cohort)' : 'Synthea CSV export';
 const N = base.length;
+console.error(`base cohort source: ${SOURCE} (N = ${N})`);
 const PRIMARY_SEED = 20260716;
 
 function runCohort(pFlagCoded, seed) {
@@ -62,6 +68,10 @@ const sweep = PS.map(p => {
     meanInvis: mean(invis), sdInvis: sd(invis),
     minInvis: Math.min(...invis), maxInvis: Math.max(...invis),
     meanUnsafe: mean(unsafe), meanTrigger: mean(trig),
+    // A4: the two columns Table 4 prints but the pipeline did not emit, so the
+    // published table is reproducible end to end rather than hand-derived.
+    mcse: sd(invis) / Math.sqrt(SEEDS.length),
+    analyticSd: Math.sqrt(((1 - p) * p) / mean(unsafe)),
   };
 });
 
@@ -80,9 +90,10 @@ md += `- clinically-unsafe cases: **${primary.unsafe}**; invisible (un-coded fla
 md += `- invisibility rate = ${primary.gap}/${primary.unsafe} = **${pct(primary.invis)}%** (no inferential interval is attached: this is a by-construction property of the model, not an estimate of a real-world quantity)\n`;
 md += `- expected by design: 1 − 0.70 = 30.0%\n\n`;
 md += `## Sweep over coding-completeness P(coded) — 40 seeds each\n\n`;
-md += `| P(coded) | expected 1−P | mean invisibility (±SD) | range | mean unsafe n | mean trigger |\n|---|---|---|---|---|---|\n`;
+md += `Base cohort source: **${SOURCE}**.\n\n`;
+md += `| P(coded) | expected 1−P | mean invisibility (±SD) | MCSE (pp) | analytic binomial SD (pp) | range | mean unsafe n | mean trigger |\n|---|---|---|---|---|---|---|---|\n`;
 for (const r of sweep) {
-  md += `| ${r.pFlagCoded.toFixed(2)} | ${pct(r.expectedInvis)}% | **${pct(r.meanInvis)}% (±${pct(r.sdInvis)})** | ${pct(r.minInvis)}–${pct(r.maxInvis)}% | ${r.meanUnsafe.toFixed(0)} | ${pct(r.meanTrigger)}% |\n`;
+  md += `| ${r.pFlagCoded.toFixed(2)} | ${pct(r.expectedInvis)}% | **${pct(r.meanInvis)}% (±${pct(r.sdInvis)})** | ${(100 * r.mcse).toFixed(2)} | ${(100 * r.analyticSd).toFixed(2)} | ${pct(r.minInvis)}–${pct(r.maxInvis)}% | ${r.meanUnsafe.toFixed(0)} | ${pct(r.meanTrigger)}% |\n`;
 }
 md += `\n**Interpretation:** invisibility rate ≈ (1 − P(coded)) across the whole range — the rule cannot see un-coded flags, so the yield of the computable safety check is a direct, monotone function of documentation-coding completeness. The single headline figure is one point on this line, not an independent measurement.\n`;
 writeFileSync(join(OUT, 'SENSITIVITY.md'), md);

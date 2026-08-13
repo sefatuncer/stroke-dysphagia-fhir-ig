@@ -19,12 +19,12 @@ Supplementary File S3.
 
 | | Distinct concepts carried | Of which carry a display term |
 |---|---|---|
-| SNOMED CT | 21 | 13 |
+| SNOMED CT | 21 | 12 |
 | LOINC | 3 | 1 |
 | Local (`dysphagia-scales-temp`, minted here, MIT) | 7 | 7 (our own text) |
 
 Where the display terms sit: **seven** in the value sets (§2.3), **three more** first
-appearing in the example instances (§2.5), **three more** first appearing in the negative
+appearing in the example instances (§2.5), **two more** first appearing in the negative
 fixtures (§2.7), and **one** LOINC term (§3). The 333-bundle evaluation cohort carries
 **no third-party display term at all** (§2.6): it matches on identifiers, so the archive
 holds no label of ours standing in for a SNOMED term. Every item is listed below, so no
@@ -75,7 +75,7 @@ English term of the International Edition; none is translated, abbreviated or ed
 
 | Code | Element | Display carried? |
 |---|---|---|
-| 371736008 | `AspirationRiskFlag.code.coding.code` | **no** — deliberately excluded from the pattern, so a conformant instance may carry a localized or edition-current term |
+| 371736008 | `AspirationRiskFlag.code` (CodeableConcept-level pattern) | **no** — deliberately excluded from the pattern, so a conformant instance may carry a localized or edition-current term |
 
 ### 2.5 Concepts in example instances (display terms carried)
 
@@ -109,14 +109,22 @@ own value sets, which is why the distinct-concept count in §1 is 21 rather than
 
 The eight should-fail fixtures are illustrative in the licensing sense — conformance inputs
 rather than published example resources — and carry verbatim SNOMED terms. (They are, of
-course, load-bearing as evidence: see the manuscript's §4.3 and Supplementary File S5.) Three concepts appear here that carry no display term
+course, load-bearing as evidence: see the manuscript's §4.3 and Supplementary File S5.) Two concepts appear here that carry no display term
 elsewhere in the artifact:
 
 | Code | Display term carried (verbatim) | Fixture |
 |---|---|---|
 | 40739000 | `Dysphagia` | `neg-aspiration-wrongcode` (a deliberately wrong value) |
 | 1231508001 | `International Dysphagia Diet Standardisation Initiative Framework - Thin Level 0` | `neg-diet-drink-code-on-food` |
-| 1237449007 | `International Dysphagia Diet Standardisation Initiative Framework - Soft and Bite-Sized Level 6` | `neg-diet-food-code-on-fluid` |
+
+> **One display term was removed (13 Aug 2026).** `neg-diet-food-code-on-fluid` previously
+> carried `International Dysphagia Diet Standardisation Initiative Framework - Soft and
+> Bite-Sized Level 6` on `1237449007`. The reference validator rejected that string as a
+> wrong display name for the concept, so it was **not** verbatim — which is precisely what
+> the no-derivatives argument in the manuscript's Data and Code Availability statement
+> claims of every display the artifact carries. The fixture now carries the identifier
+> alone. This also removed an incidental second error from that fixture, so each of the
+> eight fixtures now fails for exactly the one constraint it targets on both deployments.
 
 The remaining fixture codes (371736008, 1237442003, 1237448004, 241149003, 1289999007 and
 LOINC 34133-9) carry the same verbatim terms already listed in §2.3, §2.5 and §3.
@@ -149,7 +157,7 @@ retirement once equivalent concepts exist upstream.
 listed in §2.3, §2.5 and §2.7, the unmodified English preferred term. It redistributes no SNOMED CT
 release, national extension, or semantic content — no relationships, hierarchies,
 reference sets, or subsets beyond the enumerated value-set membership the authors defined
-themselves. The authors' territory is not a SNOMED International Member territory; the
+themselves. Where the implementing territory is not a SNOMED International Member territory, the
 publication basis relied on is the **Global Patient Set (GPS)**, published worldwide at
 no cost under **CC BY-ND 4.0**, which SNOMED International states does not require SNOMED
 CT membership or an Affiliate License.

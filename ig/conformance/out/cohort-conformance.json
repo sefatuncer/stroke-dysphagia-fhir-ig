@@ -9,5 +9,10 @@
     "information": 0
   },
   "errorSignatures": [],
-  "validator": "HL7 reference validator (validator_cli.jar), FHIR R4, IG package from ig/output"
+  "validator": "HL7 reference validator (validator_cli.jar), FHIR R4, IG package from ig/output",
+  "warningCategories": {
+    "dom-6: resource has no narrative (Bundle entries carry data, not display)": 1855,
+    "best practice: Observation should name a performer": 856,
+    "nor-1: NutritionOrder best-practice constraint": 20
+  }
 }

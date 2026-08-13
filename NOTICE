@@ -1,0 +1,66 @@
+THIRD-PARTY NOTICES
+Stroke–Dysphagia Care-Transition FHIR Implementation Guide
+
+The artifacts authored in this repository (FHIR Shorthand source, profiles, value sets,
+the local code system, examples, negative fixtures, CQL, harnesses, generators and
+pipelines) are released under the MIT License; see LICENSE.
+
+That licence covers only this work. It neither extends to nor relicenses any third-party
+terminology. This repository carries third-party concept identifiers — and, for a small
+number of concepts, the unmodified English term — rather than the terminologies
+themselves: it redistributes no code system release, national extension, or semantic
+content such as relationships, hierarchies or reference sets.
+
+Conformance resources (StructureDefinition, ValueSet, CodeSystem) carry this notice in
+their own `copyright` element. FHIR does not define a `copyright` element on instance
+resources (Observation, NutritionOrder, Composition, Bundle), so the notice below applies
+to the example instances, the eight negative fixtures and the deposited synthetic
+evaluation cohort.
+
+--------------------------------------------------------------------------------
+SNOMED CT
+--------------------------------------------------------------------------------
+SNOMED CT® is a registered trademark of SNOMED International.
+Concept identifiers and English terms are © SNOMED International.
+
+They are used here under SNOMED International's Global Patient Set (GPS), published
+worldwide at no cost under CC BY-ND 4.0, which does not require SNOMED CT membership or
+an Affiliate Licence. The attribution condition is met by this notice and by the
+`copyright` element of every conformance resource that carries a SNOMED concept. The
+no-derivatives condition is met because every display term is reproduced verbatim, with
+none translated, shortened or otherwise altered; selecting a subset of concepts for a
+value set is not a modification of the terms themselves.
+
+A per-concept inventory — every third-party code carried, where it appears, and whether
+an English display term travels with it — is published as Supplementary File S6
+(`submission/supplement/S6-terminology-license-inventory.md`), so this claim can be
+audited rather than taken on trust.
+
+Implementers remain responsible for obtaining their own SNOMED CT Affiliate or Member
+licence in their territory before deploying a system that contains SNOMED CT itself.
+
+--------------------------------------------------------------------------------
+LOINC
+--------------------------------------------------------------------------------
+LOINC® is a registered trademark of Regenstrief Institute, Inc.
+LOINC codes are © Regenstrief Institute, Inc. and the LOINC Committee.
+
+This repository distributes a small number of LOINC codes (rather than merely referencing
+them) under the terms of the LOINC License: https://loinc.org/license/
+Implementers remain responsible for their own use of LOINC.
+
+--------------------------------------------------------------------------------
+IDDSI
+--------------------------------------------------------------------------------
+The International Dysphagia Diet Standardisation Initiative (IDDSI) framework is used
+unmodified under CC BY-SA 4.0. No IDDSI document text, table, image or testing method is
+reproduced here. The IDDSI levels are carried as the SNOMED CT-embedded IDDSI concepts
+(incorporated in the SNOMED CT International Edition since January 2023).
+
+--------------------------------------------------------------------------------
+Synthetic data
+--------------------------------------------------------------------------------
+The deposited evaluation cohort was generated with Synthea (MITRE). It contains no real
+patient data: names and birth dates are Synthea's fabricated values, and every resource
+reference resolves under the RFC 2606 reserved domain `synthetic.invalid`. The Synthea
+binary itself is a third-party jar, identified by build rather than redistributed.

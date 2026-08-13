@@ -1,6 +1,6 @@
 // Read the stroke base-patient cohort (demographic spine) from the Synthea CSV export.
 // Shared by generate-cohort.mjs and sensitivity.mjs so both use exactly the same cohort.
-import { readFileSync } from 'node:fs';
+import { readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 
 function parseCsvLine(line) {
@@ -49,5 +49,30 @@ export function readBasePatients(csvDir, strokeCode = '230690007') {
     });
   }
   base.sort((a, b) => a.id.localeCompare(b.id)); // deterministic order
+  return base;
+}
+
+// ---------------------------------------------------------------------------
+// A3 — read the same demographic spine from the DEPOSITED cohort instead of the
+// Synthea CSV export. The 333 deposited bundles carry, in their Patient
+// resource, exactly the four fields this module extracts (id, birthDate, gender,
+// name), and the file name is the patient id — so the archive alone is
+// sufficient to reproduce Table 4, and the 232 MB export is no longer a
+// prerequisite for any reported result.
+//
+// Equivalence requirement: same patients, same order. Both readers sort by id,
+// and the label stream depends only on that order, so the two paths must give
+// bit-identical sweep output. `npm run sensitivity` prints which source it used.
+// ---------------------------------------------------------------------------
+export function readBasePatientsFromCohort(cohortDir) {
+  const files = readdirSync(cohortDir).filter((f) => f.endsWith('.json'));
+  const base = [];
+  for (const f of files) {
+    const bundle = JSON.parse(readFileSync(join(cohortDir, f), 'utf8'));
+    const p = bundle.entry?.map((e) => e.resource).find((r) => r?.resourceType === 'Patient');
+    if (!p) continue;
+    base.push({ id: p.id, birthDate: p.birthDate, gender: p.gender, name: p.name });
+  }
+  base.sort((a, b) => a.id.localeCompare(b.id)); // same deterministic order as the CSV reader
   return base;
 }
