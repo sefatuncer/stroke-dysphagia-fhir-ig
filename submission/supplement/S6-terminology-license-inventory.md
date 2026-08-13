@@ -164,8 +164,11 @@ CT membership or an Affiliate License.
 
 - *Attribution (BY).* SNOMED CT® is a registered trademark of SNOMED International.
   Concept identifiers and English terms are © SNOMED International, used under the GPS
-  License. This notice also appears in the `copyright` element of every artifact that
-  carries a SNOMED concept.
+  License. This notice also appears in the `copyright` element of every conformance resource
+  the IG defines — the six profiles, the six value sets and the local code system,
+  whether or not a given resource itself carries a third-party concept — and, for the
+  example instances, the negative fixtures and the deposited cohort, in the repository
+  `NOTICE` file, FHIR defining no `copyright` element on those resource types.
 - *No derivatives (ND).* Every display string in §2.3, §2.5 and §2.7 is reproduced
   verbatim as returned by the HL7 reference terminology server — including the British
   spelling in `Fibreoptic endoscopic evaluation of swallowing`, which is the term as
