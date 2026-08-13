@@ -1,4 +1,6 @@
 {
+  "igVersion": "1.2.1",
+  "runTimestamp": "2026-08-13T14:20:32.305Z",
   "validator": "HL7 reference validator (validator_cli.jar), FHIR R4, IG package from ig/output",
   "deployment": "in-toolchain reference validator (the second deployment for the rejection side)",
   "note": "Both this validator and the HAPI server share the HL7 Java validation core: portability across deployments, not independence across implementations.",

@@ -76,7 +76,17 @@ for (const oc of outcomes) {
   if (hasError) filesWithError++;
 }
 
+
+// A13: stamp every deposited record with the IG version it was produced against and
+// when it ran, so a reader can tell whether the evidence matches the reported release.
+function igStamp() {
+  const cfg = readFileSync(join(dirname(HERE), 'sushi-config.yaml'), 'utf8');
+  const v = cfg.match(/^version:\s*(\S+)/m);
+  return { igVersion: v ? v[1] : 'unknown', runTimestamp: new Date().toISOString() };
+}
+
 const summary = {
+  ...igStamp(),
   bundles: bundles.length,
   outcomes: outcomes.length,
   bundlesWithError: filesWithError,

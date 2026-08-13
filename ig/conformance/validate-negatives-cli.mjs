@@ -128,7 +128,17 @@ for (const oc of outcomes) {
 }
 
 const pass = results.length === fixtures.length && results.every((r) => r.correctlyRejected);
+
+// A13: stamp every deposited record with the IG version it was produced against and
+// when it ran, so a reader can tell whether the evidence matches the reported release.
+function igStamp() {
+  const cfg = readFileSync(join(dirname(HERE), 'sushi-config.yaml'), 'utf8');
+  const v = cfg.match(/^version:\s*(\S+)/m);
+  return { igVersion: v ? v[1] : 'unknown', runTimestamp: new Date().toISOString() };
+}
+
 const summary = {
+  ...igStamp(),
   validator: 'HL7 reference validator (validator_cli.jar), FHIR R4, IG package from ig/output',
   deployment: 'in-toolchain reference validator (the second deployment for the rejection side)',
   note: 'Both this validator and the HAPI server share the HL7 Java validation core: portability across deployments, not independence across implementations.',

@@ -15,6 +15,14 @@ import { mkdirSync, writeFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
+// A13: stamp the deposited record with the IG version it was produced against and when it
+// ran, so a reader can tell whether the evidence matches the release the paper reports.
+function igStamp(hereDir) {
+  const cfg = readFileSync(join(dirname(hereDir), 'sushi-config.yaml'), 'utf8');
+  const v = cfg.match(/^version:\s*(\S+)/m);
+  return { igVersion: v ? v[1] : 'unknown', runTimestamp: new Date().toISOString() };
+}
+
 const base = (process.argv[2] || 'http://localhost:8080/fhir').replace(/\/+$/, '');
 const here = dirname(fileURLToPath(import.meta.url));
 const resDir = join(here, '..', 'fsh-generated', 'resources');
@@ -127,6 +135,7 @@ async function main() {
   mkdirSync(outDir, { recursive: true });
   const report = {
     kind: 'positive-conformance',
+    ...igStamp(here),
     server: { baseUrl: base, ...server },
     examplesTested: examples.length,
     conforming: passed,
