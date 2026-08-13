@@ -161,7 +161,24 @@ SNOMED CT moved to a monthly International Edition release cadence during this w
 
 ## 6. Limitations
 
-1. **Single reference server.** All queries were run against tx.fhir.org. `browser.ihtsdotools.org` and `search.loinc.org` could not be reached from the working environment, so an official-browser cross-check has not been performed. This is stated in §5.3.
+1. **Single reference server.** All queries were run against tx.fhir.org, so every coverage
+   call in this log shares one server's view of the two terminologies. A cross-check against an
+   independent endpoint was attempted again on 13 August 2026 and remains blocked, which is
+   recorded here in specific terms rather than as a general difficulty:
+
+   | Endpoint | Attempted | Result |
+   |---|---|---|
+   | `browser.ihtsdotools.org/snowstorm/snomed-ct` (SNOMED International) | 13 Aug 2026 | HTTP 302 → "SNOMED International Access Denied" |
+   | `snowstorm.ihtsdotools.org/fhir` (SNOMED International FHIR endpoint) | 13 Aug 2026 | HTTP 302 → "SNOMED International Access Denied" |
+   | `r4.ontoserver.csiro.au/fhir` and `tx.ontoserver.csiro.au/fhir` (CSIRO Ontoserver) | 13 Aug 2026 | connection failed (no response) |
+   | `fhir.loinc.org` (`$lookup`) | 13 Aug 2026 | HTTP 401 — account credentials required |
+
+   The consequence is unchanged and is stated in the manuscript (§5.3-5): a code recorded under
+   an unexpected display could in principle have been missed, and no second server has confirmed
+   the ten absence calls. What the table adds is that this is an access limit of the working
+   environment, not an omission — and it tells a reader with SNOMED member or LOINC account
+   access exactly which four endpoints would settle the question, against the per-item filter
+   terms and codes listed in §2.
 2. **Display-string dependence of the original round.** Text-filter absence testing can miss a code recorded under an unexpected display. The 28 July hierarchy enumeration (§5) mitigates but does not wholly eliminate this.
 3. **Consensus classification.** Items were classified jointly by the two authors rather than independently double-coded, so no inter-rater agreement statistic is available; borderline pre-/post-coordination decisions were adjudicated internally, without an independent terminologist.
 4. **Direction of incentive.** Classifying an item as *gap* contributes to the paper's stated contribution. The classification rule was fixed before the survey (§1) to constrain this, but no external adjudication was obtained.

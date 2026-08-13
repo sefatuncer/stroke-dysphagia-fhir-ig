@@ -62,6 +62,39 @@ Endpoint: `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&
 | 40145488 | *Profiling Swallowing Safety and Physiology in People With Huntington's Disease* | Excluded — "profiling" is used in the clinical sense (characterizing swallowing physiology), not FHIR profiling; no informatics artifact |
 | 39800411 | *Long-term outcome of oesophageal atresia in adolescence (TransEAsome): a national French cohort study protocol* | Excluded — cohort study protocol; no FHIR representation |
 
+### 2.1b PubMed — second round: the diet/consistency vocabulary (programmatic, exact)
+
+The first round crossed swallowing terms with FHIR-artifact terms. It never queried the
+vocabulary of the diet/consistency binding, which is the contribution this work states most
+strongly — so an artifact indexed under IDDSI or nutrition-order terms rather than under
+"dysphagia" could have escaped it. That is a sensitivity limit of the strategy, not of the
+conclusion, and it is now tested directly. Same endpoint, run programmatically on
+13 August 2026; counts, query translations and PMIDs are deposited in
+`ig/conformance/out/search-queries.json` and reproducible with
+`ig/conformance/rerun-search-queries.mjs`.
+
+| Query | Hits | Records screened | Included |
+|---|---|---|---|
+| `IDDSI AND (FHIR OR HL7 OR interoperability)` | **0** | — | 0 |
+| `"texture-modified" AND (FHIR OR SNOMED)` | **0** | — | 0 |
+| `("nutrition order" OR "diet order") AND FHIR` | **0** | — | 0 |
+| `dysphagia AND SNOMED` | **2** | 2 | **0** |
+| `dysphagia AND LOINC` | **0** | — | 0 |
+| `(dysphagia OR swallowing) AND HL7` | **0** | — | 0 |
+| **Total** | **2** | **2** | **0** |
+
+**Screening decisions (both records, with reasons):**
+
+| PMID | Title (truncated) | Decision |
+|---|---|---|
+| 32454578 | *Where Dysphagia Begins: Polypharmacy and Xerostomia* | Excluded — clinical review; SNOMED appears only as a coding source for the underlying dataset, no artifact, profile or representation model |
+| 27250980 | *The 2010-2015 Prevalence of Eosinophilic Esophagitis in the USA: A Population-Based Study* | Excluded — epidemiological prevalence study; SNOMED used to identify cases in a claims/EHR database, not to represent swallowing assessment |
+
+**What this changes.** Nothing in the classification, and one thing in the strength of the
+claim: the absence of a dysphagia-specific FHIR artifact no longer rests on swallowing-term
+queries alone. The terms under which such an artifact would most plausibly be indexed if it
+existed — IDDSI, texture-modified, nutrition/diet order — return no records at all.
+
 ### 2.2 Google Scholar
 
 Included in the search per §3.4. Scholar applies automated-access protection, so hit counts could not be retrieved programmatically for this transcript and the search was run interactively. **No dysphagia-specific FHIR artifact was identified.** As with §1.3–1.4, this step is not machine-reproducible from this log.

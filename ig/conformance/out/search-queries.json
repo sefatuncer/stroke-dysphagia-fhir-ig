@@ -1,0 +1,67 @@
+{
+  "source": "PubMed E-utilities",
+  "accessed": "2026-08-13",
+  "queries": [
+    {
+      "id": "Q1",
+      "query": "IDDSI AND (FHIR OR HL7 OR interoperability)",
+      "rationale": "the diet/consistency axis in its own vocabulary",
+      "count": 0,
+      "translation": "\"IDDSI\"[All Fields] AND (\"FHIR\"[All Fields] OR \"HL7\"[All Fields] OR (\"interoperability\"[All Fields] OR \"interoperable\"[All Fields] OR \"interoperate\"[All Fields] OR \"interoperates\"[All Fields] OR \"interoperating\"[All Fields] OR \"interoperation\"[All Fields]))",
+      "hits": []
+    },
+    {
+      "id": "Q2",
+      "query": "\"texture-modified\" AND (FHIR OR SNOMED)",
+      "rationale": "texture-modified diets against terminology/standards",
+      "count": 0,
+      "translation": "\"texture-modified\"[All Fields] AND (\"FHIR\"[All Fields] OR (\"snomed s\"[All Fields] OR \"systematized nomenclature of medicine\"[MeSH Terms] OR (\"systematized\"[All Fields] AND \"nomenclature\"[All Fields] AND \"medicine\"[All Fields]) OR \"systematized nomenclature of medicine\"[All Fields] OR \"snomed\"[All Fields]))",
+      "hits": []
+    },
+    {
+      "id": "Q3",
+      "query": "(\"nutrition order\" OR \"diet order\") AND FHIR",
+      "rationale": "the FHIR resource this IG profiles",
+      "count": 0,
+      "translation": "(\"nutrition order\"[All Fields] OR \"diet order\"[All Fields]) AND \"FHIR\"[All Fields]",
+      "hits": []
+    },
+    {
+      "id": "Q4",
+      "query": "dysphagia AND SNOMED",
+      "rationale": "dysphagia against SNOMED CT generally",
+      "count": 2,
+      "translation": "(\"deglutition disorders\"[MeSH Terms] OR (\"deglutition\"[All Fields] AND \"disorders\"[All Fields]) OR \"deglutition disorders\"[All Fields] OR \"dysphagia\"[All Fields] OR \"dysphagias\"[All Fields]) AND (\"snomed s\"[All Fields] OR \"systematized nomenclature of medicine\"[MeSH Terms] OR (\"systematized\"[All Fields] AND \"nomenclature\"[All Fields] AND \"medicine\"[All Fields]) OR \"systematized nomenclature of medicine\"[All Fields] OR \"snomed\"[All Fields])",
+      "hits": [
+        {
+          "pmid": "32454578",
+          "title": "Where Dysphagia Begins: Polypharmacy and Xerostomia.",
+          "journal": "Federal practitioner : for the health care professionals of the VA, DoD, and PHS",
+          "year": "2020"
+        },
+        {
+          "pmid": "27250980",
+          "title": "The 2010-2015 Prevalence of Eosinophilic Esophagitis in the USA: A Population-Based Study.",
+          "journal": "Digestive diseases and sciences",
+          "year": "2016"
+        }
+      ]
+    },
+    {
+      "id": "Q5",
+      "query": "dysphagia AND LOINC",
+      "rationale": "dysphagia against LOINC generally",
+      "count": 0,
+      "translation": "(\"deglutition disorders\"[MeSH Terms] OR (\"deglutition\"[All Fields] AND \"disorders\"[All Fields]) OR \"deglutition disorders\"[All Fields] OR \"dysphagia\"[All Fields] OR \"dysphagias\"[All Fields]) AND (\"logical observation identifiers names and codes\"[MeSH Terms] OR (\"logical\"[All Fields] AND \"observation\"[All Fields] AND \"identifiers\"[All Fields] AND \"names\"[All Fields] AND \"codes\"[All Fields]) OR \"logical observation identifiers names and codes\"[All Fields] OR \"loinc\"[All Fields])",
+      "hits": []
+    },
+    {
+      "id": "Q6",
+      "query": "(dysphagia OR swallowing) AND HL7",
+      "rationale": "swallowing against HL7 without naming FHIR",
+      "count": 0,
+      "translation": "(\"deglutition disorders\"[MeSH Terms] OR (\"deglutition\"[All Fields] AND \"disorders\"[All Fields]) OR \"deglutition disorders\"[All Fields] OR \"dysphagia\"[All Fields] OR \"dysphagias\"[All Fields] OR (\"deglutition\"[MeSH Terms] OR \"deglutition\"[All Fields] OR \"swallowed\"[All Fields] OR \"swallowing\"[All Fields] OR \"swallowings\"[All Fields] OR \"swallowable\"[All Fields] OR \"swallower\"[All Fields] OR \"swallowers\"[All Fields] OR \"swallows\"[MeSH Terms] OR \"swallows\"[All Fields] OR \"swallow\"[All Fields])) AND \"HL7\"[All Fields]",
+      "hits": []
+    }
+  ]
+}
