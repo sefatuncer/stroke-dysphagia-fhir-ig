@@ -1,0 +1,54 @@
+{
+  "resourceType": "Composition",
+  "id": "neg-summary-wrong-type",
+  "meta": {
+    "profile": [
+      "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-care-transition-summary"
+    ]
+  },
+  "status": "final",
+  "type": {
+    "coding": [
+      {
+        "code": "11488-4",
+        "system": "http://loinc.org"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/ex-patient"
+  },
+  "date": "2026-03-10",
+  "author": [
+    {
+      "reference": "Organization/ex-org"
+    }
+  ],
+  "title": "Dysphagia Care-Transition Summary (wrong document type code)",
+  "section": [
+    {
+      "title": "Aspiration risk",
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Aspiration risk flag.</p></div>"
+      },
+      "entry": [
+        {
+          "reference": "Observation/ex-aspiration-risk"
+        }
+      ]
+    },
+    {
+      "title": "Diet and fluid consistency (IDDSI)",
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Diet and fluid consistency.</p></div>"
+      },
+      "entry": [
+        {
+          "reference": "NutritionOrder/ex-dysphagia-diet"
+        }
+      ]
+    }
+  ]
+}

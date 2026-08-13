@@ -1,0 +1,79 @@
+{
+  "resourceType": "Composition",
+  "id": "neg-summary-foreign-entry",
+  "meta": {
+    "profile": [
+      "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-care-transition-summary"
+    ]
+  },
+  "contained": [
+    {
+      "resourceType": "Condition",
+      "id": "foreign-condition",
+      "clinicalStatus": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+            "code": "active"
+          }
+        ]
+      },
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "230690007"
+          }
+        ]
+      },
+      "subject": {
+        "reference": "Patient/ex-patient"
+      }
+    }
+  ],
+  "status": "final",
+  "type": {
+    "coding": [
+      {
+        "code": "34133-9",
+        "system": "http://loinc.org"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/ex-patient"
+  },
+  "date": "2026-03-10",
+  "author": [
+    {
+      "reference": "Organization/ex-org"
+    }
+  ],
+  "title": "Dysphagia Care-Transition Summary (section entry outside this IG's profiles)",
+  "section": [
+    {
+      "title": "Aspiration risk",
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Aspiration risk flag.</p></div>"
+      },
+      "entry": [
+        {
+          "reference": "Observation/ex-aspiration-risk"
+        }
+      ]
+    },
+    {
+      "title": "Stroke diagnosis",
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Cerebrovascular accident.</p></div>"
+      },
+      "entry": [
+        {
+          "reference": "#foreign-condition"
+        }
+      ]
+    }
+  ]
+}

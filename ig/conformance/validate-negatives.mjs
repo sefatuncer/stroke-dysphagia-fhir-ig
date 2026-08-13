@@ -64,6 +64,14 @@ const EXPECTED = {
     why: 'sections carry narrative but no section.entry — violates invariant dct-has-content (empty envelope)',
     signature: /dct-has-content|section\.entry|at least one section/i,
   },
+  'neg-summary-wrong-type.json': {
+    why: 'wrong Composition.type code — profile fixes type to LOINC 34133-9',
+    signature: /34133-9|Composition.type|11488-4|fixed value|pattern/i,
+  },
+  'neg-summary-foreign-entry.json': {
+    why: 'section.entry references a Condition — profile restricts entries to the IG profiles',
+    signature: /Condition|target type|section.entry|Reference/i,
+  },
   'neg-instrumental-pas-out-of-range.json': {
     why: 'PAS component value 99 — violates invariant pas-range (scale is 1-8)',
     signature: /pas-range|Penetration-Aspiration|8-point/i,

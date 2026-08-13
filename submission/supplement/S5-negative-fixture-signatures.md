@@ -1,6 +1,6 @@
 # Supplementary File S5 — Negative ("should-fail") conformance fixtures: constraint coverage and rejection signatures
 
-A profile that only accepts conforming data has not been shown to constrain anything. The eight
+A profile that only accepts conforming data has not been shown to constrain anything. The ten
 fixtures below each violate **exactly one** constraint and must be **rejected**. A rejection counts
 only when the server's error carries the signature of the constraint under test — an
 unresolvable-profile complaint, or an unrelated base-FHIR error, does not count. This file reports
@@ -12,9 +12,10 @@ verbatim from that file and truncated only where the canonical URL repeats.
 
 **Deployments:** both the independently deployed HAPI FHIR server (v8.10.0, digest-pinned,
 via `$validate` against the declared profile) and the HL7 reference validator
-(`validator_cli.jar`, against the built IG package). Positive examples and the negative suite
-were each run on both deployments; the machine-readable records are `negative-conformance.json`
-(HAPI) and `negative-conformance-cli.json` (reference validator). Both share the HL7 Java
+(`validator_cli.jar`, against the built IG package). Both suites ran on both deployments, and all four
+machine-readable records are deposited: `positive-conformance.json` and
+`negative-conformance.json` (HAPI), `positive-conformance-cli.json` and
+`negative-conformance-cli.json` (reference validator). Both share the HL7 Java
 validation core, so this is portability across deployments, not independence across
 implementations (§5.3-3).
 
@@ -23,7 +24,7 @@ implementations (§5.3-3).
 > It produced a second error alongside the invariant under test, so the fixture did not satisfy
 > the "exactly one violated rule" rule this suite is built on — and the string was not verbatim,
 > which the licensing argument requires of every display the artifact carries. The identifier now
-> travels alone, and all eight fixtures fail for exactly the constraint they target on both
+> travels alone, and every fixture fails for exactly the constraint it targets on both
 > deployments.
 
 ## Rejection signatures
@@ -38,9 +39,17 @@ implementations (§5.3-3).
 | 6 | `neg-screening-noeffective` | Observation | `effective[x]` tightened to 1..1 | cardinality | `Observation.effective[x]: minimum required = 1, but only found 0 (from …/swallowing-screening-result)` |
 | 7 | `neg-severity-nosubject` | Observation | `subject` tightened 0..1 → 1..1 | cardinality | `Observation.subject: minimum required = 1, but only found 0 (from …/dysphagia-severity)` |
 | 8 | `neg-summary-no-entry` | Composition | invariant `dct-has-content` | FHIRPath invariant | `Constraint failed: dct-has-content: 'A care-transition summary must carry at least one section entry…'` |
+| 9 | `neg-summary-wrong-type` | Composition | `Composition.type` fixed to LOINC `34133-9` | pattern on CodeableConcept | `The pattern [system http://loinc.org, code 34133-9, and display 'null'] defined in the profile …/dysphagia-care-transition-summary not found` |
+| 10 | `neg-summary-foreign-entry` | Composition | `section.entry` restricted to this IG's profiles | reference target type | `Invalid Resource target type. Found Condition, but expected one of ([NutritionOrder, Observation])` |
 
-All eight were rejected at **error** severity, each with the signature of its own constraint, and
-none of the eight failed merely because a profile could not be resolved.
+All ten were rejected at **error** severity, each with the signature of its own constraint, and
+none of the ten failed merely because a profile could not be resolved.
+
+Fixtures 9 and 10 were added for the release reported here, closing the coverage gap the previous
+version of this file recorded: every constraint Table 1 presents as a contribution is now exercised
+by a should-fail fixture. Fixture 10 carries its Condition as a **contained** resource on purpose —
+with an external reference the validator cannot resolve the target and skips the type check
+altogether, so the fixture would pass silently and prove nothing.
 
 ### A note on fixture 8
 
@@ -60,24 +69,22 @@ above is from the tightened fixture.
 | `InstrumentalSwallowAssessment` | 5 | PAS range invariant |
 | `SwallowingScreeningResult` | 6 | tightened cardinality |
 | `DysphagiaSeverity` | 7 | tightened cardinality |
-| `DysphagiaCareTransitionSummary` | 8 | minimum-content invariant |
+| `DysphagiaCareTransitionSummary` | 8, 9, 10 | minimum-content invariant, fixed document type, restricted section entries |
 
-All six profiles are exercised.
+All six profiles are exercised, and so is every constraint Table 1 names.
 
 ## Constraints **not** exercised by the negative suite
 
 Reported so that the suite's coverage is not overstated:
 
-- **`Composition.type` fixed to LOINC `34133-9`** and **`section.entry` constrained** on the
-  care-transition summary — both are presented as contributions in Table 1, but no fixture violates
-  them; fixture 8 exercises only the minimum-content invariant.
 - **Extensible bindings** on the four assessment profiles' `code` elements. These are extensible by
   design (§3.3), so a code outside the value set is *not* an error and cannot be tested by a
   should-fail fixture; this is why axis separation rests on invariants rather than binding strength.
 - **Terminology-server-dependent checks** (display validation, subsumption). The rule matches codes
   directly and the harness needs no external terminology server, so these paths are untested here.
 
-Extending the suite to the first group is straightforward and is the obvious next increment.
+Neither group can be closed by a should-fail fixture: an extensible binding makes an outside code
+legal by design, and the terminology-server-dependent checks are outside the harness's scope.
 
 ## A note on fixture 2, and on what the flag profile does *not* reject
 
