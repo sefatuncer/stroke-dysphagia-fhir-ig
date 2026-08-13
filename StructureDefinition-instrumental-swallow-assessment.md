@@ -1,4 +1,4 @@
-# Instrumental Swallow Assessment (VFSS/FEES) with Penetration-Aspiration Scale - Stroke Dysphagia Care-Transition FHIR IG v1.2.0
+# Instrumental Swallow Assessment (VFSS/FEES) with Penetration-Aspiration Scale - Stroke Dysphagia Care-Transition FHIR IG v1.2.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,9 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/instrumental-swallow-assessment | *Version*:1.2.0 |
-| Active as of 2026-07-31 | *Computable Name*:InstrumentalSwallowAssessment |
-| **Copyright/Legal**: © 2026 N. Kapan Tunçer and S. Tunçer. IG artifacts licensed under the MIT License. This IG carries concept identifiers from SNOMED CT (© SNOMED International), LOINC (© Regenstrief Institute, Inc.) and the IDDSI framework (CC BY-SA 4.0, used unmodified); it redistributes no code system release, national extension or semantic content. Value sets enumerate identifiers, and some members additionally carry the English term as an unmodified display hint; the authoritative display is supplied at expansion time by the implementer's own terminology server. Implementers are responsible for holding the applicable third-party licences. | |
+| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/instrumental-swallow-assessment | *Version*:1.2.1 |
+| Active as of 2026-08-13 | *Computable Name*:InstrumentalSwallowAssessment |
+| **Copyright/Legal**: Profile definition: MIT (© 2026 N. Kapan Tunçer and S. Tunçer). This profile carries third-party concept identifiers rather than the terminologies themselves. SNOMED CT® is a registered trademark of SNOMED International; concept identifiers and English terms are © SNOMED International, used under the Global Patient Set licence (CC BY-ND 4.0) and reproduced verbatim, with none translated, shortened or otherwise altered. LOINC® is a registered trademark of Regenstrief Institute, Inc.; LOINC codes are used under the LOINC License (http://loinc.org/license). Implementers remain responsible for holding the applicable third-party licences in their own territory. | |
 
  
 VFSS/FEES result incl. PAS (Rosenbek). PAS lacks LOINC/SNOMED → temp code; proposed upstream. 
@@ -39,14 +39,14 @@ Other representations of profile: [CSV](StructureDefinition-instrumental-swallow
   "resourceType" : "StructureDefinition",
   "id" : "instrumental-swallow-assessment",
   "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/instrumental-swallow-assessment",
-  "version" : "1.2.0",
+  "version" : "1.2.1",
   "name" : "InstrumentalSwallowAssessment",
   "title" : "Instrumental Swallow Assessment (VFSS/FEES) with Penetration-Aspiration Scale",
   "status" : "active",
-  "date" : "2026-07-31T09:21:13+00:00",
+  "date" : "2026-08-13T14:00:50+00:00",
   "publisher" : "N. Kapan Tunçer; S. Tunçer",
   "description" : "VFSS/FEES result incl. PAS (Rosenbek). PAS lacks LOINC/SNOMED → temp code; proposed upstream.",
-  "copyright" : "© 2026 N. Kapan Tunçer and S. Tunçer. IG artifacts licensed under the MIT License. This IG carries concept identifiers from SNOMED CT (© SNOMED International), LOINC (© Regenstrief Institute, Inc.) and the IDDSI framework (CC BY-SA 4.0, used unmodified); it redistributes no code system release, national extension or semantic content. Value sets enumerate identifiers, and some members additionally carry the English term as an unmodified display hint; the authoritative display is supplied at expansion time by the implementer's own terminology server. Implementers are responsible for holding the applicable third-party licences.",
+  "copyright" : "Profile definition: MIT (© 2026 N. Kapan Tunçer and S. Tunçer). This profile carries third-party concept identifiers rather than the terminologies themselves. SNOMED CT® is a registered trademark of SNOMED International; concept identifiers and English terms are © SNOMED International, used under the Global Patient Set licence (CC BY-ND 4.0) and reproduced verbatim, with none translated, shortened or otherwise altered. LOINC® is a registered trademark of Regenstrief Institute, Inc.; LOINC codes are used under the LOINC License (http://loinc.org/license). Implementers remain responsible for holding the applicable third-party licences in their own territory.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "workflow",

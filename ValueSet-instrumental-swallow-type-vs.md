@@ -1,4 +1,4 @@
-# Instrumental Swallow Assessment Type - Stroke Dysphagia Care-Transition FHIR IG v1.2.0
+# Instrumental Swallow Assessment Type - Stroke Dysphagia Care-Transition FHIR IG v1.2.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/instrumental-swallow-type-vs | *Version*:1.2.0 |
-| Active as of 2026-07-31 | *Computable Name*:InstrumentalSwallowTypeVS |
+| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/instrumental-swallow-type-vs | *Version*:1.2.1 |
+| Active as of 2026-08-13 | *Computable Name*:InstrumentalSwallowTypeVS |
 | **Copyright/Legal**: Value-set definition: MIT (© 2026 N. Kapan Tunçer and S. Tunçer). Content is referenced, not redistributed: this value set enumerates third-party concept identifiers (SNOMED CT © SNOMED International; LOINC © Regenstrief Institute, Inc.; IDDSI framework CC BY-SA 4.0, used unmodified) and carries, for some members, the SNOMED CT International Edition English term as an unmodified display hint (not translated); the authoritative display is supplied at expansion time by the implementer's own terminology server. Implementers must hold the applicable third-party licences. | |
 
  
@@ -47,12 +47,12 @@ Instrumental swallowing assessments (VFSS/FEES) and associated graded scales (PA
   "resourceType" : "ValueSet",
   "id" : "instrumental-swallow-type-vs",
   "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/instrumental-swallow-type-vs",
-  "version" : "1.2.0",
+  "version" : "1.2.1",
   "name" : "InstrumentalSwallowTypeVS",
   "title" : "Instrumental Swallow Assessment Type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-31T09:21:13+00:00",
+  "date" : "2026-08-13T14:00:50+00:00",
   "publisher" : "N. Kapan Tunçer; S. Tunçer",
   "description" : "Instrumental swallowing assessments (VFSS/FEES) and associated graded scales (PAS, Yale residue) — SNOMED/LOINC where coded, temporary local codes otherwise.",
   "copyright" : "Value-set definition: MIT (© 2026 N. Kapan Tunçer and S. Tunçer). Content is referenced, not redistributed: this value set enumerates third-party concept identifiers (SNOMED CT © SNOMED International; LOINC © Regenstrief Institute, Inc.; IDDSI framework CC BY-SA 4.0, used unmodified) and carries, for some members, the SNOMED CT International Edition English term as an unmodified display hint (not translated); the authoritative display is supplied at expansion time by the implementer's own terminology server. Implementers must hold the applicable third-party licences.",

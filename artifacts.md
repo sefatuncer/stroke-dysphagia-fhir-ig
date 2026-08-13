@@ -1,4 +1,4 @@
-# Artifacts Summary - Stroke Dysphagia Care-Transition FHIR IG v1.2.0
+# Artifacts Summary - Stroke Dysphagia Care-Transition FHIR IG v1.2.1
 
 * [**Table of Contents**](toc.md)
 * **Artifacts Summary**

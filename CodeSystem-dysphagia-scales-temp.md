@@ -1,4 +1,4 @@
-# Dysphagia Scales ??? temporary local codes (proposed for LOINC/SNOMED) - Stroke Dysphagia Care-Transition FHIR IG v1.2.0
+# Dysphagia Scales ??? temporary local codes (proposed for LOINC/SNOMED) - Stroke Dysphagia Care-Transition FHIR IG v1.2.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp | *Version*:1.2.0 |
-| Draft as of 2026-07-31 | *Computable Name*:DysphagiaScalesTemp |
+| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp | *Version*:1.2.1 |
+| Draft as of 2026-08-13 | *Computable Name*:DysphagiaScalesTemp |
 | **Copyright/Legal**: MIT (© 2026 N. Kapan Tunçer and S. Tunçer). These are locally minted placeholder identifiers only. They name validated instruments whose own copyright rests with their developers; no instrument content, scoring rule or item text is reproduced here. The codes are temporary and are expected to be retired once equivalent concepts exist in LOINC or SNOMED CT. | |
 
  
@@ -31,12 +31,12 @@ Placeholder codes for validated dysphagia measures lacking terminology represent
   "resourceType" : "CodeSystem",
   "id" : "dysphagia-scales-temp",
   "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp",
-  "version" : "1.2.0",
+  "version" : "1.2.1",
   "name" : "DysphagiaScalesTemp",
   "title" : "Dysphagia Scales — temporary local codes (proposed for LOINC/SNOMED)",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-07-31T09:21:13+00:00",
+  "date" : "2026-08-13T14:00:50+00:00",
   "publisher" : "N. Kapan Tunçer; S. Tunçer",
   "description" : "Placeholder codes for validated dysphagia measures lacking terminology representation. To be submitted upstream.",
   "copyright" : "MIT (© 2026 N. Kapan Tunçer and S. Tunçer). These are locally minted placeholder identifiers only. They name validated instruments whose own copyright rests with their developers; no instrument content, scoring rule or item text is reproduced here. The codes are temporary and are expected to be retired once equivalent concepts exist in LOINC or SNOMED CT.",

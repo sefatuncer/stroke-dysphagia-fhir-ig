@@ -1,4 +1,4 @@
-# Example ??? IDDSI Level 5 diet + mildly thick fluids (synthetic) - Stroke Dysphagia Care-Transition FHIR IG v1.2.0
+# Example ??? IDDSI Level 5 diet + mildly thick fluids (synthetic) - Stroke Dysphagia Care-Transition FHIR IG v1.2.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
