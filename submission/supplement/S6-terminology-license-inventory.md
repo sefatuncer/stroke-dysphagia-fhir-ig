@@ -20,7 +20,7 @@ Supplementary File S3.
 | | Distinct concepts carried | Of which carry a display term |
 |---|---|---|
 | SNOMED CT | 21 | 12 |
-| LOINC | 3 | 1 |
+| LOINC | 4 | 1 |
 | Local (`dysphagia-scales-temp`, minted here, MIT) | 7 | 7 (our own text) |
 
 Where the display terms sit: **seven** in the value sets (§2.3), **three more** first
@@ -107,7 +107,7 @@ own value sets, which is why the distinct-concept count in §1 is 21 rather than
 
 ### 2.7 Concepts in the negative conformance fixtures (display terms carried)
 
-The eight should-fail fixtures are illustrative in the licensing sense — conformance inputs
+The ten should-fail fixtures are illustrative in the licensing sense — conformance inputs
 rather than published example resources — and carry verbatim SNOMED terms. (They are, of
 course, load-bearing as evidence: see the manuscript's §4.3 and Supplementary File S5.) Two concepts appear here that carry no display term
 elsewhere in the artifact:
@@ -129,6 +129,11 @@ elsewhere in the artifact:
 The remaining fixture codes (371736008, 1237442003, 1237448004, 241149003, 1289999007 and
 LOINC 34133-9) carry the same verbatim terms already listed in §2.3, §2.5 and §3.
 
+The two fixtures added for the release reported here (`neg-summary-wrong-type`,
+`neg-summary-foreign-entry`) carry **identifiers only**: LOINC `11488-4` (§3), LOINC `34133-9`
+and SNOMED `230690007` all travel without a display term, so they add no display string to the
+inventory. `11488-4` is the one third-party identifier this release adds.
+
 ## 3. LOINC codes
 
 | Code | Where | Display carried? |
@@ -137,6 +142,7 @@ LOINC 34133-9) carry the same verbatim terms already listed in §2.3, §2.5 and 
 | 86395-1 | `InstrumentalSwallowTypeVS` | no |
 | 34133-9 | `DysphagiaCareTransitionSummary.type` (fixed) | no |
 | 34133-9 | `ex-care-transition-summary` | yes — `Summary of episode note` |
+| 11488-4 | `neg-summary-wrong-type` (a deliberately wrong document type) | no |
 
 LOINC 99852-6 (FCM–Swallowing panel, ASHA NOMS) is discussed in the manuscript as an
 existing coded instrument but is **not** carried by any artifact.
@@ -153,7 +159,7 @@ retirement once equivalent concepts exist upstream.
 
 ## 5. License basis
 
-**SNOMED CT.** The artifact carries concept identifiers and, for the thirteen concepts
+**SNOMED CT.** The artifact carries concept identifiers and, for the twelve concepts
 listed in §2.3, §2.5 and §2.7, the unmodified English preferred term. It redistributes no SNOMED CT
 release, national extension, or semantic content — no relationships, hierarchies,
 reference sets, or subsets beyond the enumerated value-set membership the authors defined
