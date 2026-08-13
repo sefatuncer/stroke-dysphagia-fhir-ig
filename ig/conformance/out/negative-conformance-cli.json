@@ -13,7 +13,7 @@
       "signatureMatched": true,
       "profileUnresolved": false,
       "correctlyRejected": true,
-      "firstError": "Value is 'preliminary' but is fixed to 'final' in the profile https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/aspiration-risk-flag|1.2.0#Observation.status"
+      "firstError": "Value is 'preliminary' but is fixed to 'final' in the profile https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/aspiration-risk-flag|1.2.1#Observation.status"
     },
     {
       "fixture": "neg-aspiration-wrongcode.json",
@@ -22,7 +22,7 @@
       "signatureMatched": true,
       "profileUnresolved": false,
       "correctlyRejected": true,
-      "firstError": "The pattern [system http://snomed.info/sct, code 371736008, and display 'null'] defined in the profile https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/aspiration-risk-flag|1.2.0 not found. Issues: [ValidationMessage[level=ERROR,type=VALUE,location=Observation.code.coding.co"
+      "firstError": "The pattern [system http://snomed.info/sct, code 371736008, and display 'null'] defined in the profile https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/aspiration-risk-flag|1.2.1 not found. Issues: [ValidationMessage[level=ERROR,type=VALUE,location=Observation.code.coding.co"
     },
     {
       "fixture": "neg-diet-drink-code-on-food.json",
@@ -58,7 +58,7 @@
       "signatureMatched": true,
       "profileUnresolved": false,
       "correctlyRejected": true,
-      "firstError": "Observation.effective[x]: minimum required = 1, but only found 0 (from https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/swallowing-screening-result|1.2.0)"
+      "firstError": "Observation.effective[x]: minimum required = 1, but only found 0 (from https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/swallowing-screening-result|1.2.1)"
     },
     {
       "fixture": "neg-severity-nosubject.json",
@@ -67,7 +67,7 @@
       "signatureMatched": true,
       "profileUnresolved": false,
       "correctlyRejected": true,
-      "firstError": "Observation.subject: minimum required = 1, but only found 0 (from https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-severity|1.2.0)"
+      "firstError": "Observation.subject: minimum required = 1, but only found 0 (from https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-severity|1.2.1)"
     },
     {
       "fixture": "neg-summary-no-entry.json",
