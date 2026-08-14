@@ -1,4 +1,4 @@
-# Instrumental Swallow Assessment (VFSS/FEES) with Penetration-Aspiration Scale - Stroke Dysphagia Care-Transition FHIR IG v1.2.2
+# Instrumental Swallow Assessment (VFSS/FEES) with Penetration-Aspiration Scale - Stroke Dysphagia Care-Transition FHIR IG v1.2.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/instrumental-swallow-assessment | *Version*:1.2.2 |
-| Active as of 2026-08-13 | *Computable Name*:InstrumentalSwallowAssessment |
+| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/instrumental-swallow-assessment | *Version*:1.2.3 |
+| Active as of 2026-08-14 | *Computable Name*:InstrumentalSwallowAssessment |
 | **Copyright/Legal**: Profile definition: MIT (© 2026 N. Kapan Tunçer and S. Tunçer). This profile carries third-party concept identifiers rather than the terminologies themselves. SNOMED CT® is a registered trademark of SNOMED International; concept identifiers and English terms are © SNOMED International, used under the Global Patient Set licence (CC BY-ND 4.0, https://creativecommons.org/licenses/by-nd/4.0/) and reproduced verbatim, with none translated, shortened or otherwise altered. LOINC® is a registered trademark of Regenstrief Institute, Inc.; LOINC codes are used under the LOINC License (http://loinc.org/license). Implementers remain responsible for holding the applicable third-party licences in their own territory. | |
 
  
@@ -39,11 +39,11 @@ Other representations of profile: [CSV](StructureDefinition-instrumental-swallow
   "resourceType" : "StructureDefinition",
   "id" : "instrumental-swallow-assessment",
   "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/instrumental-swallow-assessment",
-  "version" : "1.2.2",
+  "version" : "1.2.3",
   "name" : "InstrumentalSwallowAssessment",
   "title" : "Instrumental Swallow Assessment (VFSS/FEES) with Penetration-Aspiration Scale",
   "status" : "active",
-  "date" : "2026-08-13T23:31:20+00:00",
+  "date" : "2026-08-14T00:08:39+00:00",
   "publisher" : "N. Kapan Tunçer; S. Tunçer",
   "description" : "VFSS/FEES result incl. PAS (Rosenbek). PAS lacks LOINC/SNOMED → temp code; proposed upstream.",
   "copyright" : "Profile definition: MIT (© 2026 N. Kapan Tunçer and S. Tunçer). This profile carries third-party concept identifiers rather than the terminologies themselves. SNOMED CT® is a registered trademark of SNOMED International; concept identifiers and English terms are © SNOMED International, used under the Global Patient Set licence (CC BY-ND 4.0, https://creativecommons.org/licenses/by-nd/4.0/) and reproduced verbatim, with none translated, shortened or otherwise altered. LOINC® is a registered trademark of Regenstrief Institute, Inc.; LOINC codes are used under the LOINC License (http://loinc.org/license). Implementers remain responsible for holding the applicable third-party licences in their own territory.",

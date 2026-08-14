@@ -23,14 +23,14 @@
     },
     "ValueSet-iddsi-fluid-levels.html" : "IDDSI Drink/Fluid Consistency Levels (SNOMED CT)",
     "ValueSet-swallow-screening-type-vs.html" : "Swallowing Screening Type",
-    "ValueSet-instrumental-swallow-type-vs.html" : "Instrumental Swallow Assessment Type",
-    "ValueSet-iddsi-food-levels.html" : "IDDSI Food Texture Levels (SNOMED CT)",
     "ValueSet-aspiration-risk-value-vs.html" : "Aspiration Event Qualifier",
-    "ValueSet-dysphagia-severity-type-vs.html" : "Dysphagia Severity / Oral-Intake Scale Type"
+    "ValueSet-iddsi-food-levels.html" : "IDDSI Food Texture Levels (SNOMED CT)",
+    "ValueSet-dysphagia-severity-type-vs.html" : "Dysphagia Severity / Oral-Intake Scale Type",
+    "ValueSet-instrumental-swallow-type-vs.html" : "Instrumental Swallow Assessment Type"
   },
   {
     "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp",
-    "version" : "1.2.2",
+    "version" : "1.2.3",
     "status" : "draft",
     "name" : "DysphagiaScalesTemp",
     "title" : "Dysphagia Scales — temporary local codes (proposed for LOINC/SNOMED)",
@@ -38,8 +38,8 @@
     "uses" : {
     },
     "ValueSet-swallow-screening-type-vs.html" : "Swallowing Screening Type",
-    "ValueSet-instrumental-swallow-type-vs.html" : "Instrumental Swallow Assessment Type",
     "ValueSet-aspiration-risk-value-vs.html" : "Aspiration Event Qualifier",
-    "ValueSet-dysphagia-severity-type-vs.html" : "Dysphagia Severity / Oral-Intake Scale Type"
+    "ValueSet-dysphagia-severity-type-vs.html" : "Dysphagia Severity / Oral-Intake Scale Type",
+    "ValueSet-instrumental-swallow-type-vs.html" : "Instrumental Swallow Assessment Type"
   }]
 }

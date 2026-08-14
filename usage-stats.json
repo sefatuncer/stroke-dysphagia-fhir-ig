@@ -1,6 +1,6 @@
 {
   "package": "dysphagia.care.transition",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "fhirVersion": "4.0.1",
   "extensions": [],
   "profiles": {

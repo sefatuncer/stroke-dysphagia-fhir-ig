@@ -1,4 +1,4 @@
-# IDDSI Drink/Fluid Consistency Levels (SNOMED CT) - Stroke Dysphagia Care-Transition FHIR IG v1.2.2
+# IDDSI Drink/Fluid Consistency Levels (SNOMED CT) - Stroke Dysphagia Care-Transition FHIR IG v1.2.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/iddsi-fluid-levels | *Version*:1.2.2 |
-| Active as of 2026-08-13 | *Computable Name*:IDDSIFluidLevels |
+| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/iddsi-fluid-levels | *Version*:1.2.3 |
+| Active as of 2026-08-14 | *Computable Name*:IDDSIFluidLevels |
 | **Copyright/Legal**: Value-set definition: MIT (© 2026 N. Kapan Tunçer and S. Tunçer). Content is referenced, not redistributed: this value set enumerates third-party concept identifiers (SNOMED CT © SNOMED International; LOINC © Regenstrief Institute, Inc.; IDDSI framework CC BY-SA 4.0, used unmodified) and carries no display terms, which are supplied at expansion time by the implementer's own terminology server. Implementers must hold the applicable third-party licences. | |
 
  
@@ -47,12 +47,12 @@ IDDSI drink-axis consistency levels 0–4 (SNOMED CT-embedded IDDSI concepts), f
   "resourceType" : "ValueSet",
   "id" : "iddsi-fluid-levels",
   "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/iddsi-fluid-levels",
-  "version" : "1.2.2",
+  "version" : "1.2.3",
   "name" : "IDDSIFluidLevels",
   "title" : "IDDSI Drink/Fluid Consistency Levels (SNOMED CT)",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-13T23:31:20+00:00",
+  "date" : "2026-08-14T00:08:39+00:00",
   "publisher" : "N. Kapan Tunçer; S. Tunçer",
   "description" : "IDDSI drink-axis consistency levels 0–4 (SNOMED CT-embedded IDDSI concepts), for NutritionOrder.oralDiet.fluidConsistencyType. Level 3 is the transitional Moderately Thick concept shared with the food axis.",
   "copyright" : "Value-set definition: MIT (© 2026 N. Kapan Tunçer and S. Tunçer). Content is referenced, not redistributed: this value set enumerates third-party concept identifiers (SNOMED CT © SNOMED International; LOINC © Regenstrief Institute, Inc.; IDDSI framework CC BY-SA 4.0, used unmodified) and carries no display terms, which are supplied at expansion time by the implementer's own terminology server. Implementers must hold the applicable third-party licences.",
