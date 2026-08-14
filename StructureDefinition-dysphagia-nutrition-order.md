@@ -1,4 +1,4 @@
-# Dysphagia Nutrition Order (IDDSI-bound) - Stroke Dysphagia Care-Transition FHIR IG v1.2.1
+# Dysphagia Nutrition Order (IDDSI-bound) - Stroke Dysphagia Care-Transition FHIR IG v1.2.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,9 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-nutrition-order | *Version*:1.2.1 |
+| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-nutrition-order | *Version*:1.2.2 |
 | Active as of 2026-08-13 | *Computable Name*:DysphagiaNutritionOrder |
-| **Copyright/Legal**: Profile definition: MIT (© 2026 N. Kapan Tunçer and S. Tunçer). This profile carries third-party concept identifiers rather than the terminologies themselves. SNOMED CT® is a registered trademark of SNOMED International; concept identifiers and English terms are © SNOMED International, used under the Global Patient Set licence (CC BY-ND 4.0) and reproduced verbatim, with none translated, shortened or otherwise altered. The IDDSI framework is used unmodified under CC BY-SA 4.0; no IDDSI document text, table, image or testing method is reproduced. Implementers remain responsible for holding the applicable third-party licences in their own territory. | |
+| **Copyright/Legal**: Profile definition: MIT (© 2026 N. Kapan Tunçer and S. Tunçer). This profile carries third-party concept identifiers rather than the terminologies themselves. SNOMED CT® is a registered trademark of SNOMED International; concept identifiers and English terms are © SNOMED International, used under the Global Patient Set licence (CC BY-ND 4.0, https://creativecommons.org/licenses/by-nd/4.0/) and reproduced verbatim, with none translated, shortened or otherwise altered. The IDDSI framework is used unmodified under CC BY-SA 4.0; no IDDSI document text, table, image or testing method is reproduced. Implementers remain responsible for holding the applicable third-party licences in their own territory. | |
 
  
 NutritionOrder constrained to bind IDDSI levels (extensible) — base FHIR only binds these 'example'. 
@@ -39,14 +39,14 @@ Other representations of profile: [CSV](StructureDefinition-dysphagia-nutrition-
   "resourceType" : "StructureDefinition",
   "id" : "dysphagia-nutrition-order",
   "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-nutrition-order",
-  "version" : "1.2.1",
+  "version" : "1.2.2",
   "name" : "DysphagiaNutritionOrder",
   "title" : "Dysphagia Nutrition Order (IDDSI-bound)",
   "status" : "active",
-  "date" : "2026-08-13T14:00:50+00:00",
+  "date" : "2026-08-13T23:31:20+00:00",
   "publisher" : "N. Kapan Tunçer; S. Tunçer",
   "description" : "NutritionOrder constrained to bind IDDSI levels (extensible) — base FHIR only binds these 'example'.",
-  "copyright" : "Profile definition: MIT (© 2026 N. Kapan Tunçer and S. Tunçer). This profile carries third-party concept identifiers rather than the terminologies themselves. SNOMED CT® is a registered trademark of SNOMED International; concept identifiers and English terms are © SNOMED International, used under the Global Patient Set licence (CC BY-ND 4.0) and reproduced verbatim, with none translated, shortened or otherwise altered. The IDDSI framework is used unmodified under CC BY-SA 4.0; no IDDSI document text, table, image or testing method is reproduced. Implementers remain responsible for holding the applicable third-party licences in their own territory.",
+  "copyright" : "Profile definition: MIT (© 2026 N. Kapan Tunçer and S. Tunçer). This profile carries third-party concept identifiers rather than the terminologies themselves. SNOMED CT® is a registered trademark of SNOMED International; concept identifiers and English terms are © SNOMED International, used under the Global Patient Set licence (CC BY-ND 4.0, https://creativecommons.org/licenses/by-nd/4.0/) and reproduced verbatim, with none translated, shortened or otherwise altered. The IDDSI framework is used unmodified under CC BY-SA 4.0; no IDDSI document text, table, image or testing method is reproduced. Implementers remain responsible for holding the applicable third-party licences in their own territory.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "workflow",

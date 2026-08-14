@@ -1,63 +1,53 @@
 {
-  "date" : "Thu, 13 Aug, 2026 14:00:50 +0000",
+  "date" : "Thu, 13 Aug, 2026 23:31:20 +0000",
   "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
   "files" : [{
     "name" : "/fsh-generated/resources/ImplementationGuide-dysphagia.care.transition.json",
     "size" : 10741,
     "processes" : [{
       "activity" : "load",
-      "start" : 271,
-      "length" : 10
-    },
-    {
-      "activity" : "loadInfo",
-      "start" : 272,
-      "length" : 1
+      "start" : 287,
+      "length" : 13
     },
     {
       "activity" : "checkR4R4B",
-      "start" : 272,
-      "length" : 8
+      "start" : 288,
+      "length" : 11
     },
     {
       "activity" : "generateNarratives",
-      "start" : 272,
-      "length" : 145
+      "start" : 288,
+      "length" : 190
     },
     {
       "activity" : "validate",
-      "start" : 280,
-      "length" : 17314
-    },
-    {
-      "activity" : "checkConformanceResources3",
-      "start" : 297,
-      "length" : 1
+      "start" : 299,
+      "length" : 13506
     },
     {
       "activity" : "scanForUsageStats",
-      "start" : 297,
-      "length" : 1
-    },
-    {
-      "activity" : "validate",
-      "start" : 297,
+      "start" : 312,
       "length" : 1
     },
     {
       "activity" : "generate1",
-      "start" : 311,
-      "length" : 9483
+      "start" : 338,
+      "length" : 12288
     },
     {
       "activity" : "generate2",
-      "start" : 646,
-      "length" : 320
+      "start" : 712,
+      "length" : 453
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 777,
-      "length" : 3
+      "start" : 980,
+      "length" : 4
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 1042,
+      "length" : 1
     }]
   },
   {
@@ -65,48 +55,53 @@
     "size" : 1697,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 271,
-      "length" : 4
+      "start" : 287,
+      "length" : 8
     },
     {
       "activity" : "load",
-      "start" : 271,
+      "start" : 287,
       "length" : 11
     },
     {
       "activity" : "load-configure",
-      "start" : 272,
+      "start" : 288,
       "length" : 3
     },
     {
       "activity" : "loadDepInfo",
-      "start" : 272,
+      "start" : 288,
       "length" : 1
     },
     {
       "activity" : "generateNarratives",
-      "start" : 272,
-      "length" : 10
+      "start" : 288,
+      "length" : 12
     },
     {
       "activity" : "validate",
-      "start" : 273,
-      "length" : 72
+      "start" : 289,
+      "length" : 117
     },
     {
-      "activity" : "checkConformanceResources3",
-      "start" : 297,
+      "activity" : "checkConformanceResources",
+      "start" : 312,
       "length" : 1
     },
     {
       "activity" : "generate1",
-      "start" : 320,
-      "length" : 1473
+      "start" : 350,
+      "length" : 1582
     },
     {
       "activity" : "generate2",
-      "start" : 646,
-      "length" : 496
+      "start" : 713,
+      "length" : 615
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 980,
+      "length" : 1
     }]
   },
   {
@@ -114,43 +109,48 @@
     "size" : 1109,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 271,
-      "length" : 3
+      "start" : 287,
+      "length" : 4
+    },
+    {
+      "activity" : "load-configure",
+      "start" : 288,
+      "length" : 1
     },
     {
       "activity" : "generateNarratives",
-      "start" : 272,
-      "length" : 10
+      "start" : 289,
+      "length" : 13
     },
     {
       "activity" : "validate",
-      "start" : 297,
-      "length" : 70
+      "start" : 312,
+      "length" : 44
     },
     {
       "activity" : "generate1",
-      "start" : 322,
-      "length" : 533
+      "start" : 352,
+      "length" : 1150
     },
     {
       "activity" : "generate2",
-      "start" : 646,
-      "length" : 206
+      "start" : 713,
+      "length" : 255
     },
     {
       "activity" : "generateExampleZip",
-      "start" : 777,
-      "length" : 1
+      "start" : 978,
+      "length" : 2
     },
     {
       "activity" : "generateExampleZip",
-      "start" : 777,
-      "length" : 1
+      "start" : 979,
+      "length" : 2
     },
     {
       "activity" : "generateExampleZip",
-      "start" : 777,
-      "length" : 3
+      "start" : 979,
+      "length" : 2
     }]
   },
   {
@@ -158,47 +158,42 @@
     "size" : 1008,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 271,
-      "length" : 1
-    },
-    {
-      "activity" : "checkR4R4B",
-      "start" : 272,
+      "start" : 287,
       "length" : 1
     },
     {
       "activity" : "generateNarratives",
-      "start" : 272,
-      "length" : 9
+      "start" : 289,
+      "length" : 7
     },
     {
       "activity" : "validate",
-      "start" : 297,
-      "length" : 1066
+      "start" : 312,
+      "length" : 1029
     },
     {
       "activity" : "generate1",
-      "start" : 322,
-      "length" : 724
+      "start" : 353,
+      "length" : 1430
     },
     {
       "activity" : "generate2",
-      "start" : 647,
-      "length" : 218
+      "start" : 714,
+      "length" : 530
     },
     {
       "activity" : "generateExampleZip",
-      "start" : 777,
+      "start" : 978,
+      "length" : 1
+    },
+    {
+      "activity" : "generateExampleZip",
+      "start" : 979,
       "length" : 2
     },
     {
       "activity" : "generateExampleZip",
-      "start" : 777,
-      "length" : 2
-    },
-    {
-      "activity" : "generateExampleZip",
-      "start" : 777,
+      "start" : 979,
       "length" : 1
     }]
   },
@@ -207,48 +202,43 @@
     "size" : 497,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 271,
+      "start" : 287,
       "length" : 2
     },
     {
       "activity" : "generateNarratives",
-      "start" : 272,
-      "length" : 2
+      "start" : 289,
+      "length" : 3
     },
     {
       "activity" : "validate",
-      "start" : 298,
-      "length" : 9
+      "start" : 313,
+      "length" : 12
     },
     {
       "activity" : "generate1",
-      "start" : 323,
-      "length" : 445
+      "start" : 354,
+      "length" : 993
     },
     {
       "activity" : "generate2",
-      "start" : 647,
-      "length" : 210
+      "start" : 714,
+      "length" : 277
     },
     {
       "activity" : "generateExampleZip",
-      "start" : 777,
-      "length" : 1
-    },
-    {
-      "activity" : "generateExampleZip",
-      "start" : 777,
-      "length" : 1
-    },
-    {
-      "activity" : "generateExampleZip",
-      "start" : 777,
+      "start" : 978,
       "length" : 2
     },
     {
-      "activity" : "scanExamplesForR5",
-      "start" : 829,
-      "length" : 1
+      "activity" : "generateExampleZip",
+      "start" : 979,
+      "length" : 2
+    },
+    {
+      "activity" : "generateExampleZip",
+      "start" : 979,
+      "length" : 2
     }]
   },
   {
@@ -256,43 +246,43 @@
     "size" : 533,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 271,
-      "length" : 3
+      "start" : 287,
+      "length" : 2
     },
     {
       "activity" : "generateNarratives",
-      "start" : 272,
-      "length" : 44
+      "start" : 289,
+      "length" : 52
     },
     {
       "activity" : "validate",
-      "start" : 298,
-      "length" : 9
+      "start" : 314,
+      "length" : 12
     },
     {
       "activity" : "generate1",
-      "start" : 324,
-      "length" : 402
+      "start" : 355,
+      "length" : 715
     },
     {
       "activity" : "generate2",
-      "start" : 647,
-      "length" : 192
+      "start" : 714,
+      "length" : 243
     },
     {
       "activity" : "generateExampleZip",
-      "start" : 777,
+      "start" : 978,
       "length" : 2
     },
     {
       "activity" : "generateExampleZip",
-      "start" : 777,
+      "start" : 979,
       "length" : 1
     },
     {
       "activity" : "generateExampleZip",
-      "start" : 777,
-      "length" : 1
+      "start" : 979,
+      "length" : 2
     }]
   },
   {
@@ -300,42 +290,47 @@
     "size" : 790,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 271,
+      "start" : 287,
       "length" : 2
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 288,
+      "length" : 1
     },
     {
       "activity" : "generateNarratives",
-      "start" : 272,
-      "length" : 2
+      "start" : 289,
+      "length" : 1
     },
     {
       "activity" : "validate",
-      "start" : 298,
-      "length" : 511
+      "start" : 314,
+      "length" : 525
     },
     {
       "activity" : "generate1",
-      "start" : 324,
-      "length" : 860
+      "start" : 356,
+      "length" : 1166
     },
     {
       "activity" : "generate2",
-      "start" : 647,
-      "length" : 203
+      "start" : 715,
+      "length" : 352
     },
     {
       "activity" : "generateExampleZip",
-      "start" : 777,
+      "start" : 978,
+      "length" : 2
+    },
+    {
+      "activity" : "generateExampleZip",
+      "start" : 979,
       "length" : 1
     },
     {
       "activity" : "generateExampleZip",
-      "start" : 777,
-      "length" : 1
-    },
-    {
-      "activity" : "generateExampleZip",
-      "start" : 777,
+      "start" : 979,
       "length" : 2
     }]
   },
@@ -344,42 +339,37 @@
     "size" : 532,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 271,
-      "length" : 3
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 272,
-      "length" : 1
+      "start" : 287,
+      "length" : 2
     },
     {
       "activity" : "validate",
-      "start" : 299,
-      "length" : 517
+      "start" : 314,
+      "length" : 502
     },
     {
       "activity" : "generate1",
-      "start" : 325,
-      "length" : 557
+      "start" : 357,
+      "length" : 881
     },
     {
       "activity" : "generate2",
-      "start" : 648,
-      "length" : 165
+      "start" : 715,
+      "length" : 283
     },
     {
       "activity" : "generateExampleZip",
-      "start" : 777,
+      "start" : 978,
       "length" : 2
     },
     {
       "activity" : "generateExampleZip",
-      "start" : 777,
+      "start" : 979,
       "length" : 2
     },
     {
       "activity" : "generateExampleZip",
-      "start" : 777,
+      "start" : 979,
       "length" : 1
     }]
   },
@@ -388,38 +378,43 @@
     "size" : 108,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 271,
+      "start" : 287,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 289,
       "length" : 1
     },
     {
       "activity" : "validate",
-      "start" : 299,
-      "length" : 1
+      "start" : 315,
+      "length" : 2
     },
     {
       "activity" : "generate1",
-      "start" : 325,
-      "length" : 182
+      "start" : 358,
+      "length" : 458
     },
     {
       "activity" : "generate2",
-      "start" : 648,
-      "length" : 169
+      "start" : 715,
+      "length" : 187
     },
     {
       "activity" : "generateExampleZip",
-      "start" : 777,
+      "start" : 978,
+      "length" : 2
+    },
+    {
+      "activity" : "generateExampleZip",
+      "start" : 979,
+      "length" : 2
+    },
+    {
+      "activity" : "generateExampleZip",
+      "start" : 979,
       "length" : 1
-    },
-    {
-      "activity" : "generateExampleZip",
-      "start" : 777,
-      "length" : 2
-    },
-    {
-      "activity" : "generateExampleZip",
-      "start" : 777,
-      "length" : 2
     }]
   },
   {
@@ -427,469 +422,464 @@
     "size" : 203,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 271,
-      "length" : 1
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 272,
+      "start" : 287,
       "length" : 1
     },
     {
       "activity" : "validate",
-      "start" : 299,
-      "length" : 2
+      "start" : 315,
+      "length" : 3
     },
     {
       "activity" : "generate1",
-      "start" : 326,
-      "length" : 227
+      "start" : 358,
+      "length" : 388
     },
     {
       "activity" : "generate2",
-      "start" : 648,
-      "length" : 202
+      "start" : 715,
+      "length" : 439
     },
     {
       "activity" : "generateExampleZip",
-      "start" : 777,
-      "length" : 2
-    },
-    {
-      "activity" : "generateExampleZip",
-      "start" : 777,
-      "length" : 2
-    },
-    {
-      "activity" : "generateExampleZip",
-      "start" : 777,
+      "start" : 978,
       "length" : 1
+    },
+    {
+      "activity" : "generateExampleZip",
+      "start" : 979,
+      "length" : 1
+    },
+    {
+      "activity" : "generateExampleZip",
+      "start" : 979,
+      "length" : 2
     }]
   },
   {
     "name" : "fsh-generated/resources/StructureDefinition-aspiration-risk-flag.json",
-    "size" : 2980,
+    "size" : 3029,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 271,
-      "length" : 3
+      "start" : 287,
+      "length" : 2
     },
     {
       "activity" : "load",
-      "start" : 271,
-      "length" : 4
+      "start" : 287,
+      "length" : 5
     },
     {
       "activity" : "generateSnapshots",
-      "start" : 271,
-      "length" : 30
+      "start" : 287,
+      "length" : 38
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 288,
+      "length" : 1
     },
     {
       "activity" : "generateNarratives",
-      "start" : 272,
-      "length" : 57
+      "start" : 289,
+      "length" : 90
     },
     {
       "activity" : "validate",
-      "start" : 275,
-      "length" : 1089
+      "start" : 291,
+      "length" : 1433
+    },
+    {
+      "activity" : "checkConformanceResources3",
+      "start" : 312,
+      "length" : 1
     },
     {
       "activity" : "scanForUsageStats",
-      "start" : 297,
+      "start" : 312,
       "length" : 1
     },
     {
       "activity" : "generate1",
-      "start" : 326,
-      "length" : 48396
+      "start" : 359,
+      "length" : 49390
     },
     {
       "activity" : "generate2",
-      "start" : 648,
-      "length" : 4658
+      "start" : 716,
+      "length" : 7063
     },
     {
       "activity" : "generate2",
-      "start" : 676,
-      "length" : 766
+      "start" : 781,
+      "length" : 1442
     },
     {
       "activity" : "makeDependencies",
-      "start" : 742,
+      "start" : 918,
       "length" : 1
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 777,
-      "length" : 6
+      "start" : 980,
+      "length" : 11
     }]
   },
   {
     "name" : "fsh-generated/resources/StructureDefinition-dysphagia-care-transition-summary.json",
-    "size" : 3482,
+    "size" : 3531,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 271,
-      "length" : 2
-    },
-    {
-      "activity" : "load",
-      "start" : 271,
-      "length" : 3
-    },
-    {
-      "activity" : "generateSnapshots",
-      "start" : 271,
-      "length" : 34
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 272,
-      "length" : 35
-    },
-    {
-      "activity" : "validate",
-      "start" : 276,
-      "length" : 851
-    },
-    {
-      "activity" : "checkConformanceResources3",
-      "start" : 297,
-      "length" : 1
-    },
-    {
-      "activity" : "generate1",
-      "start" : 374,
-      "length" : 49505
-    },
-    {
-      "activity" : "generate2",
-      "start" : 653,
-      "length" : 2674
-    },
-    {
-      "activity" : "generate2",
-      "start" : 677,
-      "length" : 181
-    },
-    {
-      "activity" : "generateValidationPack",
-      "start" : 777,
-      "length" : 12
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/StructureDefinition-dysphagia-nutrition-order.json",
-    "size" : 3411,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 271,
+      "start" : 287,
       "length" : 1
     },
     {
       "activity" : "load",
-      "start" : 271,
-      "length" : 2
+      "start" : 287,
+      "length" : 5
     },
     {
       "activity" : "generateSnapshots",
-      "start" : 271,
-      "length" : 29
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 272,
+      "start" : 287,
       "length" : 30
     },
     {
-      "activity" : "validate",
-      "start" : 277,
-      "length" : 922
-    },
-    {
-      "activity" : "scanForUsageStats",
-      "start" : 297,
-      "length" : 1
-    },
-    {
-      "activity" : "generate1",
-      "start" : 424,
-      "length" : 49546
-    },
-    {
-      "activity" : "generate2",
-      "start" : 655,
-      "length" : 2903
-    },
-    {
-      "activity" : "generate2",
-      "start" : 677,
-      "length" : 201
-    },
-    {
-      "activity" : "generateValidationPack",
-      "start" : 777,
-      "length" : 8
-    },
-    {
-      "activity" : "scanExamplesForR5",
-      "start" : 829,
-      "length" : 1
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/StructureDefinition-dysphagia-severity.json",
-    "size" : 2170,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 271,
-      "length" : 2
-    },
-    {
-      "activity" : "load",
-      "start" : 271,
-      "length" : 4
-    },
-    {
-      "activity" : "generateSnapshots",
-      "start" : 271,
-      "length" : 26
-    },
-    {
       "activity" : "generateNarratives",
-      "start" : 272,
-      "length" : 27
-    },
-    {
-      "activity" : "validate",
-      "start" : 277,
-      "length" : 667
-    },
-    {
-      "activity" : "generate1",
-      "start" : 473,
-      "length" : 39116
-    },
-    {
-      "activity" : "generate2",
-      "start" : 658,
-      "length" : 4952
-    },
-    {
-      "activity" : "generate2",
-      "start" : 677,
-      "length" : 130
-    },
-    {
-      "activity" : "generateValidationPack",
-      "start" : 777,
-      "length" : 8
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/StructureDefinition-instrumental-swallow-assessment.json",
-    "size" : 3971,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 271,
-      "length" : 2
-    },
-    {
-      "activity" : "load",
-      "start" : 271,
-      "length" : 3
-    },
-    {
-      "activity" : "generateSnapshots",
-      "start" : 271,
-      "length" : 27
-    },
-    {
-      "activity" : "load-configure",
-      "start" : 272,
-      "length" : 1
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 272,
+      "start" : 289,
       "length" : 52
     },
     {
       "activity" : "validate",
-      "start" : 278,
-      "length" : 852
+      "start" : 293,
+      "length" : 1483
+    },
+    {
+      "activity" : "generate1",
+      "start" : 408,
+      "length" : 50367
+    },
+    {
+      "activity" : "generate2",
+      "start" : 723,
+      "length" : 5424
+    },
+    {
+      "activity" : "generate2",
+      "start" : 783,
+      "length" : 723
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 980,
+      "length" : 9
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 1042,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-dysphagia-nutrition-order.json",
+    "size" : 3460,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 287,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 287,
+      "length" : 4
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 287,
+      "length" : 32
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 289,
+      "length" : 39
+    },
+    {
+      "activity" : "validate",
+      "start" : 294,
+      "length" : 1387
     },
     {
       "activity" : "checkConformanceResources3",
-      "start" : 297,
+      "start" : 312,
       "length" : 1
     },
     {
       "activity" : "scanForUsageStats",
-      "start" : 297,
+      "start" : 312,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 459,
+      "length" : 53077
+    },
+    {
+      "activity" : "generate2",
+      "start" : 728,
+      "length" : 9598
+    },
+    {
+      "activity" : "generate2",
+      "start" : 784,
+      "length" : 659
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 980,
+      "length" : 9
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-dysphagia-severity.json",
+    "size" : 2219,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 287,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 287,
+      "length" : 4
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 287,
+      "length" : 41
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 289,
+      "length" : 31
+    },
+    {
+      "activity" : "validate",
+      "start" : 296,
+      "length" : 1036
+    },
+    {
+      "activity" : "checkConformanceResources3",
+      "start" : 312,
+      "length" : 1
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 312,
       "length" : 1
     },
     {
       "activity" : "generate1",
       "start" : 512,
-      "length" : 55916
+      "length" : 48159
     },
     {
       "activity" : "generate2",
-      "start" : 663,
-      "length" : 5179
+      "start" : 738,
+      "length" : 12611
     },
     {
       "activity" : "generate2",
-      "start" : 677,
-      "length" : 137
+      "start" : 784,
+      "length" : 293
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 777,
-      "length" : 8
+      "start" : 980,
+      "length" : 7
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-instrumental-swallow-assessment.json",
+    "size" : 4020,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 287,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 287,
+      "length" : 6
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 287,
+      "length" : 47
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 289,
+      "length" : 53
+    },
+    {
+      "activity" : "validate",
+      "start" : 297,
+      "length" : 1401
+    },
+    {
+      "activity" : "generate1",
+      "start" : 560,
+      "length" : 63139
+    },
+    {
+      "activity" : "generate2",
+      "start" : 751,
+      "length" : 12538
+    },
+    {
+      "activity" : "generate2",
+      "start" : 785,
+      "length" : 318
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 980,
+      "length" : 11
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 1042,
+      "length" : 1
     }]
   },
   {
     "name" : "fsh-generated/resources/StructureDefinition-swallowing-screening-result.json",
-    "size" : 2250,
+    "size" : 2299,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 271,
-      "length" : 2
+      "start" : 287,
+      "length" : 1
     },
     {
       "activity" : "load",
-      "start" : 271,
-      "length" : 2
+      "start" : 287,
+      "length" : 6
     },
     {
       "activity" : "generateSnapshots",
-      "start" : 271,
-      "length" : 28
+      "start" : 287,
+      "length" : 32
     },
     {
       "activity" : "generateNarratives",
-      "start" : 272,
-      "length" : 24
+      "start" : 289,
+      "length" : 35
     },
     {
       "activity" : "validate",
-      "start" : 279,
-      "length" : 537
+      "start" : 298,
+      "length" : 660
     },
     {
-      "activity" : "checkConformanceResources3",
-      "start" : 297,
+      "activity" : "scanForUsageStats",
+      "start" : 312,
       "length" : 1
     },
     {
       "activity" : "generate1",
-      "start" : 568,
-      "length" : 43282
+      "start" : 623,
+      "length" : 47656
     },
     {
       "activity" : "generate2",
-      "start" : 668,
-      "length" : 4212
+      "start" : 763,
+      "length" : 8985
     },
     {
       "activity" : "generate2",
-      "start" : 678,
-      "length" : 142
+      "start" : 785,
+      "length" : 224
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 777,
-      "length" : 7
-    },
-    {
-      "activity" : "scanExamplesForR5",
-      "start" : 829,
-      "length" : 1
+      "start" : 980,
+      "length" : 11
     }]
   },
   {
     "name" : "fsh-generated/resources/ValueSet-aspiration-risk-value-vs.json",
-    "size" : 1647,
+    "size" : 1936,
     "processes" : [{
-      "activity" : "loadResources",
-      "start" : 271,
-      "length" : 1
-    },
-    {
       "activity" : "load",
-      "start" : 271,
-      "length" : 4
+      "start" : 287,
+      "length" : 5
     },
     {
       "activity" : "generateNarratives",
-      "start" : 272,
-      "length" : 118
+      "start" : 289,
+      "length" : 113
     },
     {
       "activity" : "validate",
-      "start" : 273,
-      "length" : 1881
+      "start" : 289,
+      "length" : 2188
+    },
+    {
+      "activity" : "checkConformanceResources3",
+      "start" : 312,
+      "length" : 1
     },
     {
       "activity" : "generate1",
-      "start" : 612,
-      "length" : 1384
+      "start" : 671,
+      "length" : 1945
     },
     {
       "activity" : "generate2",
-      "start" : 673,
-      "length" : 807
+      "start" : 772,
+      "length" : 2267
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 777,
-      "length" : 2
+      "start" : 980,
+      "length" : 3
     }]
   },
   {
     "name" : "fsh-generated/resources/ValueSet-dysphagia-severity-type-vs.json",
-    "size" : 2014,
+    "size" : 2303,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 271,
+      "start" : 287,
       "length" : 1
     },
     {
       "activity" : "load",
-      "start" : 271,
+      "start" : 287,
       "length" : 3
     },
     {
       "activity" : "generateNarratives",
-      "start" : 273,
-      "length" : 4
+      "start" : 289,
+      "length" : 6
     },
     {
       "activity" : "validate",
-      "start" : 275,
-      "length" : 21
-    },
-    {
-      "activity" : "checkConformanceResources3",
-      "start" : 297,
-      "length" : 1
+      "start" : 291,
+      "length" : 27
     },
     {
       "activity" : "generate1",
-      "start" : 613,
-      "length" : 1769
+      "start" : 673,
+      "length" : 2377
     },
     {
       "activity" : "generate2",
-      "start" : 673,
-      "length" : 585
+      "start" : 774,
+      "length" : 2006
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 777,
+      "start" : 980,
       "length" : 1
     }]
   },
@@ -897,136 +887,146 @@
     "name" : "fsh-generated/resources/ValueSet-iddsi-fluid-levels.json",
     "size" : 1429,
     "processes" : [{
-      "activity" : "loadResources",
-      "start" : 271,
-      "length" : 1
-    },
-    {
       "activity" : "load",
-      "start" : 271,
-      "length" : 3
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 273,
+      "start" : 287,
       "length" : 4
     },
     {
+      "activity" : "generateNarratives",
+      "start" : 289,
+      "length" : 6
+    },
+    {
       "activity" : "validate",
-      "start" : 275,
-      "length" : 15
+      "start" : 291,
+      "length" : 20
     },
     {
       "activity" : "generate1",
-      "start" : 615,
-      "length" : 1386
+      "start" : 675,
+      "length" : 1584
     },
     {
       "activity" : "generate2",
-      "start" : 674,
-      "length" : 485
+      "start" : 776,
+      "length" : 973
     }]
   },
   {
     "name" : "fsh-generated/resources/ValueSet-iddsi-food-levels.json",
     "size" : 1503,
     "processes" : [{
+      "activity" : "loadResources",
+      "start" : 287,
+      "length" : 1
+    },
+    {
       "activity" : "load",
-      "start" : 271,
-      "length" : 3
+      "start" : 287,
+      "length" : 4
     },
     {
       "activity" : "generateNarratives",
-      "start" : 273,
-      "length" : 3
+      "start" : 289,
+      "length" : 6
     },
     {
       "activity" : "validate",
-      "start" : 275,
-      "length" : 13
+      "start" : 291,
+      "length" : 28
     },
     {
       "activity" : "checkConformanceResources3",
-      "start" : 297,
+      "start" : 312,
       "length" : 1
     },
     {
       "activity" : "generate1",
-      "start" : 616,
-      "length" : 1553
+      "start" : 676,
+      "length" : 1507
     },
     {
       "activity" : "generate2",
-      "start" : 674,
-      "length" : 516
+      "start" : 777,
+      "length" : 577
     }]
   },
   {
     "name" : "fsh-generated/resources/ValueSet-instrumental-swallow-type-vs.json",
-    "size" : 1923,
+    "size" : 2212,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 271,
+      "start" : 287,
       "length" : 1
     },
     {
       "activity" : "load",
-      "start" : 271,
-      "length" : 47
+      "start" : 287,
+      "length" : 5
     },
     {
       "activity" : "checkR4R4B",
-      "start" : 272,
+      "start" : 288,
       "length" : 1
     },
     {
       "activity" : "generateNarratives",
-      "start" : 273,
-      "length" : 7
+      "start" : 289,
+      "length" : 10
     },
     {
       "activity" : "validate",
-      "start" : 275,
-      "length" : 22
+      "start" : 291,
+      "length" : 35
     },
     {
       "activity" : "generate1",
-      "start" : 618,
-      "length" : 2124
+      "start" : 678,
+      "length" : 2230
     },
     {
       "activity" : "generate2",
-      "start" : 675,
-      "length" : 541
+      "start" : 778,
+      "length" : 1084
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 980,
+      "length" : 1
     }]
   },
   {
     "name" : "fsh-generated/resources/ValueSet-swallow-screening-type-vs.json",
-    "size" : 1945,
+    "size" : 2234,
     "processes" : [{
-      "activity" : "load",
-      "start" : 271,
-      "length" : 2
+      "activity" : "loadResources",
+      "start" : 287,
+      "length" : 1
     },
     {
-      "activity" : "generateNarratives",
-      "start" : 273,
+      "activity" : "load",
+      "start" : 287,
       "length" : 3
     },
     {
+      "activity" : "generateNarratives",
+      "start" : 289,
+      "length" : 7
+    },
+    {
       "activity" : "validate",
-      "start" : 275,
-      "length" : 17
+      "start" : 291,
+      "length" : 18
     },
     {
       "activity" : "generate1",
-      "start" : 620,
-      "length" : 1688
+      "start" : 680,
+      "length" : 1921
     },
     {
       "activity" : "generate2",
-      "start" : 676,
-      "length" : 575
+      "start" : 779,
+      "length" : 2099
     }]
   },
   {
@@ -1034,8 +1034,8 @@
     "size" : 1368,
     "processes" : [{
       "activity" : "generate2",
-      "start" : 676,
-      "length" : 13
+      "start" : 781,
+      "length" : 74
     }]
   },
   {
@@ -1043,8 +1043,8 @@
     "size" : 1100,
     "processes" : [{
       "activity" : "generate2",
-      "start" : 676,
-      "length" : 14
+      "start" : 781,
+      "length" : 76
     }]
   },
   {
@@ -1052,8 +1052,8 @@
     "size" : 5300,
     "processes" : [{
       "activity" : "generate2",
-      "start" : 676,
-      "length" : 13
+      "start" : 781,
+      "length" : 67
     }]
   },
   {
@@ -1061,7 +1061,7 @@
     "size" : 0,
     "processes" : [{
       "activity" : "generate2",
-      "start" : 676,
+      "start" : 781,
       "length" : 1
     }]
   },
@@ -1070,8 +1070,8 @@
     "size" : 140,
     "processes" : [{
       "activity" : "generate2",
-      "start" : 676,
-      "length" : 5
+      "start" : 781,
+      "length" : 69
     }]
   },
   {
@@ -1079,8 +1079,8 @@
     "size" : 11890,
     "processes" : [{
       "activity" : "generate2",
-      "start" : 676,
-      "length" : 11
+      "start" : 781,
+      "length" : 73
     }]
   }]
 }

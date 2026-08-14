@@ -1,4 +1,4 @@
-# Example ??? aspiration risk present (synthetic) - Stroke Dysphagia Care-Transition FHIR IG v1.2.1
+# Example ??? aspiration risk present (synthetic) - Stroke Dysphagia Care-Transition FHIR IG v1.2.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

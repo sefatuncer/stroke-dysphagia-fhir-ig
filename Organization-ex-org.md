@@ -1,4 +1,4 @@
-# Example ??? synthetic rehabilitation service (Composition author) - Stroke Dysphagia Care-Transition FHIR IG v1.2.1
+# Example ??? synthetic rehabilitation service (Composition author) - Stroke Dysphagia Care-Transition FHIR IG v1.2.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

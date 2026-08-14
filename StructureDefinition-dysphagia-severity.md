@@ -1,4 +1,4 @@
-# Dysphagia Severity - Stroke Dysphagia Care-Transition FHIR IG v1.2.1
+# Dysphagia Severity - Stroke Dysphagia Care-Transition FHIR IG v1.2.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,9 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-severity | *Version*:1.2.1 |
+| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-severity | *Version*:1.2.2 |
 | Active as of 2026-08-13 | *Computable Name*:DysphagiaSeverity |
-| **Copyright/Legal**: Profile definition: MIT (© 2026 N. Kapan Tunçer and S. Tunçer). This profile carries third-party concept identifiers rather than the terminologies themselves. SNOMED CT® is a registered trademark of SNOMED International; concept identifiers and English terms are © SNOMED International, used under the Global Patient Set licence (CC BY-ND 4.0) and reproduced verbatim, with none translated, shortened or otherwise altered. Implementers remain responsible for holding the applicable third-party licences in their own territory. | |
+| **Copyright/Legal**: Profile definition: MIT (© 2026 N. Kapan Tunçer and S. Tunçer). This profile carries third-party concept identifiers rather than the terminologies themselves. SNOMED CT® is a registered trademark of SNOMED International; concept identifiers and English terms are © SNOMED International, used under the Global Patient Set licence (CC BY-ND 4.0, https://creativecommons.org/licenses/by-nd/4.0/) and reproduced verbatim, with none translated, shortened or otherwise altered. Implementers remain responsible for holding the applicable third-party licences in their own territory. | |
 
  
 Overall severity / oral-intake level (FOIS, DIGEST, or IDDSI FDS). 
@@ -39,14 +39,14 @@ Other representations of profile: [CSV](StructureDefinition-dysphagia-severity.c
   "resourceType" : "StructureDefinition",
   "id" : "dysphagia-severity",
   "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-severity",
-  "version" : "1.2.1",
+  "version" : "1.2.2",
   "name" : "DysphagiaSeverity",
   "title" : "Dysphagia Severity",
   "status" : "active",
-  "date" : "2026-08-13T14:00:50+00:00",
+  "date" : "2026-08-13T23:31:20+00:00",
   "publisher" : "N. Kapan Tunçer; S. Tunçer",
   "description" : "Overall severity / oral-intake level (FOIS, DIGEST, or IDDSI FDS).",
-  "copyright" : "Profile definition: MIT (© 2026 N. Kapan Tunçer and S. Tunçer). This profile carries third-party concept identifiers rather than the terminologies themselves. SNOMED CT® is a registered trademark of SNOMED International; concept identifiers and English terms are © SNOMED International, used under the Global Patient Set licence (CC BY-ND 4.0) and reproduced verbatim, with none translated, shortened or otherwise altered. Implementers remain responsible for holding the applicable third-party licences in their own territory.",
+  "copyright" : "Profile definition: MIT (© 2026 N. Kapan Tunçer and S. Tunçer). This profile carries third-party concept identifiers rather than the terminologies themselves. SNOMED CT® is a registered trademark of SNOMED International; concept identifiers and English terms are © SNOMED International, used under the Global Patient Set licence (CC BY-ND 4.0, https://creativecommons.org/licenses/by-nd/4.0/) and reproduced verbatim, with none translated, shortened or otherwise altered. Implementers remain responsible for holding the applicable third-party licences in their own territory.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "workflow",
