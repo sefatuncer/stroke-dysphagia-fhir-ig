@@ -1,11 +1,11 @@
 # Conformance — cross-implementation validation (not self-validation)
 
 **Claim for the paper:** both suites — the eight synthetic examples and the ten negative
-fixtures — run on **two deployments outside the authoring build**: the HL7 reference validator
-invoked standalone against the built package, and a separately deployed HAPI FHIR server.
-Four machine-readable records are deposited, one per suite per deployment. Both share the HL7
-Java validation core, so this is portability across deployments, not independence across
-implementations (see below).
+fixtures — run on **three deployments outside the authoring build**: the HL7 reference
+validator invoked standalone against the built package, a separately deployed HAPI FHIR server,
+and Firely Terminal on the Firely .NET SDK. Six machine-readable records are deposited. The
+first two share the HL7 Java validation core; the third shares no code with it, so agreement
+across them is independence across implementations, not only portability across deployments.
 
 | # | Server | Implementation | Status |
 |---|--------|----------------|--------|
@@ -42,6 +42,12 @@ node validate-negatives.mjs http://localhost:8080/fhir
 node validate-positives-cli.mjs
 node validate-negatives-cli.mjs
 
+# 2d) the same two suites on a THIRD deployment that shares no code with the Java
+#     core: Firely Terminal on the Firely .NET SDK, in a digest-pinned container.
+#     This is what turns portability across deployments into independence across
+#     implementations.
+node validate-with-firely.mjs
+
 # The four scripts deposit machine-readable evidence under conformance/out/
 # (positive-/negative-conformance.json for HAPI, positive-/negative-conformance-cli.json
 # for the reference validator, each with a .md summary).
@@ -69,3 +75,10 @@ and reports the worst issue severity. Exit code 0 = all examples conform.
   emit terminology *warnings*; the conformance claim is about **structural + binding**
   validity (error-level), consistent with the reference-validator result.
 - This is **feasibility/interoperability** evidence, **not** a clinical-benefit claim.
+- The Firely step runs in a digest-pinned container with the tool version pinned, but it
+  fetches that tool from nuget.org at run time rather than from an image we publish, so it
+  needs network access — the same shape of dependency as the reference validator's jar in
+  `input-cache/`. The pin fixes *what* runs, not where it is fetched from.
+- Agreement between the two implementations shows they read the profiles the same way. It
+  does not show the profiles say what we meant them to say; that limit is the co-design one
+  the manuscript records separately.

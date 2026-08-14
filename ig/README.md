@@ -42,7 +42,8 @@ sushi ig            # expect: 0 errors, 0 warnings
 
 ## Status
 Validated: SUSHI 0/0; IG Publisher 0 errors. Both suites — the eight positive examples and the
-ten negative fixtures — ran on both deployments outside the build: the HL7 reference validator
-(`validator_cli.jar`, run standalone against `output/package.tgz`) and a separately deployed
-HAPI FHIR server. All four machine-readable records are in `conformance/out/`. Build outputs (`output/`, `temp/`, `fsh-generated/`,
+ten negative fixtures — ran on three deployments outside the build: the HL7 reference validator
+(`validator_cli.jar`, run standalone against `output/package.tgz`), a separately deployed HAPI
+FHIR server, and Firely Terminal on the Firely .NET SDK, which shares no code with the Java
+core. All six machine-readable records are in `conformance/out/`. Build outputs (`output/`, `temp/`, `fsh-generated/`,
 `input-cache/`, `template/`) are regenerated and not committed.

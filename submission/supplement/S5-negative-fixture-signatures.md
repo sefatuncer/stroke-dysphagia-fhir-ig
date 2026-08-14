@@ -12,19 +12,21 @@ verbatim from that file and truncated only where the canonical URL repeats.
 
 **Deployments:** both the independently deployed HAPI FHIR server (v8.10.0, digest-pinned,
 via `$validate` against the declared profile) and the HL7 reference validator
-(`validator_cli.jar`, against the built IG package). Both suites ran on both deployments, and all four
+(`validator_cli.jar`, against the built IG package). A third deployment runs the Firely .NET SDK (Firely Terminal 3.5.0),
+which shares no code with the Java core. Both suites ran on all three, and all six
 machine-readable records are deposited: `positive-conformance.json` and
 `negative-conformance.json` (HAPI), `positive-conformance-cli.json` and
-`negative-conformance-cli.json` (reference validator). Both share the HL7 Java
-validation core, so this is portability across deployments, not independence across
-implementations (§5.3-3).
+`negative-conformance-cli.json` (reference validator), and `firely-conformance.json`
+(Firely, both suites in one record). The first two share the HL7 Java validation core, so
+agreement between them is portability across deployments; the third shares no code with it, so
+agreement with Firely is independence across implementations (§5.3-3).
 
 > **Fixture 4 was corrected (13 Aug 2026).** `neg-diet-food-code-on-fluid` carried a display term
 > on `1237449007` that the reference validator rejected as a wrong display name for the concept.
 > It produced a second error alongside the invariant under test, so the fixture did not satisfy
 > the "exactly one violated rule" rule this suite is built on — and the string was not verbatim,
 > which the licensing argument requires of every display the artifact carries. The identifier now
-> travels alone, and every fixture fails for exactly the constraint it targets on both
+> travels alone, and every fixture fails for exactly the constraint it targets on all three
 > deployments.
 
 ## Rejection signatures
@@ -43,7 +45,17 @@ implementations (§5.3-3).
 | 10 | `neg-summary-foreign-entry` | Composition | `section.entry` restricted to this IG's profiles | reference target type | `Invalid Resource target type. Found Condition, but expected one of ([NutritionOrder, Observation])` |
 
 All ten were rejected at **error** severity, each with the signature of its own constraint, and
-none of the ten failed merely because a profile could not be resolved.
+none of the ten failed merely because a profile could not be resolved. The signatures above are
+the Java core's; the Firely engine words them differently but names the same constraint every
+time — for the two cardinality fixtures it reports `Instance count is 0, which is not within the
+specified cardinality of 1..1` and puts the element (`Observation.effective[x]`,
+`Observation.subject`) in the location rather than the message. `FIRELY-CONFORMANCE.md` gives
+its wording for all ten.
+
+The independence reaches further than the validation step. The SUSHI output carries differentials
+only, with no precomputed snapshot, so each engine expanded its own snapshot from the differential
+before validating. A profile that behaves the same way in both has therefore survived two separate
+snapshot generators as well as two separate validators.
 
 Fixtures 9 and 10 were added for the release reported here, closing the coverage gap the previous
 version of this file recorded: every constraint Table 1 presents as a contribution is now exercised

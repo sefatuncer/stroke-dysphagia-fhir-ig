@@ -124,7 +124,7 @@ elsewhere in the artifact:
 > the no-derivatives argument in the manuscript's Data and Code Availability statement
 > claims of every display the artifact carries. The fixture now carries the identifier
 > alone. This also removed an incidental second error from that fixture, so every fixture
-> now fails for exactly the one constraint it targets on both deployments.
+> now fails for exactly the one constraint it targets on all three deployments.
 
 The remaining fixture codes (371736008, 1237442003, 1237448004, 241149003, 1289999007 and
 LOINC 34133-9) carry the same verbatim terms already listed in §2.3, §2.5 and §3.

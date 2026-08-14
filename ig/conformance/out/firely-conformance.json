@@ -1,0 +1,182 @@
+{
+  "igVersion": "1.2.4",
+  "runTimestamp": "2026-08-14T01:05:06.372Z",
+  "validator": "Firely .NET SDK via Firely Terminal 3.5.0 (image mcr.microsoft.com/dotnet/sdk@sha256:306301580fcaa5b445180e759db59309979002d1000669cb4cf58a567d0014bc)",
+  "deployment": "independent implementation — does NOT share the HL7 Java validation core",
+  "note": "Unlike the reference validator and the HAPI server, this engine is a separately written implementation of the same specification. Agreement here is independence across implementations, not only portability across deployments.",
+  "positives": {
+    "tested": 8,
+    "valid": 8
+  },
+  "negatives": {
+    "tested": 10,
+    "correctlyRejected": 10
+  },
+  "pass": true,
+  "results": [
+    {
+      "kind": "positive",
+      "file": "Composition-ex-care-transition-summary.json",
+      "declaredProfile": "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-care-transition-summary",
+      "valid": true,
+      "pass": true,
+      "firstIssue": ""
+    },
+    {
+      "kind": "positive",
+      "file": "NutritionOrder-ex-dysphagia-diet.json",
+      "declaredProfile": "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-nutrition-order",
+      "valid": true,
+      "pass": true,
+      "firstIssue": ""
+    },
+    {
+      "kind": "positive",
+      "file": "Observation-ex-aspiration-risk.json",
+      "declaredProfile": "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/aspiration-risk-flag",
+      "valid": true,
+      "pass": true,
+      "firstIssue": ""
+    },
+    {
+      "kind": "positive",
+      "file": "Observation-ex-dysphagia-severity.json",
+      "declaredProfile": "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-severity",
+      "valid": true,
+      "pass": true,
+      "firstIssue": ""
+    },
+    {
+      "kind": "positive",
+      "file": "Observation-ex-instrumental-swallow.json",
+      "declaredProfile": "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/instrumental-swallow-assessment",
+      "valid": true,
+      "pass": true,
+      "firstIssue": ""
+    },
+    {
+      "kind": "positive",
+      "file": "Observation-ex-swallow-screening.json",
+      "declaredProfile": "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/swallowing-screening-result",
+      "valid": true,
+      "pass": true,
+      "firstIssue": ""
+    },
+    {
+      "kind": "positive",
+      "file": "Organization-ex-org.json",
+      "declaredProfile": null,
+      "valid": true,
+      "pass": true,
+      "firstIssue": ""
+    },
+    {
+      "kind": "positive",
+      "file": "Patient-ex-patient.json",
+      "declaredProfile": null,
+      "valid": true,
+      "pass": true,
+      "firstIssue": ""
+    },
+    {
+      "kind": "negative",
+      "file": "neg-aspiration-preliminary.json",
+      "expected": "status preliminary — profile fixes status to final",
+      "invalid": true,
+      "signatureMatched": true,
+      "correctlyRejected": true,
+      "pass": true,
+      "firstIssue": "Error: Value 'preliminary' is not exactly equal to fixed value 'final' At: Observation.status[0] http://hl7.org/fhir/dotnet-api-operation-outcome|1008"
+    },
+    {
+      "kind": "negative",
+      "file": "neg-aspiration-wrongcode.json",
+      "expected": "wrong SNOMED code — profile pattern fixes code to 371736008",
+      "invalid": true,
+      "signatureMatched": true,
+      "correctlyRejected": true,
+      "pass": true,
+      "firstIssue": "Error: Value '{\"coding\":[{\"system\":\"http://snomed.info/sct\",\"code\":\"40739000\",\"display\":\"Dysphagia\"}]}' does not match pattern '{\"coding\":[{\"system\":\"http://snomed.info/sct\",\"code\":\"371736008\"}]}' At: Observation.code[0] http://hl7.org/fhir/dotnet-api-operation-outcome|1009"
+    },
+    {
+      "kind": "negative",
+      "file": "neg-diet-drink-code-on-food.json",
+      "expected": "drink-only concept on texture.modifier — invariant iddsi-axis-food",
+      "invalid": true,
+      "signatureMatched": true,
+      "correctlyRejected": true,
+      "pass": true,
+      "firstIssue": "Error: Instance failed constraint iddsi-axis-food \"A drink-only IDDSI concept must not be used on texture.modifier, which carries the food axis. IDDSI Level 3 (1237444002) is a single concept shared by both axes and is therefore permitted here.\" At: NutritionOrder.oralDiet[0] http://hl7.org/fhir/dot"
+    },
+    {
+      "kind": "negative",
+      "file": "neg-diet-food-code-on-fluid.json",
+      "expected": "food-axis concept on fluidConsistencyType — invariant iddsi-axis-fluid",
+      "invalid": true,
+      "signatureMatched": true,
+      "correctlyRejected": true,
+      "pass": true,
+      "firstIssue": "Error: Instance failed constraint iddsi-axis-fluid \"A food-axis IDDSI concept must not be used on fluidConsistencyType, which carries the drink axis (IDDSI Levels 0-4).\" At: NutritionOrder.oralDiet[0] http://hl7.org/fhir/dotnet-api-operation-outcome|1012"
+    },
+    {
+      "kind": "negative",
+      "file": "neg-instrumental-pas-out-of-range.json",
+      "expected": "PAS component value 99 — invariant pas-range (scale is 1-8)",
+      "invalid": true,
+      "signatureMatched": true,
+      "correctlyRejected": true,
+      "pass": true,
+      "firstIssue": "Error: Instance failed constraint pas-range \"The Penetration-Aspiration Scale is an 8-point ordinal scale; a PAS grade outside 1-8 is not a valid score.\" (for slice pas) At: Observation.component[0] http://hl7.org/fhir/dotnet-api-operation-outcome|1012"
+    },
+    {
+      "kind": "negative",
+      "file": "neg-screening-noeffective.json",
+      "expected": "effective[x] absent — profile requires effective[x] 1..1",
+      "invalid": true,
+      "signatureMatched": true,
+      "correctlyRejected": true,
+      "pass": true,
+      "firstIssue": "Error: Instance count is 0, which is not within the specified cardinality of 1..1 At: Observation.effective[x] http://hl7.org/fhir/dotnet-api-operation-outcome|1028"
+    },
+    {
+      "kind": "negative",
+      "file": "neg-severity-nosubject.json",
+      "expected": "subject absent — profile requires subject 1..1",
+      "invalid": true,
+      "signatureMatched": true,
+      "correctlyRejected": true,
+      "pass": true,
+      "firstIssue": "Error: Instance count is 0, which is not within the specified cardinality of 1..1 At: Observation.subject http://hl7.org/fhir/dotnet-api-operation-outcome|1028"
+    },
+    {
+      "kind": "negative",
+      "file": "neg-summary-foreign-entry.json",
+      "expected": "section.entry references a Condition — profile restricts entries to the IG profiles",
+      "invalid": true,
+      "signatureMatched": true,
+      "correctlyRejected": true,
+      "pass": true,
+      "firstIssue": "Error: Referenced resource '' does not validate against any of the expected target profiles (https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/swallowing-screening-result, https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/instrumental-swallow-assessmen"
+    },
+    {
+      "kind": "negative",
+      "file": "neg-summary-no-entry.json",
+      "expected": "sections without section.entry — invariant dct-has-content",
+      "invalid": true,
+      "signatureMatched": true,
+      "correctlyRejected": true,
+      "pass": true,
+      "firstIssue": "Error: Instance failed constraint dct-has-content \"A care-transition summary must carry at least one section entry. An envelope with no dysphagia content is not a transfer.\" At: Composition http://hl7.org/fhir/dotnet-api-operation-outcome|1012"
+    },
+    {
+      "kind": "negative",
+      "file": "neg-summary-wrong-type.json",
+      "expected": "wrong Composition.type code — profile fixes type to LOINC 34133-9",
+      "invalid": true,
+      "signatureMatched": true,
+      "correctlyRejected": true,
+      "pass": true,
+      "firstIssue": "Error: Value '{\"coding\":[{\"system\":\"http://loinc.org\",\"code\":\"11488-4\"}]}' does not match pattern '{\"coding\":[{\"system\":\"http://loinc.org\",\"code\":\"34133-9\"}]}' At: Composition.type[0] http://hl7.org/fhir/dotnet-api-operation-outcome|1009"
+    }
+  ]
+}
