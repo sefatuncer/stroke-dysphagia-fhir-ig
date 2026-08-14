@@ -37,7 +37,7 @@ Several STARE-HI items assume a *deployed* system evaluated in a care setting. T
 | 10 | Author contributions | ✅ | CRediT-style statement for both authors. |
 | 11 | Competing interests | ✅ | Declared, including the verifiable-credentials interest relevant to the future-work direction in §5.4. |
 | 12 | Acknowledgements | ◐ | Present; the acknowledgement is to the standards communities whose work is reused, with no individual contributors to name. |
-| 13 | References | ✅ | 48 references, Vancouver/AMA style, numbered by order of first citation. |
+| 13 | References | ✅ | 50 references, Vancouver/AMA style, numbered by order of first citation. |
 | 14 | Appendices / supplementary material | ✅ | S1 (element provenance), S2 (this checklist), S3 (terminology log), S4 (search log), S5 (negative-fixture rejection signatures and the constraints the suite leaves untested), S6 (per-concept terminology license inventory), plus the deposited cohort, conformance, mutation-control and sensitivity outputs. |
 
 ## Toolchain versions (STARE-HI item 5.2)
