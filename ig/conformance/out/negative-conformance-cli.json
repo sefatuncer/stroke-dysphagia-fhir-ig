@@ -1,6 +1,6 @@
 {
-  "igVersion": "1.2.2",
-  "runTimestamp": "2026-08-13T23:57:31.242Z",
+  "igVersion": "1.2.3",
+  "runTimestamp": "2026-08-14T00:30:50.499Z",
   "validator": "HL7 reference validator (validator_cli.jar), FHIR R4, IG package from ig/output",
   "deployment": "in-toolchain reference validator (the second deployment for the rejection side)",
   "note": "Both this validator and the HAPI server share the HL7 Java validation core: portability across deployments, not independence across implementations.",
@@ -15,7 +15,7 @@
       "signatureMatched": true,
       "profileUnresolved": false,
       "correctlyRejected": true,
-      "firstError": "Value is 'preliminary' but is fixed to 'final' in the profile https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/aspiration-risk-flag|1.2.2#Observation.status"
+      "firstError": "Value is 'preliminary' but is fixed to 'final' in the profile https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/aspiration-risk-flag|1.2.3#Observation.status"
     },
     {
       "fixture": "neg-aspiration-wrongcode.json",
@@ -24,7 +24,7 @@
       "signatureMatched": true,
       "profileUnresolved": false,
       "correctlyRejected": true,
-      "firstError": "The pattern [system http://snomed.info/sct, code 371736008, and display 'null'] defined in the profile https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/aspiration-risk-flag|1.2.2 not found. Issues: [ValidationMessage[level=ERROR,type=VALUE,location=Observation.code.coding.co"
+      "firstError": "The pattern [system http://snomed.info/sct, code 371736008, and display 'null'] defined in the profile https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/aspiration-risk-flag|1.2.3 not found. Issues: [ValidationMessage[level=ERROR,type=VALUE,location=Observation.code.coding.co"
     },
     {
       "fixture": "neg-diet-drink-code-on-food.json",
@@ -60,7 +60,7 @@
       "signatureMatched": true,
       "profileUnresolved": false,
       "correctlyRejected": true,
-      "firstError": "Observation.effective[x]: minimum required = 1, but only found 0 (from https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/swallowing-screening-result|1.2.2)"
+      "firstError": "Observation.effective[x]: minimum required = 1, but only found 0 (from https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/swallowing-screening-result|1.2.3)"
     },
     {
       "fixture": "neg-severity-nosubject.json",
@@ -69,7 +69,7 @@
       "signatureMatched": true,
       "profileUnresolved": false,
       "correctlyRejected": true,
-      "firstError": "Observation.subject: minimum required = 1, but only found 0 (from https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-severity|1.2.2)"
+      "firstError": "Observation.subject: minimum required = 1, but only found 0 (from https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-severity|1.2.3)"
     },
     {
       "fixture": "neg-summary-foreign-entry.json",
@@ -96,7 +96,7 @@
       "signatureMatched": true,
       "profileUnresolved": false,
       "correctlyRejected": true,
-      "firstError": "The pattern [system http://loinc.org, code 34133-9, and display 'null'] defined in the profile https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-care-transition-summary|1.2.2 not found. Issues: [ValidationMessage[level=ERROR,type=VALUE,location=Composition.type.codi"
+      "firstError": "The pattern [system http://loinc.org, code 34133-9, and display 'null'] defined in the profile https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-care-transition-summary|1.2.3 not found. Issues: [ValidationMessage[level=ERROR,type=VALUE,location=Composition.type.codi"
     }
   ]
 }

@@ -41,7 +41,7 @@
         <mxCell id="filt" value="filter stroke&#10;SNOMED 230690007&#10;=&gt; N = 333" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" vertex="1" parent="1">
           <mxGeometry x="220" y="250" width="150" height="56" as="geometry" />
         </mxCell>
-        <mxCell id="gen" value="dysphagia-layer generator&#10;(seeded model, Table 2)&#10;=&gt; FHIR bundles (IG-conformant)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" vertex="1" parent="1">
+        <mxCell id="gen" value="dysphagia-layer generator&#10;(seeded model, Table 3)&#10;=&gt; FHIR bundles (IG-conformant)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" vertex="1" parent="1">
           <mxGeometry x="400" y="244" width="200" height="68" as="geometry" />
         </mxCell>
         <mxCell id="cqlsrc" value="AspirationRiskAlert (CQL)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;" vertex="1" parent="1">

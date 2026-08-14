@@ -68,10 +68,10 @@ cd ig && sushi .
 # 2. Build the IG (HL7 IG Publisher, containerized) — see ig/Dockerfile.igbuild and ig/README.md
 #    Result: 0 errors; terminology validated against tx.fhir.org.
 
-# 3. Conformance: the eight positive examples on both deployments (the reference
-#    validator, which runs inside step 2, and a separately deployed HAPI FHIR
-#    server); the eight negative ("should-fail") fixtures on the HAPI server
-#    — see ig/conformance/README.md
+# 3. Conformance: both suites — the eight positive examples and the ten negative
+#    ("should-fail") fixtures — on both deployments: the HL7 reference validator
+#    run standalone against the built package, and a separately deployed HAPI
+#    FHIR server — see ig/conformance/README.md
 
 # 4. Decision-support feasibility evaluation (synthetic data only)
 #    The 333-bundle cohort is deposited, and every step below reads it rather than
