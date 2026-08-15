@@ -1,4 +1,4 @@
-# Home - Stroke Dysphagia Care-Transition FHIR IG v1.2.4
+# Home - Stroke Dysphagia Care-Transition FHIR IG v1.2.5
 
 * [**Table of Contents**](toc.md)
 * **Home**
@@ -7,8 +7,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ImplementationGuide/dysphagia.care.transition | *Version*:1.2.4 |
-| Active as of 2026-08-14 | *Computable Name*:DysphagiaCareTransitionIG |
+| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ImplementationGuide/dysphagia.care.transition | *Version*:1.2.5 |
+| Active as of 2026-08-15 | *Computable Name*:DysphagiaCareTransitionIG |
 | **Copyright/Legal**: © 2026 N. Kapan Tunçer and S. Tunçer. IG artifacts licensed under the MIT License. This IG carries concept identifiers from SNOMED CT (© SNOMED International), LOINC (© Regenstrief Institute, Inc.) and the IDDSI framework (CC BY-SA 4.0, used unmodified); it redistributes no code system release, national extension or semantic content. Value sets enumerate identifiers, and some members additionally carry the English term as an unmodified display hint; the authoritative display is supplied at expansion time by the implementer's own terminology server. Implementers are responsible for holding the applicable third-party licences. | |
 
 ### Stroke Dysphagia Care-Transition FHIR IG
@@ -89,11 +89,11 @@ This publication includes IP covered under the following statements.
   "resourceType" : "ImplementationGuide",
   "id" : "dysphagia.care.transition",
   "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ImplementationGuide/dysphagia.care.transition",
-  "version" : "1.2.4",
+  "version" : "1.2.5",
   "name" : "DysphagiaCareTransitionIG",
   "title" : "Stroke Dysphagia Care-Transition FHIR IG",
   "status" : "active",
-  "date" : "2026-08-14T00:48:45+00:00",
+  "date" : "2026-08-15T14:40:00+00:00",
   "publisher" : "N. Kapan Tunçer; S. Tunçer",
   "description" : "Interoperable representation of swallowing assessment, aspiration risk, dysphagia severity and IDDSI diet across stroke care transitions (acute → rehab → home). Reuses SNOMED-embedded IDDSI/GUSS + clinical findings; contributes swallowing-assessment Observation profiles + IDDSI ValueSet/binding + a care-transition summary.",
   "copyright" : "© 2026 N. Kapan Tunçer and S. Tunçer. IG artifacts licensed under the MIT License. This IG carries concept identifiers from SNOMED CT (© SNOMED International), LOINC (© Regenstrief Institute, Inc.) and the IDDSI framework (CC BY-SA 4.0, used unmodified); it redistributes no code system release, national extension or semantic content. Value sets enumerate identifiers, and some members additionally carry the English term as an unmodified display hint; the authoritative display is supplied at expansion time by the implementer's own terminology server. Implementers are responsible for holding the applicable third-party licences.",

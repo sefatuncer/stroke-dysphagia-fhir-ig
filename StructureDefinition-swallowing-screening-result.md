@@ -1,4 +1,4 @@
-# Swallowing Screening Result - Stroke Dysphagia Care-Transition FHIR IG v1.2.4
+# Swallowing Screening Result - Stroke Dysphagia Care-Transition FHIR IG v1.2.5
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/swallowing-screening-result | *Version*:1.2.4 |
-| Active as of 2026-08-14 | *Computable Name*:SwallowingScreeningResult |
+| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/swallowing-screening-result | *Version*:1.2.5 |
+| Active as of 2026-08-15 | *Computable Name*:SwallowingScreeningResult |
 | **Copyright/Legal**: Profile definition: MIT (© 2026 N. Kapan Tunçer and S. Tunçer). This profile carries third-party concept identifiers rather than the terminologies themselves. SNOMED CT® is a registered trademark of SNOMED International; concept identifiers and English terms are © SNOMED International, used under the Global Patient Set licence (CC BY-ND 4.0, https://creativecommons.org/licenses/by-nd/4.0/) and reproduced verbatim, with none translated, shortened or otherwise altered. Implementers remain responsible for holding the applicable third-party licences in their own territory. | |
 
  
@@ -39,11 +39,11 @@ Other representations of profile: [CSV](StructureDefinition-swallowing-screening
   "resourceType" : "StructureDefinition",
   "id" : "swallowing-screening-result",
   "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/swallowing-screening-result",
-  "version" : "1.2.4",
+  "version" : "1.2.5",
   "name" : "SwallowingScreeningResult",
   "title" : "Swallowing Screening Result",
   "status" : "active",
-  "date" : "2026-08-14T00:48:45+00:00",
+  "date" : "2026-08-15T14:40:00+00:00",
   "publisher" : "N. Kapan Tunçer; S. Tunçer",
   "description" : "Bedside dysphagia screening (GUSS/EAT-10/TOR-BSST). GUSS reuses SNOMED 1289999007.",
   "copyright" : "Profile definition: MIT (© 2026 N. Kapan Tunçer and S. Tunçer). This profile carries third-party concept identifiers rather than the terminologies themselves. SNOMED CT® is a registered trademark of SNOMED International; concept identifiers and English terms are © SNOMED International, used under the Global Patient Set licence (CC BY-ND 4.0, https://creativecommons.org/licenses/by-nd/4.0/) and reproduced verbatim, with none translated, shortened or otherwise altered. Implementers remain responsible for holding the applicable third-party licences in their own territory.",
