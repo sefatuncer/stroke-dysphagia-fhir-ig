@@ -112,3 +112,22 @@ constraint, which is why the table records the current one.
 The suite therefore does not test, and the profile does not reject, an instance that carries
 the required SNOMED coding plus additional local codings. That is intended behavior rather
 than a coverage gap, and it is recorded here so the two are not confused.
+
+---
+
+## A different suite, easily confused with this one
+
+A second set of hand-authored bundles is deposited alongside these, and the two are not
+interchangeable.
+
+| | Negative fixtures (this file) | Branch-coverage fixtures |
+|---|---|---|
+| What is under test | the **profiles** — does a validator reject data violating one stated constraint? | the **rule** — does the compiled CQL take the branch its specification says it should? |
+| Run by | three validator deployments | the CQL engine, on the same compiled ELM as the cohort run |
+| Conformance status of the inputs | non-conformant **by design**, one violation each | mostly conformant; three are deliberately non-conformant, and are labelled as such |
+| What a pass means | the constraint is enforced, not merely declared | the branch is reachable and behaves as specified |
+
+The branch-coverage suite says nothing about profile conformance, and this suite says nothing
+about the rule's logic. Neither substitutes for the other, and the constraints listed above as
+**not** exercised by the negative suite remain unexercised: the branch fixtures do not test
+profile constraints at all.

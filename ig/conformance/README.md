@@ -3,23 +3,25 @@
 **Claim for the paper:** both suites — the eight synthetic examples and the ten negative
 fixtures — run on **three deployments outside the authoring build**: the HL7 reference
 validator invoked standalone against the built package, a separately deployed HAPI FHIR server,
-and Firely Terminal on the Firely .NET SDK. Six machine-readable records are deposited. The
-first two share the HL7 Java validation core; the third shares no code with it, so agreement
-across them is independence across implementations, not only portability across deployments.
+and Firely Terminal on the Firely .NET SDK. Five run records are deposited — one per suite for
+each Java-core deployment, and one covering both suites for the .NET one — alongside a sixth
+record for the cohort validation. The first two deployments share the HL7 Java validation core;
+the third shares no code with it, so agreement across them is independence across
+implementations, not only portability across deployments.
 
 | # | Server | Implementation | Status |
 |---|--------|----------------|--------|
 | 0 | FHIR reference validator (`validator_cli.jar`) | HL7 (Java) | **used** — runs during the IG build, 0 errors |
 | 1 | **HAPI FHIR** (local Docker, digest-pinned = 8.10.0) | HAPI / Smile CDR OSS (Java) | **used** — `docker-compose.hapi.yml` |
-| 2 | Firely Server (.NET, different vendor) | Firely | **not used — future work** |
+| 2 | **Firely Terminal** on the Firely .NET SDK (digest-pinned container) | Firely (.NET) | **used** — `validate-with-firely.mjs` |
 
-**What this establishes, and what it does not.** Servers 0 and 1 are two *independently
-deployed* servers, and passing both shows the artifacts are portable across deployments and
-are not merely self-validating against the toolchain that produced them. However, both are
-built on the **HL7 Java validation core**, so this is *not* independence across
-implementations: a misreading shared by that core would pass on both. Validation against a
-genuinely different implementation (Firely/.NET) remains future work and is reported as a
-limitation in the manuscript.
+**What this establishes, and what it does not.** Deployments 0 and 1 are independently
+deployed, so passing both shows the artifacts are portable and not merely self-validating
+against the toolchain that produced them. Both are built on the **HL7 Java validation core**,
+however, so on their own they would not show independence across implementations: a misreading
+shared by that core would pass on both. Deployment 2 is what closes that gap — Firely Terminal
+runs the Firely .NET SDK and shares no code with the Java core. What none of the three shows is
+that the profiles encode the intended clinical semantics; that limitation stands.
 
 ## Run
 
@@ -82,3 +84,22 @@ and reports the worst issue severity. Exit code 0 = all examples conform.
 - Agreement between the two implementations shows they read the profiles the same way. It
   does not show the profiles say what we meant them to say; that limit is the co-design one
   the manuscript records separately.
+
+## Independent terminology cross-check
+
+`terminology-crosscheck.mjs` re-tests every coverage call from the manuscript's §3.2 on a
+second, independently operated terminology server — the New Zealand national service, which
+runs CSIRO Ontoserver on a national SNOMED CT edition released well after the International
+edition the original round used.
+
+```bash
+node terminology-crosscheck.mjs   # → out/TERMINOLOGY-CROSSCHECK.md + .json
+```
+
+Two guards make the result interpretable rather than merely favourable. Every resolved concept's
+**module of origin** is read back, so a concept present only in the national extension is
+reported as `EXTENSION-ONLY` and never counted as confirming an International code. And every
+absence probe runs several filter terms under a screening rule fixed before the run — a lexical
+hit counts only if its display carries swallowing-domain vocabulary — with the screened-out hits
+kept in the JSON record rather than discarded. Three positive controls must resolve or the
+script aborts without reporting any absence.

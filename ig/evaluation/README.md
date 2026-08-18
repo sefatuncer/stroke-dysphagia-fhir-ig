@@ -86,7 +86,28 @@ node compile-cql.mjs
 # 4. execute + evaluate
 node run-cql.mjs
 node evaluate.mjs        # → out/RESULTS.md
+node mutation-test.mjs   # → out/MUTATION-TEST.md
+node sensitivity.mjs     # → out/SENSITIVITY.md (Table 4)
+
+# 5. checks that do NOT use the co-designed cohort
+#    5a. branch coverage: twelve fixtures written by hand from the rule statement,
+#        each isolating one cell of the truth table, including the branches the
+#        cohort cannot produce. Expected verdicts are recorded in the fixture
+#        definitions BEFORE the engine runs, so a disagreement is a finding.
+node branch-coverage.mjs # → out/BRANCH-COVERAGE.md (writes branch-fixtures/)
+
+#    5b. differential check: a second implementation of the rule, written from the
+#        printed specification rather than the CQL and sharing no library with it,
+#        compared against the engine over the cohort and the fixtures. Both readings
+#        of the specification are reported, including the one that disagreed.
+node differential-check.mjs  # → out/DIFFERENTIAL-CHECK.md
 ```
+
+> **What 5a and 5b do and do not establish.** They test whether the compiled rule does what
+> the paper says it does — specification-to-code fidelity — on inputs the generative model
+> did not produce. Both implementations were written by the same authors, so a shared
+> misconception about the clinical question would survive in both; the co-design limitation
+> in the manuscript is unaffected.
 
 ## The generative model (`src/model.mjs`)
 Each Synthea stroke patient (demographic spine) is given a dysphagia layer by a

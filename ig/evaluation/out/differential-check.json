@@ -1,0 +1,79 @@
+{
+  "runTimestamp": "2026-08-18T11:10:58.380Z",
+  "firstImplementation": "AspirationRiskAlert.cql compiled to ELM, executed on cql-execution with cql-exec-fhir",
+  "secondImplementation": "direct traversal of the serialized FHIR JSON, written from the rule statement printed in the manuscript (§3.6); shares no library with the first",
+  "independenceCaveat": "Both implementations were written by the same authors. This measures specification-to-code fidelity, not clinical validity, and does not remove the co-design limitation.",
+  "readings": {
+    "as-printed": "condition 3 read literally from the manuscript sentence, with no status qualification on the nil-by-mouth observation",
+    "as-specified": "condition 3 with the same status filter the risk-flag branch carries, which is what the CQL implements"
+  },
+  "runs": [
+    {
+      "reading": "as-printed",
+      "sets": [
+        {
+          "set": "deposited cohort",
+          "compared": 333,
+          "agreements": 333,
+          "disagreements": []
+        },
+        {
+          "set": "hand-authored branch fixtures",
+          "compared": 12,
+          "agreements": 11,
+          "disagreements": [
+            {
+              "id": "F11",
+              "first": true,
+              "second": false,
+              "secondDetail": {
+                "codedRiskFlag": true,
+                "activeThinFluidOrder": true,
+                "nilByMouth": true,
+                "alert": false
+              }
+            }
+          ]
+        }
+      ],
+      "totalCompared": 345,
+      "totalDisagreements": 1
+    },
+    {
+      "reading": "as-specified",
+      "sets": [
+        {
+          "set": "deposited cohort",
+          "compared": 333,
+          "agreements": 333,
+          "disagreements": []
+        },
+        {
+          "set": "hand-authored branch fixtures",
+          "compared": 12,
+          "agreements": 12,
+          "disagreements": []
+        }
+      ],
+      "totalCompared": 345,
+      "totalDisagreements": 0
+    }
+  ],
+  "sets": [
+    {
+      "set": "deposited cohort",
+      "compared": 333,
+      "agreements": 333,
+      "disagreements": []
+    },
+    {
+      "set": "hand-authored branch fixtures",
+      "compared": 12,
+      "agreements": 12,
+      "disagreements": []
+    }
+  ],
+  "totalCompared": 345,
+  "totalDisagreements": 0,
+  "finding": "The literal reading of condition 3 disagreed with the first implementation, on inputs where a retracted nil-by-mouth record is present. The CQL applies a status filter the printed sentence omitted. Adjudicated in favour of the artifact — suppressing an alert on an entered-in-error record is the unsafe direction — and the manuscript sentence was corrected. No change was made to the rule."
+}

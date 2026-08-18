@@ -1,0 +1,746 @@
+{
+  "server": "https://terminz.azurewebsites.net/fhir",
+  "implementation": "CSIRO Ontoserver (NZ national terminology service)",
+  "runTimestamp": "2026-08-18T10:22:10.319Z",
+  "positiveControls": [
+    {
+      "term": "Dysphagia Outcome and Severity",
+      "expected": "767131006",
+      "resolved": true,
+      "hits": 1
+    },
+    {
+      "term": "Gugging",
+      "expected": "1289999007",
+      "resolved": true,
+      "hits": 3
+    },
+    {
+      "term": "Fibreoptic endoscopic evaluation of swallowing",
+      "expected": "311834001",
+      "resolved": true,
+      "hits": 1
+    }
+  ],
+  "reused": [
+    {
+      "group": "Screening",
+      "system": "http://snomed.info/sct",
+      "code": "1289999007",
+      "label": "GUSS",
+      "resolved": true,
+      "status": 200,
+      "display": "Gugging Swallowing Screen",
+      "version": "http://snomed.info/sct/21000210109/version/20260720",
+      "moduleId": "900000000000207008",
+      "inactive": false,
+      "verdict": "CONFIRMED"
+    },
+    {
+      "group": "Screening",
+      "system": "http://snomed.info/sct",
+      "code": "717684008",
+      "label": "Yale / 3-oz protocol",
+      "resolved": true,
+      "status": 200,
+      "display": "Yale Swallow Protocol",
+      "version": "http://snomed.info/sct/21000210109/version/20260720",
+      "moduleId": "900000000000207008",
+      "inactive": false,
+      "verdict": "CONFIRMED"
+    },
+    {
+      "group": "Screening",
+      "system": "http://snomed.info/sct",
+      "code": "716854005",
+      "label": "Yale / 3-oz score",
+      "resolved": true,
+      "status": 200,
+      "display": "Yale Swallow Protocol score",
+      "version": "http://snomed.info/sct/21000210109/version/20260720",
+      "moduleId": "900000000000207008",
+      "inactive": false,
+      "verdict": "CONFIRMED"
+    },
+    {
+      "group": "Instrumental",
+      "system": "http://snomed.info/sct",
+      "code": "241149003",
+      "label": "VFSS",
+      "resolved": true,
+      "status": 200,
+      "display": "Videofluoroscopy swallow",
+      "version": "http://snomed.info/sct/21000210109/version/20260720",
+      "moduleId": "900000000000207008",
+      "inactive": false,
+      "verdict": "CONFIRMED"
+    },
+    {
+      "group": "Instrumental",
+      "system": "http://snomed.info/sct",
+      "code": "311834001",
+      "label": "FEES",
+      "resolved": true,
+      "status": 200,
+      "display": "Fibreoptic endoscopic evaluation of swallowing",
+      "version": "http://snomed.info/sct/21000210109/version/20260720",
+      "moduleId": "900000000000207008",
+      "inactive": false,
+      "verdict": "CONFIRMED"
+    },
+    {
+      "group": "Instrumental",
+      "system": "http://loinc.org",
+      "code": "24681-9",
+      "label": "VFSS (LOINC)",
+      "resolved": true,
+      "status": 200,
+      "display": "RF videography Hypopharynx and Esophagus Views",
+      "version": "2.82",
+      "moduleId": null,
+      "inactive": false,
+      "verdict": "CONFIRMED"
+    },
+    {
+      "group": "Instrumental",
+      "system": "http://loinc.org",
+      "code": "86395-1",
+      "label": "VFSS swallowing study (LOINC)",
+      "resolved": true,
+      "status": 200,
+      "display": "RF videography Hypopharynx and Esophagus Views for swallowing function W speech and W barium contrast PO",
+      "version": "2.82",
+      "moduleId": null,
+      "inactive": false,
+      "verdict": "CONFIRMED"
+    },
+    {
+      "group": "Severity",
+      "system": "http://snomed.info/sct",
+      "code": "767131006",
+      "label": "DOSS",
+      "resolved": true,
+      "status": 200,
+      "display": "Dysphagia Outcome and Severity Scale",
+      "version": "http://snomed.info/sct/21000210109/version/20260720",
+      "moduleId": "900000000000207008",
+      "inactive": false,
+      "verdict": "CONFIRMED"
+    },
+    {
+      "group": "Severity",
+      "system": "http://snomed.info/sct",
+      "code": "1231505003",
+      "label": "IDDSI-FDS",
+      "resolved": true,
+      "status": 200,
+      "display": "IDDSI-FDS - International Dysphagia Diet Standardisation Initiative Functional Diet Scale",
+      "version": "http://snomed.info/sct/21000210109/version/20260720",
+      "moduleId": "900000000000207008",
+      "inactive": false,
+      "verdict": "CONFIRMED"
+    },
+    {
+      "group": "Severity",
+      "system": "http://loinc.org",
+      "code": "99852-6",
+      "label": "ASHA-NOMS FCM swallowing panel",
+      "resolved": true,
+      "status": 200,
+      "display": "Functional Communication Measure - Swallowing panel [ASHA NOMS]",
+      "version": "2.82",
+      "moduleId": null,
+      "inactive": false,
+      "verdict": "CONFIRMED"
+    },
+    {
+      "group": "IDDSI drink axis",
+      "system": "http://snomed.info/sct",
+      "code": "1231508001",
+      "label": "IDDSI drink Level 0 (thin)",
+      "resolved": true,
+      "status": 200,
+      "display": "International Dysphagia Diet Standardisation Initiative Framework - Thin Level 0",
+      "version": "http://snomed.info/sct/21000210109/version/20260720",
+      "moduleId": "900000000000207008",
+      "inactive": false,
+      "verdict": "CONFIRMED"
+    },
+    {
+      "group": "IDDSI drink axis",
+      "system": "http://snomed.info/sct",
+      "code": "1237441005",
+      "label": "IDDSI drink Level 1",
+      "resolved": true,
+      "status": 200,
+      "display": "International Dysphagia Diet Standardisation Initiative Framework - Slightly Thick Level 1",
+      "version": "http://snomed.info/sct/21000210109/version/20260720",
+      "moduleId": "900000000000207008",
+      "inactive": false,
+      "verdict": "CONFIRMED"
+    },
+    {
+      "group": "IDDSI drink axis",
+      "system": "http://snomed.info/sct",
+      "code": "1237442003",
+      "label": "IDDSI drink Level 2",
+      "resolved": true,
+      "status": 200,
+      "display": "International Dysphagia Diet Standardisation Initiative Framework - Mildly Thick Level 2",
+      "version": "http://snomed.info/sct/21000210109/version/20260720",
+      "moduleId": "900000000000207008",
+      "inactive": false,
+      "verdict": "CONFIRMED"
+    },
+    {
+      "group": "IDDSI drink axis",
+      "system": "http://snomed.info/sct",
+      "code": "1237444002",
+      "label": "IDDSI Level 3 (shared axis)",
+      "resolved": true,
+      "status": 200,
+      "display": "International Dysphagia Diet Standardisation Initiative Framework - Moderately Thick Level 3",
+      "version": "http://snomed.info/sct/21000210109/version/20260720",
+      "moduleId": "900000000000207008",
+      "inactive": false,
+      "verdict": "CONFIRMED"
+    },
+    {
+      "group": "IDDSI drink axis",
+      "system": "http://snomed.info/sct",
+      "code": "1237446000",
+      "label": "IDDSI drink Level 4",
+      "resolved": true,
+      "status": 200,
+      "display": "International Dysphagia Diet Standardisation Initiative Framework - Extremely Thick Level 4",
+      "version": "http://snomed.info/sct/21000210109/version/20260720",
+      "moduleId": "900000000000207008",
+      "inactive": false,
+      "verdict": "CONFIRMED"
+    },
+    {
+      "group": "IDDSI food axis",
+      "system": "http://snomed.info/sct",
+      "code": "1237447009",
+      "label": "IDDSI food Level 4",
+      "resolved": true,
+      "status": 200,
+      "display": "International Dysphagia Diet Standardisation Initiative Framework - Pureed Level 4",
+      "version": "http://snomed.info/sct/21000210109/version/20260720",
+      "moduleId": "900000000000207008",
+      "inactive": false,
+      "verdict": "CONFIRMED"
+    },
+    {
+      "group": "IDDSI food axis",
+      "system": "http://snomed.info/sct",
+      "code": "1237448004",
+      "label": "IDDSI food Level 5",
+      "resolved": true,
+      "status": 200,
+      "display": "International Dysphagia Diet Standardisation Initiative Framework - Minced & Moist Level 5",
+      "version": "http://snomed.info/sct/21000210109/version/20260720",
+      "moduleId": "900000000000207008",
+      "inactive": false,
+      "verdict": "CONFIRMED"
+    },
+    {
+      "group": "IDDSI food axis",
+      "system": "http://snomed.info/sct",
+      "code": "1237449007",
+      "label": "IDDSI food Level 6",
+      "resolved": true,
+      "status": 200,
+      "display": "International Dysphagia Diet Standardisation Initiative Framework - Soft & Bite Sized Level 6",
+      "version": "http://snomed.info/sct/21000210109/version/20260720",
+      "moduleId": "900000000000207008",
+      "inactive": false,
+      "verdict": "CONFIRMED"
+    },
+    {
+      "group": "IDDSI food axis",
+      "system": "http://snomed.info/sct",
+      "code": "1237450007",
+      "label": "IDDSI food Level 7 (easy to chew)",
+      "resolved": true,
+      "status": 200,
+      "display": "International Dysphagia Diet Standardisation Initiative Framework - Easy to Chew Level 7",
+      "version": "http://snomed.info/sct/21000210109/version/20260720",
+      "moduleId": "900000000000207008",
+      "inactive": false,
+      "verdict": "CONFIRMED"
+    },
+    {
+      "group": "IDDSI food axis",
+      "system": "http://snomed.info/sct",
+      "code": "1237451006",
+      "label": "IDDSI food Level 7 (regular)",
+      "resolved": true,
+      "status": 200,
+      "display": "International Dysphagia Diet Standardisation Initiative Framework - Regular Level 7",
+      "version": "http://snomed.info/sct/21000210109/version/20260720",
+      "moduleId": "900000000000207008",
+      "inactive": false,
+      "verdict": "CONFIRMED"
+    },
+    {
+      "group": "Core findings",
+      "system": "http://snomed.info/sct",
+      "code": "371736008",
+      "label": "At risk for aspiration",
+      "resolved": true,
+      "status": 200,
+      "display": "At increased risk for aspiration",
+      "version": "http://snomed.info/sct/21000210109/version/20260720",
+      "moduleId": "900000000000207008",
+      "inactive": false,
+      "verdict": "CONFIRMED"
+    },
+    {
+      "group": "Core findings",
+      "system": "http://snomed.info/sct",
+      "code": "68052005",
+      "label": "Pulmonary aspiration",
+      "resolved": true,
+      "status": 200,
+      "display": "Pulmonary aspiration",
+      "version": "http://snomed.info/sct/21000210109/version/20260720",
+      "moduleId": "900000000000207008",
+      "inactive": false,
+      "verdict": "CONFIRMED"
+    },
+    {
+      "group": "Core findings",
+      "system": "http://snomed.info/sct",
+      "code": "40739000",
+      "label": "Dysphagia",
+      "resolved": true,
+      "status": 200,
+      "display": "Dysphagia",
+      "version": "http://snomed.info/sct/21000210109/version/20260720",
+      "moduleId": "900000000000207008",
+      "inactive": false,
+      "verdict": "CONFIRMED"
+    },
+    {
+      "group": "Core findings",
+      "system": "http://snomed.info/sct",
+      "code": "182923009",
+      "label": "Nil by mouth",
+      "resolved": true,
+      "status": 200,
+      "display": "Nil by mouth",
+      "version": "http://snomed.info/sct/21000210109/version/20260720",
+      "moduleId": "900000000000207008",
+      "inactive": false,
+      "verdict": "CONFIRMED"
+    },
+    {
+      "group": "Cohort criterion",
+      "system": "http://snomed.info/sct",
+      "code": "230690007",
+      "label": "Cerebrovascular accident",
+      "resolved": true,
+      "status": 200,
+      "display": "Cerebrovascular accident",
+      "version": "http://snomed.info/sct/21000210109/version/20260720",
+      "moduleId": "900000000000207008",
+      "inactive": false,
+      "verdict": "CONFIRMED"
+    },
+    {
+      "group": "Hierarchy anchor",
+      "system": "http://snomed.info/sct",
+      "code": "273249006",
+      "label": "Assessment scale",
+      "resolved": true,
+      "status": 200,
+      "display": "Assessment scales",
+      "version": "http://snomed.info/sct/21000210109/version/20260720",
+      "moduleId": "900000000000207008",
+      "inactive": false,
+      "verdict": "CONFIRMED"
+    }
+  ],
+  "gaps": [
+    {
+      "label": "FOIS",
+      "verdict": "GAP-REPRODUCED",
+      "candidateCount": 0,
+      "screenedOutCount": 0,
+      "perTerm": [
+        {
+          "term": "Functional Oral Intake",
+          "total": 0,
+          "candidates": [],
+          "screenedOutCount": 0,
+          "screenedOut": []
+        },
+        {
+          "term": "FOIS",
+          "total": 0,
+          "candidates": [],
+          "screenedOutCount": 0,
+          "screenedOut": []
+        },
+        {
+          "term": "oral intake scale",
+          "total": 0,
+          "candidates": [],
+          "screenedOutCount": 0,
+          "screenedOut": []
+        }
+      ]
+    },
+    {
+      "label": "PAS",
+      "verdict": "GAP-REPRODUCED",
+      "candidateCount": 0,
+      "screenedOutCount": 0,
+      "perTerm": [
+        {
+          "term": "Penetration-Aspiration Scale",
+          "total": 0,
+          "candidates": [],
+          "screenedOutCount": 0,
+          "screenedOut": []
+        },
+        {
+          "term": "Penetration Aspiration",
+          "total": 0,
+          "candidates": [],
+          "screenedOutCount": 0,
+          "screenedOut": []
+        },
+        {
+          "term": "Rosenbek",
+          "total": 0,
+          "candidates": [],
+          "screenedOutCount": 0,
+          "screenedOut": []
+        }
+      ]
+    },
+    {
+      "label": "DIGEST",
+      "verdict": "GAP-REPRODUCED",
+      "candidateCount": 0,
+      "screenedOutCount": 30,
+      "perTerm": [
+        {
+          "term": "Dynamic Imaging Grade",
+          "total": 0,
+          "candidates": [],
+          "screenedOutCount": 0,
+          "screenedOut": []
+        },
+        {
+          "term": "DIGEST",
+          "total": 187,
+          "candidates": [],
+          "screenedOutCount": 30,
+          "screenedOut": [
+            {
+              "code": "372684006",
+              "display": "Digestant"
+            },
+            {
+              "code": "225775007",
+              "display": "Digested food"
+            },
+            {
+              "code": "1351620007",
+              "display": "Digestif drink"
+            },
+            {
+              "code": "49596003",
+              "display": "Digestive organ structure"
+            },
+            {
+              "code": "51289009",
+              "display": "Digestive tract structure"
+            },
+            {
+              "code": "21891005",
+              "display": "Digestive enzyme"
+            },
+            {
+              "code": "86762007",
+              "display": "Structure of digestive system"
+            },
+            {
+              "code": "14320005",
+              "display": "Digester operator"
+            },
+            {
+              "code": "226548006",
+              "display": "Digestive biscuit"
+            },
+            {
+              "code": "308925008",
+              "display": "Digestive symptom"
+            },
+            {
+              "code": "61578001",
+              "display": "Abnormal digestive tract function"
+            },
+            {
+              "code": "118155006",
+              "display": "Gastrointestinal tract endoscopy"
+            },
+            {
+              "code": "119210004",
+              "display": "Digestive organ part"
+            },
+            {
+              "code": "709519000",
+              "display": "Digestive tract part"
+            },
+            {
+              "code": "77312004",
+              "display": "Enterocyte digestion"
+            },
+            {
+              "code": "127868003",
+              "display": "Upper digestive tract structure"
+            },
+            {
+              "code": "37557000",
+              "display": "Digestive peristalsis"
+            },
+            {
+              "code": "447964005",
+              "display": "Digestive tract route"
+            },
+            {
+              "code": "5668004",
+              "display": "Lower gastrointestinal tract structure"
+            },
+            {
+              "code": "735433009",
+              "display": "Sarcoidosis of digestive system"
+            },
+            {
+              "code": "272627002",
+              "display": "Entire digestive organ"
+            },
+            {
+              "code": "64856004",
+              "display": "Digestive system fluid"
+            },
+            {
+              "code": "731977000",
+              "display": "Entire digestive tract"
+            },
+            {
+              "code": "226046002",
+              "display": "Plain digestive biscuit"
+            },
+            {
+              "code": "278859004",
+              "display": "Entire digestive system"
+            },
+            {
+              "code": "709493000",
+              "display": "Digestive system reflux"
+            },
+            {
+              "code": "167197004",
+              "display": "Digestive function tests"
+            },
+            {
+              "code": "18741006",
+              "display": "Digestive gland function"
+            },
+            {
+              "code": "386617003",
+              "display": "Digestive system finding"
+            },
+            {
+              "code": "399766006",
+              "display": "Digestive organ antibody"
+            }
+          ]
+        },
+        {
+          "term": "swallowing toxicity",
+          "total": 0,
+          "candidates": [],
+          "screenedOutCount": 0,
+          "screenedOut": []
+        }
+      ]
+    },
+    {
+      "label": "TOR-BSST",
+      "verdict": "GAP-REPRODUCED",
+      "candidateCount": 0,
+      "screenedOutCount": 0,
+      "perTerm": [
+        {
+          "term": "Toronto Bedside",
+          "total": 0,
+          "candidates": [],
+          "screenedOutCount": 0,
+          "screenedOut": []
+        },
+        {
+          "term": "TOR-BSST",
+          "total": 0,
+          "candidates": [],
+          "screenedOutCount": 0,
+          "screenedOut": []
+        },
+        {
+          "term": "bedside swallowing screening test",
+          "total": 0,
+          "candidates": [],
+          "screenedOutCount": 0,
+          "screenedOut": []
+        }
+      ]
+    },
+    {
+      "label": "V-VST",
+      "verdict": "GAP-REPRODUCED",
+      "candidateCount": 0,
+      "screenedOutCount": 0,
+      "perTerm": [
+        {
+          "term": "Volume-Viscosity",
+          "total": 0,
+          "candidates": [],
+          "screenedOutCount": 0,
+          "screenedOut": []
+        },
+        {
+          "term": "Volume Viscosity",
+          "total": 0,
+          "candidates": [],
+          "screenedOutCount": 0,
+          "screenedOut": []
+        },
+        {
+          "term": "V-VST",
+          "total": 0,
+          "candidates": [],
+          "screenedOutCount": 0,
+          "screenedOut": []
+        }
+      ]
+    },
+    {
+      "label": "EAT-10",
+      "verdict": "GAP-REPRODUCED",
+      "candidateCount": 0,
+      "screenedOutCount": 0,
+      "perTerm": [
+        {
+          "term": "Eating Assessment Tool",
+          "total": 0,
+          "candidates": [],
+          "screenedOutCount": 0,
+          "screenedOut": []
+        },
+        {
+          "term": "EAT-10",
+          "total": 0,
+          "candidates": [],
+          "screenedOutCount": 0,
+          "screenedOut": []
+        }
+      ]
+    },
+    {
+      "label": "Yale Pharyngeal Residue",
+      "verdict": "GAP-REPRODUCED",
+      "candidateCount": 0,
+      "screenedOutCount": 0,
+      "perTerm": [
+        {
+          "term": "Pharyngeal Residue",
+          "total": 0,
+          "candidates": [],
+          "screenedOutCount": 0,
+          "screenedOut": []
+        },
+        {
+          "term": "Yale Pharyngeal",
+          "total": 0,
+          "candidates": [],
+          "screenedOutCount": 0,
+          "screenedOut": []
+        }
+      ]
+    },
+    {
+      "label": "MBSImP",
+      "verdict": "GAP-REPRODUCED",
+      "candidateCount": 0,
+      "screenedOutCount": 0,
+      "perTerm": [
+        {
+          "term": "Modified Barium Swallow Impairment",
+          "total": 0,
+          "candidates": [],
+          "screenedOutCount": 0,
+          "screenedOut": []
+        },
+        {
+          "term": "MBSImP",
+          "total": 0,
+          "candidates": [],
+          "screenedOutCount": 0,
+          "screenedOut": []
+        }
+      ]
+    },
+    {
+      "label": "silent aspiration",
+      "verdict": "GAP-REPRODUCED",
+      "candidateCount": 0,
+      "screenedOutCount": 0,
+      "perTerm": [
+        {
+          "term": "Silent aspiration",
+          "total": 0,
+          "candidates": [],
+          "screenedOutCount": 0,
+          "screenedOut": []
+        }
+      ]
+    },
+    {
+      "label": "laryngeal penetration",
+      "verdict": "GAP-REPRODUCED",
+      "candidateCount": 0,
+      "screenedOutCount": 0,
+      "perTerm": [
+        {
+          "term": "Laryngeal penetration",
+          "total": 0,
+          "candidates": [],
+          "screenedOutCount": 0,
+          "screenedOut": []
+        },
+        {
+          "term": "penetration of larynx",
+          "total": 0,
+          "candidates": [],
+          "screenedOutCount": 0,
+          "screenedOut": []
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "reusedTested": 26,
+    "reusedConfirmed": 26,
+    "reusedNotConfirmed": [],
+    "gapsTested": 10,
+    "gapsReproduced": 10,
+    "gapsContradicted": [],
+    "sctVersion": "http://snomed.info/sct/21000210109/version/20260720"
+  },
+  "verdict": "The second server reproduces the coverage assessment in full."
+}

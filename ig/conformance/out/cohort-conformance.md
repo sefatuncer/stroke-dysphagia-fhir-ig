@@ -15,16 +15,3 @@ suppressed: `dom-6` (no narrative — these resources are machine-generated and 
 rendered), the base-FHIR best practice that observations carry a performer (the model
 does not simulate clinicians), and `nor-1` on the nil-by-mouth orders, which by design
 carry no oral diet, supplement or enteral formula.
-
-## Warning categories
-
-No bundle produced an error. The warnings break down as follows; the raw per-resource
-output (~4 MB) is not deposited, so this table is the auditable record of what they were.
-
-| Warnings | Category |
-|---:|---|
-| 1855 | dom-6: resource has no narrative (Bundle entries carry data, not display) |
-| 856 | best practice: Observation should name a performer |
-| 20 | nor-1: NutritionOrder best-practice constraint |
-| **2731** | **total** |
-

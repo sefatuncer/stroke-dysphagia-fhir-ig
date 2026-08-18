@@ -1,0 +1,59 @@
+{
+  "resourceType": "Bundle",
+  "id": "bundle-F05",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "F05",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Patient"
+          ]
+        },
+        "gender": "unknown",
+        "birthDate": "1950-01-01",
+        "name": [
+          {
+            "family": "Fixture",
+            "given": [
+              "Branch"
+            ]
+          }
+        ]
+      },
+      "fullUrl": "https://synthetic.invalid/fhir/Patient/F05"
+    },
+    {
+      "resource": {
+        "resourceType": "NutritionOrder",
+        "id": "F05-diet",
+        "meta": {
+          "profile": [
+            "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-nutrition-order"
+          ]
+        },
+        "status": "active",
+        "intent": "order",
+        "patient": {
+          "reference": "Patient/F05"
+        },
+        "dateTime": "2026-03-10",
+        "oralDiet": {
+          "fluidConsistencyType": [
+            {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "1231508001"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "fullUrl": "https://synthetic.invalid/fhir/NutritionOrder/F05-diet"
+    }
+  ]
+}

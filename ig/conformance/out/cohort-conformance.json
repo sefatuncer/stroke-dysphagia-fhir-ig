@@ -1,6 +1,6 @@
 {
-  "igVersion": "1.2.5",
-  "runTimestamp": "2026-08-15T15:20:10.347Z",
+  "igVersion": "1.3.0",
+  "runTimestamp": "2026-08-18T11:10:30.169Z",
   "bundles": 333,
   "outcomes": 333,
   "bundlesWithError": 0,
@@ -11,10 +11,5 @@
     "information": 0
   },
   "errorSignatures": [],
-  "validator": "HL7 reference validator (validator_cli.jar), FHIR R4, IG package from ig/output",
-  "warningCategories": {
-    "dom-6: resource has no narrative (Bundle entries carry data, not display)": 1855,
-    "best practice: Observation should name a performer": 856,
-    "nor-1: NutritionOrder best-practice constraint": 20
-  }
+  "validator": "HL7 reference validator (validator_cli.jar), FHIR R4, IG package from ig/output"
 }

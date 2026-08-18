@@ -1,0 +1,196 @@
+{
+  "runTimestamp": "2026-08-18T11:10:58.152Z",
+  "engine": "cql-execution + cql-exec-fhir, the same compiled ELM used for the cohort run",
+  "provenance": "fixtures authored by hand from the rule statement, not produced by the generative model",
+  "fixtures": 12,
+  "agreements": 12,
+  "disagreements": [],
+  "branchesReached": {
+    "alertRaised": 4,
+    "npoExclusionApplied": 2,
+    "amendedStatusAccepted": 1
+  },
+  "pass": true,
+  "results": [
+    {
+      "id": "F01",
+      "name": "flag + thin fluids + not nil-by-mouth",
+      "covers": "the conjunction satisfied — the alert-raising cell",
+      "conformant": true,
+      "nonConformanceReason": null,
+      "expected": true,
+      "observed": true,
+      "branches": {
+        "hasFlag": true,
+        "onThin": true,
+        "isNpo": false
+      },
+      "agrees": true
+    },
+    {
+      "id": "F02",
+      "name": "flag + thickened fluids (IDDSI Level 2)",
+      "covers": "the thin-fluid conjunct false",
+      "conformant": true,
+      "nonConformanceReason": null,
+      "expected": false,
+      "observed": false,
+      "branches": {
+        "hasFlag": true,
+        "onThin": false,
+        "isNpo": false
+      },
+      "agrees": true
+    },
+    {
+      "id": "F03",
+      "name": "flag + thin fluids + nil-by-mouth as an Observation",
+      "covers": "the nil-by-mouth exclusion in its Observation form — never emitted by the cohort",
+      "conformant": true,
+      "nonConformanceReason": null,
+      "expected": false,
+      "observed": false,
+      "branches": {
+        "hasFlag": true,
+        "onThin": true,
+        "isNpo": true
+      },
+      "agrees": true
+    },
+    {
+      "id": "F04",
+      "name": "flag + thin fluids + an active order carrying no oral diet",
+      "covers": "the nil-by-mouth exclusion in its order form",
+      "conformant": true,
+      "nonConformanceReason": null,
+      "expected": false,
+      "observed": false,
+      "branches": {
+        "hasFlag": true,
+        "onThin": true,
+        "isNpo": true
+      },
+      "agrees": true
+    },
+    {
+      "id": "F05",
+      "name": "no flag + thin fluids",
+      "covers": "the flag conjunct false",
+      "conformant": true,
+      "nonConformanceReason": null,
+      "expected": false,
+      "observed": false,
+      "branches": {
+        "hasFlag": false,
+        "onThin": true,
+        "isNpo": false
+      },
+      "agrees": true
+    },
+    {
+      "id": "F06",
+      "name": "flag + thin fluids on a cancelled order",
+      "covers": "the order status filter",
+      "conformant": true,
+      "nonConformanceReason": null,
+      "expected": false,
+      "observed": false,
+      "branches": {
+        "hasFlag": true,
+        "onThin": false,
+        "isNpo": false
+      },
+      "agrees": true
+    },
+    {
+      "id": "F07",
+      "name": "flag with status `amended` + thin fluids",
+      "covers": "the `amended` arm of the status filter — unreachable for profile-conformant data",
+      "conformant": false,
+      "nonConformanceReason": "AspirationRiskFlag fixes Observation.status to `final`; this fixture violates that on purpose to reach the branch.",
+      "expected": true,
+      "observed": true,
+      "branches": {
+        "hasFlag": true,
+        "onThin": true,
+        "isNpo": false
+      },
+      "agrees": true
+    },
+    {
+      "id": "F08",
+      "name": "flag recorded years earlier + thin fluids",
+      "covers": "temporal scope: the rule carries no validity period, so a stale flag still fires",
+      "conformant": true,
+      "nonConformanceReason": null,
+      "expected": true,
+      "observed": true,
+      "branches": {
+        "hasFlag": true,
+        "onThin": true,
+        "isNpo": false
+      },
+      "agrees": true
+    },
+    {
+      "id": "F09",
+      "name": "flag + a subsumed IDDSI concept instead of the Level 0 code",
+      "covers": "code-level matching: the rule matches the thin-fluid code directly, not by value-set membership or subsumption",
+      "conformant": false,
+      "nonConformanceReason": "The drink-axis value set enumerates Level 0 as 1231508001; this fixture uses the IDDSI Framework parent concept, which the binding does not enumerate.",
+      "expected": false,
+      "observed": false,
+      "branches": {
+        "hasFlag": true,
+        "onThin": false,
+        "isNpo": false
+      },
+      "agrees": true
+    },
+    {
+      "id": "F10",
+      "name": "flag with status `preliminary` + thin fluids",
+      "covers": "the status filter in the alert-raising direction",
+      "conformant": false,
+      "nonConformanceReason": "AspirationRiskFlag fixes Observation.status to `final`.",
+      "expected": false,
+      "observed": false,
+      "branches": {
+        "hasFlag": false,
+        "onThin": true,
+        "isNpo": false
+      },
+      "agrees": true
+    },
+    {
+      "id": "F11",
+      "name": "nil-by-mouth Observation with status `entered-in-error` + flag + thin fluids",
+      "covers": "the suppressing branch must not be silenced by a retracted record",
+      "conformant": true,
+      "nonConformanceReason": null,
+      "expected": true,
+      "observed": true,
+      "branches": {
+        "hasFlag": true,
+        "onThin": true,
+        "isNpo": false
+      },
+      "agrees": true
+    },
+    {
+      "id": "F12",
+      "name": "no flag, no order",
+      "covers": "the empty case",
+      "conformant": true,
+      "nonConformanceReason": null,
+      "expected": false,
+      "observed": false,
+      "branches": {
+        "hasFlag": false,
+        "onThin": false,
+        "isNpo": false
+      },
+      "agrees": true
+    }
+  ]
+}

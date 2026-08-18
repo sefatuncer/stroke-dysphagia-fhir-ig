@@ -1,0 +1,84 @@
+{
+  "resourceType": "Bundle",
+  "id": "bundle-F02",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "F02",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Patient"
+          ]
+        },
+        "gender": "unknown",
+        "birthDate": "1950-01-01",
+        "name": [
+          {
+            "family": "Fixture",
+            "given": [
+              "Branch"
+            ]
+          }
+        ]
+      },
+      "fullUrl": "https://synthetic.invalid/fhir/Patient/F02"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "F02-flag",
+        "meta": {
+          "profile": [
+            "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/aspiration-risk-flag"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "371736008"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/F02"
+        },
+        "effectiveDateTime": "2026-03-08"
+      },
+      "fullUrl": "https://synthetic.invalid/fhir/Observation/F02-flag"
+    },
+    {
+      "resource": {
+        "resourceType": "NutritionOrder",
+        "id": "F02-diet",
+        "meta": {
+          "profile": [
+            "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-nutrition-order"
+          ]
+        },
+        "status": "active",
+        "intent": "order",
+        "patient": {
+          "reference": "Patient/F02"
+        },
+        "dateTime": "2026-03-10",
+        "oralDiet": {
+          "fluidConsistencyType": [
+            {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "1237442003"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "fullUrl": "https://synthetic.invalid/fhir/NutritionOrder/F02-diet"
+    }
+  ]
+}
