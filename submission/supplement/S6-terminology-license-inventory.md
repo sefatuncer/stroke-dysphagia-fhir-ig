@@ -185,7 +185,7 @@ CT membership or an Affiliate License.
   GPS release file; the per-concept list above is provided precisely so that a licensor or
   reviewer can perform that check directly.
 
-**LOINC.** Three LOINC codes are carried, one with its name (§3). These are distributed by
+**LOINC.** Four LOINC codes are carried, one with its name (§3). These are distributed by
 the authors, not merely referenced by implementers, and are used under the terms of the
 LOINC License (Regenstrief Institute, Inc.). LOINC® is a registered trademark of
 Regenstrief Institute, Inc. The notice appears in the `copyright` element of each artifact
