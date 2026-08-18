@@ -2,97 +2,97 @@
   "id" : "dysphagia-scales-temp",
   "type" : "CodeSystem",
   "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp",
-  "version" : "1.3.1",
+  "version" : "1.3.2",
   "name" : "DysphagiaScalesTemp"
 },
 {
   "id" : "dysphagia.care.transition",
   "type" : "ImplementationGuide",
   "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ImplementationGuide/dysphagia.care.transition",
-  "version" : "1.3.1",
+  "version" : "1.3.2",
   "name" : "DysphagiaCareTransitionIG"
 },
 {
   "id" : "aspiration-risk-flag",
   "type" : "StructureDefinition",
   "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/aspiration-risk-flag",
-  "version" : "1.3.1",
+  "version" : "1.3.2",
   "name" : "AspirationRiskFlag"
 },
 {
   "id" : "dysphagia-care-transition-summary",
   "type" : "StructureDefinition",
   "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-care-transition-summary",
-  "version" : "1.3.1",
+  "version" : "1.3.2",
   "name" : "DysphagiaCareTransitionSummary"
 },
 {
   "id" : "dysphagia-nutrition-order",
   "type" : "StructureDefinition",
   "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-nutrition-order",
-  "version" : "1.3.1",
+  "version" : "1.3.2",
   "name" : "DysphagiaNutritionOrder"
 },
 {
   "id" : "dysphagia-severity",
   "type" : "StructureDefinition",
   "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-severity",
-  "version" : "1.3.1",
+  "version" : "1.3.2",
   "name" : "DysphagiaSeverity"
 },
 {
   "id" : "instrumental-swallow-assessment",
   "type" : "StructureDefinition",
   "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/instrumental-swallow-assessment",
-  "version" : "1.3.1",
+  "version" : "1.3.2",
   "name" : "InstrumentalSwallowAssessment"
 },
 {
   "id" : "swallowing-screening-result",
   "type" : "StructureDefinition",
   "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/swallowing-screening-result",
-  "version" : "1.3.1",
+  "version" : "1.3.2",
   "name" : "SwallowingScreeningResult"
 },
 {
   "id" : "aspiration-risk-value-vs",
   "type" : "ValueSet",
   "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/aspiration-risk-value-vs",
-  "version" : "1.3.1",
+  "version" : "1.3.2",
   "name" : "AspirationRiskValueVS"
 },
 {
   "id" : "dysphagia-severity-type-vs",
   "type" : "ValueSet",
   "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/dysphagia-severity-type-vs",
-  "version" : "1.3.1",
+  "version" : "1.3.2",
   "name" : "DysphagiaSeverityTypeVS"
 },
 {
   "id" : "iddsi-fluid-levels",
   "type" : "ValueSet",
   "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/iddsi-fluid-levels",
-  "version" : "1.3.1",
+  "version" : "1.3.2",
   "name" : "IDDSIFluidLevels"
 },
 {
   "id" : "iddsi-food-levels",
   "type" : "ValueSet",
   "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/iddsi-food-levels",
-  "version" : "1.3.1",
+  "version" : "1.3.2",
   "name" : "IDDSIFoodLevels"
 },
 {
   "id" : "instrumental-swallow-type-vs",
   "type" : "ValueSet",
   "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/instrumental-swallow-type-vs",
-  "version" : "1.3.1",
+  "version" : "1.3.2",
   "name" : "InstrumentalSwallowTypeVS"
 },
 {
   "id" : "swallow-screening-type-vs",
   "type" : "ValueSet",
   "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/swallow-screening-type-vs",
-  "version" : "1.3.1",
+  "version" : "1.3.2",
   "name" : "SwallowScreeningTypeVS"
 }]

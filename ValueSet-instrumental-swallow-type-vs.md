@@ -1,4 +1,4 @@
-# Instrumental Swallow Assessment Type - Stroke Dysphagia Care-Transition FHIR IG v1.3.1
+# Instrumental Swallow Assessment Type - Stroke Dysphagia Care-Transition FHIR IG v1.3.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/instrumental-swallow-type-vs | *Version*:1.3.1 |
+| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/instrumental-swallow-type-vs | *Version*:1.3.2 |
 | Active as of 2026-08-18 | *Computable Name*:InstrumentalSwallowTypeVS |
 | **Copyright/Legal**: Value-set definition: MIT (© 2026 N. Kapan Tunçer and S. Tunçer). Content is referenced, not redistributed: this value set enumerates third-party concept identifiers (SNOMED CT © SNOMED International; LOINC © Regenstrief Institute, Inc.; IDDSI framework CC BY-SA 4.0, used unmodified) and carries, for some members, the SNOMED CT International Edition English term as an unmodified display hint (not translated); the authoritative display is supplied at expansion time by the implementer's own terminology server. SNOMED CT® is a registered trademark of SNOMED International; those terms are © SNOMED International, used under the Global Patient Set licence (CC BY-ND 4.0, https://creativecommons.org/licenses/by-nd/4.0/) and reproduced verbatim, with none translated, shortened or otherwise altered. Implementers must hold the applicable third-party licences. | |
 
@@ -47,12 +47,12 @@ Instrumental swallowing assessments (VFSS/FEES) and associated graded scales (PA
   "resourceType" : "ValueSet",
   "id" : "instrumental-swallow-type-vs",
   "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/instrumental-swallow-type-vs",
-  "version" : "1.3.1",
+  "version" : "1.3.2",
   "name" : "InstrumentalSwallowTypeVS",
   "title" : "Instrumental Swallow Assessment Type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-18T13:05:08+00:00",
+  "date" : "2026-08-18T14:23:53+00:00",
   "publisher" : "N. Kapan Tunçer; S. Tunçer",
   "description" : "Instrumental swallowing assessments (VFSS/FEES) and associated graded scales (PAS, Yale residue) — SNOMED/LOINC where coded, temporary local codes otherwise.",
   "copyright" : "Value-set definition: MIT (© 2026 N. Kapan Tunçer and S. Tunçer). Content is referenced, not redistributed: this value set enumerates third-party concept identifiers (SNOMED CT © SNOMED International; LOINC © Regenstrief Institute, Inc.; IDDSI framework CC BY-SA 4.0, used unmodified) and carries, for some members, the SNOMED CT International Edition English term as an unmodified display hint (not translated); the authoritative display is supplied at expansion time by the implementer's own terminology server. SNOMED CT® is a registered trademark of SNOMED International; those terms are © SNOMED International, used under the Global Patient Set licence (CC BY-ND 4.0, https://creativecommons.org/licenses/by-nd/4.0/) and reproduced verbatim, with none translated, shortened or otherwise altered. Implementers must hold the applicable third-party licences.",
