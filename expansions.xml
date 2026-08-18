@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="d913fb76-5b06-4468-a6fa-0a91f4e3fdd6"/>
+  <id value="2a08187f-6b0e-40b6-accf-9eeb673294d7"/>
   <meta>
-    <lastUpdated value="2026-08-18T10:55:39.840+00:00"/>
+    <lastUpdated value="2026-08-18T13:05:08.104+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -23,9 +23,9 @@
                   </span>
                 </li>
                 <li>
-                  <a href="CodeSystem-dysphagia-scales-temp.html">codesystem Dysphagia Scales — temporary local codes (proposed for LOINC/SNOMED) v1.3.0 (CodeSystem)</a>
+                  <a href="CodeSystem-dysphagia-scales-temp.html">codesystem Dysphagia Scales — temporary local codes (proposed for LOINC/SNOMED) v1.3.1 (CodeSystem)</a>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp|1.3.0" title="Click to Copy URL" class="btn-copy"> </button>
+                    <button data-clipboard-text="https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp|1.3.1" title="Click to Copy URL" class="btn-copy"> </button>
                   </span>
                 </li>
               </ul>
@@ -80,12 +80,12 @@
                 <td>Silent aspiration (finding) — proposed (no SNOMED concept)</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp&quot;, &quot;version&quot;: &quot;1.3.0&quot;, &quot;code&quot;: &quot;SILENT-ASPIRATION&quot;, &quot;display&quot;: &quot;Silent aspiration (finding) — proposed (no SNOMED concept)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp&quot;, &quot;version&quot;: &quot;1.3.1&quot;, &quot;code&quot;: &quot;SILENT-ASPIRATION&quot;, &quot;display&quot;: &quot;Silent aspiration (finding) — proposed (no SNOMED concept)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp&quot;&gt;&lt;version value=&quot;1.3.0&quot;&gt;&lt;code value=&quot;SILENT-ASPIRATION&quot;&gt;&lt;display value=&quot;Silent aspiration (finding) — proposed (no SNOMED concept)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp&quot;&gt;&lt;version value=&quot;1.3.1&quot;&gt;&lt;code value=&quot;SILENT-ASPIRATION&quot;&gt;&lt;display value=&quot;Silent aspiration (finding) — proposed (no SNOMED concept)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -93,15 +93,15 @@
           </div>
         </text>
         <url value="https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/aspiration-risk-value-vs"/>
-        <version value="1.3.0"/>
+        <version value="1.3.1"/>
         <name value="AspirationRiskValueVS"/>
         <title value="Aspiration Event Qualifier"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-08-18T10:55:39+00:00"/>
+        <date value="2026-08-18T13:05:08+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:bc60cc77-e4eb-4d9a-88c8-5713394c6a60"/>
-          <timestamp value="2026-08-18T11:03:19+00:00"/>
+          <identifier value="urn:uuid:cd0036c7-c63f-45e0-abf2-b30a5568ea6e"/>
+          <timestamp value="2026-08-18T13:17:37+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -134,11 +134,11 @@
           </parameter>
           <parameter>
             <name value="warning-experimental"/>
-            <valueUri value="https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp|1.3.0"/>
+            <valueUri value="https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp|1.3.1"/>
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp|1.3.0"/>
+            <valueUri value="https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp|1.3.1"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -171,9 +171,9 @@
                   </span>
                 </li>
                 <li>
-                  <a href="CodeSystem-dysphagia-scales-temp.html">codesystem Dysphagia Scales — temporary local codes (proposed for LOINC/SNOMED) v1.3.0 (CodeSystem)</a>
+                  <a href="CodeSystem-dysphagia-scales-temp.html">codesystem Dysphagia Scales — temporary local codes (proposed for LOINC/SNOMED) v1.3.1 (CodeSystem)</a>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp|1.3.0" title="Click to Copy URL" class="btn-copy"> </button>
+                    <button data-clipboard-text="https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp|1.3.1" title="Click to Copy URL" class="btn-copy"> </button>
                   </span>
                 </li>
               </ul>
@@ -208,12 +208,12 @@
                 <td>Functional Oral Intake Scale — level 1–7</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp&quot;, &quot;version&quot;: &quot;1.3.0&quot;, &quot;code&quot;: &quot;FOIS&quot;, &quot;display&quot;: &quot;Functional Oral Intake Scale — level 1–7&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp&quot;, &quot;version&quot;: &quot;1.3.1&quot;, &quot;code&quot;: &quot;FOIS&quot;, &quot;display&quot;: &quot;Functional Oral Intake Scale — level 1–7&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp&quot;&gt;&lt;version value=&quot;1.3.0&quot;&gt;&lt;code value=&quot;FOIS&quot;&gt;&lt;display value=&quot;Functional Oral Intake Scale — level 1–7&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp&quot;&gt;&lt;version value=&quot;1.3.1&quot;&gt;&lt;code value=&quot;FOIS&quot;&gt;&lt;display value=&quot;Functional Oral Intake Scale — level 1–7&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -261,15 +261,15 @@
           </div>
         </text>
         <url value="https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/dysphagia-severity-type-vs"/>
-        <version value="1.3.0"/>
+        <version value="1.3.1"/>
         <name value="DysphagiaSeverityTypeVS"/>
         <title value="Dysphagia Severity / Oral-Intake Scale Type"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-08-18T10:55:39+00:00"/>
+        <date value="2026-08-18T13:05:08+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:666f4b75-41ab-4e00-bb1d-c1d6aeffd018"/>
-          <timestamp value="2026-08-18T11:03:30+00:00"/>
+          <identifier value="urn:uuid:65711898-462f-4e56-8ac6-9f2b816dfbc7"/>
+          <timestamp value="2026-08-18T13:17:48+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -290,11 +290,11 @@
           </parameter>
           <parameter>
             <name value="warning-experimental"/>
-            <valueUri value="https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp|1.3.0"/>
+            <valueUri value="https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp|1.3.1"/>
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp|1.3.0"/>
+            <valueUri value="https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp|1.3.1"/>
           </parameter>
           <parameter>
             <name value="used-valueset"/>
@@ -467,15 +467,15 @@
           </div>
         </text>
         <url value="https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/iddsi-fluid-levels"/>
-        <version value="1.3.0"/>
+        <version value="1.3.1"/>
         <name value="IDDSIFluidLevels"/>
         <title value="IDDSI Drink/Fluid Consistency Levels (SNOMED CT)"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-08-18T10:55:39+00:00"/>
+        <date value="2026-08-18T13:05:08+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:88fbcbc6-9379-4589-96b1-ec692c68d0a1"/>
-          <timestamp value="2026-08-18T11:03:40+00:00"/>
+          <identifier value="urn:uuid:d2b5124f-9488-49a8-82a6-af0b18ca2e70"/>
+          <timestamp value="2026-08-18T13:18:00+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -671,15 +671,15 @@
           </div>
         </text>
         <url value="https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/iddsi-food-levels"/>
-        <version value="1.3.0"/>
+        <version value="1.3.1"/>
         <name value="IDDSIFoodLevels"/>
         <title value="IDDSI Food Texture Levels (SNOMED CT)"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-08-18T10:55:39+00:00"/>
+        <date value="2026-08-18T13:05:08+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:34cbea95-260f-4c89-9792-2e09878efa4a"/>
-          <timestamp value="2026-08-18T11:03:41+00:00"/>
+          <identifier value="urn:uuid:e1a0fd4f-abd0-44f2-b8f5-5b7988678bf2"/>
+          <timestamp value="2026-08-18T13:18:01+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -761,9 +761,9 @@
                   </span>
                 </li>
                 <li>
-                  <a href="CodeSystem-dysphagia-scales-temp.html">codesystem Dysphagia Scales — temporary local codes (proposed for LOINC/SNOMED) v1.3.0 (CodeSystem)</a>
+                  <a href="CodeSystem-dysphagia-scales-temp.html">codesystem Dysphagia Scales — temporary local codes (proposed for LOINC/SNOMED) v1.3.1 (CodeSystem)</a>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp|1.3.0" title="Click to Copy URL" class="btn-copy"> </button>
+                    <button data-clipboard-text="https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp|1.3.1" title="Click to Copy URL" class="btn-copy"> </button>
                   </span>
                 </li>
               </ul>
@@ -878,12 +878,12 @@
                 <td>Penetration-Aspiration Scale (Rosenbek 1996) — score 1–8</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp&quot;, &quot;version&quot;: &quot;1.3.0&quot;, &quot;code&quot;: &quot;PAS&quot;, &quot;display&quot;: &quot;Penetration-Aspiration Scale (Rosenbek 1996) — score 1–8&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp&quot;, &quot;version&quot;: &quot;1.3.1&quot;, &quot;code&quot;: &quot;PAS&quot;, &quot;display&quot;: &quot;Penetration-Aspiration Scale (Rosenbek 1996) — score 1–8&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp&quot;&gt;&lt;version value=&quot;1.3.0&quot;&gt;&lt;code value=&quot;PAS&quot;&gt;&lt;display value=&quot;Penetration-Aspiration Scale (Rosenbek 1996) — score 1–8&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp&quot;&gt;&lt;version value=&quot;1.3.1&quot;&gt;&lt;code value=&quot;PAS&quot;&gt;&lt;display value=&quot;Penetration-Aspiration Scale (Rosenbek 1996) — score 1–8&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -898,12 +898,12 @@
                 <td>Yale Pharyngeal Residue Severity Rating</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp&quot;, &quot;version&quot;: &quot;1.3.0&quot;, &quot;code&quot;: &quot;YALE-RESIDUE&quot;, &quot;display&quot;: &quot;Yale Pharyngeal Residue Severity Rating&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp&quot;, &quot;version&quot;: &quot;1.3.1&quot;, &quot;code&quot;: &quot;YALE-RESIDUE&quot;, &quot;display&quot;: &quot;Yale Pharyngeal Residue Severity Rating&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp&quot;&gt;&lt;version value=&quot;1.3.0&quot;&gt;&lt;code value=&quot;YALE-RESIDUE&quot;&gt;&lt;display value=&quot;Yale Pharyngeal Residue Severity Rating&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp&quot;&gt;&lt;version value=&quot;1.3.1&quot;&gt;&lt;code value=&quot;YALE-RESIDUE&quot;&gt;&lt;display value=&quot;Yale Pharyngeal Residue Severity Rating&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -911,15 +911,15 @@
           </div>
         </text>
         <url value="https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/instrumental-swallow-type-vs"/>
-        <version value="1.3.0"/>
+        <version value="1.3.1"/>
         <name value="InstrumentalSwallowTypeVS"/>
         <title value="Instrumental Swallow Assessment Type"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-08-18T10:55:39+00:00"/>
+        <date value="2026-08-18T13:05:08+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:c790991b-1d7a-44c9-a6b2-8c038696b927"/>
-          <timestamp value="2026-08-18T11:03:33+00:00"/>
+          <identifier value="urn:uuid:c6f74751-0025-4b2f-a12f-e82048379ccc"/>
+          <timestamp value="2026-08-18T13:17:51+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -960,11 +960,11 @@
           </parameter>
           <parameter>
             <name value="warning-experimental"/>
-            <valueUri value="https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp|1.3.0"/>
+            <valueUri value="https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp|1.3.1"/>
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp|1.3.0"/>
+            <valueUri value="https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp|1.3.1"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -1017,9 +1017,9 @@
                   </span>
                 </li>
                 <li>
-                  <a href="CodeSystem-dysphagia-scales-temp.html">codesystem Dysphagia Scales — temporary local codes (proposed for LOINC/SNOMED) v1.3.0 (CodeSystem)</a>
+                  <a href="CodeSystem-dysphagia-scales-temp.html">codesystem Dysphagia Scales — temporary local codes (proposed for LOINC/SNOMED) v1.3.1 (CodeSystem)</a>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp|1.3.0" title="Click to Copy URL" class="btn-copy"> </button>
+                    <button data-clipboard-text="https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp|1.3.1" title="Click to Copy URL" class="btn-copy"> </button>
                   </span>
                 </li>
               </ul>
@@ -1094,12 +1094,12 @@
                 <td>Eating Assessment Tool-10 — total score</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp&quot;, &quot;version&quot;: &quot;1.3.0&quot;, &quot;code&quot;: &quot;EAT-10&quot;, &quot;display&quot;: &quot;Eating Assessment Tool-10 — total score&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp&quot;, &quot;version&quot;: &quot;1.3.1&quot;, &quot;code&quot;: &quot;EAT-10&quot;, &quot;display&quot;: &quot;Eating Assessment Tool-10 — total score&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp&quot;&gt;&lt;version value=&quot;1.3.0&quot;&gt;&lt;code value=&quot;EAT-10&quot;&gt;&lt;display value=&quot;Eating Assessment Tool-10 — total score&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp&quot;&gt;&lt;version value=&quot;1.3.1&quot;&gt;&lt;code value=&quot;EAT-10&quot;&gt;&lt;display value=&quot;Eating Assessment Tool-10 — total score&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1114,12 +1114,12 @@
                 <td>Toronto Bedside Swallowing Screening Test — pass/fail</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp&quot;, &quot;version&quot;: &quot;1.3.0&quot;, &quot;code&quot;: &quot;TOR-BSST&quot;, &quot;display&quot;: &quot;Toronto Bedside Swallowing Screening Test — pass/fail&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp&quot;, &quot;version&quot;: &quot;1.3.1&quot;, &quot;code&quot;: &quot;TOR-BSST&quot;, &quot;display&quot;: &quot;Toronto Bedside Swallowing Screening Test — pass/fail&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp&quot;&gt;&lt;version value=&quot;1.3.0&quot;&gt;&lt;code value=&quot;TOR-BSST&quot;&gt;&lt;display value=&quot;Toronto Bedside Swallowing Screening Test — pass/fail&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp&quot;&gt;&lt;version value=&quot;1.3.1&quot;&gt;&lt;code value=&quot;TOR-BSST&quot;&gt;&lt;display value=&quot;Toronto Bedside Swallowing Screening Test — pass/fail&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1127,15 +1127,15 @@
           </div>
         </text>
         <url value="https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/swallow-screening-type-vs"/>
-        <version value="1.3.0"/>
+        <version value="1.3.1"/>
         <name value="SwallowScreeningTypeVS"/>
         <title value="Swallowing Screening Type"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-08-18T10:55:39+00:00"/>
+        <date value="2026-08-18T13:05:08+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:140bb3c5-5483-4589-bc45-f7c5812375b6"/>
-          <timestamp value="2026-08-18T11:03:36+00:00"/>
+          <identifier value="urn:uuid:ac67aba3-95be-4ffe-a8a8-d54bcc3abc38"/>
+          <timestamp value="2026-08-18T13:17:55+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -1168,11 +1168,11 @@
           </parameter>
           <parameter>
             <name value="warning-experimental"/>
-            <valueUri value="https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp|1.3.0"/>
+            <valueUri value="https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp|1.3.1"/>
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp|1.3.0"/>
+            <valueUri value="https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/CodeSystem/dysphagia-scales-temp|1.3.1"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>

@@ -1,4 +1,4 @@
-# Example ??? FOIS functional oral-intake level (synthetic) - Stroke Dysphagia Care-Transition FHIR IG v1.3.0
+# Example ??? FOIS functional oral-intake level (synthetic) - Stroke Dysphagia Care-Transition FHIR IG v1.3.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
