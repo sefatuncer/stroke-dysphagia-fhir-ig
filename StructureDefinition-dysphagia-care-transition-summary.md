@@ -1,4 +1,4 @@
-# Dysphagia Care-Transition Summary - Stroke Dysphagia Care-Transition FHIR IG v1.2.5
+# Dysphagia Care-Transition Summary - Stroke Dysphagia Care-Transition FHIR IG v1.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-care-transition-summary | *Version*:1.2.5 |
-| Active as of 2026-08-15 | *Computable Name*:DysphagiaCareTransitionSummary |
+| *Official URL*:https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-care-transition-summary | *Version*:1.3.0 |
+| Active as of 2026-08-18 | *Computable Name*:DysphagiaCareTransitionSummary |
 | **Copyright/Legal**: Profile definition: MIT (© 2026 N. Kapan Tunçer and S. Tunçer). This profile carries third-party concept identifiers rather than the terminologies themselves. LOINC® is a registered trademark of Regenstrief Institute, Inc.; LOINC codes are used under the LOINC License (http://loinc.org/license). SNOMED CT® is a registered trademark of SNOMED International; concept identifiers and English terms are © SNOMED International, used under the Global Patient Set licence (CC BY-ND 4.0, https://creativecommons.org/licenses/by-nd/4.0/) and reproduced verbatim, with none translated, shortened or otherwise altered. Implementers remain responsible for holding the applicable third-party licences in their own territory. | |
 
  
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-dysphagia-care-trans
   "resourceType" : "StructureDefinition",
   "id" : "dysphagia-care-transition-summary",
   "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/StructureDefinition/dysphagia-care-transition-summary",
-  "version" : "1.2.5",
+  "version" : "1.3.0",
   "name" : "DysphagiaCareTransitionSummary",
   "title" : "Dysphagia Care-Transition Summary",
   "status" : "active",
-  "date" : "2026-08-15T14:40:00+00:00",
+  "date" : "2026-08-18T10:55:39+00:00",
   "publisher" : "N. Kapan Tunçer; S. Tunçer",
   "description" : "Composition bundling swallowing assessment + severity + aspiration risk + IDDSI diet + precautions for a stroke care transition.",
   "copyright" : "Profile definition: MIT (© 2026 N. Kapan Tunçer and S. Tunçer). This profile carries third-party concept identifiers rather than the terminologies themselves. LOINC® is a registered trademark of Regenstrief Institute, Inc.; LOINC codes are used under the LOINC License (http://loinc.org/license). SNOMED CT® is a registered trademark of SNOMED International; concept identifiers and English terms are © SNOMED International, used under the Global Patient Set licence (CC BY-ND 4.0, https://creativecommons.org/licenses/by-nd/4.0/) and reproduced verbatim, with none translated, shortened or otherwise altered. Implementers remain responsible for holding the applicable third-party licences in their own territory.",
