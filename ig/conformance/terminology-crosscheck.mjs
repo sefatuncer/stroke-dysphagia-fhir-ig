@@ -29,7 +29,7 @@
 // controls resolve — so those run first and the script refuses to report if
 // they do not.
 // ============================================================================
-import { writeFileSync, mkdirSync } from 'node:fs';
+import { writeFileSync, mkdirSync, readFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -183,8 +183,18 @@ async function expandFilter(term, count = 30) {
   return { ok: true, status, total: body.expansion?.total ?? contains.length, hits: contains.map((c) => ({ code: c.code, display: c.display })) };
 }
 
+// Every other conformance record in this deposit carries the IG version it was run
+// against; a record without one cannot be told apart from a stale copy later.
+const igVersion = (readFileSync(join(HERE, '..', 'sushi-config.yaml'), 'utf8')
+  .match(/^version:\s*(\S+)/m) || [, 'unknown'])[1];
+
 // ----------------------------------------------------------------------------
-const run = { server: BASE, implementation: 'CSIRO Ontoserver (NZ national terminology service)', runTimestamp: new Date().toISOString() };
+const run = {
+  igVersion,
+  server: BASE,
+  implementation: 'CSIRO Ontoserver (NZ national terminology service)',
+  runTimestamp: new Date().toISOString(),
+};
 
 console.log('positive controls…');
 run.positiveControls = [];

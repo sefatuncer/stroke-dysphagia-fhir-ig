@@ -1,5 +1,5 @@
 {
-  "runTimestamp": "2026-08-18T11:10:58.152Z",
+  "runTimestamp": "2026-08-18T13:28:31.242Z",
   "engine": "cql-execution + cql-exec-fhir, the same compiled ELM used for the cohort run",
   "provenance": "fixtures authored by hand from the rule statement, not produced by the generative model",
   "fixtures": 12,

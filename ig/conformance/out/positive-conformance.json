@@ -1,7 +1,7 @@
 {
   "kind": "positive-conformance",
-  "igVersion": "1.3.0",
-  "runTimestamp": "2026-08-18T11:06:26.279Z",
+  "igVersion": "1.3.1",
+  "runTimestamp": "2026-08-18T13:22:03.994Z",
   "server": {
     "baseUrl": "http://localhost:8080/fhir",
     "name": "HAPI FHIR Server",

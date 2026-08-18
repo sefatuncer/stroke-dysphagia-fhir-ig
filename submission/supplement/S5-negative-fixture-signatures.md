@@ -13,7 +13,7 @@ verbatim from that file and truncated only where the canonical URL repeats.
 **Deployments:** both the independently deployed HAPI FHIR server (v8.10.0, digest-pinned,
 via `$validate` against the declared profile) and the HL7 reference validator
 (`validator_cli.jar`, against the built IG package). A third deployment runs the Firely .NET SDK (Firely Terminal 3.5.0),
-which shares no code with the Java core. Both suites ran on all three, and all six
+which shares no code with the Java core. Both suites ran on all three, and all five
 machine-readable records are deposited: `positive-conformance.json` and
 `negative-conformance.json` (HAPI), `positive-conformance-cli.json` and
 `negative-conformance-cli.json` (reference validator), and `firely-conformance.json`
@@ -54,8 +54,8 @@ its wording for all ten.
 
 The independence reaches further than the validation step. The SUSHI output carries differentials
 only, with no precomputed snapshot, so each engine expanded its own snapshot from the differential
-before validating. A profile that behaves the same way in both has therefore survived two separate
-snapshot generators as well as two separate validators.
+before validating. A profile that behaves the same way on all three has therefore survived separate
+snapshot generators as well as two independent validator implementations.
 
 Fixtures 9 and 10 were added for the release reported here, closing the coverage gap the previous
 version of this file recorded: every constraint Table 1 presents as a contribution is now exercised
@@ -83,7 +83,7 @@ above is from the tightened fixture.
 | `DysphagiaSeverity` | 7 | tightened cardinality |
 | `DysphagiaCareTransitionSummary` | 8, 9, 10 | minimum-content invariant, fixed document type, restricted section entries |
 
-All six profiles are exercised, and so is every constraint Table 1 names.
+All six profiles are exercised, and so is every constraint Table 1 names **that a should-fail fixture can reach**. The extensible bindings it also names cannot be reached that way — an outside code is legal by design — and they are listed below as untested.
 
 ## Constraints **not** exercised by the negative suite
 

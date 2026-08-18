@@ -1,7 +1,8 @@
 {
+  "igVersion": "1.3.1",
   "server": "https://terminz.azurewebsites.net/fhir",
   "implementation": "CSIRO Ontoserver (NZ national terminology service)",
-  "runTimestamp": "2026-08-18T10:22:10.319Z",
+  "runTimestamp": "2026-08-18T13:28:42.746Z",
   "positiveControls": [
     {
       "term": "Dysphagia Outcome and Severity",

@@ -209,7 +209,7 @@ reported, and all three did.
 
 | Check | Result |
 |---|---|
-| Reused codes re-tested | **26/26 confirmed** |
+| Concepts re-tested | **26/26 confirmed** — the 24 reuse codes of Table 2, plus the cohort criterion (`230690007`) and the hierarchy anchor (`273249006`) used in the absence testing |
 | Of those, from the SNOMED International core module | **23/23 SNOMED concepts** (the remaining three are LOINC, which has no module) |
 | Any concept inactive on the later edition | **None** |
 | Any concept present only in the national extension | **None** |

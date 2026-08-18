@@ -1,6 +1,6 @@
 {
-  "igVersion": "1.3.0",
-  "runTimestamp": "2026-08-18T11:09:03.185Z",
+  "igVersion": "1.3.1",
+  "runTimestamp": "2026-08-18T13:25:46.110Z",
   "validator": "Firely .NET SDK via Firely Terminal 3.5.0 (image mcr.microsoft.com/dotnet/sdk@sha256:306301580fcaa5b445180e759db59309979002d1000669cb4cf58a567d0014bc)",
   "deployment": "independent implementation — does NOT share the HL7 Java validation core",
   "note": "Unlike the reference validator and the HAPI server, this engine is a separately written implementation of the same specification. Agreement here is independence across implementations, not only portability across deployments.",

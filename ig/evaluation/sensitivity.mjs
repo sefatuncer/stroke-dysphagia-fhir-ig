@@ -93,7 +93,7 @@ md += `## Sweep over coding-completeness P(coded) — 40 seeds each\n\n`;
 md += `Base cohort source: **${SOURCE}**.\n\n`;
 md += `| P(coded) | expected 1−P | mean invisibility (±SD) | MCSE (pp) | analytic binomial SD (pp) | range | mean unsafe n | mean trigger |\n|---|---|---|---|---|---|---|---|\n`;
 for (const r of sweep) {
-  md += `| ${r.pFlagCoded.toFixed(2)} | ${pct(r.expectedInvis)}% | **${pct(r.meanInvis)}% (±${pct(r.sdInvis)})** | ${(100 * r.mcse).toFixed(2)} | ${(100 * r.analyticSd).toFixed(2)} | ${pct(r.minInvis)}–${pct(r.maxInvis)}% | ${r.meanUnsafe.toFixed(0)} | ${pct(r.meanTrigger)}% |\n`;
+  md += `| ${r.pFlagCoded.toFixed(2)} | ${pct(r.expectedInvis)}% | **${pct(r.meanInvis)}% (±${pct(r.sdInvis)})** | ${(100 * r.mcse).toFixed(2)} | ${(100 * r.analyticSd).toFixed(2)} | ${pct(r.minInvis)}–${pct(r.maxInvis)}% | ${r.meanUnsafe.toFixed(1)} | ${pct(r.meanTrigger)}% |\n`;
 }
 md += `\n**Interpretation:** invisibility rate ≈ (1 − P(coded)) across the whole range — the rule cannot see un-coded flags, so the yield of the computable safety check is a direct, monotone function of documentation-coding completeness. The single headline figure is one point on this line, not an independent measurement.\n`;
 writeFileSync(join(OUT, 'SENSITIVITY.md'), md);
