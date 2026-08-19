@@ -1,4 +1,4 @@
-# Example ??? GUSS bedside screening result (synthetic) - Stroke Dysphagia Care-Transition FHIR IG v1.3.2
+# Example ??? GUSS bedside screening result (synthetic) - Stroke Dysphagia Care-Transition FHIR IG v1.3.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

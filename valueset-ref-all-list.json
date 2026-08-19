@@ -11,10 +11,10 @@
     "sources" : ["2.16.840.1.113883.4.642.3.141"],
     "uses" : {
     },
-    "StructureDefinition-swallowing-screening-result.html" : "Swallowing Screening Result",
-    "StructureDefinition-instrumental-swallow-assessment.html" : "Instrumental Swallow Assessment (VFSS/FEES) with Penetration-Aspiration Scale",
+    "StructureDefinition-aspiration-risk-flag.html" : "Aspiration Risk Flag",
     "StructureDefinition-dysphagia-severity.html" : "Dysphagia Severity",
-    "StructureDefinition-aspiration-risk-flag.html" : "Aspiration Risk Flag"
+    "StructureDefinition-swallowing-screening-result.html" : "Swallowing Screening Result",
+    "StructureDefinition-instrumental-swallow-assessment.html" : "Instrumental Swallow Assessment (VFSS/FEES) with Penetration-Aspiration Scale"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/composition-attestation-mode",
@@ -56,10 +56,10 @@
     "sources" : ["2.16.840.1.113883.4.642.3.5"],
     "uses" : {
     },
-    "StructureDefinition-swallowing-screening-result.html" : "Swallowing Screening Result",
-    "StructureDefinition-instrumental-swallow-assessment.html" : "Instrumental Swallow Assessment (VFSS/FEES) with Penetration-Aspiration Scale",
+    "StructureDefinition-aspiration-risk-flag.html" : "Aspiration Risk Flag",
     "StructureDefinition-dysphagia-severity.html" : "Dysphagia Severity",
-    "StructureDefinition-aspiration-risk-flag.html" : "Aspiration Risk Flag"
+    "StructureDefinition-swallowing-screening-result.html" : "Swallowing Screening Result",
+    "StructureDefinition-instrumental-swallow-assessment.html" : "Instrumental Swallow Assessment (VFSS/FEES) with Penetration-Aspiration Scale"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/diet-type",
@@ -213,12 +213,12 @@
     "sources" : ["2.16.840.1.113883.4.642.3.20"],
     "uses" : {
     },
+    "StructureDefinition-aspiration-risk-flag.html" : "Aspiration Risk Flag",
+    "StructureDefinition-dysphagia-severity.html" : "Dysphagia Severity",
     "StructureDefinition-swallowing-screening-result.html" : "Swallowing Screening Result",
-    "StructureDefinition-dysphagia-care-transition-summary.html" : "Dysphagia Care-Transition Summary",
     "StructureDefinition-dysphagia-nutrition-order.html" : "Dysphagia Nutrition Order (IDDSI-bound)",
     "StructureDefinition-instrumental-swallow-assessment.html" : "Instrumental Swallow Assessment (VFSS/FEES) with Penetration-Aspiration Scale",
-    "StructureDefinition-dysphagia-severity.html" : "Dysphagia Severity",
-    "StructureDefinition-aspiration-risk-flag.html" : "Aspiration Risk Flag"
+    "StructureDefinition-dysphagia-care-transition-summary.html" : "Dysphagia Care-Transition Summary"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/list-empty-reason",
@@ -302,10 +302,10 @@
     "sources" : ["2.16.840.1.113883.4.642.3.403"],
     "uses" : {
     },
-    "StructureDefinition-swallowing-screening-result.html" : "Swallowing Screening Result",
-    "StructureDefinition-instrumental-swallow-assessment.html" : "Instrumental Swallow Assessment (VFSS/FEES) with Penetration-Aspiration Scale",
+    "StructureDefinition-aspiration-risk-flag.html" : "Aspiration Risk Flag",
     "StructureDefinition-dysphagia-severity.html" : "Dysphagia Severity",
-    "StructureDefinition-aspiration-risk-flag.html" : "Aspiration Risk Flag"
+    "StructureDefinition-swallowing-screening-result.html" : "Swallowing Screening Result",
+    "StructureDefinition-instrumental-swallow-assessment.html" : "Instrumental Swallow Assessment (VFSS/FEES) with Penetration-Aspiration Scale"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
@@ -319,10 +319,10 @@
     "sources" : ["2.16.840.1.113883.4.642.3.396"],
     "uses" : {
     },
-    "StructureDefinition-swallowing-screening-result.html" : "Swallowing Screening Result",
-    "StructureDefinition-instrumental-swallow-assessment.html" : "Instrumental Swallow Assessment (VFSS/FEES) with Penetration-Aspiration Scale",
+    "StructureDefinition-aspiration-risk-flag.html" : "Aspiration Risk Flag",
     "StructureDefinition-dysphagia-severity.html" : "Dysphagia Severity",
-    "StructureDefinition-aspiration-risk-flag.html" : "Aspiration Risk Flag"
+    "StructureDefinition-swallowing-screening-result.html" : "Swallowing Screening Result",
+    "StructureDefinition-instrumental-swallow-assessment.html" : "Instrumental Swallow Assessment (VFSS/FEES) with Penetration-Aspiration Scale"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
@@ -336,10 +336,10 @@
     "sources" : ["2.16.840.1.113883.4.642.3.399"],
     "uses" : {
     },
-    "StructureDefinition-swallowing-screening-result.html" : "Swallowing Screening Result",
-    "StructureDefinition-instrumental-swallow-assessment.html" : "Instrumental Swallow Assessment (VFSS/FEES) with Penetration-Aspiration Scale",
+    "StructureDefinition-aspiration-risk-flag.html" : "Aspiration Risk Flag",
     "StructureDefinition-dysphagia-severity.html" : "Dysphagia Severity",
-    "StructureDefinition-aspiration-risk-flag.html" : "Aspiration Risk Flag"
+    "StructureDefinition-swallowing-screening-result.html" : "Swallowing Screening Result",
+    "StructureDefinition-instrumental-swallow-assessment.html" : "Instrumental Swallow Assessment (VFSS/FEES) with Penetration-Aspiration Scale"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
@@ -353,10 +353,10 @@
     "sources" : ["2.16.840.1.113883.4.642.3.395"],
     "uses" : {
     },
-    "StructureDefinition-swallowing-screening-result.html" : "Swallowing Screening Result",
-    "StructureDefinition-instrumental-swallow-assessment.html" : "Instrumental Swallow Assessment (VFSS/FEES) with Penetration-Aspiration Scale",
+    "StructureDefinition-aspiration-risk-flag.html" : "Aspiration Risk Flag",
     "StructureDefinition-dysphagia-severity.html" : "Dysphagia Severity",
-    "StructureDefinition-aspiration-risk-flag.html" : "Aspiration Risk Flag"
+    "StructureDefinition-swallowing-screening-result.html" : "Swallowing Screening Result",
+    "StructureDefinition-instrumental-swallow-assessment.html" : "Instrumental Swallow Assessment (VFSS/FEES) with Penetration-Aspiration Scale"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/observation-status",
@@ -370,10 +370,10 @@
     "sources" : ["2.16.840.1.113883.4.642.3.400"],
     "uses" : {
     },
-    "StructureDefinition-swallowing-screening-result.html" : "Swallowing Screening Result",
-    "StructureDefinition-instrumental-swallow-assessment.html" : "Instrumental Swallow Assessment (VFSS/FEES) with Penetration-Aspiration Scale",
+    "StructureDefinition-aspiration-risk-flag.html" : "Aspiration Risk Flag",
     "StructureDefinition-dysphagia-severity.html" : "Dysphagia Severity",
-    "StructureDefinition-aspiration-risk-flag.html" : "Aspiration Risk Flag"
+    "StructureDefinition-swallowing-screening-result.html" : "Swallowing Screening Result",
+    "StructureDefinition-instrumental-swallow-assessment.html" : "Instrumental Swallow Assessment (VFSS/FEES) with Penetration-Aspiration Scale"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
@@ -388,10 +388,10 @@
     "sources" : ["2.16.840.1.113883.4.642.3.407"],
     "uses" : {
     },
-    "StructureDefinition-swallowing-screening-result.html" : "Swallowing Screening Result",
-    "StructureDefinition-instrumental-swallow-assessment.html" : "Instrumental Swallow Assessment (VFSS/FEES) with Penetration-Aspiration Scale",
+    "StructureDefinition-aspiration-risk-flag.html" : "Aspiration Risk Flag",
     "StructureDefinition-dysphagia-severity.html" : "Dysphagia Severity",
-    "StructureDefinition-aspiration-risk-flag.html" : "Aspiration Risk Flag"
+    "StructureDefinition-swallowing-screening-result.html" : "Swallowing Screening Result",
+    "StructureDefinition-instrumental-swallow-assessment.html" : "Instrumental Swallow Assessment (VFSS/FEES) with Penetration-Aspiration Scale"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
@@ -405,10 +405,10 @@
     "sources" : ["2.16.840.1.113883.4.642.3.397"],
     "uses" : {
     },
-    "StructureDefinition-swallowing-screening-result.html" : "Swallowing Screening Result",
-    "StructureDefinition-instrumental-swallow-assessment.html" : "Instrumental Swallow Assessment (VFSS/FEES) with Penetration-Aspiration Scale",
+    "StructureDefinition-aspiration-risk-flag.html" : "Aspiration Risk Flag",
     "StructureDefinition-dysphagia-severity.html" : "Dysphagia Severity",
-    "StructureDefinition-aspiration-risk-flag.html" : "Aspiration Risk Flag"
+    "StructureDefinition-swallowing-screening-result.html" : "Swallowing Screening Result",
+    "StructureDefinition-instrumental-swallow-assessment.html" : "Instrumental Swallow Assessment (VFSS/FEES) with Penetration-Aspiration Scale"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/request-intent",
@@ -480,7 +480,7 @@
   },
   {
     "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/aspiration-risk-value-vs",
-    "version" : "1.3.2",
+    "version" : "1.3.3",
     "status" : "active",
     "name" : "AspirationRiskValueVS",
     "title" : "Aspiration Event Qualifier",
@@ -493,7 +493,7 @@
   },
   {
     "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/dysphagia-severity-type-vs",
-    "version" : "1.3.2",
+    "version" : "1.3.3",
     "status" : "active",
     "name" : "DysphagiaSeverityTypeVS",
     "title" : "Dysphagia Severity / Oral-Intake Scale Type",
@@ -506,7 +506,7 @@
   },
   {
     "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/iddsi-fluid-levels",
-    "version" : "1.3.2",
+    "version" : "1.3.3",
     "status" : "active",
     "name" : "IDDSIFluidLevels",
     "title" : "IDDSI Drink/Fluid Consistency Levels (SNOMED CT)",
@@ -518,7 +518,7 @@
   },
   {
     "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/iddsi-food-levels",
-    "version" : "1.3.2",
+    "version" : "1.3.3",
     "status" : "active",
     "name" : "IDDSIFoodLevels",
     "title" : "IDDSI Food Texture Levels (SNOMED CT)",
@@ -530,7 +530,7 @@
   },
   {
     "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/instrumental-swallow-type-vs",
-    "version" : "1.3.2",
+    "version" : "1.3.3",
     "status" : "active",
     "name" : "InstrumentalSwallowTypeVS",
     "title" : "Instrumental Swallow Assessment Type",
@@ -544,7 +544,7 @@
   },
   {
     "url" : "https://sefatuncer.github.io/stroke-dysphagia-fhir-ig/ValueSet/swallow-screening-type-vs",
-    "version" : "1.3.2",
+    "version" : "1.3.3",
     "status" : "active",
     "name" : "SwallowScreeningTypeVS",
     "title" : "Swallowing Screening Type",
