@@ -170,9 +170,10 @@ CT membership or an Affiliate License.
 
 - *Attribution (BY).* SNOMED CT® is a registered trademark of SNOMED International.
   Concept identifiers and English terms are © SNOMED International, used under the GPS
-  License. This notice also appears in the `copyright` element of every conformance resource
-  the IG defines — the six profiles, the six value sets and the local code system,
-  whether or not a given resource itself carries a third-party concept — and, for the
+  License. This notice also appears in the `copyright` element of ten of the thirteen conformance
+  resources the IG defines: the six profiles and the four value sets that carry SNOMED
+  display terms. The two IDDSI value sets enumerate identifiers only and the local code
+  system holds locally minted codes, so each carries its own notice instead. For the
   example instances, the negative fixtures and the deposited cohort, in the repository
   `NOTICE` file, FHIR defining no `copyright` element on those resource types.
 - *No derivatives (ND).* Every display string in §2.3, §2.5 and §2.7 is reproduced

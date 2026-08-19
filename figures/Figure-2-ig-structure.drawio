@@ -72,7 +72,7 @@
         <mxCell id="bv5b" style="endArrow=open;html=1;dashed=1;strokeColor=#6c8ebf;" edge="1" parent="1" source="pf5" target="vs5b"><mxGeometry relative="1" as="geometry" /></mxCell>
 
         <!-- Local CodeSystem (below the value sets it feeds) -->
-        <mxCell id="cs" value="DysphagiaScalesTemp (CodeSystem) — temporary codes for instruments that lack terminology (PAS, FOIS, DIGEST, EAT-10, TOR-BSST, V-VST, Yale residue, ...); upstream submission pending" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;align=left;spacingLeft=8;spacingRight=8;" vertex="1" parent="1">
+        <mxCell id="cs" value="DysphagiaScalesTemp (CodeSystem) — temporary codes for instruments that lack terminology (PAS, FOIS, EAT-10, DIGEST, TOR-BSST, Yale residue, silent aspiration); upstream submission pending" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;align=left;spacingLeft=8;spacingRight=8;" vertex="1" parent="1">
           <mxGeometry x="40" y="420" width="575" height="64" as="geometry" />
         </mxCell>
         <mxCell id="cs1" style="endArrow=open;html=1;dashed=1;strokeColor=#d6b656;" edge="1" parent="1" source="cs" target="vs1"><mxGeometry relative="1" as="geometry" /></mxCell>

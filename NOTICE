@@ -11,9 +11,11 @@ number of concepts, the unmodified English term — rather than the terminologie
 themselves: it redistributes no code system release, national extension, or semantic
 content such as relationships, hierarchies or reference sets.
 
-Every conformance resource the IG defines (StructureDefinition, ValueSet, CodeSystem)
-carries this notice in its own `copyright` element, naming the Global Patient Set licence
-and its URI. FHIR defines no `copyright` element on instance resources (Observation,
+Ten of the thirteen conformance resources the IG defines carry this notice in their own
+`copyright` element, naming the Global Patient Set licence and its URI: the six profiles
+and the four value sets that carry SNOMED display terms. The two IDDSI value sets
+enumerate identifiers only and the local code system holds locally minted codes, so each
+carries its own notice instead. FHIR defines no `copyright` element on instance resources (Observation,
 NutritionOrder, Composition, Bundle), so for the example instances, the negative fixtures
 and the deposited synthetic evaluation cohort the notice below stands in its place.
 
