@@ -1,7 +1,7 @@
 info  Running SUSHI v3.20.0 (implements FHIR Shorthand specification v3.0.0)
 info  Arguments:
 info    C:\Users\tuncer\Desktop\Sefa-Nazife\Makaleler\A-Amiral-FHIR-IG\ig
-info  No output path specified. Output to .
+info  No output path specified. Output to ig
 info  Using configuration file: C:\Users\tuncer\Desktop\Sefa-Nazife\Makaleler\A-Amiral-FHIR-IG\ig\sushi-config.yaml
 info  Importing FSH text...
 info  Preprocessed 1 documents with 2 aliases.
@@ -42,6 +42,10 @@ info  The _build script hosted at https://github.com/HL7/ig-publisher-scripts is
 |  -------------------------------------------------------------  |
 |                                                                 |
 ===================================================================
-| You rock, lobster!                     0 Errors      0 Warnings |
+| Just like a perfect pearl.             0 Errors      0 Warnings |
+===================================================================
+|    You are using SUSHI version 3.20.0, but the latest stable    |
+| release is version 3.20.1. To install the latest release, run:  |
+|                    npm install -g fsh-sushi                     |
 ===================================================================
 

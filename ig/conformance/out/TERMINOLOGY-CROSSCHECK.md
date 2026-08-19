@@ -2,7 +2,7 @@
 
 **Server:** https://terminz.azurewebsites.net/fhir — CSIRO Ontoserver (NZ national terminology service)
 **SNOMED CT edition/version reported by the server:** http://snomed.info/sct/21000210109/version/20260720
-**Run:** 2026-08-18T14:50:41.906Z
+**Run:** 2026-08-19T10:59:01.759Z
 
 The coverage assessment reported in the manuscript was made against the HL7 reference
 terminology server (tx.fhir.org). This run repeats it on a server that shares no code
